@@ -1,0 +1,25 @@
+dev container　キャッシュなしのコンテナービルド
+→成功
+
+https://github.com/lifull/iezukuri-dev-env?tab=readme-ov-file#installing-packages--%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB
+
+---
+
+iezukuri-web
+
+$ cd iezukuri-web
+$ mise use node@16
+$ node -v
+$ npm ci
+
+iezukuri-webのローカル環境
+$ npm run local
+
+localhost:3005/iezukuri
+
+---
+
+iezukuri-web-v5
+
+$ cd iezukuri-web
+$ dc webv5 up --build

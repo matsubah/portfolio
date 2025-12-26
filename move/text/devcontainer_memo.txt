@@ -1,0 +1,25 @@
+
+* Dev containerの終了方法は下記コマンドで良いか？
+$ docker stop $(docker ps -q)
+
+* iezukuri-webとiezukuri-managerを切り替える時は、毎回Dev Containerを終了した方が良いか
+
+* Dev Containerで開発する際は、各レポジトリは/iezukuri-dev-env以下に置いたレポジトリで開発する、で良いか
+
+例）iezukuri-manager
+
+これまでのレポジトリ→/projects以下に置いていた
+/Users/matsubah/projects/iezukuri-manager
+
+これから
+/Users/matsubah/projects/iezukuri-dev-env/iezukuri-manager
+
+* iezukuri-managerの開発環境の立ち上げ（dc manager up)は無事起動しました。
+ローカル環境のmanagerはこれまで「localhost/login」でアクセスできたのですが、今も同じでしょうか？
+アクセスしたところ「404 page not found」となっていましたので確認させてください。
+
+===
+
+# dev containerのキャッシュを消す
+
+$ rm -rf ~/Library/Application\ Support/Code/User/globalStorage/ms-vscode-remote.remote-containers

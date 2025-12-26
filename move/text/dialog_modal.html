@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Dialog</title>
+
+<style>
+h1 {
+  margin-bottom: 20px;
+}
+
+.dialog {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.45);
+}
+.dialog > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  padding: 24px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,.45);
+}
+
+</style>
+</head>
+<body>
+
+<h1>modal dialog</h1>
+<button type="button" id="openButton">open dialog</button>
+
+<div class="dialog" id="dialog" aria-modal="true" role="dialog" aria-labelledby="label-dialog" hidden>
+  <div>
+    <h2 id="label-dialog">銀河鉄道の夜</h2>
+    <p>『<b>銀河鉄道の夜</b>』（<b>銀河鐵道の夜</b>、ぎんがてつどうのよる）は、<a href="#">宮沢賢治</a>の<a href="#">童話</a>作品。孤独な少年ジョバンニが、友人カムパネルラと<a href="#">銀河鉄道</a>の旅をする物語で、宮沢賢治童話の代表作のひとつとされている。
+    </p>
+    <button id="closeButton">close</button>
+  </div>
+</div>
+
+
+<p><a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/">modal dialog</a></p>
+
+<script>
+  let openButton = document.querySelector("#openButton")
+  let closeButton = document.querySelector("#closeButton")
+  let dialog = document.querySelector("#dialog");
+  let tabbableElements = Array.from(dialog.querySelectorAll(`a,button,input,[contenteditable],[tabindex]`))
+
+  openButton.addEventListener('click', function(evt) {
+    dialog.removeAttribute("hidden")
+    tabbableElements[0].focus();
+  })
+  closeButton.addEventListener('click', function(evt) {
+    dialog.setAttribute("hidden", "hidden")
+    openButton.focus();
+  })
+
+  dialog.addEventListener('keydown', function(evt) {
+    if(evt.key === "Escape"){
+      dialog.setAttribute("hidden", "hidden");
+      openButton.focus();
+      return;
+    }
+
+    if(evt.key === "Tab" && !evt.shiftKey){
+      evt.preventDefault();
+      let index = tabbableElements.indexOf(document.activeElement);
+      let nextItem = tabbableElements[index + 1] || tabbableElements[0]; //なければ0
+      nextItem.focus();
+      return;
+    }
+
+    if(evt.key === "Tab" && evt.shiftKey){
+      evt.preventDefault();
+      let index = tabbableElements.indexOf(document.activeElement);
+      let nextItem = tabbableElements[index - 1] || tabbableElements[tabbableElements.length - 1]; //なければ1つ前
+      nextItem.focus();
+      return;
+    }
+
+  })
+</script>
+
+</body>
+</html>

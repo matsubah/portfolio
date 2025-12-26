@@ -1,0 +1,33 @@
+1人目
+
+個人開発自慢LT会 - Google スライド https://docs.google.com/presentation/d/14dtZdMgDh1u5zBkDY93SkTBzN7pm_1Cff8S405-hJhk/edit#slide=id.g2ec052febc2_0_6
+
+topi0247/MyApp: 作成したアプリ集です https://github.com/topi0247/MyApp
+
+言の葉つむぎ https://kotonoha-tsumugi.vercel.app/
+
+言の葉つづり https://kotonoha-tsuduri.vercel.app/
+
+2人目
+
+速くて安いWebサイトを作る - Speaker Deck https://speakerdeck.com/nishiharatsubasa/su-kutean-iwebsaitowozuo-ru
+
+意外？ @propertyがCSSアニメーションを激変させる理由 - ICS MEDIA https://ics.media/entry/241219/
+
+Web Motion Catalog https://web-motion-catalog.com/
+
+3人目
+
+なぜ私は自分が使わないサービスを作るのか？ / Why would I create a service that I would not use? - Speaker Deck https://speakerdeck.com/aiandrox/why-would-i-create-a-service-that-i-would-not-use
+
+4人目
+
+ファインディLT_ポケモン対戦の定量的分析 - Speaker Deck https://speakerdeck.com/fufufukakaka/huaindeilt-pokemondui-zhan-noding-liang-de-fen-xi
+
+5人目
+
+運用しているアプリケーションのDBのリプレイスをやってみた - Speaker Deck https://speakerdeck.com/miura55/yun-yong-siteiruapurikesiyonnodbnoripureisuwoyatutemita
+
+6人目
+
+レビューを増やしつつ 高評価維持するテクニック - Speaker Deck https://speakerdeck.com/tsuzuki817/rebiyuwozeng-yasitutu-gao-ping-jia-wei-chi-surutekunituku
