@@ -1,0 +1,77 @@
+#　IEZUKURI-10938
+【プチ改修】条件選択ページ（SP）のボタン追加
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10938
+
+## 内容
+-　https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=143434249
+での指摘により、条件選択ページのページ下部にボタンを入れたいです。
+
+罫線と市区町村選択に戻るボタンの間
+ボタンの枠の色は他のボタンと一緒
+＃テスト環境？ユニット環境？にて、
+　ご対応いただいた際に、一度画面を見せていただけれbと思います！
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-10938_sp_list_condition_add_button
+
+## ソース
+
+grep
+
+id="prg-fixed-bottom-navigation"
+
+/views/Detail/Case/Index/parts/fixedBottomNavigation.html.twig
+/views/Detail/Product/Index/parts/fixedBottomNavigation.html.twig
+/views/Detail/parts/makerFixedBottomNavigation.html.twig
+/views/Landing/MakerList/parts/fixedBottomNavigation.html.twig
+/views/Landing/ProductList/parts/fixedBottomNavigation.html.twig
+/views/LandingPrice/Product/List/parts/fixedBottomNavigation.html.twig
+/views/LandingSimulation/Product/parts/fixedBottomNavigation.html.twig
+/views/Maker/Flow/flow.html.twig
+/views/Product/Flow/flow.html.twig
+
+fixedBottomNavigation.html.twig
+
+/views/Detail/Case/index.html.twig
+/views/Detail/Product/index.html.twig
+/views/Landing/MakerList/list.html.twig
+/views/Landing/ProductList/list.html.twig
+/views/LandingPrice/Product/List/parts/productList.html.twig
+/views/LandingSimulation/Product/parts/list.html.twig
+
+js
+/js/smartphone/page/maker/flow_search_navigation.js
+/js/smartphone/page/product/flow_search_navigation.js
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

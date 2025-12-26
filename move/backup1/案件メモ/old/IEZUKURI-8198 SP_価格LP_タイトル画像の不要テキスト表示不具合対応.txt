@@ -1,0 +1,57 @@
+# IEZUKURI-8198 SP_価格LP_タイトル画像の不要テキスト表示不具合対応
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8198
+
+## 内容
+- SPの価格LPヘッダー部分の画像に
+不要なテキスト「注文住宅カタログを一括請求！」が出力されているので、対応する
+※添付ファイル参照（黄色の枠部分）
+・URL例（本番環境）
+https://www.homes.co.jp/iezukuri/lp/price/product/
+https://www.homes.co.jp/iezukuri/lp/price/product/low10000high499999/
+https://www.homes.co.jp/iezukuri/lp/price/product/kanagawa/low10000high499999/
+https://www.homes.co.jp/iezukuri/lp/price/product/kanagawa/yokohama_nishi-city/low10000high499999/
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/low10000high499999/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/kanagawa/low10000high499999/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/kanagawa/yokohama_nishi-city/low10000high499999/
+
+https://www-iezukuri-test.homes.co.jp/iezukuri/lp/price/product/
+https://www-iezukuri-test.homes.co.jp/iezukuri/lp/price/product/low10000high499999/
+https://www-iezukuri-test.homes.co.jp/iezukuri/lp/price/product/kanagawa/low10000high499999/
+https://www-iezukuri-test.homes.co.jp/iezukuri/lp/price/product/kanagawa/yokohama_nishi-city/low10000high499999/
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-8198_sp_lp_remove_text
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

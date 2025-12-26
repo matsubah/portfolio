@@ -1,0 +1,60 @@
+# IEZUKURI-9056
+LP反響質向上_他LP展開(会社LP)_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-9056
+
+## 内容
+- カタログLPのBパターンを会社LPに展開する
+ url例：/iezukuri/lp/maker/chiba/funabashi-city/theme-41/
+
+ABテストの実装は無し
+ (bディレクトリは不要)
+
+テンプレート系タスクの実施順序は以下。
+ # LP反響質向上_他LP展開(会社LP)_市区町村選択ページのテンプレート切り分け
+ https://jira.next-group.jp/browse/IEZUKURI-9064
+ # LP反響質向上_他LP展開(会社LP)_過去Bパターン反映
+ https://jira.next-group.jp/browse/IEZUKURI-9065
+ # LP反響質向上_他LP展開(会社LP)_コーディング
+ https://jira.next-group.jp/browse/IEZUKURI-9056
+ # LP反響質向上_他LP展開(会社LP)_JS実装
+ https://jira.next-group.jp/browse/IEZUKURI-9063
+
+ 
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+https://www-iezukuri-test.homes.co.jp/iezukuri/lp/maker/chiba/funabashi-city/theme-41/
+
+## Branch
+
+* Topic branch
+IEZUKURI-8671_topic_sp_lp_ui_ex_maker
+
+* Feature branch
+git checkout -b IEZUKURI-9056_feature_sp_lp_ui_ex_maker_new
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

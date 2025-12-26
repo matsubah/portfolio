@@ -1,0 +1,58 @@
+# IEZUKURI-8483
+SP詳細_サムネイル4:3対応_カタログ詳細_コーディング・JS実装
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8483
+
+## 内容
+- 仕様書：https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=141737656
+
+このチケットではカタログ詳細ページのコーディングを行う。
+
+メインはコーディング。
+
+新規で追加されたフォトギャラリーのリンク部分に関してはJSの実装が必要になりそう。
+
+- 完了の定義
+
+
+## 対象画面
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/product/pid-20115/
+
+## Branch
+
+* Topic branch
+IEZUKURI-8403_topic_sp_ux_detail_thumbnail
+
+* Feature branch
+IEZUKURI-8483_feature_sp_ux_detail_thumbnail_product
+
+## ソース
+
+https://www.homes.co.jp/kodate/b-17001290000380/
+.mod-mainVisual .mainImage::after {
+    content: "";
+    position: absolute;
+    display: block;
+    right: 10px;
+    bottom: 10px;
+    width: 6.4vw;
+    height: 6.4vw;
+    background-image: url(/iezukuri/img/smartphone/common/icon/icon_photo_viewer.svg);
+    background-size: contain;
+}
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

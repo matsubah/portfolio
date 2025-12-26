@@ -1,0 +1,42 @@
+# IEZUKURI-8875
+LP反響質向上_ UI改修_カタログ名FB対応
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8875
+
+## 内容
+- 吹き出し部分が誤タップできそうなデザインだったので修正する
+
+## 対象画面
+テーマあり
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/product/tokyo/setagaya-city/theme-41/
+テーマなし
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/product/tokyo/setagaya-city/
+
+0件時
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/product/okinawa/yaeyama_yonaguni-city/theme-23/
+
+## Branch
+
+* Topic branch
+IEZUKURI-8671_topic_sp_lp_ui_abtest
+
+* Feature branch
+IEZUKURI-8875_feature_sp_lp_ui_feedback
+
+## ソース
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

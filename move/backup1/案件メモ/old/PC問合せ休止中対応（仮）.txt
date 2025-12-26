@@ -1,0 +1,139 @@
+# 280_PC問合せ休止中対応(タスク名不明)
+
+## JIRA:
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=125557406
+
+## （フェーズ１）「詳細系ページ」
+- 非活性ボタンのラベルを変更する
+- OEM対応でホームズくんの有り無しでボタンデザインを変更する
+
+## 対象画面
+
+* 会社詳細ページ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-3217/
+
+* カタログ詳細ページ / 詳細内カタログ一覧ページ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-3217/product/pid-11200/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-3217/product/
+
+* 施工事例詳細ページ / 詳細内施工事例一覧ページ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-1013/case/cid-13551/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-1013/case/
+
+* イベント詳細ページ / 詳細内イベント一覧ページ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/event/eid-10484/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/event/
+→休止中ではないデータしかない
+
+* その他詳細内ページ
+→スコープ外
+
+## Branch
+
+* Topic branch
+IEZUKURI-7133_topic_pc_capacity_ui_update
+
+* Feature branch
+git checkout -b IEZUKURI-7133_feature_pc_capacity_ui_update
+
+## 1/16のタスク
+
+- ディレクトリ構造の把握
+- 一覧の仮実装
+→昨日の内容でfeatureブランチに投入
+
+- 詳細の仮実装(会社、カタログ、事例)
+- 詳細一覧の仮実装(カタログ、事例)
+→featureブランチを作り、そこに実装していく
+
+## ソース
+
+* 会社詳細ページ
+iezukuri-web-unit/php_include/src/Iezukuri/PcBundle/Resources/views/MakerDetail/parts/mainPicture.html.twig
+
+* カタログ詳細ページ
+iezukuri-web-unit/php_include/src/Iezukuri/PcBundle/Resources/views/ProductDetail/parts/mainPicture.html.twig
+
+* 詳細内カタログ一覧ページ
+iezukuri-web-unit/php_include/src/Iezukuri/PcBundle/Resources/views/ProductDetail/list.html.twig
+
+* 施工事例詳細ページ
+iezukuri-web-unit/php_include/src/Iezukuri/PcBundle/Resources/views/CaseDetail/parts/mainPicture.html.twig
+
+* 詳細内施工事例一覧ページ
+iezukuri-web-unit/php_include/src/Iezukuri/PcBundle/Resources/views/CaseDetail/list.html.twig
+
+* イベント詳細ページ
+「会社共通ヘッダーの問合せボタン」→タイトル（メーカー名）下の詳細、parts/detail/base.html.twigにてinclude
+iezukuri-web-unit/php_include/src/Iezukuri/PcBundle/Resources/views/parts/detail/headerInquireBtn.html.twig
+
+* 詳細内イベント一覧ページ
+iezukuri-web-unit/php_include/src/Iezukuri/PcBundle/Resources/views/parts/detail/headerInquireBtn.html.twig
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+■休止中データ
+
+* 会社詳細ページ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-3217/
+
+* カタログ詳細ページ / 詳細内カタログ一覧ページ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-3217/product/pid-11200/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-3217/product/
+
+* 施工事例詳細ページ / 詳細内施工事例一覧ページ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-1013/case/cid-13551/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-1013/case/
+
+* イベント詳細ページ / 詳細内イベント一覧ページ
+→休止中データ見当たらず
+
+■問合せ受付中データ
+
+* 会社詳細ページ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-1583/
+
+* カタログ詳細ページ / 詳細内カタログ一覧ページ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-1583/product/pid-12167/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-1583/product/
+
+* 施工事例詳細ページ / 詳細内施工事例一覧ページ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-1583/case/cid-13378/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-1583/case/
+
+* イベント詳細ページ / 詳細内イベント一覧ページ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/event/eid-10484/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/event/
+
+■OEMデータ（楽天）
+
+* 会社詳細ページ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-1013/?o=248hA3c2GUnlW7I
+
+* カタログ詳細ページ / 詳細内カタログ一覧ページ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-1013/product/pid-6803/?o=248hA3c2GUnlW7I
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-1013/product/?o=248hA3c2GUnlW7I
+
+* 施工事例詳細ページ / 詳細内施工事例一覧ページ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-1013/case/cid-13551/?o=248hA3c2GUnlW7I
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-1013/case/?o=248hA3c2GUnlW7I
+
+* イベント詳細ページ / 詳細内イベント一覧ページ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/event/eid-10484/?o=248hA3c2GUnlW7I
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/event/?o=248hA3c2GUnlW7I
+→休止中データ見当たらず
+
+## 懸念点
+* CSSの命名ルールがよくわかっていない為、ソース内に記述しているのを忘れないようにする
+* デザインが決まる前なので、ボタンのデザインや仮の画像の位置などは後ほど修正する予定
+
+## 今後
+commitはここ
+http://gitlab.dev.nxin.jp/app/iezukuri/commit/7d6874c06db00e8c6d01ccdadb8fb0713328884d

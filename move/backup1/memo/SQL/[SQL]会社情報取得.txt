@@ -1,0 +1,83 @@
+SELECT
+  CASE g.status WHEN 1 THEN '掲載中' ELSE '非掲載' END                                                             AS "ｽﾃｰﾀｽ"
+  ,g.gyosha_id                                                                                                     AS "会社ID"
+  ,CASE WHEN g.partner_division = 1 THEN 'ﾊｳｽﾒｰｶｰ' WHEN g.partner_division = 2 THEN '工務店' ELSE '設計事務所' END AS "ﾊﾟｰﾄﾅｰ区分"
+  ,CASE WHEN g.gyosha_id = ma.parent_gyosha_id THEN '本店' ELSE '支店' END                                         AS "ID種別"
+  ,g.member_id                                                                                                     AS "会員番号"
+  ,g.name                                                                                                          AS "会社名"
+  ,g.title                                                                                                         AS "屋号･FC店名等"
+  ,g.addr1_1                                                                                                       AS "所在地都道府県"
+  ,g.addr1_2                                                                                                       AS "所在地市区郡町村"
+  ,p.cnt_area                                                                                                      AS "建築対応ｴﾘｱ(都道府県)数"
+  ,CASE WHEN w.modify_date IS NOT NULL THEN '有' ELSE '無' END                                                     AS "FD有無"
+  ,CASE g.product_existence WHEN 1 THEN '有' ELSE '無' END                                                         AS "ｶﾀﾛｸﾞ有無"
+  ,CASE g.product_existence WHEN 1 THEN cnt_product_all ELSE NULL END                                              AS "ｶﾀﾛｸﾞ登録数"
+  ,CASE g.product_existence WHEN 1 THEN cnt_product_on ELSE NULL END                                               AS "ｶﾀﾛｸﾞ表示数"
+  ,c.cnt_case_all                                                                                                  AS "施工事例登録数"
+  ,c.cnt_case_on                                                                                                   AS "施工事例表示数"
+  ,v.cnt_voice_all                                                                                                 AS "会社の評判表示数"
+--  ,g.pr_comment_list                                                                                               AS "PRﾀｲﾄﾙ"
+--  ,g.pr_comment                                                                                                    AS "家づくり検討者へのﾒｯｾｰｼﾞ"
+FROM
+  housing_gyosha g
+  LEFT JOIN housing_gyosha_group_member me USING (gyosha_id)
+  LEFT JOIN housing_gyosha_group_master ma USING (group_id)
+  LEFT JOIN housing_webcall w USING (gyosha_id)
+  LEFT JOIN (
+    SELECT
+      p.gyosha_id
+      ,COUNT(DISTINCT(CASE WHEN p.product_listing = 1 THEN p.product_id ELSE NULL END)) AS cnt_product_on
+      ,COUNT(DISTINCT(p.product_id)) AS cnt_product_all
+      ,COUNT(DISTINCT(CASE WHEN p.product_listing = 1 THEN pa.addr1_1 ELSE NULL END)) AS cnt_area
+    FROM
+      housing_product p
+      LEFT JOIN housing_product_construction_area pa USING (product_id)
+    WHERE
+      p.status = 1
+    GROUP BY
+      p.gyosha_id
+  ) p USING (gyosha_id)
+  LEFT JOIN (
+    SELECT
+      gyosha_id
+      ,COUNT(CASE WHEN status = 1 THEN case_id ELSE NULL END) AS cnt_case_on
+      ,COUNT(case_id) AS cnt_case_all
+    FROM
+      housing_construction_case
+    WHERE
+      status <> 9
+    GROUP BY
+      gyosha_id
+  ) c USING (gyosha_id)
+  LEFT JOIN (
+    SELECT
+      gyosha_id
+      ,COUNT(voice_id) AS cnt_voice_all
+    FROM
+      housing_voice
+    GROUP BY
+      gyosha_id
+  ) v USING (gyosha_id)
+WHERE
+  g.status <> 9
+  AND gyosha_id <> 1
+GROUP BY
+  g.gyosha_id
+  ,g.partner_division
+  ,ma.parent_gyosha_id
+  ,g.member_id
+  ,g.status
+  ,g.product_existence
+  ,g.name
+  ,g.title
+  ,g.addr1_1
+  ,g.addr1_2
+  ,w.modify_date
+  ,p.cnt_product_on
+  ,p.cnt_product_all
+  ,p.cnt_area
+  ,c.cnt_case_on
+  ,c.cnt_case_all
+  ,v.cnt_voice_all
+ORDER BY
+  g.gyosha_id

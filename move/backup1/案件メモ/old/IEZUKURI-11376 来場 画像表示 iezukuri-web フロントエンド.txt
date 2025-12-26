@@ -1,0 +1,58 @@
+# IEZUKURI-11376
+来場 画像表示 iezukuri-web フロントエンド
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-11376
+
+## 内容
+
+- 仕様
+デザイン
+https://jira.next-group.jp/wiki/display/chumon/387_05_03_FIX
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-11376_visit_image_add
+
+## ソース
+
+*
+
+## 単体テスト
+
+機能テストのみ
+画面確認
+
+▼対象ページ
+
+会社詳細
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-10457/
+来場情報詳細
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-10457/visit/vid-33/
+来場できる会社一覧
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/visit/osaka/list/
+
+
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

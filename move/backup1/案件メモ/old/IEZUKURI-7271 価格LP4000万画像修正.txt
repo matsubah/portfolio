@@ -1,0 +1,60 @@
+# IEZUKURI-7271 価格LP4000万画像修正
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-7271
+
+## 内容
+- 万円表記がないため画像修正→差し替え
+
+完了の定義
+developにマージ
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/low1000000high9999999/
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-7271_lp_price_image
+
+## ソース PC/SP
+
+1. /iezukuri/img/default/page/lp_price/product/bg_main_range6.jpg
+* /iezukuri/img/default/page/inquire/lp_price/product/low1000000high9999999.jpg
+* /iezukuri/img/smartphone/page/lp_price/product/img_main_range6.jpg
+* /iezukuri/img/smartphone/page/inquire/lp_price/product/low1000000high9999999.jpg
+
+## 単体テスト
+
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/low1000000high9999999/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/inquire/product/input/?ref=lppr%2Cp%2C13201%2C%2C%2C
+
+隼さん
+G長承認お願いします。
+
+丸田さん→代理隼さん
+PJ承認お願いします。
+
+https://www-iezukuri-backstage.homes.co.jp/iezukuri/lp/price/product/tokyo/chiyoda-city/low1000000high9999999/
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+｀
+
+## 今後

@@ -1,0 +1,83 @@
+# IEZUKURI-8227【3D特集】エリア選択UI変更_コーディング(コンフリクト解消)
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8227
+
+## 内容
+- https://jira.next-group.jp/browse/IEZUKURI-8149
+上記チケットが藤川さんの実装( https://jira.next-group.jp/browse/IEZUKURI-8199 )とコンフリクトを起こしているので解消する
+藤川さんのがdevelopにあがってから対応
+
+完了の定義
+developにマージ
+
+## 対象画面
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/contents/3dmodelhouse/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/contents/3dmodelhouse/1/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/contents/3dmodelhouse/18/
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-8227_pc_3d_index_merge → IEZUKURI-8227_pc_3d_index_merge_old
+git merge IEZUKURI-8149_pc_3d_ui_select
+git checkout -b IEZUKURI-8227_pc_3d_ui_select_merge
+
+git commit -m "【IEZUKURI-8227】3D_index_エリア選択UI変更"
+
+## ソース
+
+[matsubah@iezukuri-web-unit php_include]$ git merge IEZUKURI-8149_pc_3d_ui_select
+CONFLICT (rename/add): Rename php_include/src/Iezukuri/PcBundle/Resources/views/Contents/parts/assets/stylesheet.html.twig->php_include/src/Iezukuri/PcBundle/Resources/views/Contents/Matterport/Detail/parts/assets/stylesheet.html.twig in IEZUKURI-8149_pc_3d_ui_select. php_include/src/Iezukuri/PcBundle/Resources/views/Contents/Matterport/Detail/parts/assets/stylesheet.html.twig added in HEAD
+Adding as php_include/src/Iezukuri/PcBundle/Resources/views/Contents/Matterport/Detail/parts/assets/stylesheet.html.twig~HEAD instead
+Auto-merging php_include/src/Iezukuri/PcBundle/Resources/views/Contents/Matterport/Index/parts/assets/stylesheet.html.twig
+CONFLICT (add/add): Merge conflict in php_include/src/Iezukuri/PcBundle/Resources/views/Contents/Matterport/Index/parts/assets/stylesheet.html.twig
+Auto-merging php_include/src/Iezukuri/PcBundle/Resources/views/Contents/Matterport/Index/parts/assets/javascript.html.twig
+CONFLICT (add/add): Merge conflict in php_include/src/Iezukuri/PcBundle/Resources/views/Contents/Matterport/Index/parts/assets/javascript.html.twig
+CONFLICT (rename/delete): php_include/src/Iezukuri/PcBundle/Resources/views/Contents/Matterport/Index/index.html.twig deleted in HEAD and renamed in IEZUKURI-8149_pc_3d_ui_select. Version IEZUKURI-8149_pc_3d_ui_select of php_include/src/Iezukuri/PcBundle/Resources/views/Contents/Matterport/Index/index.html.twig left in tree.
+Removing php_include/src/Iezukuri/PcBundle/Resources/views/Contents/Matterport/Detail/parts/thumbnailList.html.twig
+Removing php_include/src/Iezukuri/PcBundle/Resources/views/Contents/Matterport/Detail/parts/reserveFixed.html.twig
+Removing php_include/src/Iezukuri/PcBundle/Resources/views/Contents/Matterport/Detail/parts/reserve.html.twig
+Removing php_include/src/Iezukuri/PcBundle/Resources/views/Contents/Matterport/Detail/parts/notice.html.twig
+Removing php_include/src/Iezukuri/PcBundle/Resources/views/Contents/Matterport/Detail/parts/matterportShowcase.html.twig
+Removing php_include/src/Iezukuri/PcBundle/Resources/views/Contents/Matterport/Detail/parts/info.html.twig
+Removing php_include/src/Iezukuri/PcBundle/Resources/views/Contents/Matterport/Detail/parts/copyText.html.twig
+Removing php_include/src/Iezukuri/PcBundle/Resources/views/Contents/Matterport/Detail/parts/company.html.twig
+Removing php_include/src/Iezukuri/PcBundle/Resources/views/Contents/Matterport/Detail/parts/backButton.html.twig
+CONFLICT (rename/rename): Rename php_include/src/Iezukuri/PcBundle/Resources/views/Contents/Matterport/Detail/assets/javascript.html.twig->php_include/src/Iezukuri/PcBundle/Resources/views/Contents/Matterport/Detail/parts/assets/javascript.html.twig in HEAD. Rename php_include/src/Iezukuri/PcBundle/Resources/views/Contents/Matterport/parts/assets/javascript.html.twig->php_include/src/Iezukuri/PcBundle/Resources/views/Contents/Matterport/Detail/parts/assets/javascript.html.twig in IEZUKURI-8149_pc_3d_ui_select
+Renaming php_include/src/Iezukuri/PcBundle/Resources/views/Contents/Matterport/Detail/assets/javascript.html.twig to php_include/src/Iezukuri/PcBundle/Resources/views/Contents/Matterport/Detail/parts/assets/javascript.html.twig~HEAD and php_include/src/Iezukuri/PcBundle/Resources/views/Contents/Matterport/parts/assets/javascript.html.twig to php_include/src/Iezukuri/PcBundle/Resources/views/Contents/Matterport/Detail/parts/assets/javascript.html.twig~IEZUKURI-8149_pc_3d_ui_select instead
+Removing php_include/src/Iezukuri/PcBundle/Resources/views/Contents/Matterport/Detail/parts/anchorHack.html.twig
+Auto-merging php_include/src/Iezukuri/PcBundle/Resources/public/css/default/page/contents/matterport/index/mod/pickup.css
+Auto-merging php_include/src/Iezukuri/PcBundle/Resources/public/css/default/page/contents/matterport/index/mod/matterport_list.css
+Auto-merging php_include/src/Iezukuri/PcBundle/Resources/public/css/default/page/contents/matterport/index/mod/main_visual.css
+Automatic merge failed; fix conflicts and then commit the result.
+
+$ git reflog
+
+a9d59a4 HEAD@{0}: commit: 【IEZUKURI-8227】3D_index_エリア選択UI変更
+fbfeeb0 HEAD@{1}: reset: moving to fbfeeb0
+16274af HEAD@{2}: commit: 【IEZUKURI-8227】3D_index_エリア選択UI変更
+93c7814 HEAD@{3}: reset: moving to 93c7814
+0f0b0d6 HEAD@{4}: commit: 【IEZUKURI-8227】3D_index_エリア選択UI変更
+93c7814 HEAD@{5}: commit (merge): 【IEZUKURI-8227】3D_index_エリア選択UI変更
+fbfeeb0 HEAD@{6}: checkout: moving from develop to IEZUKURI-8227_pc_3d_index_merge
+fbfeeb0 HEAD@{7}: merge origin/develop: Fast-forward
+e7efc7a HEAD@{8}: checkout: moving from IEZUKURI-8149_pc_3d_ui_select to develop
+ec74a9d HEAD@{9}: checkout: moving from develop to IEZUKURI-8149_pc_3d_ui_select
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

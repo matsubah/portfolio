@@ -1,0 +1,78 @@
+# IEZUKURI-8925
+記事LP上部CVボタン追加_実装
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8925
+
+## 内容
+- https://www.homes.co.jp/iezukuri/lp/cont/theme-29/
+
+先方から納品されたデータを組み込む
+テンプレはABパターンで出し分け中で、今回Cパターンとなる
+urlパラメータで条件分岐してる
+要テスト
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=146432927
+
+## 対象画面
+C(新規)
+https://www.homes.co.jp/iezukuri/lp/cont/theme-29/?optmz=c
+
+A
+https://www.homes.co.jp/iezukuri/lp/cont/theme-29/
+
+B
+https://www.homes.co.jp/iezukuri/lp/cont/theme-29/?optmz=b
+
+backstage
+C(新規)
+https://www-iezukuri-backstage.homes.co.jp/iezukuri/lp/cont/theme-29/?optmz=c
+
+A
+https://www-iezukuri-backstage.homes.co.jp/iezukuri/lp/cont/theme-29/
+
+B
+https://www-iezukuri-backstage.homes.co.jp/iezukuri/lp/cont/theme-29/?optmz=b
+
+live
+C(新規)
+https://www.homes.co.jp/iezukuri/lp/cont/theme-29/?optmz=c
+
+A
+https://www.homes.co.jp/iezukuri/lp/cont/theme-29/
+
+B
+https://www.homes.co.jp/iezukuri/lp/cont/theme-29/?optmz=b
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-8738_topic_cont_lp_add_cv
+
+* Feature branch
+git checkout -b IEZUKURI-8925_feature_cont_lp_add_cv
+
+## ソース
+
+*
+
+## 単体テスト
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/cont/theme-29/?optmz=c
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
++ 9f9532117abffd1b8bb6f58001a112d1a52d9d22 【IEZUKURI-8925】記事LP TypeC（上部CVボタン追加）
++ 8b574ca2a41f88aa01a161ed50dfa0a9f146058f 【IEZUKURI-8925】記事LP TypeC（上部CVボタン追加） 不要ファイル削除
+
+## 懸念点
+
+
+## 今後

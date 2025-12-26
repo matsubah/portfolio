@@ -1,0 +1,50 @@
+# IEZUKURI-7517
+SP_3D特集情報拡充_不具合_一覧_メイン画像内のアイコン画像が左寄り
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-7517
+
+## 内容
+- 3Dモデルハウス特集一覧にて、メイン画像内の中央下部に出力される
+「3Dモデルハウスを見る」アイコン画像が左寄りに表示される場合があります。
+
+・上記事象を確認した検証端末：iPhone 6S Plus SMD-0199（iOS10）
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-7517_sp_3dmodelhouse_list_bugfix
+
+## ソース
+
+*
+
+## 単体テスト
+
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/contents/3dmodelhouse/
+
+* Android
+Android 8 : android one S4
+Android 7 : HUAWEI p10 lite
+
+* iOS
+iOS10 : iPhone SE
+
+
+
+## 懸念点
+
+
+## 今後

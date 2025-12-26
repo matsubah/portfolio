@@ -1,0 +1,53 @@
+# IEZUKURI-9094
+イベント集客HTMLメール_イワタ建設
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-9094
+
+## 内容
+-
+
+▼入稿シート
+https://drive.google.com/drive/folders/1NZh7OlTbJPpTPmQQl059BPq_oKdSwks2
+
+▼使用画像（長尾さんチェック済）
+https://drive.google.com/drive/folders/1FnwHA9wxxr6zCKdyjzwyy1I7x049pU99
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+master
+
+* Feature branch
+git checkout -b IEZUKURI-9094_mail_iwatakensetsu_201909
+
+## ソース
+
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/2019/10/iwata/img_detail_staff01.jpg
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/2019/10/iwata/img_detail_staff02.jpg
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/2019/10/iwata/img_mainvisual.jpg
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/2019/10/iwata/img_maker.jpg
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/2019/10/iwata/img_sub_01.jpg
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/2019/10/iwata/img_sub_02.jpg
+
+*
+
+## 単体テスト
+
+https://pi.pardot.com/email/template/draft/edit/id/27275
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

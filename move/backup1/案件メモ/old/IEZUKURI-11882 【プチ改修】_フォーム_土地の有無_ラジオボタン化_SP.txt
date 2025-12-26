@@ -1,0 +1,66 @@
+#　IEZUKURI-11882
+【プチ改修】_フォーム_土地の有無_ラジオボタン化_SP
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-11882
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-11882_sp_inquire_ownland_edit
+
+## ソース
+
+<ul style="display: flex;">
+    <li>
+        <label class="">
+            <span class="check"><input type="radio" id="inquire_inquire_0" name="inquire[inquire][]" value="10" data-ol-has-click-handler="" style="margin-left: 0px;"></span>
+            <span class="labelText" style="">土地あり（現住所と同じ）</span>
+        </label>
+    </li>
+    <li>
+        <label class=" ">
+            <span class="check"><input type="radio" id="inquire_inquire_1" name="inquire[inquire][]" value="14" data-ol-has-click-handler=""></span>
+            <span class="labelText">土地あり（現住所以外）</span>
+        </label>
+    </li>
+    <li>
+        <label class="">
+            <span class="check"><input type="radio" id="inquire_inquire_2" name="inquire[inquire][]" value="11" data-ol-has-click-handler=""></span>
+            <span class="labelText">土地なし</span>
+        </label>
+    </li>
+</ul>
+
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

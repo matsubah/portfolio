@@ -1,0 +1,48 @@
+#　IEZUKURI-10945
+来場ph1 iezukuri-web フロントエンド 会社詳細来場一覧
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10945
+
+## 内容
+-
+
+仕様書
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=187662608
+デザイン
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=191763644
+デザインファイル
+https://drive.google.com/drive/folders/10Mr1hcqTE6LCsK3yK20NszDKd0dxGfVL
+
+- 完了の定義
+Topicブランチにマージ（10944のブランチが先にマージされると思われる）
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-10944_create_maker_visit_list
+
+* Feature branch
+git checkout -b IEZUKURI-10945_feature_maker_visit_list
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

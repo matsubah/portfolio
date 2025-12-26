@@ -1,0 +1,76 @@
+# IEZUKURI-8932
+PCベネフィットLP_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8932
+
+## 内容
+- 矢部さんから空のtwigが渡ってきたら作業開始
+都道府県部分は下記ページの下部を参考にする
+https://www.homes.co.jp/iezukuri/lp/product/
+
+動的実装でうまく動作しなかったら技術と連携して進める
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=146432930
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=121338053
+
+- 完了の定義
+
+## デザイン
+■ベネフィットLP(PC)
+https://drive.google.com/drive/folders/1UjQ5kdwNgnCZdfVamngj98rk-bbK88nx
+
+【補足】
+PCはもらったデザインに対して日本地図をページ下部に設置
+エリア選択すると下記に遷移する想定
+https://www.homes.co.jp/iezukuri/lp/product/tokyo/
+
+## 対象画面
+https://www.homes.co.jp/iezukuri/lp/cont/3/
+
+## meta情報
+
+タイトル
+通常	注文住宅の住宅カタログを無料で一括請求【LIFULL HOME'S/ライフルホームズ】
+OEM	注文住宅の住宅カタログを無料で一括請求
+
+description
+通常	ハウスメーカー・工務店・設計士の住宅カタログを無料で一括請求ができます。家づくりの悩みの解決やカタログの活用法などをご紹介します。【LIFULL HOME'S/ライフルホームズ】
+OEM	ハウスメーカー・工務店・設計士の住宅カタログを無料で一括請求ができます。家づくりの悩みの解決やカタログの活用法などをご紹介します。
+
+keyword
+通常	LIFULL HOME'S,ライフルホームズ,注文住宅,住宅メーカー,ハウスメーカー,工務店,住宅カタログ,一括請求
+OEM	注文住宅,住宅メーカー,ハウスメーカー,工務店,住宅カタログ,一括請求
+
+noindex	nofollow
+
+遷移先
+https://www.homes.co.jp/iezukuri/lp/product/tokyo/
+
+## Branch
+
+* Topic branch
+IEZUKURI-8737_topic_pc_benefit_lp
+
+* Feature branch
+IEZUKURI-8932_feature_pc_benefit_lp
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

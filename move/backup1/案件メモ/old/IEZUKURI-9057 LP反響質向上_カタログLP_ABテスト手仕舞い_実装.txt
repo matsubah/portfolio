@@ -1,0 +1,47 @@
+#　IEZUKURI-9057
+LP反響質向上_カタログLP_ABテスト手仕舞い_実装
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-9057
+
+## 内容
+-　カタログLP一覧のABテストの手仕舞い
+bディレクトリを従来ディレクトリに持ってくるイメージ
+controllerもこのチケットで対応
+ウォークスルーも実施
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-8671_topic_sp_lp_ui_product_abtest_merge
+
+* Feature branch
+git checkout -b IEZUKURI-9057_feature_sp_lp_ui_product_abtest_merge
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

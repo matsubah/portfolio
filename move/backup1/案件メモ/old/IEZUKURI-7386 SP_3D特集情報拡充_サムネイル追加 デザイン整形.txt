@@ -1,0 +1,114 @@
+    .mod-photoSlider li {
+    width: 13rem;
+    height: 9rem;
+    margin-right: 1rem;
+}
+
+.mod-photoSlider a {
+    display: block;
+}
+
+.mod-photoSlider li a img {
+    width: 100%;
+}
+
+
+<style>
+    /* コントローラー */
+.mod-photoSlider .sp-arrows {
+    /* プラグインのCSSを上書き */
+    margin-top: -20px;
+}
+.mod-photoSlider .sp-arrows .sp-arrow {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    top: 50%;
+    z-index: 10;
+}
+.mod-photoSlider .sp-arrows .sp-arrow.sp-previous-arrow { left: -9px; }
+.mod-photoSlider .sp-arrows .sp-arrow.sp-next-arrow     { right: -9px; }
+.mod-photoSlider .sp-arrows .sp-arrow:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    transform: none;
+    position: absolute;
+    background: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22120%22%20height%3D%22120%22%20viewBox%3D%220%200%20120%20120%22%3E%3Cpath%20fill%3D%22%23000%22%20d%3D%22M30.7%2063.4l44.7%2044.7c1.9%201.9%204.9%201.9%206.8%200l7.1-7.1c1.9-1.9%201.9-4.9%200-6.8l-30.8-30.8c-1.9-1.9-1.9-4.9%200-6.8l30.8-30.8c1.9-1.9%201.9-4.9%200-6.8l-7.1-7.1c-1.9-1.9-4.9-1.9-6.8%200l-44.7%2044.7c-1.9%201.9-1.9%204.9%200%206.8z%22/%3E%3C/svg%3E) no-repeat 50% 50%;
+    background-size: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+/* プラグインによるbeforeリセット */
+.mod-photoSlider .sp-arrows .sp-arrow:before {
+        content: none;
+}
+.mod-photoSlider .sp-arrows .sp-arrow.sp-previous-arrow:after { right: 2px; }
+.mod-photoSlider .sp-arrows .sp-arrow.sp-next-arrow:after { left: 2px; transform: rotate(180deg); }
+
+</style>
+
+<div class="sp-arrows"><div class="sp-arrow sp-previous-arrow" style="display: block;">
+</div>
+<div class="sp-arrow sp-next-arrow" style="display: block;"></div></div>
+
+# IEZUKURI-7386 SP_3D特集情報拡充_サムネイル追加 デザイン整形
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-7386
+
+## 内容
+- 一覧サムネカルーセル部分のデザイン整形
+https://drive.google.com/drive/folders/1KEoQXWQeD5_XkU4BZB-xani8t-mfxAFm
+
+仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=121330699
+
+完了の定義
+プロダクトレビューOK
+レビューOK
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-7386_sp_3dmodelhouse_thumbnail_style
+git checkout -b IEZUKURI-7386_sp_3dmodelhouse_thumbnail_style_z
+
+2/22
+IEZUKURI-7386_sp_3dmodelhouse_thumbnail_style_0222
+
+元となるブランチ：
+IEZUKURI-7181_sp_3dmodelhouse_thumbnail_dynamic_output
+
+git branch -D IEZUKURI-7386_sp_3dmodelhouse_thumbnail_style_last
+
+git push -u origin IEZUKURI-7386_sp_3dmodelhouse_thumbnail_style_old
+
+git branch -D IEZUKURI-7386_sp_3dmodelhouse_thumbnail_style_old
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

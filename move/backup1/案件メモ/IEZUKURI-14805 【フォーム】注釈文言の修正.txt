@@ -1,0 +1,44 @@
+#　IEZUKURI-14805
+【フォーム】注釈文言の修正
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-14805
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-14805_attention_inquire_confirm
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

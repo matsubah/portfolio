@@ -1,0 +1,49 @@
+# IEZUKURI-8230【LP】プログレスバーの表記揺れ修正_ウォークスルー
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8230
+
+## 内容
+- https://jira.next-group.jp/browse/IEZUKURI-8150
+上記チケットで実装したもののウォークスルーテスト
+
+完了の定義
+テスト完了
+
+## 対象画面
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/product/theme-29/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/product/tokyo/theme-29/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/product/tokyo/chiyoda-city/theme-29/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/low10000high499999/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/tokyo/low10000high499999/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/tokyo/chiyoda-city/low10000high499999/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/maker/tokyo/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/maker/tokyo/chiyoda-city/
+
+https://www-iezukuri-test.homes.co.jp/iezukuri/lp/product/theme-29/
+https://www-iezukuri-test.homes.co.jp/iezukuri/lp/product/tokyo/theme-29/
+https://www-iezukuri-test.homes.co.jp/iezukuri/lp/product/tokyo/chiyoda-city/theme-29/
+https://www-iezukuri-test.homes.co.jp/iezukuri/lp/price/product/low10000high499999/
+https://www-iezukuri-test.homes.co.jp/iezukuri/lp/price/product/tokyo/low10000high499999/
+https://www-iezukuri-test.homes.co.jp/iezukuri/lp/price/product/tokyo/chiyoda-city/low10000high499999/
+https://www-iezukuri-test.homes.co.jp/iezukuri/lp/maker/tokyo/
+https://www-iezukuri-test.homes.co.jp/iezukuri/lp/maker/tokyo/chiyoda-city/
+
+## 使用端末
+iPhone SE iOS 10.3.3
+iPhone 8 plus iOS 11.0
+GALAXY S8 Android 7.0
+
+## Branch
+develop
+
+## ソース
+
+*
+
+
+## 懸念点
+
+
+## 今後

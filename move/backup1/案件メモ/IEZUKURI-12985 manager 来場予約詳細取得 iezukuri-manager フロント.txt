@@ -1,0 +1,47 @@
+#　IEZUKURI-12985
+manager 来場予約詳細取得 iezukuri-manager フロント
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-12985
+
+## 内容
+- https://jira.next-group.jp/browse/IEZUKURI-12942
+上記実装後に行う
+
+仕様書
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=224540548
+
+参考
+メール問合せ 詳細 住宅メーカー
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=70181408
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-10032_topic_visit_reservation
+
+* Feature branch
+git checkout -b IEZUKURI-12985_visit_reservation_detail
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

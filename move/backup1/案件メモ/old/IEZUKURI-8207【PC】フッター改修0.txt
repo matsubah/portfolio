@@ -1,0 +1,77 @@
+# IEZUKURI-8207【PC】フッター改修
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8207
+
+## 内容
+- 仕様書
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=138206357
+
+ウォークスルーはこの板で実施
+
+完了の定義
+developにマージ
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-8207_pc_footer
+
+## ソース
+
+src/Iezukuri/PcBundle/Resources/views/Inquire/parts/isms.html.twig:    <p><span class="img"><img src="/iezukuri/img/default/bnr/isms.gif" alt="情報セキュリティマネジメントシステム" width="130" height="59"></span><span class="txt">株式会社LIFULLは、情報セキュリティマネジメントシステムの国際規格「ISO/IEC 27001」および国内規格「JIS Q 27001」の認証を取得しています。<br>※個人情報の送信はSSL暗号化通信にて安全に行っていただけます。</span></p>
+src/Iezukuri/PcBundle/Resources/views/InquireEvent/parts/isms.html.twig:    <p><span class="img"><img src="/iezukuri/img/default/bnr/isms.gif" alt="情報セキュリティマネジメントシステム" width="130" height="59"></span><span class="txt">株式会社LIFULLは、情報セキュリティマネジメントシステムの国際規格「ISO/IEC 27001」および国内規格「JIS Q 27001」の認証を取得しています。<br>※個人情報の送信はSSL暗号化通信にて
+安全に行っていただけます。</span></p>
+src/Iezukuri/PcBundle/Resources/views/LandingPrice/parts/isms.html.twig:        <dt><img src="/iezukuri/img/default/bnr/isms.gif" alt="情報セキュリティマネジメントシステム" width="130" height="59"></dt>
+src/Iezukuri/PcBundle/Resources/views/LandingRanking/parts/isms.html.twig:        <dt><img src="/iezukuri/img/default/bnr/isms.gif" alt="情報セキュリティマネジメントシステム" width="130" height="59"></dt>
+src/Iezukuri/PcBundle/Resources/views/LandingSimulation/parts/isms.html.twig:        <dt><img src="/iezukuri/img/default/bnr/isms.gif" alt="情報セキュリティマネジメントシステム" width="130" height="59"></dt>
+
+
+*
+
+## 単体テスト
+
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/hoge/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-0/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/inquire/maker/input/?id=116&ref=de%2Cm%2C%2C%2C%2C
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/dsp/kanade/product/mid-5648/pid-20115/tokyo/hachioji-city/theme-41/
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後
+
+backstage
+
+https://www-iezukuri-backstage.homes.co.jp/iezukuri/
+https://www-iezukuri-backstage.homes.co.jp/iezukuri/hoge/
+https://www-iezukuri-backstage.homes.co.jp/iezukuri/mid-0/
+https://www-iezukuri-backstage.homes.co.jp/iezukuri/lp/
+https://www-iezukuri-backstage.homes.co.jp/iezukuri/inquire/maker/input/?id=116&ref=de%2Cm%2C%2C%2C%2C
+https://www-iezukuri-backstage.homes.co.jp/iezukuri/dsp/kanade/product/mid-5648/pid-20115/tokyo/hachioji-city/theme-41/
+
+honban
+
+
+https://www.homes.co.jp/iezukuri/
+https://www.homes.co.jp/iezukuri/hoge/
+https://www.homes.co.jp/iezukuri/mid-0/
+https://www.homes.co.jp/iezukuri/lp/
+https://www.homes.co.jp/iezukuri/inquire/maker/input/?id=116&ref=de%2Cm%2C%2C%2C%2C
+https://www.homes.co.jp/iezukuri/dsp/kanade/product/mid-5648/pid-20115/tokyo/hachioji-city/theme-41/

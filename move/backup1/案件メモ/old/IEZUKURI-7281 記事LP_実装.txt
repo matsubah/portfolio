@@ -1,0 +1,80 @@
+# IEZUKURI-7281 記事LP_実装
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-7281
+
+## 内容
+- ■概要
+記事LPの実装
+
+- ■TDK仕様書
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=121338053
+
+- ■納品ファイル
+https://jira.next-group.jp/browse/IEZUKURI-7280
+
+- 対象ページ※SPのみ
+/iezukuri/lp/cont/2/ を作成
+
+php_include/src/Iezukuri/SpBundle/Resources/views/LandingContents/Index/2.html.twig
+を作成
+
+テンプレは以下を参考にしてください
+php_include/src/Iezukuri/SpBundle/Resources/views/LandingContents/Theme/41.html.twig
+
+tdkの設定も同時に行う。
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-7281_lp_contents
+
+## ソース
+
+htdocs/www/iezukuri/img/smartphone/page/lp_contents/index/2/bg_border_dot.png
+htdocs/www/iezukuri/img/smartphone/page/lp_contents/index/2/icon_homeskun_01.png
+htdocs/www/iezukuri/img/smartphone/page/lp_contents/index/2/icon_homeskun_02.png
+htdocs/www/iezukuri/img/smartphone/page/lp_contents/index/2/icon_house.png
+htdocs/www/iezukuri/img/smartphone/page/lp_contents/index/2/img_contents_01.jpg
+htdocs/www/iezukuri/img/smartphone/page/lp_contents/index/2/img_contents_02.jpg
+htdocs/www/iezukuri/img/smartphone/page/lp_contents/index/2/img_contents_03.jpg
+htdocs/www/iezukuri/img/smartphone/page/lp_contents/index/2/img_mainvisual_01.jpg
+htdocs/www/iezukuri/img/smartphone/page/lp_contents/index/2/img_mainvisual_02.png
+htdocs/www/iezukuri/img/smartphone/page/lp_contents/index/2/img_product.jpg
+php_include/src/Iezukuri/SpBundle/Resources/public/css/smartphone/page/lp_contents/index/2/mod/style.css
+php_include/src/Iezukuri/SpBundle/Resources/views/LandingContents/Index/2.html.twig
+php_include/src/Iezukuri/SpBundle/Resources/views/LandingContents/Index/parts/assets/2/stylesheet.html.twig
+
+
+## 単体テスト
+
+確認用URL
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/cont/2/
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後
+渡辺さんペアプロ→画像名称を統一させる
+マージリクエスト→渡辺さんレビュー→問題なし→丸太さんレビュー待ち
+
+加藤さんマーリクOK→developにマージ
+https://www-iezukuri-test.homes.co.jp/iezukuri/lp/cont/2/
+
+リリース承認を依頼する
+
+伊藤 隼 [LIFULL]さん
+G長承認お願いします。
+
+丸田 将平 [LIFULL]さん
+PJ承認お願いします。

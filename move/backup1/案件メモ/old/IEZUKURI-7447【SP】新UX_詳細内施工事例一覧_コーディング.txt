@@ -1,0 +1,55 @@
+# IEZUKURI-7447【SP】新UX_詳細内施工事例一覧_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-7447
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=131567677
+
+- 完了の定義
+
+
+## 対象画面
+www.homes.co.jp/iezukuri/mid-116/product/cid-27641/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-116/case/
+
+## Branch
+
+* Topic branch
+IEZUKURI-7762_topic_case_detail_list
+
+* Feature branch
+IEZUKURI-7447_feature_case_detail_list
+
+## ソース
+
+git checkout IEZUKURI-7446_feature_product_detail_list src/Iezukuri/SpBundle/Resources/public/css/smartphone/page/detail/product/list
+git checkout IEZUKURI-7446_feature_product_detail_list src/Iezukuri/SpBundle/Resources/public/js/smartphone/page/detail/product/list
+git checkout IEZUKURI-7446_feature_product_detail_list src/Iezukuri/SpBundle/Resources/views/Detail/Product
+
+git checkout IEZUKURI-7445_feature_case_detail src/Iezukuri/SpBundle/Resources/public/css/smartphone/page/detail/case
+git checkout IEZUKURI-7445_feature_case_detail src/Iezukuri/SpBundle/Resources/public/js/smartphone/page/detail/case
+git checkout IEZUKURI-7445_feature_case_detail src/Iezukuri/SpBundle/Resources/views/Detail/Case
+
+
+
+Detail/Case/Index.html.twig  →   施工事例詳細
+Detail/Case/list.html.twig  →   詳細内施工事例一覧
+Detail/Case/parts           →   indexとlistで共通のパーツ（後々でチケットを切って対応）
+Detail/Case/Index/parts      →   index(詳細内事例一覧)のみで使うパーツ
+Detail/Case/List/parts      →   list(詳細内事例一覧)のみで使うパーツ
+
+
+*
+
+## 単体テスト
+
+
+
+## 懸念点
+
+
+## 今後

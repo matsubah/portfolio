@@ -1,0 +1,55 @@
+# IEZUKURI-8432
+Synergy!_セミナー・イベントフォームコーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8432
+
+## 内容
+-
+
+- 仕様書：
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=139290408
+
+- 完了の定義
+
+
+## 対象画面
+file:///Users/matsubah/projects/iezukuri-static-html/synergy/seminar_entry/input/input.html
+file:///Users/matsubah/projects/iezukuri-static-html/synergy/seminar_entry/thanks/thanks.html
+
+## Branch
+
+* Topic branch
+IEZUKURI-8466_topic_synergy_seminar-entry
+
+* Feature branch
+IEZUKURI-8432_feature_synergy_seminar-entry
+IEZUKURI-8432_feature_synergy_path
+
+## ソース
+
+git show master:synergy/document_download/iez_bs_download_footer.css
+git checkout master synergy/document_download/iez_bs_download_footer.css
+
+#確認
+git show IEZUKURI-8465_topic_synergy_documentdownload:synergy/document_download/
+#取ってくる
+git checkout IEZUKURI-8465_topic_synergy_documentdownload synergy/document_download/
+
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

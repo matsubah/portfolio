@@ -1,0 +1,63 @@
+# IEZUKURI-10821
+【プチ改修】イベント詳細ページのテキスト修正
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10821
+
+## 内容
+- プチ改修案件です。
+
+イベント詳細ページのテキスト修正をお願いいたします。
+
+
+
+▼対象ページ
+イベント詳細ページ：（例）https://www.homes.co.jp/iezukuri/mid-10377/event/eid-23118/
+
+▼対象箇所
+ページ上部と概要にある「開催場所」内の※テキスト
+
+（既存）
+※詳細な開催場所はお問合せください
+　⇓
+（変更）
+※開催場所の詳細はお問合せください
+
+
+
+よろしくお願いいたします。
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-10821_pc_eventdetail_textrepair
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

@@ -1,0 +1,80 @@
+# IEZUKURI-8780
+LP反響質向上_UI改修_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-XXXX
+
+## 内容
+- UI改修の実装を行う
+
+デザイン案
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=147365019
+
+チェックボックスを上部へ
+選択した際に選択されている状態だとわかるUI
+ホームズくんエリア改修
+jsは技術側で行う(件数表示、追従フッター、エリアクリッカブル)
+など
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=146416316
+
+- 完了の定義
+
+
+## 対象画面
+テーマあり
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/product/tokyo/setagaya-city/theme-41/
+テーマなし
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/product/tokyo/setagaya-city/
+
+0件時
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/product/okinawa/yaeyama_yonaguni-city/theme-23/
+
+## Branch
+
+* Topic branch
+IEZUKURI-8671_topic_sp_lp_ui_abtest
+
+* Feature branch
+IEZUKURI-8780_feature_sp_lp_ui_uncheck
+IEZUKURI-8780_feature_sp_lp_ui_feedback
+
+spike デフォルトチェックを外す
+IEZUKURI-8780_sp_lp_defaultcheck_spike
+
+## ソース
+
+* .baloon {
+
+}
+.mod-leadText {
+    /* margin: 15px auto; */
+    padding: 1.5rem .7rem 0;
+    text-align: center;
+    /* background-color: #fff; */
+    background-color: #f5f5f5;
+}
+.mod-leadText .balloon {
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #dadada;
+    margin: 0 auto;
+    padding: .5rem;
+}
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

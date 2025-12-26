@@ -1,0 +1,63 @@
+#　IEZUKURI-10261
+注文住宅 Business_メルマガ登録改修コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10261
+
+## 内容
+-　以下、チケットの通り項目を増加設定する
+https://jira.next-group.jp/browse/IEZUKURI-10260
+
+以下項目を追加
+・貴社名
+・ご担当者様氏名
+・ご担当者様氏名（フリガナ）
+・メールアドレス
+
+個人情報変更なし
+
+### Synergyでの再設定は以下
+現行のメルマガフォームは一旦残す
+新しくフォーム設定
+新しく設定したフォームへCSSをあてる
+完了したら、動線のリンクを差し替える
+古いメールアドレスのみのフォームをゴミ箱へ
+上記工程が終わったら完了
+
+柳沼作業
+synergy!上でDB設定
+
+技術
+コーディング
+
+柳沼
+アップロード
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-10261_synergy_mailmagazine_regist_edit
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

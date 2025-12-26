@@ -1,0 +1,54 @@
+# IEZUKURI-9279 注文住宅 Business_トップ改修カルーセル調査
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-9279
+
+## 内容
+- 以下コンフル
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=149122752
+
+以下、調査内容
+
+メインビジュアルをカルーセルにした際、左右をつっきることができるか？
+左右の＜＞矢印のデザインを変更することはできるか？
+画像に紐づく「●」のデザインや色彩を変更できるか
+ferretOne上
+【ferret Oneカスタマーサポート】トップページ
+で調査
+
+- ferret one 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=151764215
+
+## 対象画面
+https://app.ferret-one.com/sites/c19011121046/preview?page_id=5cff8694514b7b5f6400427f&preview_link=https%3A%2F%2Fapp.ferret-one.com%2Fsites%2Fc19011121046%2Fpages%2F5cff8694514b7b5f6400427f%3Fiframe%3Dtrue%26preview%3Dtrue%26preview_mode%3Ddesktop
+
+サンドボックス
+https://app.ferret-one.com/sites/c19011121046/pages/5cff8694514b7b5f6400427f/edit?force_edit=true
+
+CSSは本番反映されてしまうので触らない
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b xxx
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

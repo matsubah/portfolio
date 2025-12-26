@@ -1,0 +1,51 @@
+#　IEZUKURI-12763
+iezukuri-web イベント詳細 iezukuri-web-v1 フロントエンド
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-12763
+
+## 内容
+-
+IEZUKURI-12762 の実装後に行う
+
+仕様書
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=224540548
+
+デザイン
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=230218819
+
+
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-10032_topic_ph2_visit
+
+* Feature branch
+git checkout -b IEZUKURI-12763_visit_plans_venues_detail_coding
+
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

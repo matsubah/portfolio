@@ -1,0 +1,48 @@
+# IEZUKURI-7634※3/28【SP】新UX_FB(都道府県選択、市区町村選択)_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-7634
+
+## 内容
+- リストの角丸を8pxに
+2行のときにアイコン中央揃え(一覧参考)
+完了の定義
+migrationにマージ
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-7634_areapref_update
+
+## ソース
+
+*
+
+## 単体テスト
+
+▼会社：市区町村選択
+https://www.homes.co.jp/iezukuri/maker/
+（テーマ有）https://www.homes.co.jp/iezukuri/maker/heme-42/
+
+▼カタログ：市区町村選択
+https://www.homes.co.jp/iezukuri/product/
+（テーマ有）https://www.homes.co.jp/iezukuri/product/theme-42/
+
+
+
+
+## 懸念点
+
+
+## 今後

@@ -1,0 +1,66 @@
+# IEZUKURI-10680
+【楽天OEM】フッター変更依頼
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10680
+
+## 内容
+-
+
+▼対象サイト
+https://www.homes.co.jp/iezukuri/?o=248hA3c2GUnlW7I
+
+
+
+▼修正箇所
+フッター
+https://drive.google.com/file/d/1xxcK6GyfgZrshK8Pid1Njk1q7wCKY4sW/view?usp=sharing
+
+①関連サービス欄
+（現）転職・派遣・バイトの総合求人情報サイト
+      楽天ジョブサーチ
+        ⇓
+（新）今注目のニュースをチェックする
+      楽天Infoseek ニュース
+      https://news.infoseek.co.jp/
+
+②おすすめ欄
+（現）【楽天カード】楽天スーパーポイントが2倍貯まるクレジットカード。年会費無料。
+        ⇓
+（新）【楽天レシピ】190 万以上のレシピが、完全無料で見放題。
+      https://recipe.rakuten.co.jp/?scid=we_rcp_fudosanfooter200617
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-10680_pc_oem_fotter
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

@@ -1,0 +1,154 @@
+#　IEZUKURI-11897
+土地あり用テーマページ新規作成（Ph1-1）
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-11897
+
+## 内容
+- 土地ありテーマページへのの新規作成をお願いいたします！
+
+仕様書
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=208094702
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+git checkout -b IEZUKURI-11595_topic_user-with-land_ph1-1
+
+* Feature branch
+git checkout -b IEZUKURI-11897_feature_user-with-land_theme-84_add
+
+## ソース
+
+* /iezukuri/img/default/page/flow/theme/heading_maker_84.jpg
+
+
+## 単体テスト
+
+↓あとでtheme-84に置き換える
+
+画像変更
+PC/SP
+https://www.homes.co.jp/iezukuri/maker/theme-83/
+https://www.homes.co.jp/iezukuri/maker/tokyo/theme-83/
+https://www.homes.co.jp/iezukuri/maker/tokyo/theme-83/list/
+https://www.homes.co.jp/iezukuri/product/theme-83/
+https://www.homes.co.jp/iezukuri/product/tokyo/theme-83/
+https://www.homes.co.jp/iezukuri/product/tokyo/theme-83/list/
+PCのみ
+https://www.homes.co.jp/iezukuri/case/theme-83/
+https://www.homes.co.jp/iezukuri/case/tokyo/theme-83/
+https://www.homes.co.jp/iezukuri/case/tokyo/theme-83/list/
+
+テーマ追加
+PC/SP
+https://www.homes.co.jp/iezukuri/maker/tokyo/condition/
+https://www.homes.co.jp/iezukuri/product/tokyo/condition/
+PCのみ
+https://www.homes.co.jp/iezukuri/case/tokyo/condition/
+
+詳細→登録してるメーカーがあれば確認可能
+https://www.homes.co.jp/iezukuri/mid-2773/
+https://www.homes.co.jp/iezukuri/mid-2773/product/
+https://www.homes.co.jp/iezukuri/mid-2773/product/pid-14107/
+https://www.homes.co.jp/iezukuri/mid-2773/case/cid-32675/
+
+LP
+https://www.homes.co.jp/iezukuri/lp/maker/theme-83/
+https://www.homes.co.jp/iezukuri/lp/maker/tokyo/chiyoda-city/theme-83/
+https://www.homes.co.jp/iezukuri/lp/product/theme-83/
+https://www.homes.co.jp/iezukuri/lp/product/tokyo/chiyoda-city/theme-83/
+
+Manager
+https://iezukuri-manager-develop.iez-dev.homes.co.jp/product/pid-31424/edit
+https://iezukuri-manager-develop.iez-dev.homes.co.jp/case/cid-21973/edit
+https://iezukuri-manager-develop.iez-dev.homes.co.jp/event/eid-14656/edit
+https://iezukuri-manager-develop.iez-dev.homes.co.jp/about/keyword
+
+PC
+テーマありリスト 700x160px
+https://www.homes.co.jp/iezukuri/img/default/page/list/theme/heading_case_84.jpg
+https://www.homes.co.jp/iezukuri/img/default/page/list/theme/heading_maker_84.jpg
+https://www.homes.co.jp/iezukuri/img/default/page/list/theme/heading_product_84.jpg
+
+「住宅カタログを探す」にあるサムネイル画像 各サイズ
+https://www.homes.co.jp/iezukuri/img/default/theme/38x38/84.jpg
+https://www.homes.co.jp/iezukuri/img/default/theme/136x102/84.jpg
+https://www.homes.co.jp/iezukuri/img/default/theme/149x149/84.jpg
+https://www.homes.co.jp/iezukuri/img/default/theme/214x128/84.jpg
+
+SP
+テーマありリスト 200x200px
+https://www.homes.co.jp/iezukuri/maker/tokyo/theme-84/
+https://www.homes.co.jp/iezukuri/product/tokyo/theme-84/
+
+LP TOP ランキング部分 130x130px
+https://www.homes.co.jp/iezukuri/img/smartphone/page/lp/theme/lp_ranking_84.jpg
+
+テスト環境
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-5648/product/pid-31424/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-5648/case/cid-21973/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-5648/event/eid-14656/
+
+=== テスト用 ===
+
+画像変更
+PC
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/img/default/page/flow/theme/heading_maker_84.jpg
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/img/default/page/flow/theme/heading_product_84.jpg
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/img/default/page/flow/theme/heading_case_84.jpg
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/img/default/page/list/theme/heading_maker_84.jpg
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/img/default/page/list/theme/heading_product_84.jpg
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/img/default/page/list/theme/heading_case_84.jpg
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/img/default/page/lp/theme/header/heading_maker_84.jpg
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/img/default/page/lp/theme/header/heading_product_84.jpg
+
+SP
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/img/smartphone/page/flow/theme/200x200/84.jpg
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/img/smartphone/page/list/theme/200x200/84.jpg
+
+テーマ追加
+PC/SP
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/maker/tokyo/condition/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/product/tokyo/condition/
+PCのみ
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/case/tokyo/condition/
+
+詳細→登録してるメーカーがあれば確認可能
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-2773/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-2773/product/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-2773/product/pid-14107/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-2773/case/cid-32675/
+
+LP
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/lp/maker/theme-84/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/lp/maker/tokyo/chiyoda-city/theme-84/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/lp/product/theme-84/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/lp/product/tokyo/chiyoda-city/theme-84/
+
+Manager
+https://iezukuri-manager-develop.iez-dev.homes.co.jp/product/pid-31424/edit
+https://iezukuri-manager-develop.iez-dev.homes.co.jp/case/cid-21973/edit
+https://iezukuri-manager-develop.iez-dev.homes.co.jp/event/eid-14656/edit
+https://iezukuri-manager-develop.iez-dev.homes.co.jp/about/keyword
+
+
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

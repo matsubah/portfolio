@@ -1,0 +1,44 @@
+#　IEZUKURI-12986
+3Dモデルハウス特集ページヘッダ・フッタの新基盤化_不具合対応
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-12986
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-12986_responsive_header_footer_fix
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

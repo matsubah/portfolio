@@ -1,0 +1,51 @@
+# IEZUKURI-7445【SP】新UX_事例詳細_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-7445
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=127849599
+
+- 完了の定義
+
+
+## 対象画面
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/case/cid-17276/#
+
+## Branch
+
+* Topic branch
+IEZUKURI-7762_topic_case_detail
+
+* Feature branch
+git checkout -b IEZUKURI-7445_feature_case_detail
+
+## ソース
+
+git show IEZUKURI-7444_feature_product_detail src/Iezukuri/SpBundle/Resources/views/Detail/Product
+git checkout IEZUKURI-7444_feature_product_detail src/Iezukuri/SpBundle/Resources/views/Detail/Product
+git checkout IEZUKURI-7443_feature_maker_detail src/Iezukuri/SpBundle/Resources/views/Detail/Maker/Index/parts/keywordArea.html.twig
+git checkout IEZUKURI-7444_feature_product_detail src/Iezukuri/SpBundle/Resources/public/css/smartphone/page/detail/product/index/
+git checkout IEZUKURI-7444_feature_product_detail src/Iezukuri/SpBundle/Resources/public/js/smartphone/page/detail/product/index/
+git checkout IEZUKURI-7444_feature_product_detail_old -- ../htdocs/www/iezukuri/img/smartphone/page/detail/img_makerlogo_lifull.png
+git checkout IEZUKURI-7444_feature_product_detail_old -- ../htdocs/www/iezukuri/img/smartphone/page/detail/sprite_icon_toggle.png
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

@@ -1,0 +1,56 @@
+# IEZUKURI-8215【UX】会社一覧_エリア変更UI_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8215
+
+## 内容
+- 仕様書
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=127843309
+
+JSの仮実装を含めて行う。※本実装はエンジニアで行う
+
+## 対象画面
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker/tokyo/chiyoda-city/theme-29/list/
+
+- 仕様から抜粋
+
+現在ユーザが選択している条件を表示する
+
+▼建てたいエリア
+選択中の｛都道府県｝｛市区町村｝をテキストでつなげて表示する。
+｛市区町村｝未選択時は｛都道府県｝のみ。両方とも未選択時は全国と表示する。
+「変更する」を押下すると、エリア変更ページが表示
+（表示の仕方はprottを参照 https://prottapp.com/app/#/projects/5bda86304942fb18cab8bc15）
+表示例
+全国
+東京都
+東京都千代田区
+
+## Branch
+
+* Topic branch
+IEZUKURI-7336_sp_ux_ui_list
+
+* Feature branch
+git checkout -b IEZUKURI-8215_sp_ux_ui_list_maker_area
+
+## ソース
+
+* 削除
+
+change_condition.scss
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

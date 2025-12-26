@@ -1,0 +1,48 @@
+# IEZUKURI-10194
+注文住宅 Business_資料ダウンロード選択肢追加（Shufoo!）
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10194
+
+## 内容
+- こちらのチケットでは、Synergy!の資料ダウンロードフォームにおいて、プルダウンの選択肢にShufooを追加する。
+参考：https://jira.next-group.jp/browse/IEZUKURI-10199
+
+サービス名
+Shufoo!
+
+サービスURL
+https://iezukuri-business.homes.jp/lists/sales-promotion/shufoo
+
+S3資料アップロードURL
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/business/download/one-compath/shufoo.pdf
+
+
+## 対象画面
+https://f.msgs.jp/webapp/form/19253_nmcb_14/index.do?service=shufoo
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-10194_doc_download_shufoo
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

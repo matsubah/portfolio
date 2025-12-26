@@ -1,0 +1,55 @@
+# IEZUKURI-9127
+除外システム Manager除外申請 iezukuri-manager 10/1コーディング対応
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-9127
+
+## 内容
+- ・TOP
+　カレッジの部分のパスワード部分を削除そ、メール診断の部分を横100%に。
+・注意事項
+　新旧の基準を2つ上下に並べて表示
+　上が新、下が旧
+　タイトル部分にいつの反響ならどちらを参照すべてきわかるよう赤字で入れる
+・入力画面
+　新旧の基準にリンク
+　更新日はトルツメ
+
+[~itojun]
+・注意事項ページのタイトル
+・入力ページのリンクタイトル
+・入力ページの注意事項
+
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-9127_modify_coding
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

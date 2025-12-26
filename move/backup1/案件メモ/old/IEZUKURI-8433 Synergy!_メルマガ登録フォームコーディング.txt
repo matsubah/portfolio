@@ -1,0 +1,53 @@
+# IEZUKURI-8433
+Synergy!_メルマガ登録フォームコーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8433
+
+## 内容
+-
+
+- 仕様書：
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=140847865
+
+- 完了の定義
+
+
+## 対象画面
+file:///Users/matsubah/projects/iezukuri-static-html/synergy/mailmagazine_regist/input/input.html
+file:///Users/matsubah/projects/iezukuri-static-html/synergy/mailmagazine_regist/thanks/thanks.html
+
+## Branch
+
+* Topic branch
+IEZUKURI-8467_topic_synergy_mailmagazine_regist
+
+* Feature branch
+IEZUKURI-8433_feature_synergy_mailmagazine_regist
+
+## ソース
+
+
+
+#確認
+git show IEZUKURI-8465_topic_synergy_documentdownload:synergy/document_download/
+#取ってくる
+git checkout IEZUKURI-8465_topic_synergy_documentdownload synergy/document_download/
+
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

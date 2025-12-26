@@ -1,0 +1,85 @@
+# IEZUKURI-7704※3/28【SP】新UX_FB(エラーページ)_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-7704
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-7704_exception_update
+
+## ソース
+
+*
+
+## 単体テスト
+
+新UX　テスト環境URL
+
+3Dモデルハウス
+https://www-test.homes.co.jp/iezukuri/contents/3dmodelhouse/
+
+404error
+https://www-test.homes.co.jp/iezukuri/hoge/
+
+500error
+https://www-test.homes.co.jp/iezukuri/mid-0/
+
+問合せ
+https://www-test.homes.co.jp/iezukuri/inquire/product/input/
+
+LP
+https://www-test.homes.co.jp/iezukuri/lp
+
+カタログ
+https://www-test.homes.co.jp/iezukuri/product/
+
+都道府県選択（カタログ）
+https://www-test.homes.co.jp/iezukuri/product/tokyo/chiyoda-city/
+
+一覧（カタログ）
+https://www-test.homes.co.jp/iezukuri/product/tokyo/chiyoda-city/theme-29/list/
+
+カタログ詳細
+https://www-test.homes.co.jp/iezukuri/mid-903/product/pid-13656/
+
+会社
+https://www-test.homes.co.jp/iezukuri/maker/
+https://www-test.homes.co.jp/iezukuri/maker/tokyo/chiyoda-city/
+https://www-test.homes.co.jp/iezukuri/maker/tokyo/chiyoda-city/theme-41/
+https://www-test.homes.co.jp/iezukuri/maker/tokyo/chiyoda-city/theme-41/list/
+
+会社詳細
+https://www-test.homes.co.jp/iezukuri/mid-5648/
+
+
+http://homes.co.jp/iezukuri/mid-903/product/pid-13656/
+
+
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

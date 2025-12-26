@@ -1,0 +1,82 @@
+#　IEZUKURI-12743
+3Dモデルハウス特集ページヘッダ・フッタの新基盤化
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-12743
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-12743_responsive_header_footer
+
+## ソース
+
+*
+
+## 単体テスト
+
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/inquire/product/input/?id[1588][]=4510&pref=13&city=203
+
+来場PJ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/visit/osaka/list/
+
+テスト環境
+
+対象画面にて確認
+https://iezukuri-web-develop-cloudfront.iez-dev.homes.co.jp/iezukuri/contents/3dmodelhouse/
+https://iezukuri-web-develop-cloudfront.iez-dev.homes.co.jp/iezukuri/contents/3dmodelhouse/32/
+https://iezukuri-web-develop-cloudfront.iez-dev.homes.co.jp/iezukuri/visit/osaka/list/
+https://iezukuri-web-develop-cloudfront.iez-dev.homes.co.jp/iezukuri/mid-5058/visit/vid-50/
+
+既存画面に影響がないことを確認
+https://iezukuri-web-develop-cloudfront.iez-dev.homes.co.jp/iezukuri/makers/5058
+https://iezukuri-web-develop-cloudfront.iez-dev.homes.co.jp/iezukuri/inquire/maker/input/?id=5058&ref=de%2Cm%2C%2C%2C%2C
+https://iezukuri-web-develop-cloudfront.iez-dev.homes.co.jp/iezukuri/lp/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/lp/simulation/product/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/lp/ranking/product/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/lp/cont/3/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/lp/product/theme-41/
+
+本番環境
+
+対象画面にて確認
+https://www.homes.co.jp/iezukuri/contents/3dmodelhouse/
+https://www.homes.co.jp/iezukuri/contents/3dmodelhouse/32/
+https://www.homes.co.jp/iezukuri/visit/osaka/list/
+https://www.homes.co.jp/iezukuri/mid-11138/visit/vid-103/
+
+既存画面に影響がないことを確認
+https://www.homes.co.jp/iezukuri/makers/5058
+https://www.homes.co.jp/iezukuri/lp/
+https://www.homes.co.jp/iezukuri/lp/simulation/product/
+https://www.homes.co.jp/iezukuri/lp/ranking/product/
+https://www.homes.co.jp/iezukuri/lp/cont/3/
+https://www.homes.co.jp/iezukuri/lp/product/theme-41/
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

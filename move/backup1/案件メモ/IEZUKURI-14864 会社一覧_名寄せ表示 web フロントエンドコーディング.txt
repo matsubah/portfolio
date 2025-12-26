@@ -1,0 +1,44 @@
+#　IEZUKURI-14864
+会社一覧_名寄せ表示 web フロントエンドコーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-14864
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-14858_topic_maker_list_name_identification
+
+* Feature branch
+git checkout -b IEZUKURI-14864_maker_list_name_identification_front
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

@@ -1,0 +1,116 @@
+# IEZUKURI-9326
+ビジパ改修_コード移植
+→【SPIKE】ビジパ改修_Pardotテストテンプレート作成＆構造調査
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-9326
+
+## 内容
+- ticket
+テストテンプレートの構築、構造調査を行う
+レイアウトテンプレートなどの構造が把握できたらチケット内にメモなどしておく
+
+構成について
+https://jira.next-group.jp/browse/IEZUKURI-9329
+PJ計画書
+https://jira.next-group.jp/browse/IEZUKURI-9146
+Pardotのマーケティング→ランディング→レイアウトテンプレートをいじっていくことになると思います
+
+spike：2d
+
+
+- 渡辺さんより
+■編集ページ（エンジニアさんが使用するページ）
+▽フォームテンプレート（フォームの編集はコチラから）
+https://pi.pardot.com/layoutTemplate/read/id/69393
+
+▽ランディングページテンプレート（ランディングページの編集はコチラから）
+https://pi.pardot.com/layoutTemplate/read/id/69391
+一旦テスト環境で作成し、テスト。
+問題なければ、本番環境にコピー作成する。
+
+■箱
+▽ランディングページ
+https://pi.pardot.com/landingPage/read/id/33261
+
+▽フォーム
+https://pi.pardot.com/form/read/id/39441
+
+↓整理後↓
+
+■【注文】フォームレイアウトテンプレート
+https://pi.pardot.com/layoutTemplate/read/id/69419
+
+■【注文】BPフォーム（箱）
+https://pi.pardot.com/form/read/id/39511
+
+■【注文】BPランディングページレイアウトテンプレート
+https://pi.pardot.com/layoutTemplate/read/id/69421
+
+■【注文】BPランディングページ（箱）
+https://pi.pardot.com/landingPage/read/id/33285
+
+
+
+テスト用
+
+【注文住宅】BPページフォーム(test)
+https://pi.pardot.com/form/read/id/39439
+
+
+
+注文LPリプレイス
+・LP・LPのレイアウトテンプレートを作る
+・フォーム・フォームのレイアウトテンプレート作る
+・LPのレイアウトテンプレートにフォームをiframeで埋め込む
+・ボタンなどの遷移先リンクをPardot上で設定する（カスタムリダイレクトやファイルを使う等）
+10/25 10:52
+メモ
+https://inquiry.develop.homes.co.jp/l/517421/2019-10-18/d382cd
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+構成について
+https://jira.next-group.jp/browse/IEZUKURI-9329
+
+PJ計画書
+https://jira.next-group.jp/browse/IEZUKURI-9146
+
+
+- 完了の定義
+
+## 対象画面
+
+Pardotヘルプページ
+
+ランディングページを使用したビジターへのエンゲージ
+https://help.salesforce.com/articleView?id=pardot_landing_pages_parent.htm&type=5
+
+
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b xxx
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

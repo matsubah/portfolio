@@ -1,0 +1,62 @@
+#　IEZUKURI-11138
+オンライン相談可の会社_LPリスト_コーディング・実装
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-11138
+
+## 内容
+-　仕様書
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=195396647
+
+Topic branch
+IEZUKURI-10442_topic_lp_maker_online_display
+Feature branch
+IEZUKURI-11138_feature_lp_maker_online_display
+表示位置確認用先行チケット
+https://jira.next-group.jp/browse/IEZUKURI-11099
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=195396647
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-10442_topic_lp_maker_online_display
+
+Feature branch
+
+* Feature branch
+IEZUKURI-11115_sp_lp_maker_online_add
+IEZUKURI-11115_sp_lp_maker_online_add_old
+→古い
+
+git checkout -b IEZUKURI-11138_feature_lp_maker_online_display
+
+
+## ソース
+
+f4bd34fbf (HEAD -> IEZUKURI-11138_feature_lp_maker_online_display, origin/IEZUKURI-11138_feature_lp_maker_online_display) 【IEZUKURI-11138】SP 会社LP 会社ロゴを1.5倍に変更
+
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

@@ -1,0 +1,60 @@
+#　IEZUKURI-11149
+【プチ改修】LPのロゴを大きくする
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-11149
+
+## 内容
+-　ロゴの視認性が悪いのでロゴを大きくしたいと思います！
+
+【対象ページ】
+SPのみ
+
+カタログLP（テーマ有無どちらも）
+https://www.homes.co.jp/iezukuri/lp/product/tokyo/chiyoda-city/theme-29/
+https://www.homes.co.jp/iezukuri/lp/product/tokyo/chiyoda-city/
+価格LP
+https://www.homes.co.jp/iezukuri/lp/price/product/tokyo/chiyoda-city/low500000high624999/
+
+
+補足
+会社LPは、オンライン相談可アイコンの方と一緒に実施。
+
+関連チケット
+
+https://jira.next-group.jp/browse/IEZUKURI-11138
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-11149_sp_lp_logo_bigger
+
+## ソース
+
+*
+
+## 単体テスト
+
+
+9f70d3278c425a6b160a12860faa118b042e3eda 【IEZUKURI-11149】SP カタログLP 会社ロゴを1.5倍に変更
+935a54bba2facfe1dad28bfa18519ffcc80f0603 【IEZUKURI-11149】SP 価格LP 会社ロゴを1.5倍に変更
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

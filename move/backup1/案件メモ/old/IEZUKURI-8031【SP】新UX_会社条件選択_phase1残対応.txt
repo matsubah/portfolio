@@ -1,0 +1,48 @@
+# IEZUKURI-8031【SP】新UX_会社条件選択_phase1残対応
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-XXXX
+
+## 内容
+- https://docs.google.com/spreadsheets/d/1gV0fXbBiyv-l028vRNg78S2yzZVHK3s4820KUe85IuU/edit#gid=0
+
+8:詳細条件が2行の時に行間が狭い
+
+※カタログも確認
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker/tokyo/chiyoda-city/condition/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/theme-41/list/
+
+## Branch
+
+* Topic branch
+migration
+
+* Feature branch
+git checkout -b IEZUKURI-8031_sp_condition_style
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

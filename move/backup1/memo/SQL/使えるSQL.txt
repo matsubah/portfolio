@@ -1,0 +1,121 @@
+2022/10
+
+会社詳細内の事例詳細とカタログ詳細が「問合せ上限到達済みで受付可能件数が0件」になっている開発環境のデータが分かるSQL
+
+SELECT
+  maker_id, maker_display_name, catalogs_count, examples_count
+FROM
+  external.web_makers
+WHERE
+  is_inquirable = false AND catalogs_count > 0 AND examples_count > 0
+ORDER BY maker_id;
+
+----
+
+2024/02/05追加
+「本番環境でカタログなし会員のID」
+
+select * from conceptual.makers
+where is_registable_catalog = false
+and is_publish = true
+and cancellation_date is null
+order by maker_id desc
+
+----
+
+2024/03/18 SQL保存
+
+メーカーの親子関係をみる
+
+SELECT
+  mgm.group_id,
+  m.gyosha_id,
+  m.member_id,
+  mgm.parent_gyosha_id = m.gyosha_id AS parent,
+  m."name",
+  mgm.group_name
+FROM
+  housing_gyosha m
+LEFT JOIN housing_gyosha_group_member mg
+    USING (gyosha_id)
+JOIN housing_gyosha_group_master mgm ON
+  mg.group_id = mgm.group_id
+WHERE m.status = 1
+ORDER BY
+  mgm.group_id ASC, gyosha_id ASC
+;
+
+----
+
+展示場イベント
+select * from conceptual.visit_plans_venues vpv  where visit_plan_venue_id = 188700
+
+----
+
+SELECT
+  maker_id, maker_display_name, catalogs_count, examples_count
+FROM
+  external.web_makers
+WHERE
+  maker_id IN (
+    SELECT DISTINCT maker_id
+    FROM conceptual.catalog_samples
+    WHERE catalog_id = '11494'
+  )
+ORDER BY maker_id;
+
+
+----
+
+SELECT DISTINCT maker_id
+FROM external.web_catalogs
+WHERE catalog_id IN (
+  SELECT catalog_id
+  FROM external.web_catalog_samples
+);
+
+----
+
+--青天井かどうかは housing_client の is_stop_inquire_reach_budget で制御されています。
+--0 : 反響止めない（青天井）
+--1 : 反響止める（青天井ではない）
+--housing_gyosha と 結合してみる必要がありSQLだと以下のようになります。
+SELECT g.*
+FROM housing_gyosha g
+INNER JOIN housing_client c ON g.client_id = c.client_id
+WHERE c.is_stop_inquire_reach_budget = 0
+AND g.status = 1
+
+
+----
+
+SELECT maker_id, created_at, updated_at, member_id, maker_category_id, is_publish, publishable_date, cancellation_date, "name", ruby, title, title_ruby, client_id, maker_group_id, maker_budget_group_id, is_registable_catalog, is_online_contactable, first_postal_code, last_postal_code, block_code, address_detail_free, other_traffic, company_reception_tel_number, fax_number, regular_work_start, regular_work_end, irregular_work_time, regular_holiday, president_name, president_name_ruby, affiliation_organization, construction_trader_license, design_office_license, company_established_year, employee_number, qualification, build_outcome_number, build_outcome_year, official_homepage, pr_title, pr_description, regular_check_period, regular_check_since, completion_guarantee_organization, wound_guarantee_organization, other_guarantee, initial_capital, sales_amount, sales_year, main_image_filename, logo_image_filename, is_display_personal_information_in_email, main_image_resized_width, is_main_image_resized, logo_image_resized_width, is_logo_image_resized
+FROM conceptual.makers
+where maker_id = '7471';
+
+
+----
+
+SELECT maker_account_id, created_at, updated_at, deleted_at, maker_id, account, "password"
+FROM conceptual.maker_accounts
+where maker_id = '7471';
+
+
+----
+
+2024/07/05
+masterから収入の選択肢を取得
+
+SELECT master_incomes.income_id,
+   master_incomes.name,
+   master_incomes.sort
+  FROM conceptual.master_incomes
+ WHERE ((master_incomes.is_display = true) AND (master_incomes.deleted_at IS NULL))
+
+ABテストのtrue/falseを変更する
+
+ UPDATE conceptual.abtests
+ SET
+     is_interruption = false
+ WHERE
+     abtest_key = 'IEZUKURI-19527-sp-linemvp1';

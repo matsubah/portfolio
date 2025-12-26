@@ -1,0 +1,45 @@
+# IEZUKURI-10126
+【優先度：低】イベントHTMLメールダークモード対応
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10126
+
+## 内容
+- 下記について、お手すきな際に調査・対応をお願いいたします。
+他案件より【優先度：低】、【対応期限なし】で大丈夫でございます。
+
+〇ダークモード時不具合現象
+
+以前出したHTMLメールをモバイルでみていた時に、
+ダークモードの設定がされている端末でみた場合、
+黒い文字が黒背景で表示され、見えなくなっているところがある。
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+master
+
+* Feature branch
+git checkout -b IEZUKURI-10126_mail_template_darkmode
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

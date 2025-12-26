@@ -1,0 +1,80 @@
+#　IEZUKURI-12716
+【既存基盤】プレミアムジャックのフッタータグの変更
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-12716
+https://jira.next-group.jp/browse/IEZUKURI-12719
+
+参考
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=186801562
+
+## 内容
+-　新基盤リリースに伴い、プレミアムジャックのCxenseタグが変更となりました。
+既存基盤でも反映させたく、プレミアムジャックのCxenseタグの入れ替えをお願いいたします。
+
+
+
+▼既存基盤該当箇所
+
+PC／SP
+
+3Dモデルハウス特集
+https://www.homes.co.jp/iezukuri/contents/3dmodelhouse/
+LP
+https://www.homes.co.jp/iezukuri/lp/
+※サイトの導線上は上記ページで新タグを確認できればOKですが、
+　もしコーディング上は共通フッター内で展開しているようでしたら、既存基盤の共通フッター全ページ対応するという認識でOKです。
+
+
+
+▼Cxense新タグ
+
+【PCフッター用】
+設定サイズ：1200px×150px
+
+<div id="insertAdSpaceBeforeThis_0000000166d707e7" style="display:none"></div> <script type="text/javascript"> (function() { try { var scriptEl = document.createElement('script'); scriptEl.type = 'text/javascript'; scriptEl.async = 'async'; scriptEl.src = ('https:' == document.location.protocol) ? 'https://scdn.cxense.com/cx.js' : 'http://cdn.cxense.com/cx.js'; var targetEl = document.getElementsByTagName('script')[0]; targetEl.parentNode.insertBefore(scriptEl, targetEl); } catch (e) {}; })(); </script> <script type="text/javascript"> var cX = cX || {}; cX.callQueue = cX.callQueue || []; cX.callQueue.push(['insertAdSpace', { adSpaceId:'0000000166d707e7', adUnitWidth:1200, adUnitHeight:150, initialHorizontalAdUnits:1, initialVerticalAdUnits:1 } ]); </script>
+【SPフッター用】
+設定サイズ：450px×450px
+
+<div id="insertAdSpaceBeforeThis_0000000166d7083b" style="display:none"></div> <script type="text/javascript"> (function() { try { var scriptEl = document.createElement('script'); scriptEl.type = 'text/javascript'; scriptEl.async = 'async'; scriptEl.src = ('https:' == document.location.protocol) ? 'https://scdn.cxense.com/cx.js' : 'http://cdn.cxense.com/cx.js'; var targetEl = document.getElementsByTagName('script')[0]; targetEl.parentNode.insertBefore(scriptEl, targetEl); } catch (e) {}; })(); </script> <script type="text/javascript"> var cX = cX || {}; cX.callQueue = cX.callQueue || []; cX.callQueue.push(['insertAdSpace', { adSpaceId:'0000000166d7083b', adUnitWidth:450, adUnitHeight:450, initialHorizontalAdUnits:1, initialVerticalAdUnits:1 } ]); </script>
+
+
+実装チケット
+https://jira.next-group.jp/browse/IEZUKURI-12719
+
+## 対象画面
+
+PC／SP
+
+3Dモデルハウス特集
+https://www.homes.co.jp/iezukuri/contents/3dmodelhouse/
+LP
+https://www.homes.co.jp/iezukuri/lp/
+→確認用に2画面、反映は全体でOK
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-12716_tag_cxense_renew
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

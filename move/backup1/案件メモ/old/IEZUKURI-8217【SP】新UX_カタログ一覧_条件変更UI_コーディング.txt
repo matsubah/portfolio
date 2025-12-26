@@ -1,0 +1,75 @@
+# IEZUKURI-8217【SP】新UX_会社一覧_条件変更UI_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8217
+
+## 内容
+- 仕様書
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=127843328
+
+JSの仮実装を含めて行う。※本実装はエンジニアで行う
+
+## 対象画面
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/tokyo/chiyoda-city/list/
+
+- 仕様から抜粋
+
+×ボタン
+当ページは会社およびカタログ一覧ページからオーバーレイで表示されるが、×ボタン押下により元のページを再度表示する。
+その際、選択条件の変更は行われない。
+オーバーレイの表示イメージはprottを参照　https://prottapp.com/app/#/projects/5bda86304942fb18cab8bc15
+
+★	2	各条件設定
+全て以下ページの仕様を踏襲
+条件選択ページ
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=127836206
+すでに、条件が設定されている場合は、選択されている条件を引き継いで表示する。
+坪単価の下限値、上限値　→　そこからの参考建物価格
+各テーマ等は選択されているものはチェックを入れる。
+ちなみに、条件を変更して「検索結果を見る」ボタンを押下せずに画面を閉じ、再度画面を表示した場合は変更前の条件が表示される。（あくまで検索結果を見るボタンが押下される前まではその条件は未確定とする）
+ローコストを選択して一覧ページへ遷移
+条件変更ページを表示（ローコストが選択状態）
+ローコストを外して、受賞歴ありを選択
+×ボタンでページを閉じる（選択したものは未確定）
+再度条件変更ページを開く
+→この時チェックが付いているのは、ローコスト住宅。
+
+★	3	変更する
+ボタンの名称は{変更する}
+上記以外の仕様は以下ページの仕様を踏襲
+条件選択ページ
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=127836206
+
+## Branch
+
+* Topic branch
+IEZUKURI-7336_sp_ux_ui_list
+
+* Feature branch
+git checkout -b IEZUKURI-8217_sp_ux_ui_list_product_condition
+
+## ソース
+
+git show IEZUKURI-8216_sp_ux_ui_list_product_area:php_include/src/Iezukuri/SpBundle/Resources/public/css/smartphone/page/list/product/mod/modal_change_area.scss
+git checkout IEZUKURI-8216_sp_ux_ui_list_product_area -- src/Iezukuri/SpBundle/Resources/public/css/smartphone/page/list/product/mod/modal_change_area.scss
+git show IEZUKURI-8218_sp_ux_ui_list_maker_condition:php_include/src/Iezukuri/SpBundle/Resources/public/css/smartphone/page/list/product/mod/modal_change_condition.scss
+git checkout IEZUKURI-8216_sp_ux_ui_list_product_area -- src/Iezukuri/SpBundle/Resources/views/Product/List/parts/modalChangeArea.html.twig
+git checkout IEZUKURI-8216_sp_ux_ui_list_product_area -- src/Iezukuri/SpBundle/Resources/public/js/smartphone/page/product/list/condition.js
+
+* 削除
+change_condition.scss
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

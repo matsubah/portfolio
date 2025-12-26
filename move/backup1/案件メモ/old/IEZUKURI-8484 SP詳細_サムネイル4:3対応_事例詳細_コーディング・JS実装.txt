@@ -1,0 +1,59 @@
+# IEZUKURI-8484
+SP詳細_サムネイル4:3対応_事例詳細_コーディング・JS実装
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8484
+
+## 内容
+- 仕様書：https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=141737656
+
+このチケットでは事例詳細ページのコーディングを行う。
+
+メインはコーディング。
+
+新規で追加されたフォトギャラリーのリンク部分に関してはJSの実装が必要になりそう。
+
+## 対象画面
+
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/case/cid-17276/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/case/cid-21598/
+
+## Branch
+
+* Topic branch
+IEZUKURI-8403_topic_sp_ux_detail_thumbnail
+
+* Feature branch
+IEZUKURI-8484_feature_sp_ux_detail_thumbnail_case
+
+## ソース
+
+git checkout IEZUKURI-8483_feature_sp_ux_detail_thumbnail_product src/Iezukuri/SpBundle/Resources/public/css/smartphone/page/detail/mod/campaign.css
+git checkout IEZUKURI-8483_feature_sp_ux_detail_thumbnail_product htdocs/www/iezukuri/img/smartphone/common/icon/icon_photo_viewer.svg
+git checkout IEZUKURI-8483_feature_sp_ux_detail_thumbnail_product src/Iezukuri/SpBundle/Resources/public/css/smartphone/page/detail/product/mod/main_visual.css
+git checkout IEZUKURI-8483_feature_sp_ux_detail_thumbnail_product src/Iezukuri/SpBundle/Resources/views/Detail/Product/parts/mainVisual.html.twig
+git checkout IEZUKURI-8483_feature_sp_ux_detail_thumbnail_product src/Iezukuri/SpBundle/Resources/public/css/smartphone/page/detail/mod/maker_title.css
+git checkout IEZUKURI-8483_feature_sp_ux_detail_thumbnail_product src/Iezukuri/SpBundle/Resources/public/js/smartphone/page/detail/product/index/widget/productGallery.js
+git checkout IEZUKURI-8483_feature_sp_ux_detail_thumbnail_product src/Iezukuri/SpBundle/Resources/public/js/smartphone/page/detail/product/index/widget/productMainVisual.js
+git checkout IEZUKURI-8483_feature_sp_ux_detail_thumbnail_product src/Iezukuri/SpBundle/Resources/views/Detail/Product/Index/parts/mainVisual.html.twig
+git checkout IEZUKURI-8483_feature_sp_ux_detail_thumbnail_product src/Iezukuri/SpBundle/Resources/views/Detail/parts/makerTitle.html.twig
+git checkout IEZUKURI-8483_feature_sp_ux_detail_thumbnail_product src/Iezukuri/SpBundle/Resources/public/js/smartphone/page/detail/product/list/widget/campaignArea.js
+git checkout IEZUKURI-8483_feature_sp_ux_detail_thumbnail_product src/Iezukuri/SpBundle/Resources/views/Detail/Maker/index.html.twig
+git checkout IEZUKURI-8483_feature_sp_ux_detail_thumbnail_product src/Iezukuri/SpBundle/Resources/public/css/smartphone/page/detail/mod/maker_info.css
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

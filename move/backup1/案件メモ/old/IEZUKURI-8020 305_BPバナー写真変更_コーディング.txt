@@ -1,0 +1,39 @@
+# IEZUKURI-8020 305_BPバナー写真変更_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8020
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+git checkout -b IEZUKURI-8020_sp_footer_bpbanner
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

@@ -1,0 +1,91 @@
+#　IEZUKURI-10347
+【イベントHTMLメール】4月配信：大阪
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10347
+
+## 内容
+- 4月配信のイベントHTMLメールのメール本文の作成をお願いいたします。
+
+--------------------
+ 入稿シート
+ --------------------
+
+ [https://drive.google.com/drive/folders/1HIxqBtVcf-yT3p8HLUPLCOmWK1CdLpAP]
+
+ 
+
+■枠について
+ 今回は2社で受注しましたので、
+ A枠：ビーバーハウス様が上段
+ C枠：ビ・ハウス様が下段
+
+でお願いいたします。
+
+■イベントURL
+ タグの埋込用URLを作成依頼中です（別部署対応）
+ 作成次第、お伝えいたします。
+■画像
+ビ・ハウス様分がまだ届いていません
+届き次第、お伝えいたします。
+
+--------------------
+ スケジュール
+ --------------------
+
+■クライアントへのキャプチャ送付
+ 来週中ごろまでに送れると嬉しいです。
+
+■テスト配信
+ 4月13・14日、20・21日を予約済
+
+■配信日
+ 4月15日（水）22日（水）
+
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+ビーバーハウス様の差し替え画像が届きました！
+
+https://drive.google.com/drive/folders/1HNP-2Yb3SA4qM1ubQRQhIqtvqrFCOWmQ
+top_修正版.jpg
+
+また、短縮URLも決まりました！
+▼ビーバーハウス
+短縮URL：https://homes.jp/34kISvO
+
+▼ビ・ハウス
+短縮URL：https://homes.jp/2wgXHmt
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-10347_mail_beaver+bihouse_202004
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

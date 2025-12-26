@@ -1,0 +1,58 @@
+#　IEZUKURI-10979
+コロナ関連の文言削除【フォーム＆サンクスメール】
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10979
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+Old
+問合せフォーム
+http://gitlab.dev.nxin.jp/app/iezukuri/merge_requests/1102
+IEZUKURI-10389_feature_add_announcement
+サンクスメール
+http://gitlab.dev.nxin.jp/app/iezukuri/merge_requests/1101
+IEZUKURI-10390_thanks_mail_covid-19_text
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-10979_delete_covid-19_announcement_and_thanksmail
+
+## ソース
+
+*
+
+## 単体テスト
+
+Unit
+
+カタログ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/inquire/product/input/?id[1588][]=4510&pref=13&city=203
+
+イベント
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/inquire/maker/input/?id[1588][]=1588&pref=13&city=203
+
+
+https://www-test.homes.co.jp/iezukuri/inquire/maker/input/?id[1588][]=1588&pref=13&city=203
+https://www-test.homes.co.jp/iezukuri/inquire/product/input/?id[1588][]=4510&pref=13&city=203
+https://www-test.homes.co.jp/iezukuri/inquire/case/input/?id[1588][]=6244&pref=13&city=203
+
+https://www-test.homes.co.jp/iezukuri/inquire/event/input/?id[1588]=5364
+
+## 懸念点
+
+
+## 今後

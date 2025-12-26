@@ -1,0 +1,76 @@
+#　IEZUKURI-11253
+【manager】旧CSVフォーマットダウンロード削除のお知らせ
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-11253
+
+## 内容
+- Manager
+メール問合せ画面のページ下部にある、旧CSVフォーマットダウンロード枠に、下記お知らせを出したいです。
+
+
+
+🔽参考URL（テスト環境）
+https://iezukuri-manager-develop.iez-dev.homes.co.jp/inquire/mail
+
+
+
+🔽お願いしたいこと
+
+旧CSVフォーマットダウンロード枠の場所の確認
+　└メール問合せ画面のみか
+　└電話問合せ画面はどうか
+該当枠内に、お知らせのテキスト・ページ内アンカーを作成する
+
+
+🔽テキスト
+
+枠外の下に、下記を表示
+
+------------------
+
+旧CSVフォーマットでのお問合せデータダウンロード機能は、2020年12月中旬頃（※）廃止となります。
+<a>問合せ画面上部の問合せデータCSVダウンロード機能</a>をご利用くださいますよう、よろしくお願いいたします。
+※リリース日の詳細が確定いたしましたらあらためてお知らせいたします。
+
+------------------
+
+ <a>タグで囲ったところを、ページ上部のCSVフォーマットダウンロードへのアンカーとしたいです。
+
+
+
+Managerトップ画面の赤い文字と同じ装飾でお願いします！
+
+
+
+よろしくお願いいたします。
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-435_topic_del_oldcsvdownload
+
+* Feature branch
+git checkout -b IEZUKURI-11253_feature_del_oldcsvdownload
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

@@ -1,0 +1,75 @@
+# IEZUKURI-10955 来場ph1 iezukuri-web 来場LP一覧 フロントエンド
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10955
+
+## 内容
+- 仕様書
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=187662619
+デザイン
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=193457114
+デザインファイル
+https://drive.google.com/drive/folders/1YEay_k5s8lM1WNZynnmhvLUxQdbZDUy4
+
+【あれこれ】
+●ページ全体は既存注文の一覧を元に作成してます
+●h1の処理とか絞り込み・並び替えがないなどの差異があります
+●一覧のカセット部分は会社詳細ページの一覧が元になってます
+●会社名＆ロゴが入るなど差異があります
+
+岩田さんFB内容
+・タイトル下のリード文が長いかもと思って短い案を考えました
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=187662619
+
+ ・なんか、、、あんまり遷移できないかもと思ったので
+　└クリッカブルエリアを広げる
+　　└枠全体でも良い位かと（あ、でも会社ロゴと会社名だけはやめたほうがいいですかね。。）
+　　└シニアのようにタイトルをリンクテキストにしたらどうだろうかhttps://kaigo.homes.co.jp/s/list/ad11=13/area2=202/#searchResults
+
+・気づくの遅れてすみません。会社名は「関連会社」ではなく「主催会社」か「会社名」が良いと思いました
+
+
+<li class="type"><span class="icon">モデルハウス見学</span></li>
+<li class="type"><span class="icon">完成見学会</span></li>
+<li class="type"><span class="icon">構造・工場見学</span></li>
+<li class="type"><span class="icon">ショールーム見学</span></li>
+<li class="type"><span class="icon">入居者宅見学</span></li>
+<li class="type"><span class="icon">セミナー</span></li>
+<li class="type"><span class="icon">教室</span></li>
+<li class="type"><span class="icon">土地相談</span></li>
+<li class="type"><span class="icon">資金相談</span></li>
+<li class="type"><span class="icon">売却・住み替え相談</span></li>
+<li class="type"><span class="icon">設計相談</span></li>
+<li class="type"><span class="icon">宿泊体験会</span></li>
+<li class="type"><span class="icon">DIY体験</span></li>
+<li class="type"><span class="icon">その他イベント</span></li>
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-10032_topic_visit_pj_ph2
+
+* Feature branch
+git checkout -b IEZUKURI-10955_create_visit_list
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

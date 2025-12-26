@@ -1,0 +1,48 @@
+# IEZUKURI-10139
+注文住宅 Business_ビジパコーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10139
+
+## 内容
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=166798513
+
+- 仕様はこちらの「synergy!画面」を参考
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=168555142
+
+あくまでsynergy!の方だけでの対応で、下記の対応であったpardot側の画面は非対応とする。
+https://jira.next-group.jp/browse/IEZUKURI-9407
+
+作業工程的には、下記の2案件の後に進めるが、同じソースを修正することになるため、扱いには注意する。
+リリースは同時の予定となる。
+https://jira.next-group.jp/browse/IEZUKURI-9907
+https://jira.next-group.jp/browse/IEZUKURI-9908
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-10139_synergy_business_partner_top_ad
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

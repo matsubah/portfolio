@@ -1,0 +1,65 @@
+# IEZUKURI-8019【SP】新UX_カタログ詳細_カタログ写真(サムネイル)のcss調整
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8019
+
+## 内容
+- カタログ詳細の*「カタログ写真」*部分(サムネイル一覧)について、
+動的出力により、縦長画像・横長画像を混在して表示すると、添付画像の通りになる
+
+長尾さんに確認したところ、メイン画像と同様に
+自動でトリミングするように
+（表示枠と画像の中心を合わせて、表示枠に高さと幅がそろうように）
+CSSを調整してほしいとのことです。
+（画像サイズに関わらず、表示領域は、 横幅・高さを固定 にしたいそうです）
+
+下記のMerge Requestのブランチで確認可能です。
+(migrationブランチでマージされたらmigration環境で確認可能です)
+＜Merge Request #840＞
+http://gitlab.dev.nxin.jp/app/iezukuri/merge_requests/840
+
+＜参考＞
+添付ファイルのカタログ詳細は、上記ブランチにした状態で
+下記URLで確認可能です。
+/iezukuri/mid-116/product/pid-376/
+/iezukuri/mid-837/product/pid-2722/
+
+※ 施工事例詳細の「施工事例写真」部分も同様 なので、
+　その部分は、本件で一緒に対応するか別チケットにするかはおまかせします
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* 元branch
+IEZUKURI-7569_sp_product_detail_dynamic_2
+
+* Feature branch
+git checkout -b IEZUKURI-8019_sp_product_detail_dynamic_2_css_old
+git checkout -b IEZUKURI-8019_product_detail_css
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

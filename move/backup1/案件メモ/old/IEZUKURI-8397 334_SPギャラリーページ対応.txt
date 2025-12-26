@@ -1,0 +1,107 @@
+# IEZUKURI-8399【SP】ギャラリーページ対応_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-XXXX
+
+## 内容
+-　ギャラリーページにて画像がトリミングされてしまっています。
+
+ これを、画像が切られることのないよう、枠に対してすべてがおさまるように修正をお願いいたします。
+
+（例）画像が切れてしまっているページ
+https://www.homes.co.jp/iezukuri/mid-2455/product/pid-25279/#
+
+〇対象ページ
+https://www.homes.co.jp/iezukuri/mid-**/product/pid-****/#
+https://www.homes.co.jp/iezukuri/mid-**/case/cid-****/#
+
+また、今回アエラさんからのクレームにてバグが発覚しており、
+テスト実施時にはアエラさんの画像を使っての表示確認も実施したいと思っております。
+
+〇テスト時に利用するアエラさんの画像
+※川原さんに確認中※
+
+恐れ入りますが、なるはやにてご対応いただきたくお願いいたします。
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+不具合例：
+
+カタログ
+https://www.homes.co.jp/iezukuri/mid-2455/product/pid-25279/
+事例
+https://www.homes.co.jp/iezukuri/mid-2455/case/cid-28946/
+
+サンプル画像の確認用
+
+カタログ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/product/pid-20115/
+施工事例
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/case/cid-17276/
+
+・会社詳細ページ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/
+・カタログ詳細ページ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/product/pid-20115/
+・詳細内カタログ一覧ページ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/product/
+・会社一覧ページ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker/theme-41/list/
+
+## Branch
+
+* Topic branch
+IEZUKURI-8397_topic_sp_ux_gallery_bugfix
+
+* Feature branch
+git checkout -b IEZUKURI-8397_feature_sp_ux_gallery_bugfix
+
+## ソース
+
+* CSS
+
+.mod-caseList .images a {
+    display: block;
+    height: calc(75vw - 5%);
+}
+.mod-caseList .images a img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: calc(75vw - 5%);
+    border-radius: 8px 8px 0 0;
+}
+
+
+## 単体テスト
+
+iOS
+iPhone 5s iOS 11.2.5
+iPhone 7 Plus iOS 11.2.5
+iPhone XR iOS 12.1.4
+
+Android
+XPERIA Android 6.0.1
+XPERIA Android 8.0
+
+テスト環境での実機確認（ウォークスルー）
+https://www-test.homes.co.jp/iezukuri/mid-2187/case/cid-4287/
+
+Android
+6.0.1   Sony SO-01G Xperia Z3
+7.0     HUAWEI Mate7
+8.0     KYOCERA android one S4
+
+backstage
+https://www-iezukuri-backstage.homes.co.jp/iezukuri/mid-1908/product/pid-4592/
+https://www-iezukuri-backstage.homes.co.jp/iezukuri/mid-5648/case/cid-17276/
+
+## 懸念点
+
+
+## 今後

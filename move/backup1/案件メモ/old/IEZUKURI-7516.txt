@@ -1,0 +1,58 @@
+# IEZUKURI-7516
+SP_3D特集情報拡充_詳細_来場予約ボタンなしの場合に下部の一部が見切れる不具合対応
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-7516
+
+## 内容
+- ＜不具合内容＞
+3Dモデルハウス詳細画面にて、下記事象が発生しているので、対応する
+・来場予約ボタンなしの場合で、下部に初期表示でサムネイルが数秒表示されるがその部分が見切れる
+・上記のサムネイル部分が数秒すると、閉じられるが、その際、サムネイル上部にあるmatterportのメニュー部分も下部に隠れてしまう
+　※添付画像を参照
+
+＜対応方針＞
+・（1）3Dモデルハウス詳細画面にて、来場予約ボタンなしで、端末が縦向きの場合のstyleを作成する
+・（2）上記条件の場合に、js側でそのstyleを定義したclass名を付与するように制御する
+※ IEZUKURI-7509 で対応したjs 部分で、上記条件の場合に端末が横向き部分用のclass名を付与しているので、そこの部分を改修する
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-7516_sp_3dmodelhouse_detail_bugfix
+
+## ソース
+
+*
+
+## 単体テスト
+
+予約ボタンなし
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/contents/3dmodelhouse/1/?sid=cvT7GnC2nJ5
+
+予約ボタンあり
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/contents/3dmodelhouse/11/?sid=cvT7GnC2nJ5
+
+* Android
+Android 8 : android one S4
+Android 7 : HUAWEI p10 lite
+
+* iOS
+iOS10 : iPhone SE
+
+## 懸念点
+
+
+## 今後

@@ -1,0 +1,208 @@
+#　IEZUKURI-12061
+土地あり用流入導線の設定（Ph1-1,1-2共用）
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-12061
+
+## 内容
+-　仕様書
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=209817176
+
+デザインファイル共有
+
+書き出し画像：https://drive.google.com/drive/folders/1tSIyua0ZO3RrRs-5viQFMa_L4KiJlTBp
+※命名規則は特に考えてないのでご自由にリネームしてください
+XDデータ：https://drive.google.com/drive/folders/1JcF7ag2zBH_SjGmT7g1lDfY-eWVLsk_z
+
+
+リリースの順番
+
+ph1-1
+１．テーマページ
+２．テーマ追加
+３．会員にテーマ登録
+４．プレミアムジャックバナー
+ph1-2
+　１．導線追加
+優先度イメージ
+LPトップ
+完了
+404
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+git checkout -b IEZUKURI-11595_topic_user-with-land_ph1-2
+git checkout -b IEZUKURI-11595_topic_user-with-land_ph1-2_icon
+git checkout -b IEZUKURI-11595_topic_user-with-land_ph1-2_introduction
+
+* Feature branch
+git checkout -b IEZUKURI-12061_feature_user-with-land_introduction_add
+git checkout -b IEZUKURI-12061_user-with-land_introduction_add_fix
+git checkout -b IEZUKURI-12061_feature_user-with-land_introduction_add_fix
+
+## ソース
+
+*
+
+## 単体テスト
+
+来場アイコン
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/case/#anchor_tab
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/product/#anchor_tab
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/visit/#anchor_tab
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/visit/vid-4/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/visit/osaka/list/
+
+===============================================================================
+
+テスト環境
+
+新規テーマページ
+PC
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/maker/theme-84/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/maker/tokyo/theme-84/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/maker/tokyo/theme-84/list/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/product/theme-84/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/product/tokyo/theme-84/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/product/tokyo/theme-84/list/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/case/theme-84/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/case/tokyo/theme-84/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/case/tokyo/theme-84/list/
+
+SP
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/maker/theme-84/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/maker/tokyo/theme-84/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/maker/tokyo/theme-84/list/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/product/theme-84/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/product/tokyo/theme-84/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/product/tokyo/theme-84/list/
+
+テーマ文言（アイコン）の追加
+PC
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/maker/tokyo/condition/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/product/tokyo/condition/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/case/tokyo/condition/
+
+SP
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/maker/tokyo/condition/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/product/tokyo/condition/
+
+詳細画面でのラベルとアイコンの確認
+→登録してるメーカーがあれば確認可能（mIDは仮）
+PC/SP
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-2773/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-2773/product/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-2773/product/pid-14107/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-2773/case/cid-32675/
+
+LP　新規テーマページ
+
+PC/SP
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/lp/maker/theme-84/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/lp/maker/tokyo/theme-84/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/lp/maker/tokyo/chiyoda-city/theme-84/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/lp/product/theme-84/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/lp/product/tokyo/theme-84/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/lp/product/tokyo/chiyoda-city/theme-84/
+
+
+
+各導線
+
+LPトップ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/
+完了画面（テスト問合せ）
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/inquire/product/input/?id[1588][]=4510&pref=13&city=203
+404エラーページ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/404/
+
+LPトップ
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/lp/
+完了画面（テスト問合せ）
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/inquire/product/input/?id[1588][]=4510&pref=13&city=203
+404エラーページ
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/404/
+
+===
+
+新規テーマページ
+PC/SP
+https://www.homes.co.jp/iezukuri/maker/theme-84/
+https://www.homes.co.jp/iezukuri/maker/tokyo/theme-84/
+https://www.homes.co.jp/iezukuri/maker/tokyo/theme-84/list/
+https://www.homes.co.jp/iezukuri/product/theme-84/
+https://www.homes.co.jp/iezukuri/product/tokyo/theme-84/
+https://www.homes.co.jp/iezukuri/product/tokyo/theme-84/list/
+PCのみ
+https://www.homes.co.jp/iezukuri/case/theme-84/
+https://www.homes.co.jp/iezukuri/case/tokyo/theme-84/
+https://www.homes.co.jp/iezukuri/case/tokyo/theme-84/list/
+
+テーマ文言（アイコン）の追加
+PC/SP
+https://www.homes.co.jp/iezukuri/maker/tokyo/condition/
+https://www.homes.co.jp/iezukuri/product/tokyo/condition/
+PCのみ
+https://www.homes.co.jp/iezukuri/case/tokyo/condition/
+
+詳細画面でのラベルとアイコンの確認
+→登録してるメーカーがあれば確認可能（mIDは仮）
+https://www.homes.co.jp/iezukuri/mid-2773/
+https://www.homes.co.jp/iezukuri/mid-2773/product/
+https://www.homes.co.jp/iezukuri/mid-2773/product/pid-14107/
+https://www.homes.co.jp/iezukuri/mid-2773/case/cid-32675/
+
+LP
+https://www.homes.co.jp/iezukuri/lp/maker/theme-84/
+https://www.homes.co.jp/iezukuri/lp/maker/tokyo/theme-84/
+https://www.homes.co.jp/iezukuri/lp/maker/tokyo/chiyoda-city/theme-84/
+https://www.homes.co.jp/iezukuri/lp/product/theme-84/
+https://www.homes.co.jp/iezukuri/lp/product/tokyo/theme-84/
+https://www.homes.co.jp/iezukuri/lp/product/tokyo/chiyoda-city/theme-84/
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後
+
+
+念のため置いておく
+
+*＜テスト仕様書＞*
+***●1．ウォークスルー*
+・テスト方法：
+
+対象URLを確認し、仕様書とデザインファイルとで確認した通りの場合、期待値通りとして結果の欄に○を記載する。
+ * 新規テーマページ
+ * プレミアムジャックバナー
+ * 各導線バナー
+ ** LPトップ
+ ** お問合せ完了画面
+ ** 404エラーページ
+
+||No||PC
+結果||SP
+結果||テスト項目||URL||期待値||
+|1| | |新規テーマページ|https://www.homes.co.jp/iezukuri/maker/theme-84/|エラーなく表示される
+テーマ画像が表示される
+マスタからテーマにあった文言が表示される|
+|2| | |新規テーマページ|https://www.homes.co.jp/iezukuri/product/theme-84/|同上|

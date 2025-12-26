@@ -1,0 +1,93 @@
+# 注文住宅IEZUKURI-9055
+除外システム Manager除外申請 iezukuri-manager 追加コーディング対応
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-9055
+
+## 内容
+- タスク
+
+トップ
+メール問合せのところからコピペしてきてください。
+
+メール問合せ
+「除外審査申請について」はテーブルと同じ幅でお願いします。
+ページングのところは対応なしでOKです。
+
+電話問合せ
+「除外審査申請について」はテーブルと同じ幅でお願いします。
+添付した画像のイメージに合わせて修正をお願いします。
+
+トピックブランチは、259_exclusion_systemになります。
+
+■文言
+
+1
+課金判定について
+
+「有効」・・・お客様からのものと判断された問合せです。
+「無効」・・・通話中に電話機の「2」（除外申請）を押した問合せです。
+
+除外申請について
+
+「除外申請」・・・課金判定が有効、かつ通話時間が61秒以上のため課金対象となります。除外審査申請が可能です。
+「対象外」　・・・課金判定が無効、もしくは通話時間が60秒以下のため課金対象外です。
+「期限切れ」・・・問合せ発生日の翌月末日を過ぎたため除外審査申請はできません。
+「申請済み」・・・除外審査申請が完了しています。
+※自動除外された問合せもシステム上申請は可能ですが、申請自体は無効となります
+
+2
+除外申請について
+
+「除外申請」・・・除外審査申請が可能です。
+「期限切れ」・・・問合せ発生日の翌月末日を過ぎたため除外審査申請はできません。
+「申請済み」・・・除外審査申請が完了しています。
+※自動除外された問合せや無課金制であるイベント問合せなど、除外審査申請が不要な問合せもシステム上申請は可能ですが、申請自体は無効となります
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+Manager環境でのSassのデプロイ
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=66409393
+
+
+## 対象画面
+https://localhost/
+https://localhost/inquire/mail
+https://localhost/inquire/tel
+
+## Branch
+
+* Topic branch
+259_exclusion_system
+
+* Feature branch
+    git checkout -b IEZUKURI-9055_add_coding
+
+バグ対応
+259_exclusion_system_bugfix
+IEZUKURI-9080_exclusion_system_bugfix_mail
+IEZUKURI-9081_exclusion_system_bugfix_review
+
+## ソース
+
+*
+
+
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

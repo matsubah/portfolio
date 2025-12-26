@@ -1,0 +1,116 @@
+# IEZUKURI-7691 ※3/28【SP】新UX_FB(カタログ一覧)_コーディング part2
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-7691
+参考：https://jira.next-group.jp/browse/IEZUKURI-7680
+
+## 内容
+- タイトルエリアの実装
+- ソートUIの実装
+- チェックボックスUI
+- search_result_button.cssリファクタ
+- moreInfoリファクタ
+- only
+- 休止中文言
+
+オプション
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+migrationにマージ
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-6885_topic_list_product
+
+* Feature branch
+git checkout -b IEZUKURI-7691_feature_list_product_component_others
+IEZUKURI-7691_feature_list_product_update
+→ブランチ変更（わたなべさん巻き取りずみ）
+
+## ソース
+
+タイトルエリアの実装
+product.html.twigにて差替え
+searchTitleHeading.html.twig、sort.html.twigの追加
+search_title_heading.scssも追加
+
+<div class="sec-list">
+
+    <div class="sec-listTitle">
+        {% include 'SpBundle::Maker/List/parts/searchTitleHeading.html.twig' only %}
+        {# todo sort動的実装 #}
+        {% include 'SpBundle::Maker/List/parts/sort.html.twig' only %}
+    </div>
+    {# /.sec-listTitle #}
+
+ソートUI
+sort.scssの追加
+
+チェックボックスUI（product.scss）
+background: var(--base-color-primary) url(/iezukuri/img/smartphone/page/list/icon_check.svg) no-repeat 50% 50%;
+
+search_result_button.cssリファクタ
+
+moreInfoリファクタ
+more_info.scss
+moreInfo.html.twig
+
+only
+includeには必ずつける（エラー起きたら相談）
+
+休止中文言（product.scss）
+.stop {
+    padding: 10px 0;
+    border-radius: 0 0 8px 8px;
+    background-color: #e2e4e4;
+    text-align: center;
+    font-size: 12px;
+}
+
+松原 明臣(4539/8階)さん
+[To:3613401] 松原 明臣(4539/8階)さん
+さみだれですいませんが、会社一覧(リスト以外)のdiffです
+出来そうなところから随時お願いします(助っ人で渡辺joinもアリ)
+http://gitlab.dev.nxin.jp/app/iezukuri/compare/d93387095...3dd920654
+
+[To:3613401] 松原 明臣(4539/8階)さん
+とりあえず共通とトップで修正が必要なところを洗い出してます
+手分けしてつぶしていきましょう
+https://jira.next-group.jp/browse/IEZUKURI-7638
+https://jira.next-group.jp/browse/IEZUKURI-7632
+
+杉山 洋右(4520)@8Fさん
+UXトップページの全体リファクタのマーリクです
+技術部分は一切いじってないです
+https://jira.next-group.jp/browse/IEZUKURI-7632
+
+TO：マツバラさん
+会社一覧のプルリクです。参考までに
+http://gitlab.dev.nxin.jp/app/iezukuri/merge_requests/752/
+
+
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

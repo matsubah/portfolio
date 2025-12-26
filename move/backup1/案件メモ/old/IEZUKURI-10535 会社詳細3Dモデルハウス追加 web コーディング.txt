@@ -1,0 +1,44 @@
+#　IEZUKURI-10535
+会社詳細3Dモデルハウス追加 web コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10535
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=180792680
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-10464_topic_maker_3d_withC
+
+* Feature branch
+git checkout -b IEZUKURI-10535_feature_maker_3d_withC
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

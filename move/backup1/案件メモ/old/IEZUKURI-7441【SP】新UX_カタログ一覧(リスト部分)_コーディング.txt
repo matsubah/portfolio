@@ -1,0 +1,99 @@
+# IEZUKURI-7441【SP】新UX_カタログ一覧(リスト部分)_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-7441
+
+## 内容
+-
+
+- 仕様書
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=128780153
+
+・建築エリア変更、条件選択変更
+・オススメ順
+・まとめてチェック削除
+・追従ボタン
+・次の10件
+
+- 完了の定義
+topicにマージ
+
+## 対象画面
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/list/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/theme-41/list/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/tokyo/list/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/tokyo/theme-41/list/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/tokyo/chiyoda-city/list/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/tokyo/chiyoda-city/theme-41/list/
+
+## Branch
+
+* Topic branch
+IEZUKURI-6885_topic_list_product
+
+* Feature branch
+git checkout -b IEZUKURI-7441_feature_list_product_component
+
+渡辺 和貴 [LIFULL]
+会社一覧の実装おわってるので参考にしてください
+https://jira.next-group.jp/browse/IEZUKURI-7354
+http://gitlab.dev.nxin.jp/app/iezukuri/merge_requests/726/diffs
+
+
+## ソース
+
+/* 新着リスト用 吹き出し NEWアイコン */
+.mod-product .newIcon {
+    position: absolute;
+    top: -10px;
+    left: 2px;
+    padding: 4px 0;
+    width: 30px;
+    color: #fff;
+    font-size: .9rem;
+    background: #dc482b;
+    border-radius: 5px;
+    text-align: center;
+}
+.mod-product .newIcon:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border: 5px solid transparent;
+    border-top-color: #dc482b;
+}
+
+＜新デザイン＞
+
+<style>
+.notice {
+    position: absolute;
+    top: 8px;
+    left: -5px;
+    display: inline-block;
+    background: url(/smp/assets/img/smartphone/page/flow/_abtest/icon_notice.png) no-repeat 0 0;
+    background-size: 44px 20px;
+    width: 44px;
+    padding: 5px 10px 5px 5px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #ed6103;
+    line-height: 1.1;
+    font-size: 1rem;
+    font-weight: bold;
+}
+</style>
+
+<span class="notice">更新</span>
+
+*
+
+## 単体テスト
+
+
+## 懸念点
+
+
+## 今後

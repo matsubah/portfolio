@@ -1,0 +1,50 @@
+# IEZUKURI-9449
+注文住宅 Business_トップ改修_コーディング(PC)
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-9449
+
+## 内容
+- PC画面構成（仕様書）
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=149123125
+
+XDデータ　1101_注B_TOP改修.xd
+https://drive.google.com/drive/folders/1MVFl9n8Uh9yAd5ZuU3hr24XTe3F85ZuE
+プレビュー
+https://xd.adobe.com/view/8162e8c7-4283-469b-502c-2fb61ab90812-f753/
+
+デザインデータの置き場所
+https://drive.google.com/drive/folders/1cLJQz7tRNjzhZ9OebSXHmddgRoEGIfhT
+
+Prott
+https://prottapp.com/p/8d7e50#/s/5d932df986e46517cb0081b9
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b xxx
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

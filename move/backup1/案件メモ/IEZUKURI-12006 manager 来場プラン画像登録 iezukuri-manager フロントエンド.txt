@@ -1,0 +1,45 @@
+#　IEZUKURI-12006
+manager 来場プラン画像登録 iezukuri-manager フロントエンド
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-12006
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+https://localhost/visit/visit_plan/vid-16/images
+
+## Branch
+
+* Topic branch
+IEZUKURI-10032_topic_ph2_visit
+
+* Feature branch
+git checkout -b IEZUKURI-12006_visit_plan_images
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

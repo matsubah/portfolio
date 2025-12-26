@@ -1,0 +1,81 @@
+# IEZUKURI-8208【SP】フッター改修
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8208
+
+## 内容
+- 仕様書
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=138206357
+
+ウォークスルーはこの板で実施
+
+完了の定義
+developにマージ
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-8208_sp_footer
+
+## ソース
+
+php_include/src/Iezukuri/SpBundle/Resources/views/_Slot/footer.html.twig
+
+php_include/src/Iezukuri/SpBundle/Resources/views/_Slot/assets/css/Index/index.html.twig
+            '@SpBundle/Resources/public/css/smartphone/module/accordion_link.css'
+
+php_include/src/Iezukuri/SpBundle/Resources/public/css/smartphone/module/accordion_link.css
+
+
+*　リダイレクトするURLについて
+PC
+https://www.homes.co.jp/
+→https://www.homes.co.jp
+
+SP
+https://www.homes.co.jp/
+→https://www.homes.co.jp/smp/re/
+
+PC/SP共通
+http://local.lifull.jp/
+→http://local.lifull.jp
+
+https://flower.lifull.jp/
+→https://flower.lifull.jp
+
+http://lifull-fam.com/
+→http://lifull-fam.com
+
+## 単体テスト
+
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/hoge/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-0/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/inquire/maker/input/?id=116&ref=de%2Cm%2C%2C%2C%2C
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/dsp/kanade/product/mid-5648/pid-20115/tokyo/hachioji-city/theme-41/
+
+
+ - 実機
+Android 8.1.0
+  OPPO
+
+Android
+ GALAXY S8
+
+iOS 10
+ iPhoneSE ios 10.3.3
+
+iOS 12
+ iPhone XR
+
+## 懸念点
+
+
+## 今後

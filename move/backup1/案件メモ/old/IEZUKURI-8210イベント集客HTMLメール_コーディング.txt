@@ -1,0 +1,100 @@
+# IEZUKURI-8210イベント集客HTMLメール_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8210
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+* パラメータ周り
+【HTML】
+◆全てのリンクに以下パラメータを追加（リンクごとに@@MAIL_ID@@の後にある01を上から連番で付けてください。一番初めのリンクは@@MAIL_ID@@01、次に出てくるリンクは@@MAIL_ID@@02 ...）
+?mail_id=@@MAIL_ID@@01&amp;utm_source=email_after&amp;utm_medium=own&amp;utm_content=mm&amp;utm_campaign=06_@@DEVICE@@ooeee_mm900003&amp;cmp_id=06_@@DEVICE@@ooeee_mm900003
+
+◆配信停止リンク(そのまま貼り付けてください)
+@@OPTOUT_PARAMS_BEGIN@@mail_id=@@MAIL_ID@@oo&amp;utm_source=email_after&amp;utm_medium=own&amp;utm_content=mm&amp;utm_campaign=06_@@DEVICE@@ooeee_mm900003&amp;cmp_id=06_@@DEVICE@@ooeee_mm900003@@OPTOUT_PARAMS_END@@
+
+【TEXT】
+◆全てのリンクに以下パラメータを追加（同様に@@MAIL_IDの後にある数値2桁を連番にしてください）
+?mail_id=@@MAIL_ID@@01&utm_source=email_after&utm_medium=own&utm_content=mm&utm_campaign=06_@@DEVICE@@ooeee_mm900003&cmp_id=06_@@DEVICE@@ooeee_mm900003
+
+◆配信停止リンク(そのまま貼り付けてください)
+@@OPTOUT_PARAMS_BEGIN@@mail_id=@@MAIL_ID@@oo&utm_source=email_after&utm_medium=own&utm_content=mm&utm_campaign=06_@@DEVICE@@ooeee_mm900003&cmp_id=06_@@DEVICE@@ooeee_mm900003@@OPTOUT_PARAMS_END@@
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-8209_topic_mail_template
+
+* Feature branch
+git checkout -b IEZUKURI-8210_feature_mail_template_text
+
+## ソース
+
+https://www.chatwork.com/#!rid150687146-1193806349654294528
+
+*　残っているコーディングタスクは
+・まだ仕様で文字が決まっていないところを修正。
+→対応済み、本番用は後ほど差し替え
+・いくつかの端末で、崩れているので修正。
+→Pardot上では対応済み、配信テスト後に実機テスト後で発生したら対応
+・画像がちゃんとしたものが来たら修正(?)
+→済み、本番用は後ほど差し替え
+・三宅さんから追跡するパラメータ共有してもらって修正して再度レビュー
+→パラメータは共有ずみ、URLは仮
+・画像をawsに格納
+→済み、本番用は後ほど差し替え
+・POとデザインのフィードバックがあったら対応。
+→未対応
+
+
+ダミーディレクトリつくってS3にアップしました
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/2019/07/dummy/btn_apply.png
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/2019/07/dummy/btn_showdetail.png
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/2019/07/dummy/icon_event01.png
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/2019/07/dummy/img_event01_detail_staff01.jpg
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/2019/07/dummy/img_event01_detail_staff02.jpg
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/2019/07/dummy/img_event01_maker.png
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/2019/07/dummy/img_event01_mv.jpg
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/2019/07/dummy/img_event01_sub01.jpg
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/2019/07/dummy/img_event01_sub02.jpg
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/2019/07/dummy/img_header_kanagawa.png
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/2019/07/dummy/img_mv_consultation.jpg
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/2019/07/dummy/img_present.png
+
+以下はcommonに入れたのでパスが異なります
+ファイル名も少し変えてるのでご注意ください
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/common/logo_iezukuri.png
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/common/icon_heading.png
+
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 参考
+https://n2p.co.jp/blog/tech/htmlmail2017/
+
+## 懸念点
+
+
+## 今後
+
+・スタッフ紹介の部分を「お近くの住宅展示場案内」と「キャンペーン情報」として活用します。
+・「お近くの住宅展示場」下のボタン追加
+・大きいキャンペーン画像の部分(ホームズ君がのってるクオカードキャンペーンの画像)削除

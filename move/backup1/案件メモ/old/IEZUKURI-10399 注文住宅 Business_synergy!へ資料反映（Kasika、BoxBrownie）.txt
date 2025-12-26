@@ -1,0 +1,64 @@
+# IEZUKURI-10399
+注文住宅 Business_synergy!へ資料反映（Kasika、BoxBrownie）
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10399
+
+## 内容
+-　①工務店向けマーケティングオートメーション『KASIKA』
+サービスURL　※依頼時未公開
+/lists/order-rates/kasika
+S3資料アップロードURL
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/business/download/cocolive/kasika.pdf
+
+②BoxBrownie.com
+サービスURL　※依頼時未公開
+/lists/housing-production/boxbrownie
+S3資料アップロードURL
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/business/download/boxbrownie/boxbrownie.pdf
+
+---
+
+Synergy!のコンフル
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=62558036
+
+0302_Business_セミナーエントリーフォームの作成
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=166799490
+
+[IEZUKURI-10399] 注文住宅 Business_synergy!へ資料反映（Kasika、BoxBrownie）
+https://jira.next-group.jp/browse/IEZUKURI-10399
+
+https://f.msgs.jp/webapp/form/19253_nmcb_14/index.do?service=kasika
+https://f.msgs.jp/webapp/form/19253_nmcb_14/index.do?service=boxbrownie
+
+---
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+
+
+* Feature branch
+git checkout -b IEZUKURI-10399_doc_download_kasika+boxbrownie
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

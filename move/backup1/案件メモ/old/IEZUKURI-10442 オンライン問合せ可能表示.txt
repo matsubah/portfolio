@@ -1,0 +1,84 @@
+#　398_オンライン相談可能な会社訴求
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10442
+
+## 内容
+-　https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=179902599
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+打ち合わせ内容
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=180786735
+
+- デザイン
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=180807341
+
+=========================
+【受け渡し】
+●XDでーた
+　https://drive.google.com/drive/folders/1-Cc4hSiSeTQXAkUnMO3OQQ-5rQMttWlY
+　※基本余白は5px・10px・15pxで作成してるので、適宜お願いします！（一部3pxはあるけども）
+
+●プロトタイプ開発用に書き出し済み。
+　https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=180807341
+　※コンフルにURL＆passあり。
+→url：https://xd.adobe.com/view/bdea29a1-cfcb-4c6a-464a-ca68c897cc6b-cbdb/
+→pass：Online0511
+
+●素材（戸建のとこと同じもの）
+　https://drive.google.com/drive/folders/1z9r3OyGrfaRwlF__CJT2QOH714HukEcR
+　※SVGは書き出しっぱなし。コードは整えてない。
+　※ほむおは圧縮済み。
+=========================
+
+## 対象画面
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-10006/
+
+リスト：https://www.homes.co.jp/kodate/shinchiku/tokyo/list/
+詳細：https://www.homes.co.jp/kodate/b-17019440000136/
+
+## Branch
+
+* Topic branch
+git checkout -b IEZUKURI-10442_topic_add_online-counseling-notice
+
+* Feature branch
+git checkout -b IEZUKURI-10482_feature_pc_add_online-counseling-notice
+git checkout -b IEZUKURI-10483_feature_sp_add_online-counseling-notice
+
+【IEZUKURI-10482】オンライン相談可 PC 会社一覧・詳細／カタログ一覧・詳細
+
+## ソース
+
+*
+
+## 単体テスト
+
+会社一覧
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker/tokyo/chiyoda-city/list/
+詳細
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-10006/
+
+カタログ一覧
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/tokyo/chiyoda-city/list/
+詳細
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-2033/product/pid-10692/
+
+事例一覧
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/case/tokyo/chiyoda-city/list/
+詳細
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-4858/case/cid-21936/
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

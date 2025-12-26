@@ -1,0 +1,46 @@
+# IEZUKURI-7358【SP】新UX_共通パーツ(ページトップへ)_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-7358
+
+## 内容
+ページ内トップへ移動ボタン	ボタン押下で、ページ内最上部へ、ページ内移動する。
+（既存「ページトップへ」ボタンと同じ動作）
+
+- 共通パーツの実装
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=126588402
+
+完了の定義
+トピックへマージ
+
+## 対象画面
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/ など
+
+## Branch
+
+* Topic branch
+IEZUKURI-6885_topic_ux_common_pagetop
+IEZUKURI-7358_feature_ux_common_pagetop
+
+* Feature branch
+git checkout -b IEZUKURI-7358_feature_ux_common_pagetop
+
+## ソース
+
+* php_include/src/Iezukuri/SpBundle/Resources/views/_Slot/footer.html.twig
+
+<div class="pagetop">
+    <a href="#header"><span class="ui-icon ui-icon-arrow_up"></span><span class="label">ページトップへ </span></a>
+</div>
+
+・mod-とui-は切り分ける(uiではなく別classを付与してそちらで設定)
+・ページトップは別モジュールで_Slot/parts配下に
+・ページトップのbottomとか調整
+
+## 単体テスト
+
+
+## 懸念点
+
+
+## 今後

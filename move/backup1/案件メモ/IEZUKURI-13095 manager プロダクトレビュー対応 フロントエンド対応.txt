@@ -1,0 +1,98 @@
+#　IEZUKURI-13095
+manager プロダクトレビュー対応 フロントエンド対応
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-13095
+
+## 内容
+- https://docs.google.com/spreadsheets/d/1oGYIALprOhciBdN3YYJ3RBSymmJHiIrAcvkRU0tM5Js/edit#gid=0
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-10032_topic_ph2_visit
+
+* Feature branch
+git checkout -b IEZUKURI-13095_visit_after-review_fix
+
+## ソース
+
+タイトル
+input
+    font-size: 1.1em;
+    font-family: Arial;
+
+textarea
+    font-size: 1.1em;
+    font-family: monospace;
+
+
+
+
+
+
+
+
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後
+
+
+## Managerで何も登録してないIDを取得
+
+SQL
+
+WITH has_venues_makers AS (
+	select DISTINCT maker_id from conceptual.venues
+), has_visit_plans_makers AS (
+	select DISTINCT maker_id from conceptual.visit_plans
+)
+select member_id from housing_gyosha where housing_gyosha.status = 1 AND housing_gyosha.client_id IS NOT NULL AND gyosha_id NOT IN (select * from has_visit_plans_makers) AND gyosha_id NOT IN (select * from has_venues_makers) limit 30;
+
+9000054
+9000057
+9000058
+9000059
+9000087
+9000088
+9000089
+9000090
+9000091
+9000094
+9101979 →松原専用
+9101998
+9102023
+9102174
+9102358
+9102495
+9102501
+9102654
+9102721
+9103004
+9103123
+9103178
+9103254
+9103328
+9104606
+9104971
+9105379
+9105552
+9105682
+9105683

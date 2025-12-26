@@ -1,0 +1,95 @@
+#　IEZUKURI-10974 【manager】除外基準へのリンク復活
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10974
+
+## 内容
+- Managerトップ画面に以前ありました【反響除外基準へのリンク】の復活をお願いいたします。
+
+以前の画面仕様が確認とれなかったので、
+削除された時の履歴をご確認いただき作業をお願いいたします。
+＆開発環境で一度画面確認したいです。
+
+役に立つか分かりませんが
+https://www.chatwork.com/#!rid145963806-1236163015083032576
+CWの履歴から思うに、2019年10月16日より前に消えている様子です。
+
+希望日時はめちゃくちゃ希望で入れましたので、対応可能そうな日程でご相談させてください。
+
+
+- 完了の定義
+
+
+## 対象画面
+Manager Top
+
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-10974_top_add_chargeExclude
+
+## ソース
+
+rel="noopener noreferrer"
+resources/assets/sass/page/top/top.scss
+
+.chargeExclude {
+    margin-top: 36px;
+    ul {
+        @include clearfix;
+    }
+    li {
+        float: left;
+        width: 280px;
+        + li {
+            margin-left: 2rem;
+        }
+        a:hover img {
+            opacity: .8;
+        }
+        .update {
+            display: block;
+            margin-top: .5rem;
+            text-align: right;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+resources/views/top/top.blade.php
+
+<div class="chargeExclude">
+    <div class="hm-itemTitle">
+        <p class="title">問合せ課金除外審査申請</p>
+    </div>
+    <ul>
+        <li>
+            <a href="/download/shinsakijun_201701.pdf" target="_blank"><img src="/img/page/top/btn_exclude_regulation.png" width="280" alt="課金除外審査基準"></a>
+            <span class="update">PDF形式  80KB、2017/01/16更新</span>
+        </li>
+        <li>
+            <a href="http://www.homes.co.jp/cjs" target="_blank"><img src="/img/page/top/btn_exclude_form.png" width="280" alt="申請フォーム"></a>
+        </li>
+    </ul>
+</div>
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

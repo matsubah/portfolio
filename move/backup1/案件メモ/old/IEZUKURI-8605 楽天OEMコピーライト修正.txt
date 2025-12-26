@@ -1,0 +1,45 @@
+# IEZUKURI-8605
+楽天OEMコピーライト修正
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8605
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/?o=248hA3c2GUnlW7I
+
+## Branch
+
+* Feature branch
+git checkout -b IEZUKURI-8605_fix_footer_oem
+
+## ソース
+
+src/Iezukuri/PcBundle/Resources/views/parts/rakutenFooter.html.twig:        <p class="copyRight">© 1997 Rakuten, Inc.</p>
+
+新基盤
+
+
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

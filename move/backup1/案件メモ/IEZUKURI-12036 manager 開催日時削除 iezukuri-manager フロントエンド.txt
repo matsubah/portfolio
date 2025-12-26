@@ -1,0 +1,107 @@
+#　IEZUKURI-12036
+manager 開催日時削除 iezukuri-manager フロントエンド
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-12036
+
+## 内容
+- IEZUKURI-12035
+→この実装後に作成
+
+モーダル画面を整える
+
+仕様書（画面下「◆削除確認画面・完了画面」部分）
+
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=220222209
+
+見た目は相談しながら決める
+
+## 対象画面
+/visit/visit_plan/vid-{visit_plan_id}/visit_plans_venues/vvid-{visit_plan_venue_id}/datetimes/
+
+https://localhost/visit/visit_plan/vid-1/visit_plans_venues/vvid-1/datetimes
+
+## Branch
+
+* Topic branch
+IEZUKURI-10032_topic_ph2_visit
+
+* Feature branch
+git checkout -b IEZUKURI-12036_feature_visit_plan_delete
+
+## ソース
+
+<div class="delete-confirm-modal-background prg-delete-confirm-modal-background is-hide"></div>
+<div class="delete-confirm-modal prg-delete-confirm-modal is-hide">
+    <div class="delete-confirm-modal-inner">
+        <p>以下の内容を削除します。よろしいですか？</p>
+        <ul class="delete-contents prg-delete-contents">
+            {{-- jsで挿入 --}}
+        </ul>
+    </div>
+    <div class="upperButton">
+        <button type="button" class="hm-button hm-buttonsize-large prg-cancel-button hm-size-w8em">キャンセル</button>
+        <button type="button" class="hm-button-ocean hm-buttonsize-large prg-execute-delete-button hm-size-w8em" data-visit_plan_venue_id="{{ $visitPlanVenueId }}">OK</button>
+    </div>
+</div>
+
+
+.delete-confirm-modal {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    display: block;
+    background-color: #fff;
+    border: 1px solid #999;
+    margin: 5%;
+    width: 90%;
+    height: 85%;
+    font-size: 20px;
+    z-index: 4;
+    transition: all .3s;
+    .delete-confirm-modal-inner {
+        position: absolute;
+        top: 5%;
+        left: 10%;
+        padding: 20px;
+        width: 80%;
+        height: 80%;
+        scroll-behavior: smooth;
+        overflow-y: auto;
+    }
+    .delete-contents {
+        padding-top: 10px;
+    }
+    .date-and-times {
+        padding-top: 5px;
+    }
+    .upperButton {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 10px;
+        padding-top: 10px;
+        text-align: center;
+    }
+}
+
+
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

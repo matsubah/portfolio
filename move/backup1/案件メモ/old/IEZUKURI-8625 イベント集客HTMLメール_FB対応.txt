@@ -1,0 +1,50 @@
+# IEZUKURI-8625
+イベント集客HTMLメール_FB対応
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8625
+
+## 内容
+- 端末テスト実施後のFB対応を行う
+
+以下CWより抜粋
+
+・HTMLの%%email_preference_center%%を抜く
+・併せて、@@TRACKING_URL@@を、
+　HTML最後の</BODY>の前に入れこむ
+・直したものを格納し直していただく
+テキストの方の修正版（％％抜いたやつ）は格納し直しておきました！
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=143996922
+
+同じブランチに、テスト結果として判明したバグの修正も入れる？
+
+## 対象画面
+
+
+## Branch
+master
+
+* Topic branch
+IEZUKURI-8209_topic_mail_template_fix
+
+* Feature branch
+git checkout -b IEZUKURI-8625_feature_mail_template_fix
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

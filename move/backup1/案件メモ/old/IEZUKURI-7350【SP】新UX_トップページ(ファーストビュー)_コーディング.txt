@@ -1,0 +1,52 @@
+# IEZUKURI-7350【SP】新UX_トップページ(ファーストビュー)_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-7350
+
+## 内容
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=126588195
+
+1:メインビジュアル
+2:「建てたいエリアから探す」ボタン
+3:「カタログから探す」ボタン
+4:3Dモデルバナー
+らへんまで
+
+- 完了の定義
+トピックへマージ
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-6885_topic_ux_common_components
+
+* Feature branch
+git checkout -b IEZUKURI-7350_feature_ux_top_firstview
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後
+
+box-shadow: 1px 1px 20px 16px rgba(255,255,255,.7);
+background-color: rgba(255,255,255,.7);
+border-radius: 10px;

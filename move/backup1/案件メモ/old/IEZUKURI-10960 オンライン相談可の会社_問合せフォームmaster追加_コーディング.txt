@@ -1,0 +1,57 @@
+#　IEZUKURI-10960
+オンライン相談可の会社_問合せフォームmaster追加_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10960
+
+## 内容
+- 企画概要
+オンライン相談可能な会社の可視化
+問合せフォームにオンライン相談希望と記入できる ⇒ 問合せフォームver1
+  └次期開発では、お問合せ内容欄の選択肢を増やす。 ⇒ 問合せフォームver2（今回はここ）
+ユーザにオンライン相談希望を選べる、ということが伝わる
+クライアントにオンライン相談希望の旨が伝わる
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=182935376
+
+デザイン
+なし。コーディングにて対応。
+
+- 完了の定義
+
+
+## 対象画面
+
+PC／SP
+問合せ入力フォーム
+https://www.homes.co.jp/iezukuri/inquire/maker/input/
+https://www.homes.co.jp/iezukuri/inquire/product/input/
+https://www.homes.co.jp/iezukuri/inquire/case/input/
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-10442_topic_online-counseling-notice_inquire
+git checkout -b IEZUKURI-10960_feature_online-counseling-notice_inquire
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

@@ -1,0 +1,44 @@
+# IEZUKURI-8330【SP】価格LPのUI変更_コーディング_追加実装
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8330
+
+## 内容
+- 本チケットでは価格LPのUI変更の追加された仕様の実装を行う。
+
+仕様書
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=139285524
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-7530_topic_sp_lp_ui
+
+* Feature branch
+git checkout -b IEZUKURI-8330_sp_lp_ui_add
+git checkout -b IEZUKURI-8330_sp_lp_ui_add2
+
+## ソース
+
+*
+
+## 単体テスト
+
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/low10000high499999/
+
+本体価格のないテストデータ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5452/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/gifu/tajimi-city/low625000high749999/
+
+マーリク
+
+http://gitlab.dev.nxin.jp/app/iezukuri/merge_requests/908
+
+## 懸念点
+
+
+## 今後

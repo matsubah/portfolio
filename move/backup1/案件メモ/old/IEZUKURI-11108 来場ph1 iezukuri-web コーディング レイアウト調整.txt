@@ -1,0 +1,240 @@
+#　IEZUKURI-11108
+来場ph1 iezukuri-web コーディング レイアウト調整
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-11108
+
+## 内容
+-　
+来場詳細内会社情報レイアウト調整
+→参考は下記のURLなど
+https://www.homes.co.jp/iezukuri/mid-3199/product/pid-24090/
+
+svgアイコン差し替え
+→
+
+来場特長グレースケール対応
+
+仕様書
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=187662612
+項目
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=186793094#id-387_phase1%EF%BC%9APJ%E6%A6%82%E8%A6%81-%E3%80%90%E9%A0%85%E7%9B%AE%E3%80%91%E6%9D%A5%E5%A0%B4%E6%83%85%E5%A0%B1%E8%A9%B3%E7%B4%B0%E6%9D%A5%E5%A0%B4%E6%83%85%E5%A0%B1
+デザイン
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=191763644
+デザインファイル
+https://drive.google.com/drive/folders/10Mr1hcqTE6LCsK3yK20NszDKd0dxGfVL
+
+先行チケット
+IEZUKURI-10946 来場ph1 iezukuri-web フロントエンド 来場詳細
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-10032_topic_visit_pj
+
+* Feature branch
+git checkout -b IEZUKURI-11108_edit_visit_detail
+
+## ソース
+
+.mod-makerLink {
+    padding-bottom: .8rem;
+    text-align: right
+}
+
+.mod-makerLink .anchor {
+    display: inline-block;
+    padding: 1.6rem;
+    text-decoration: none
+}
+
+.mod-makerLink .anchor>* {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.mod-makerLink .anchor .makerImage {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 1.2rem;
+    width: 55px
+}
+
+.mod-makerLink .anchor .makerImage .logo {
+    max-width: 55px;
+    max-height: 40px
+}
+
+.mod-makerLink .anchor .maker {
+    height: 13px;
+    max-width: 144px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #000
+}
+
+
+
+
+
+.mod-visitInfo .feature .iconBox .featureIcon.is-off .text {
+    color: #c3c3c3;
+}
+
+
+
+
+.sec-info {
+    //padding-bottom: .8rem;
+    margin-bottom: 3.2rem;
+}
+
+.mod-makerInfo .heading {
+    background-color: #fff;
+    border: 0;
+}
+
+.mod-makerInfo .wrap {
+    padding: 0 16px;
+    background-color: #fff
+}
+
+.mod-makerInfo td {
+    vertical-align: middle
+}
+
+.mod-makerInfo .detail {
+    margin-bottom: 1.4rem;
+    border: 1px solid rgba(112,125,128,0.16);
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden
+}
+
+.mod-makerInfo .detail tbody th {
+    background-color: rgba(112,125,128,.08);
+    width: 115px;
+    padding-left: 1.6rem;
+    font-size: 1.6rem;
+    font-weight: normal
+}
+
+.mod-makerInfo .detail tbody th,.mod-makerInfo .detail tbody td {
+    box-sizing: border-box;
+    border-top: 1px solid rgba(112,125,128,0.16);
+    color: #333
+}
+
+.mod-makerInfo .detail tbody td {
+    padding: 1.5rem 2rem;
+    border-left: 1px solid rgba(112,125,128,0.16)
+}
+
+.mod-makerInfo .detail tbody tr:last-child th,.mod-makerInfo .detail tbody tr:last-child td {
+    border-bottom: 0
+}
+
+.mod-makerInfo .heading .icon {
+    vertical-align: middle
+}
+
+.mod-makerInfo .heading .text {
+    padding-left: .5rem;
+    vertical-align: middle
+}
+
+.mod-makerInfo .detail td .clientSiteURL {
+    color: inherit
+}
+
+.mod-makerTitle {
+    display: table;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 0 1.6rem 1.6rem;
+    width: 100%
+}
+
+.mod-makerTitle .link {
+    display: table;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #000
+}
+
+.mod-makerTitle .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid #c3c3c3;
+    padding: .5rem;
+    margin-right: 1.6rem;
+    width: 84px;
+    height: 74px
+}
+
+.mod-makerTitle .logo .maker {
+    max-width: 74px;
+    max-height: 64px
+}
+
+.mod-makerTitle .title {
+    display: table-cell;
+    vertical-align: top;
+    width: 100%
+}
+
+.mod-makerTitle .title .categoryType {
+    display: inline-block;
+    padding: .2rem .4rem;
+    border: 1px solid var(--base-color-primary);
+    border-radius: 4px;
+    color: var(--base-color-primary);
+    font-size: 1rem;
+    font-weight: bold
+}
+
+.mod-makerTitle .title .name {
+    margin-top: 1rem;
+    line-height: 1.4;
+    font-size: 1.8rem;
+    font-weight: bold
+}
+
+.mod-makerTitle .icon {
+    display: table-cell;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 14px
+}
+
+
+
+
+
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

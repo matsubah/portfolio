@@ -1,0 +1,179 @@
+#　IEZUKURI-11645 アイコン入れ替え
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-11645
+
+## 内容
+-　【土地ありユーザ集客】案件のサブタスク
+
+ずっとペンドしていた新アイコンへの入れ替えを実施する。
+
+作業依頼
+アイコン使用箇所の調査
+新アイコンへの入れ替え
+
+仕様書
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=205659021&src=contextnavpagetreemode
+アイコンデータ
+https://drive.google.com/file/d/1gObzq2lw8nFQkxcpoq6nZEjOkRj7PCub/view
+https://drive.google.com/drive/folders/1V6oCQad_7A6e8FI65QbV2iDwe0_v07AG
+https://drive.google.com/drive/u/0/folders/14jbJAndGEbzdt1ice8uAwErFRAfrGeHO
+組み込みイメージ
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=144014829
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+git checkout -b IEZUKURI-11595_topic_user-with-land_ph0
+
+* Feature branch
+git checkout -b IEZUKURI-11645_feature_sp_detail_svg
+
+## ソース
+
+*
+
+## 単体テスト
+
+価格帯・グレード
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5649/
+ID 9000011
+
+構造・形態　1
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5650/
+ID 9000012
+
+構造・形態　2
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5651/
+ID 9000013
+
+性能
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5652/
+ID 9000014
+
+エコロジー/土地・庭
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-8994/
+ID 9000015
+
+デザイン/素材
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5649/
+ID 9000011
+
+
+テスト環境
+テスト環境にて下記URLのメーカーを中心に、svgアイコンが差し替えられ、崩れがないことを確認
+ チェックポイント：工法などのアイコンと来場のアイコンが新しいものに替わっていること、実機で見た場合に違和感がない間の取り方になっていること
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-5058/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-5058/visit/#anchor_tab
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-5058/visit/vid-54/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/visit/osaka/list/
+各アイコンの確認
+価格帯・グレード
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-837/
+構造・形態　1
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-5650/
+構造・形態　2
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-5651/
+性能
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-5652/
+エコロジー/土地・庭
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-8994/
+デザイン/素材
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-5649/
+
+本番環境
+
+「タマホーム」
+https://www.homes.co.jp/iezukuri/mid-5058/
+こだわりポイント
+ローコスト住宅
+平屋住宅
+3階建て住宅
+高気密・高断熱住宅
+外観デザイン住宅
+二世帯住宅
+耐震・免震・制震住宅
+ガレージハウス住宅
+展示場・モデルハウス見学
+20～30歳代に人気の家
+省エネ住宅
+和風住宅
+オール電化住宅
+屋上のある家
+長期優良住宅
+防音・遮音性住宅
+内装デザイン住宅
+収納がスゴイ
+
+工法
+木造軸組（在来）工法
+
+高級住宅「三井ホーム」
+https://www.homes.co.jp/iezukuri/mid-9592/
+こだわりポイント
+輸入住宅
+高級住宅・豪邸
+自然素材の家
+中庭のある家
+エクステリア
+
+3階建て住宅
+高気密・高断熱住宅
+外観デザイン住宅
+二世帯住宅
+耐震・免震・制震住宅
+ガレージハウス
+住宅展示場・モデルハウス見学
+20～30歳代に人気の家
+内装デザイン住宅
+生活導線デザイン住宅
+
+
+工法
+
+
+「一条工務店」
+https://www.homes.co.jp/iezukuri/mid-8237/
+高級住宅・豪邸
+
+平屋住宅
+3階建て住宅
+高気密・高断熱住宅
+ZEH・Nearly ZEH住宅
+外観デザイン住宅
+二世帯住宅
+耐震・免震・制震住宅
+バリアフリー・シニア向け住宅
+住宅展示場・モデルハウス見学
+20～30歳代に人気の家
+長期保証住宅
+省エネ住宅
+自然素材の家
+木の家
+和風住宅
+中庭のある家
+オール電化住宅
+長期優良住宅
+防音・遮音性住宅
+内装デザイン住宅
+受賞歴あり
+生活導線デザイン住宅
+エクステリア
+
+
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

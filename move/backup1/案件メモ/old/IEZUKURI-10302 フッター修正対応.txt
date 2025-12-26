@@ -1,0 +1,63 @@
+#　IEZUKURI-10302 フッター修正対応
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10302
+
+## 内容
+-　以下のご対応をお願い致します。
+
+【対象デバイス】PC/SP
+
+【対象ページ】全ページ（該当のフッターがあるページ）
+
+【修正内容】
+
+1.賃貸マンション・アパートは全てnofollowにする
+2.「不動産価値」を「住まいインデックス」に変更する
+※URL変更なし(https://lifullhomes-index.jp/)
+※3月18日に名称変更
+
+【仕様書】
+https://docs.google.com/spreadsheets/d/1gLnNtjbm1MmaF8cpbu-gCEoK8VBOHTqj7tGkj8HM0qs/edit#gid=1407735788
+※対象のシート：wwwTOP以外仕様書
+※注文の対応範囲は上記に記載の通り②、③のみです
+
+3/31リリースをお願いします。難しいようでしたら早めに教えて頂ければと思います。よろしくお願いします。
+
+参照チケット：
+https://jira.next-group.jp/browse/IEZUKURI-9361
+
+## 対象画面
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-10302_footer_edit
+
+## ソース
+src/Iezukuri/PcBundle/Resources/views/parts/footer.html.twig
+src/Iezukuri/SpBundle/Resources/views/_Slot/parts/accordionLink.html.twig
+
+*
+
+## 単体テスト
+PC/SP
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/404
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-0/
+
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

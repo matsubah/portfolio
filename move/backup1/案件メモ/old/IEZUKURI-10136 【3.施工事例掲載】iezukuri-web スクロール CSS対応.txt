@@ -1,0 +1,45 @@
+# IEZUKURI-10136
+【3.施工事例掲載】iezukuri-web スクロール CSS対応
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10136
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-10072_feature_add_case_in_product_lp
+git checkout -b IEZUKURI-10072_feature_add_case_in_product_lp origin/IEZUKURI-10072_feature_add_case_in_product_lp
+
+* Feature branch
+git checkout -b IEZUKURI-10136_feature_add_case_in_product_lp_css
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

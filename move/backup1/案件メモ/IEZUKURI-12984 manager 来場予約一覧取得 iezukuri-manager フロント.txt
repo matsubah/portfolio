@@ -1,0 +1,52 @@
+#　IEZUKURI-12984
+manager 来場予約一覧取得 iezukuri-manager フロント
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-12984
+
+## 内容
+- https://jira.next-group.jp/browse/IEZUKURI-12935
+上記実装後に行う
+
+仕様書
+
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=233903952
+
+
+## 対象画面
+
+mail.blade.html
+
+## Branch
+
+* Topic branch
+IEZUKURI-10032_topic_visit_reservation
+
+* Feature branch
+git checkout -b IEZUKURI-12984_visit_reservation_list
+
+iezukuri-manager-api : IEZUKURI-10032_topic_visit_reservations
+iezukuri-api : IEZUKURI-10032_visit_ph2
+iezukuri-db-api : IEZUKURI-10032_topic_visit_reservations
+
+
+https://github.com/lifull/iezukuri-manager/tree/IEZUKURI-10032_topic_visit_reservation
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

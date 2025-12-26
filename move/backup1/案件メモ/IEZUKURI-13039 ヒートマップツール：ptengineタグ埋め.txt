@@ -1,0 +1,58 @@
+#　IEZUKURI-13039
+ヒートマップツール：ptengineタグ埋め
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-13039
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+https://iezukuri-web-develop-cloudfront.iez-dev.homes.co.jp/iezukuri/
+https://iezukuri-web-develop-cloudfront.iez-dev.homes.co.jp/iezukuri/inquire/product/input/?id[1588][]=4510&pref=13&city=203
+https://iezukuri-web-develop-cloudfront.iez-dev.homes.co.jp/iezukuri/lp/
+
+
+## 対象画面
+
+【新規作成タグ】
+Ptengine_HeatMap_Visit
+
+＜GTM＞
+・コンテナ名：【PC・SP】www.homes.co.jp （iezukuri HOME'S注文住宅）
+・コンテナID：GTM-WWRWC3
+・ワークスペース名：IEZUKURI-13039_【タグ設置】ptengineタグ設定
+
+＜テスト仕様書＞
+・該当するGTMワークスペースのプレビューモードにて下記「操作」を行い、
+　GTMの「Summary」の内容を参照して、「期待値」の状態であることを確認する。
+・「期待値」の確認
+　・発火：「Tags Fired」にあること
+上記が期待値通りであれば、各「結果」に〇を記載する。
+||No||PC
+ 結果||SP
+ 結果||項目||操作||期待値
+ (タグ発火確認)||
+|1|　|　|トップ|https://iezukuri-web-develop-cloudfront.iez-dev.homes.co.jp/iezukuri/
+ にアクセス|・発火
+ Ptengine_CV_Visit|
+|2|　|　|カタログ問合せ
+ (入力)|https://iezukuri-web-develop-cloudfront.iez-dev.homes.co.jp/iezukuri/inquire/product/input/?id[1588][]=4510&pref=13&city=203にアクセス|同上|
+|3|　|　|カタログ問合せ
+ (確認)|上記入力画面で、必須項目を入力し、
+ 確認ボタンを押下|同上|
+|4|　|　|カタログ問合せ
+ (完了)|上記確認画面で、送信ボタンを押下|同上|
+|5|　|　|LP|https://iezukuri-web-develop-cloudfront.iez-dev.homes.co.jp/iezukuri/lp/
+ にアクセス|同上|
+|6|　|　|旧基盤|https://iezukuri-web-develop-cloudfront.iez-dev.homes.co.jp/iezukuri/contents/3dmodelhouse/
+ にアクセス|同上|
+
+
+https://www.homes.co.jp/iezukuri/
+https://www.homes.co.jp/iezukuri/lp/
+https://www.homes.co.jp/iezukuri/contents/3dmodelhouse/

@@ -1,0 +1,52 @@
+#　IEZUKURI-12030
+manager 開催日時登録 iezukuri-manager フロントエンド
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-12030
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+ex)
+追加日時0件
+https://localhost/visit/visit_plan/vid-4/visit_plans_venues/vvid-24/datetimes/add
+
+追加日時1件以上
+https://localhost/visit/visit_plan/vid-1/visit_plans_venues/vvid-1/datetimes/add
+
+AppScan
+https://iezukuri-manager-appscan.iez-dev.homes.co.jp/visit/visit_plan/vid-4/visit_plans_venues/vvid-24/datetimes/add
+
+## Branch
+
+* Topic branch
+IEZUKURI-10032_topic_ph2_visit
+
+* Feature branch
+git checkout -b IEZUKURI-12030_feature_visit_venue_new
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

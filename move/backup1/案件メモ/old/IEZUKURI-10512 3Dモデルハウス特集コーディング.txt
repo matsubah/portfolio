@@ -1,0 +1,66 @@
+# IEZUKURI-10512
+3Dモデルハウス特集コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10512
+
+## 内容
+-
+
+- 仕様
+▼3Dモデルハウス特集の仕様書
+
+400_【SP】3Dモデルハウス一覧ページ
+
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=180793046
+
+400_【SP】3Dモデルハウス詳細
+
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=180793196
+
+400_【PC】3Dモデルハウス一覧ページ
+
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=180794501
+
+400_【PC】3Dモデルハウス詳細
+
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=180803498
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-10464_topic_3dmodelhouse_withC
+
+* Feature branch
+git checkout -b IEZUKURI-10512_feature_3dmodelhouse_withC
+git checkout -b IEZUKURI-10512_feature_3dmodelhouse_withC_pc
+
+## ソース
+
+*
+
+## 単体テスト
+
+テスト環境
+https://www-iezukuri-test.homes.co.jp/iezukuri/contents/3dmodelhouse/
+https://www-iezukuri-test.homes.co.jp/iezukuri/contents/3dmodelhouse/17/
+
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

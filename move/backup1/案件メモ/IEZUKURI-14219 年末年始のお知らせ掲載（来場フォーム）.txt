@@ -1,0 +1,62 @@
+#　IEZUKURI-14219
+年末年始のお知らせ掲載（来場フォーム）
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-14219
+
+## 内容
+- 来場でも年末年始のお知らせ掲載をしたく、以下のご対応をお願いできますでしょうか？
+※松原さんに事前に更新方法などをご相談させて頂いております
+
+掲載期間：12/23（木）～1/6（木）
+　　　　　（タイマーなどではなくリリースで対応）
+文言：
+年末年始期間中は、ハウスメーカー・工務店各社などの休業により、お問合せへの対応にお時間をいただく場合がございます。誠に恐れ入りますが、ご了承の程お願い申し上げます。
+
+掲載位置：来場予約入力フォーム上部
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+main
+
+* Feature branch
+git checkout -b IEZUKURI-14219_visit_form_announcement
+
+## ソース
+
+*
+
+<section className="bg-white">
+<div className="container">
+<div className="py-6 pb-0 | sm:pt-6 | md:pt-14 md:pb-0">
+<div className="p-4 pb-3 border border-mono-300 rounded-lg text-sm | md:px-6 md:pt-5 md:pb-4">
+<p>年末年始期間中は、ハウスメーカー・工務店各社などの休業により、お問合せへの対応にお時間をいただく場合がございます。<br>誠に恐れ入りますが、ご了承の程お願い申し上げます。</p>
+</div>
+</div>
+</div>
+</section>
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

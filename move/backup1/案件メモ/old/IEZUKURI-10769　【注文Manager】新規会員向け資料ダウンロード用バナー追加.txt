@@ -1,0 +1,69 @@
+#　IEZUKURI-10769
+【注文Manager】新規会員向け資料ダウンロード用バナー追加
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10769
+
+## 内容
+-　おつかれ様です。
+注文Managerに、新規会員向け資料ダウンロード用バナーの追加をお願いいたします。
+
+
+
+▼バナー：PSD置き場
+G:\共有ドライブ\LIFULL HOME'S事業本部\注文住宅・リフォーム・リノベーション事業部\注文住宅ユニット\注文サイト\マネージャー
+フレームデザイン.psd
+https://drive.google.com/file/d/1k4onpG1juWr6S7GRXDIvB4u4agt2C68n/view?usp=sharing
+
+書き出しはフォントがなくてもできる！とのことなので、書き出しからお願いいたします。
+
+▼リンク先URL
+https://s3-ap-northeast-1.amazonaws.com/homes-iezukuri-manager/download/successfulcase.pdf
+
+▼バナー掲載URL
+https://iezukuri-manager.homes.co.jp/　ログイン後
+
+※バナー掲載位置イメージ（ページ下段：ログイン後画面のオレンジの枠）
+https://drive.google.com/file/d/1wRrqdwEIsXHDMklv4abxeSUuLbA4-M4W/view?usp=sharing
+
+
+
+▼スケジュール
+7/7（火）リリース目標
+
+よろしくお願いいたします。
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-10769_add_banner_manual
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

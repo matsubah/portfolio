@@ -1,0 +1,51 @@
+# IEZUKURI-7638 ※3/28【SP】新UX_FB(共通パーツ)_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-7638
+
+## 内容
+- ページトップリンクの位置調整(追従フッターとかぶる)
+- ヘッダーフッターの余白や罫線
+- ロゴ
+- バナーエリアの復活
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=126588402
+参考：https://jira.next-group.jp/browse/IEZUKURI-7680
+
+> バナーに関しては以下
+> https://jira.next-group.jp/browse/IEZUKURI-7356
+> http://gitlab.dev.nxin.jp/app/iezukuri/merge_requests/684/diffs#eb448aae83c6ab80d20cdc94e731e2512280f865_6_3
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-7638_topic_common_top_update
+
+* Feature branch
+git checkout -b IEZUKURI-7638_feature_common_top_update
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

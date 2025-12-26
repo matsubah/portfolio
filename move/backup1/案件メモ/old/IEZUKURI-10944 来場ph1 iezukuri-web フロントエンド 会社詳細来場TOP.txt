@@ -1,0 +1,46 @@
+#　IEZUKURI-10944
+来場ph1 iezukuri-web フロントエンド 会社詳細来場TOP
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10944
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-10032_topic_visit_pj
+
+* Feature branch
+git checkout -b IEZUKURI-10944_create_maker_visit_list
+
+## ソース
+
+*
+
+## 単体テスト
+キャンペーンあり会社情報画面
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5660/
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

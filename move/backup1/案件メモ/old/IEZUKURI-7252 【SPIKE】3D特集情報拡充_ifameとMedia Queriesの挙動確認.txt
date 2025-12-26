@@ -1,0 +1,100 @@
+# IEZUKURI-7252 【SPIKE】3D特集情報拡充_ifameとMedia Queriesの挙動確認
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-7252
+
+## 内容
+- SPモデルハウスの詳細ページで以下の調査を行う
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=121330699
+(現状　https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=115254161)
+
+端末を横向きにした際に
+* ヘッダフッタを非表示にできるか
+* 上記を非表示にした際にiframeが正常に表示されるか
+* 不具合が起きた際に対応できるか
+
+ブレイクポイントについては要相談
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-6481_topic_sp_3dmodelhouse_detail
+→矢部さん作成、ルーティング設定済みのブランチ
+
+* Feature branch
+IEZUKURI-7252_feature_sp_3dmodelhouse_detail
+
+git checkout -b IEZUKURI-7252_feature_sp_3dmodelhouse_detail
+git push origin IEZUKURI-7252_feature_sp_3dmodelhouse_detail
+
+## ソース
+
+*
+
+### memo
+@media screen and (min-width: 375px) {
+    //landscape
+
+}
+
+matterport サポートページより
+https://support.matterport.com/hc/en-us/articles/209262978-Test-your-Embed-Code
+
+iPhone xs os12 Safari:OK
+iPhone 8 os11 Safari:OK
+iPhone 7 plus os11 Safari:OK（高さが短い）
+iPhone 6s os10:OK
+iPhone 5s os11:？→横にした時にmatterportのツール類が出ない（高さの調整必要か）
+→Chromeだとツールバーが上部に出てしまうので対応必要か
+
+Android 8 端末が貸し出し中のため未実施
+Android 7 Chrome URLのバーは出ないが、デフォルトのツールバーがかぶる（端末はp10 lite）
+Android 6 Chrome URLのバーが出る
+Android 5 Chrome URLのバーが出る
+
+## SPIKE結果
+
+端末を横向きにした際に
+
+* ヘッダフッタを非表示にできるか
+→OK、iPhone iOS10以上で確認
+
+* 上記を非表示にした際にiframeが正常に表示されるか
+→ブラウザによる違いあり（Safariの場合は横にするとツールバーなどが消えたが、Chromeでは消えないため、matterportのツール位置が画面外になってしまう）
+
+* 不具合が起きた際に対応できるか
+→資料は公式の"Embedding Guidelines"だけ見てiframeの埋め込みはできたが、ツールバーの対応などクロスブラウザやOS毎の対応が発生した場合に難しくなる可能性あり
+
+iframe allow=vr
+https://support.matterport.com/hc/en-us/community/posts/115008279147-Updates-to-WebVR-New-iFrame-Attribute-allow-vr-
+
+画面フィット
+参考
+http://nekokke.tech/vh/
+http://mori-coding.blog.jp/archives/6498961.htmlhttp://www.inazumatv.com/contents/archives/9863
+
+iOS画面サイズ一覧
+https://qiita.com/tomohisaota/items/f8857d01f328e34fb551
+
+bootstrap
+https://getbootstrap.com/docs/4.0/layout/overview/
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

@@ -1,0 +1,89 @@
+# IEZUKURI-9407
+ビジパ改修_Pardot移行_実装
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-9407
+
+## 内容
+- 調査をもとにSynergy→Pardotへの移行をおこなう
+入力、完了ページ両方
+
+完了の定義：大橋さんが作成した箱に実装を行っている状態であること、html,cssをリポジトリ管理しmasterマージされること
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+入力画面URL
+https://inquiry.develop.homes.co.jp/l/517421/2019-10-29/d38ykn
+
+完了画面URL
+https://inquiry.develop.homes.co.jp/l/517421/2019-11-01/d398jg
+
+参考：
+https://f.msgs.jp/webapp/form/19253_nmcb_1/index.do
+https://f.msgs.jp/webapp/form/19253_nmcb_15/setParameters.do
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b xxx
+
+## ソース
+
+* css
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/css/bp_base.css
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/css/bp_faq.css
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/css/bp_flow.css
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/css/bp_footer.css
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/css/bp_header.css
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/css/bp_inquire.css
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/css/bp_layout.css
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/css/bp_main_visual.css
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/css/bp_performance.css
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/css/bp_reset.css
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/css/bp_system.css
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/css/bp_thanks.css
+
+* img
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/img/bp_bg_header_bar.png
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/img/bp_bg_main_flash.png
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/img/bp_bg_main_visual.gif
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/img/bp_heading_inquire_input.png
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/img/bp_heading_inquire_thanks.png
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/img/bp_icon_tel_input.png
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/img/bp_icon_tel_thanks.png
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/img/bp_img_flowlist.gif
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/img/bp_img_inquire_homes.png
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/img/bp_img_main_visual.png
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/img/bp_img_system01.png
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/img/bp_img_system02.png
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/img/bp_img_system03.png
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/img/bp_img_system04.png
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/img/bp_img_system05.png
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/img/bp_img_system06.png
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/img/bp_img_system07.png
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/img/bp_img_system08.png
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/img/bp_img_user_graph.png
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/img/bp_sprite_btn_inquire.png
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/pardot/business_partner/img/bp_sprite_btn_submit.png
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

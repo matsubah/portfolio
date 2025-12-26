@@ -1,0 +1,59 @@
+#　IEZUKURI-12715
+【OEM】楽天フッターコピーライト変更
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-12715
+
+## 内容
+-　おつかれ様です。
+4/1の楽天の社名変更に伴い、楽天OEMフッターのコピーライト変更をお願いいたします。
+
+
+
+▼楽天OEMサイト
+https://www.homes.co.jp/iezukuri/?o=248hA3c2GUnlW7I
+　└新基盤
+　└既存基盤
+　※両方ともお願いいたします
+
+
+
+▼該当箇所
+フッターのコピーライト
+※添付画像参照ください
+
+
+
+▼変更内容
+現在：© Rakuten, Inc.
+変更後：© Rakuten Group, Inc.
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-12715_pc_oem_footer_copyright
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

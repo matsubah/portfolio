@@ -1,0 +1,46 @@
+# IEZUKURI-9201
+【イベントHTMLメール】テンプレリファクタ
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-9201
+
+## 内容
+- 命名をケバブ化(https://jira.next-group.jp/browse/IEZUKURI-9094)
+htmlにstyleタグにベタ書きしてあるcssをstyle.scssに移行(できますっけ？)
+テスト配信が問題なかったら都道府県エリアのcssをテンプレに移行
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+http://localhost:3000/mailtemplate/onecompany.html
+
+## Branch
+
+* Topic branch
+master
+
+* Feature branch
+git checkout -b IEZUKURI-9201_mail_template_refactoring
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

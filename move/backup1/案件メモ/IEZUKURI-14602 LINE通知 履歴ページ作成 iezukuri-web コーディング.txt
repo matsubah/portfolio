@@ -1,0 +1,57 @@
+#　IEZUKURI-14602
+LINE通知 履歴ページ作成 iezukuri-web コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-14602
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-14312_topic_mail-inquires
+
+* Feature branch
+git checkout -b IEZUKURI-14602_mail-inquires
+
+## ソース
+
+*
+
+## 単体テスト
+
+テスト環境
+
+カタログ問合せ後
+https://iezukuri-web-develop-cloudfront.iez-dev.homes.co.jp/iezukuri/mail-inquiries/c2f2386a6623886fed153c176d5fbfd756c40ebb54294319c3ac1af2054123a1
+
+会社問合せ後
+https://iezukuri-web-develop-cloudfront.iez-dev.homes.co.jp/iezukuri/mail-inquiries/92bd39f7e640056195f59cea9617ff16e2139b19734d5ec447b02f03af532142
+
+事例問合せ後
+https://iezukuri-web-develop-cloudfront.iez-dev.homes.co.jp/iezukuri/mail-inquiries/848d228280a8d9fbe9c87bea5ff91ffe9ef04724204d998b3d34253cc8e7f4e0
+
+
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

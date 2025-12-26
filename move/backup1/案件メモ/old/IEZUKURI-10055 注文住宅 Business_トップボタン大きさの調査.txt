@@ -1,0 +1,48 @@
+#　IEZUKURI-10055
+注文住宅 Business_トップボタン大きさの調査
+
+# sub task
+# IEZUKURI-10224
+注文住宅 Business_トップボタンの大きさ変更を実装
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10055
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-10055_ferretOne_top_css
+-> IEZUKURI-10224_ferretOne_top_css
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

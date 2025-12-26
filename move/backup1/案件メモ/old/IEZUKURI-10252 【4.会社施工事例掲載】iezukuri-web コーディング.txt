@@ -1,0 +1,49 @@
+#　IEZUKURI-10252
+【4.会社施工事例掲載】iezukuri-web コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10252
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+「もっと見る」のリンク
+・フォントサイズを見出し（施工事例）と同じ大きさにあわせる
+・「もっと見る」の下のラインはなし　←追加
+　└下線があると他の部分より強調されてみえるかなと思うため。。
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-9644_topic_sp_lp_add_case_maker_lp
+
+* Feature branch
+git checkout -b IEZUKURI-10252_feature_sp_lp_maker_add_case
+
+
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

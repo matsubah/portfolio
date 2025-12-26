@@ -1,0 +1,68 @@
+# IEZUKURI-8231【SP】価格LPのUI変更_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8231
+
+## 内容
+- 通常LPに実装されているリスト部分のUIを価格LPにも展開する
+※通常LPはABテストのBパターンを採用しているためそちらのテンプレを流用すること！(listB.html.twigや_abディレクトリ)
+※増税コンテンツの部分は展開するかは要相談(記述が古いため)
+
+参考
+LP： https://www.homes.co.jp/iezukuri/lp/product/gifu/tajimi-city/theme-41/
+価格LP： https://www.homes.co.jp/iezukuri/lp/price/product/gifu/tajimi-city/low10000high499999/
+
+仕様書
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=139285524
+
+>フロートCVボタン
+つけるでお願いいたします。
+
+>参考建物価格
+LP全体として参考建物価格で統一しているため、今回は対象外として進めたく思います。
+全LPの表記変更を進める際に対象とする際にスコープに含めたく。
+
+
+## 対象画面
+/iezukuri/lp/simulation/product/
+/iezukuri/lp/price/product/low10000high499999/
+/iezukuri/lp/price/product/low500000high624999/
+/iezukuri/lp/price/product/low625000high749999/
+/iezukuri/lp/price/product/low750000high874999/
+/iezukuri/lp/price/product/low875000high999999/
+/iezukuri/lp/price/product/low1000000high9999999/
+
+## Branch
+
+* Topic branch
+IEZUKURI-7530_topic_sp_lp_ui
+
+* Feature branch
+git checkout -b IEZUKURI-8231_sp_lp_ui_list
+git checkout -b IEZUKURI-7530_topic_sp_lp_ui
+
+追加修正
+dc06d4e 【IEZUKURI-8231】sp_lp_価格LPのUI変更 リード文変更
+
+
+## ソース
+
+対象
+* php_include/src/Iezukuri/SpBundle/Resources/views/LandingPrice/_Slot/productList.html.twig
+* php_include/src/Iezukuri/SpBundle/Resources/views/_Slot/assets/css/LandingPrice/product.html.twig
+
+参照元
+/SpBundle/Resources/public/css/smartphone/page/lp/maker/_ab/mod/result_item.css
+/SpBundle/Resources/public/css/smartphone/page/lp/product/_ab/mod/result_item.css
+/SpBundle/Resources/views/Landing/MakerList/listB.html.twig
+/SpBundle/Resources/views/Landing/MakerList/parts/_ab/resultItem.html.twig
+/SpBundle/Resources/views/Landing/ProductList/parts/_ab/resultItem.html.twig
+
+## 単体テスト
+
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/low10000high499999/
+
+## 懸念点
+
+
+## 今後

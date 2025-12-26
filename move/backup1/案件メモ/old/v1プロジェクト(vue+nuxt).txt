@@ -1,0 +1,55 @@
+# とりあえず
+
+v1プロジェクト(vue+nuxt)のリポジトリはこちらです
+https://github.com/lifull/iezukuri-web
+
+まだ設計段階ですがcloneして起動するか試してみてください
+お手すきのときでよいです
+
+
+
+
+
+
+
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-XXXX
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b xxx
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

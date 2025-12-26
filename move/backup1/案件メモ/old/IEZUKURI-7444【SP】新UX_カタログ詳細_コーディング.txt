@@ -1,0 +1,93 @@
+# IEZUKURI-7444【SP】新UX_カタログ詳細_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-7444
+
+## 内容
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=127849820
+
+
+- 完了の定義
+
+
+## 対象画面
+/iezukuri/mid-***
+ex.
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-35/product/pid-116/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-1588/product/pid-4510/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-1588/product/pid-4509/
+
+## Branch
+migrationを元にする
+
+* Topic branch
+NG IEZUKURI-7762_topic_maker_detail_old
+IEZUKURI-7762_topic_product_detail
+
+* Feature branch
+git checkout -b IEZUKURI-7444_feature_product_detail_old
+git checkout -b IEZUKURI-7444_feature_product_detail
+
+* merge用ブランチ
+NG IEZUKURI-7444_feature_product_merge
+
+git diff --name-status IEZUKURI-7762_topic_product_detail
+
+
+cdb95c9 【IEZUKURI-7444】新フォルダ構成に移行
+1d53f15 【IEZUKURI-7444】merge topic -> fix conflict
+e241fc3 Merge branch 'IEZUKURI-7443_feature_detail_blank_template' into 'IEZUKURI-7762_topic_maker_detail'
+
+../htdocs/www/iezukuri/img/smartphone/page/detail/img_makerlogo_lifull.png
+git show IEZUKURI-7444_feature_product_detail_old:../htdocs/www/iezukuri/img/smartphone/page/detail/img_makerlogo_lifull.png
+git checkout IEZUKURI-7444_feature_product_detail_old -- ../htdocs/www/iezukuri/img/smartphone/page/detail/img_makerlogo_lifull.png
+git checkout IEZUKURI-7444_feature_product_detail_old -- ../htdocs/www/iezukuri/img/smartphone/page/detail/sprite_icon_toggle.png
+
+フォルダ構成変更のコミット（会社詳細のブランチから持ってくる）
+git cherry-pick 39de2b21acc396f3af223bbfd35a680b5cc5ee36
+
+
+## ソース
+
+カタログメイン画像
+種別カタログ名
+会社情報
+カタログ写真
+カタログデータ
+建築対応エリア
+CVボタン
+PRテキスト
+カタログの特長
+同じ会社の他のカタログ
+同じ会社の施工事例
+他の情報
+会社概要
+電話問合せ
+他のカタログを探す
+注文住宅トップページリンク
+CVボタン（フロート）
+
+
+
+*
+html
+img
+CSS
+
+        
+## 単体テスト
+
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

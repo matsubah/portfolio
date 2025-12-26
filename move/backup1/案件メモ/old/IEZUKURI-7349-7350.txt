@@ -1,0 +1,76 @@
+# IEZUKURI-7349【SP】新UX_共通パーツ(ヘッダー)_コーディング
+# IEZUKURI-7356【SP】新UX_共通パーツ(フッター)_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-7349
+
+## 内容
+-
+
+- 仕様
+共通パーツの実装(LP、問合せは対象外)
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=126588402
+
+デザイン置き場
+https://drive.google.com/drive/folders/1pmvn2sSHqsXSszlne_99KbRugy7xvgUr
+
+XDファイル
+https://drive.google.com/drive/folders/18BP4WWjSkx6pQuNKzBKIwIlUEkYQKPnd
+
+完了の定義
+トピックへマージ
+
+## 対象画面
+https://www.homes.co.jp/smp/
+
+## Branch
+
+* Topic branch
+IEZUKURI-6885_topic_ux_common_components
+
+* Feature branch
+git checkout -b IEZUKURI-7349_feature_ux_common_components
+git checkout -b IEZUKURI-7356_feature_ux_common_components
+
+## マーリク
+ヘッダー
+http://gitlab.dev.nxin.jp/app/iezukuri/merge_requests/683
+フッター
+http://gitlab.dev.nxin.jp/app/iezukuri/merge_requests/684
+
+## ソース
+
+* footer
+
+あとで使うためメモとして残す
+<div id="footer" class="sec-footer">
+    <div class="mod-footer">
+-        <div class="pagetop">
+-            <a href="#header"><span class="ui-icon ui-icon-arrow_up"></span><span class="label">ページトップへ </span></a>
+-        </div>
+-        {% include 'SpBundle::_Slot/parts/matterportCta.html.twig' only %}
+
+影響範囲
+・LP
+.mod-lpHeader
+.mod-lpFooter
+→クラス名が異なるため影響なし
+
+・問合せ画面
+mod-header
+mod-footer
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

@@ -1,0 +1,60 @@
+#　IEZUKURI-11982
+manager 来場プラン一覧 iezukuri-manager フロントエンド
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-11982
+
+## 内容
+-　API
+
+https://jira.next-group.jp/browse/IEZUKURI-11980
+
+実装
+
+https://jira.next-group.jp/browse/IEZUKURI-11981
+
+→Topicブランチ
+IEZUKURI-10032_topic_ph2_visit
+
+https://jira.next-group.jp/browse/IEZUKURI-11917
+
+開催場所一覧のスタイルもこのブランチに含めています。
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-10032_topic_ph2_visit
+
+* Feature branch
+git checkout -b IEZUKURI-11982_feature_visit_list_style
+
+
+* APIのブランチ切り替え
+
+iezukuri-api
+→IEZUKURI-10032_visit_ph2
+
+iezukuri-manager-api
+→IEZUKURI-10032_visit_ph2
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

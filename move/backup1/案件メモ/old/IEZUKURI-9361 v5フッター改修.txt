@@ -1,0 +1,46 @@
+# IEZUKURI-9361 v5フッター改修
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-9361
+
+## 内容
+▼エピック
+https://jira.next-group.jp/browse/IEZUKURI-9365
+▼修正内容
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=154376997
+
+- 仕様
+https://docs.google.com/spreadsheets/d/1hZKAczzkX9xvSq0vES4vLzN7zmXUOaj7mbaPZnElQYY/edit#gid=1961207141
+
+11末までに対応
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-9361_footer_edit
+
+## ソース
+
+* src/Iezukuri/PcBundle/Resources/views/parts/footer.html.twig
+* src/Iezukuri/SpBundle/Resources/views/_Slot/parts/accordionLink.html.twig
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

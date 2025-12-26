@@ -1,0 +1,68 @@
+#　IEZUKURI-10217
+注文住宅 Business_お役立ち資料コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10217
+
+## 内容
+-　デザインファイル
+https://jira.next-group.jp/browse/IEZUKURI-10191
+
+- 仕様書
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=164704570
+
+改修手順
+
+資料ダウンロードインデックスを構築しnoindexで公開しておく→OK
+新しいサービス紹介資料ページを構築しnoindexで公開しておく→OK
+お役立ち資料ページを構築しnoindexで公開しておく→OK
+
+1〜3と同時進行でダウンロードさせるホワイトペーパーをs3へアップロードする、synergy!へ適応　→加藤さん→OK
+「サービス紹介資料」「お役立ち資料」内の個々の資料データを構築（一覧ページ）　→柳沼さん3/17
+
+トップカルーセルのリンク先を「https://iezukuri-business.homes.jp/download/」へ変更（下書き状態）→3/17
+サイトマップ上の資料ダウンロードのリンク先を「https://iezukuri-business.homes.jp/download/」へ変更（下書き状態）
+→柳沼3/18
+
+（追加） 新しいお役立ち資料synergy!フォーム　23日　松原
+（追加） Synergy!に初回追加のお役立ち資料適応　23日　松原
+（追加） Synergy!テスト　23日　柳沼さん
+
+1〜3のnoindexを解除 3/24
+グローバルナビゲーションの実装と公開 3/24
+トップ、サイトマップ編集分を公開 3/24
+旧サービス紹介資料ページを、資料ダウンロードページへリダイレクト設定 3/24,3/25
+
+
+## 対象画面
+https://app.ferret-one.com/
+
+## Branch
+
+* Topic branch
+master
+
+* Feature branch
+git checkout -b IEZUKURI-10217_ferretOne_download_css
+
+
+## ソース
+
+なし
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

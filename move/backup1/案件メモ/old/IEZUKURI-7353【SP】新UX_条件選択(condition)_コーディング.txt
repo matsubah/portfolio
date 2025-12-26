@@ -1,0 +1,46 @@
+# IEZUKURI-7353 【SP】新UX_条件選択(condition)_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-7353
+
+## 内容
+- とりあえず坪単価以外
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=127836206
+
+- 完了の定義
+トピックへマージ
+
+## 対象画面
+www.homes.co.jp/iezukuri/maker/condition/
+www.homes.co.jp/iezukuri/product/condition/
+
+## Branch
+
+* Topic branch
+migrationブランチから
+IEZUKURI-6885_topic_ux_condition
+IEZUKURI-6885_topic_ux_condition_new
+
+* Feature branch
+git checkout -b IEZUKURI-7353_feature_ux_condition
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

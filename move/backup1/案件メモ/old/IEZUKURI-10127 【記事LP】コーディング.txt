@@ -1,0 +1,40 @@
+# IEZUKURI-10127
+【記事LP】コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10127
+
+## 内容
+- コンフル：https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=169419264
+
+FIXデザイン：https://drive.google.com/drive/u/0/folders/1LIFFwkUYv7FoTeH_FxwkDm4S9q-mgwhH
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-9644_topic_sp_lp_content
+
+* Feature branch
+git checkout -b IEZUKURI-10127_feature_sp_lp_content
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

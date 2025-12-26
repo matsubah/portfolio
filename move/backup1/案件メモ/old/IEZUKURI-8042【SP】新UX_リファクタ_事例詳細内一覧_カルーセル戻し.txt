@@ -1,0 +1,42 @@
+# IEZUKURI-8042
+【SP】新UX_リファクタ_事例詳細内一覧_カルーセル戻し
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8042
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=131567677
+
+- 完了の定義
+
+
+## 対象画面
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-116/case/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/case/
+
+## Branch
+
+* Topic branch
+migration
+
+* Feature branch
+git checkout -b IEZUKURI-8042_sp_case_list_fix
+
+old
+IEZUKURI-7851_sp_case_list_dynamic_output
+
+## ソース
+
+*
+
+## 単体テスト
+
+
+
+## 懸念点
+
+
+## 今後

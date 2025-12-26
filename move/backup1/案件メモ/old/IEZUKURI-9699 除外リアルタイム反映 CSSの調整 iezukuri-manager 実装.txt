@@ -1,0 +1,65 @@
+# IEZUKURI-9699
+除外リアルタイム反映 CSSの調整 iezukuri-manager 実装
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-9699
+
+## 内容
+- 改修箇所
+
+TOPの金額表示テーブルのレイアウト
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=158629981
+
+予算入力ページの凡例の太字化（課金対象外、課金対象）
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=158629975
+
+課金除外審査状況の位置変更
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=163121068
+
+以下ブランチよりブランチを切って作業してください
+IEZUKURI-9486_topic_realtime_reflect
+
+APIは以下ブランチに切り替えてください
+manager-apiのブランチ
+IEZUKURI-9486_topic_realtime_reflect
+
+iezukuri-apiのブランチ
+IEZUKURI-9486_topic_realtime_reflect
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+https://localhost/
+https://localhost/inquire/tel/
+https://localhost/inquire/mail/inquire_id-1001438
+
+## Branch
+
+* Topic branch
+IEZUKURI-9486_topic_realtime_reflect
+
+* Feature branch
+git checkout -b IEZUKURI-9699_feature_realtime_reflect_css
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

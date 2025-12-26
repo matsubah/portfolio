@@ -1,0 +1,79 @@
+# IEZUKURI-8186【SP】新UX_FB対応_コーディング(カルーセル)
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8186
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-8186_sp_carousel_bugfix
+
+## ソース
+
+.mod-recommendCase .slider {
+    width: 80%;
+    margin: auto;
+}
+.mod-recommendCase .items {
+    display: -webkit-box; /* for Android4.2～4.3 */
+    display: flex;
+}
+.mod-recommendCase .item {
+    border-radius: 8px;
+    /* border: 1px solid #e2e2e2; */
+    box-shadow: 0 1px 1px -1px rgba(0,0,0,.3);
+    /* margin-right: 1rem; */
+    box-sizing: border-box;
+    padding: 5px;
+}
+.mod-recommendCase .item .anchor {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid;
+}
+.mod-recommendCase .item .thumb {
+    height: calc((70vw - 10px) / 4 * 3); /* 画面幅の70％ 4:3比率 */
+    text-align: center;
+    padding: 0;
+}
+.mod-recommendCase .item .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

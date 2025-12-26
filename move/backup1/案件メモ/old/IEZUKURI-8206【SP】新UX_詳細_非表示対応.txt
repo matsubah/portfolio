@@ -1,0 +1,78 @@
+# IEZUKURI-8206【SP】新UX_詳細_非表示対応
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8206
+
+## 内容
+- 非表示の項目があった際に表示がおかしくなるところがある
+https://www.homes.co.jp/iezukuri/mid-9930/product/pid-23930/
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+unit環境
+カタログindex
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5598/product/pid-13424/
+
+事例index
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-9015/case/cid-21750/
+
+会社index
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5598/
+
+詳細内カタログ一覧
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5598/product/
+
+詳細内施工事例一覧
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-9015/case/
+
+
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-8206_sp_ux_hidden_bugfix
+
+## ソース
+
+*
+
+src/Iezukuri/SpBundle/Resources/views/Detail/Case/index.html.twig:        <div class="sec-others">
+src/Iezukuri/SpBundle/Resources/views/Detail/Case/list.html.twig:        <div class="sec-others">
+src/Iezukuri/SpBundle/Resources/views/Detail/Maker/index.html.twig:        <div class="sec-others">
+src/Iezukuri/SpBundle/Resources/views/Detail/Product/index.html.twig:        <div class="sec-others">
+src/Iezukuri/SpBundle/Resources/views/Detail/Product/list.html.twig:        <div class="sec-others">
+
+
+
+## 単体テスト
+
+カタログindex
+https://www-iezukuri-test.homes.co.jp/iezukuri/mid-5598/product/pid-13424/
+事例index
+https://www-iezukuri-test.homes.co.jp/iezukuri/mid-9015/case/cid-21750/
+会社index
+https://www-iezukuri-test.homes.co.jp/iezukuri/mid-5598/
+詳細内カタログ一覧
+https://www-iezukuri-test.homes.co.jp/iezukuri/mid-5598/product/
+詳細内施工事例一覧
+https://www-iezukuri-test.homes.co.jp/iezukuri/mid-9015/case/
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

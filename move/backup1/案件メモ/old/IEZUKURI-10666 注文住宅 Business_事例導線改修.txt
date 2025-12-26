@@ -1,0 +1,56 @@
+#
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10666
+
+## 内容
+- 調査いただいたトップの事例導線について本実装をお願いします。
+
+サービス名の表示について「_アンダーバー」を許容で参ります。
+表示順は以下になりますでしょうか？
+
+画像
+効果（オレンジ太字）
+日付
+description
+サービスアイコン
+
+よろしくお願いします。
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+master
+
+* Feature branch
+git checkout -b IEZUKURI-10666_ferretOne_top_casestudy
+
+【IEZUKURI-10666】ferretOne_トップ_事例導線改修
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

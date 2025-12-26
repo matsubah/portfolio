@@ -1,0 +1,112 @@
+#　IEZUKURI-10492
+トラコス運用広告用LP_コーディングのご依頼
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10492
+
+## 内容
+◎具体的な対応内容
+- 納品ファイルが自社コーディングルールに沿って作成されているかの確認
+- 確認OKであればLHテンプレに沿ってヘッダー&フッダーの追加
+- ページでJSが組み込まれているが、必要に応じてLH設計方法や実装方法に合わせて実装
+（他必要になりそうな事項は仕様書にまとめおりますが、不足あれば教えてください（例：URL,tdk,dataLleyer,リダイレクト)
+
+◎リリース日
+- リリース日はマストでは決まっていない
+- 広宣費の予算の都合上、5月末ないしは6月頭にリリースできればうれしい
+
+-　リダイレクト先
+https://www.homes.co.jp/iezukuri/lp/cont/4/
+→https://www.homes.co.jp/iezukuri/lp/
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=121338053
+
+仕様書から
+
+＝＝＝
+
+SP	あこがれLP	https://www.homes.co.jp/iezukuri/lp/cont/4/
+STYLEごとに探す注文住宅｜無料カタログをお取り寄せ【LIFULL HOME'S/ライフルホームズ】
+
+ハウスメーカー・工務店・設計士の住宅カタログを無料で一括請求ができます。いつかはしたい暮らしをSTYLEごとにご紹介します。【LIFULL HOME'S/ライフルホームズ】	LIFULL HOME'S,ライフルホームズ,注文住宅,住宅メーカー,ハウスメーカー,工務店,設計士,住宅カタログ,一括請求,ローコスト,収納,高気密,高断熱	noindex	nofollow
+ローコスト：https://www.homes.co.jp/iezukuri/lp/product/theme-41/
+
+収納がスゴイ：https://www.homes.co.jp/iezukuri/lp/product/theme-38/
+
+高気密・高断熱：https://www.homes.co.jp/iezukuri/lp/product/theme-51/
+
+https://drive.google.com/drive/folders/1WiAmPy1L1Eswr_nJyYDyaWFn3N8thGsO
+
+＝＝＝
+
+＜エクセル仕様書から＞
+
+ベネフィットLPと同様のヘッダーを付けていただけますでしょうか。
+https://www.homes.co.jp/iezukuri/lp/cont/3/
+
+（お取り寄せボタン）
+ローカルでは挙動しませんが、スクリプトは実装済みでございます。フッターを実装いただき、建設予定エリア（★）まで、ページ内遷移をお願い致します。
+
+エリアにつきましては、ベネフィットLPと同様の遷移ができればと思いますので、ご対応の程、何卒よろしくお願い致します。
+
+
+- 完了の定義
+
+
+LIFULLフォントの場所
+https://actionforall.homes.co.jp/
+
+長谷部さんより
+> LH内であれば是非是非使用していただきたいです。
+> 現在LIFULL FONTは3ウエイトありまして、
+> ウエイト3つ全部設定しているのがACTION FOR ALLになるかなぁと思います。
+> https://actionforall.homes.co.jp/
+> ↑から取っていただいて構わないのですが別途お渡しした方が良いですか？
+
+> また、事前にご連絡いたしますと、比較的近い未来にfontはアップデートされます。
+> 言うても来週などにはならないのでどこかで更新作業が必要になるかも知れません。
+> （何かの改修タイミングで問題ないかと思いますが・・・）
+
+
+## 対象画面
+確認用URL
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/cont/4/
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-10492_lp_contents
+git checkout -b IEZUKURI-10492_lp_contents_js
+git checkout -b IEZUKURI-10492_lp_contents_lifullfont
+git checkout -b IEZUKURI-10492_lp_contents_fontsize
+
+a56a1d015 【IEZUKURI-10492】記事LPコーディング あこがれLP
+
+## ソース
+
+*
+
+## 単体テスト
+
+「title」	<head>タグ内にある<title>タグ内の値
+「description」	<head>タグ内にある<meta>タグの name="description" における content の値
+「keywords」	<head>タグ内にある<meta>タグの name="keywords" における content の値
+「robots」	<head>タグ内にある<meta>タグの name="robots" における content の値
+
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

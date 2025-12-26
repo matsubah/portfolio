@@ -1,0 +1,110 @@
+# IEZUKURI-7727
+【PC】3Dモデルハウス_コーディング残タスク
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-7727
+
+## 内容
+- 一覧ページ
+https://www.homes.co.jp/iezukuri/contents/3dmodelhouse/
+①マウスオーバーのデザインが分かりにくかったかもしれないのですが、あれ実は拡大してまして。。
+「一覧ページ」のサムネイル「3Dモデルハウスを見る」にカーソルが当たったときの挙動を、「詳細ページ」の室内サムネイルと同じにしたいです（リリース前の実装と同じくマウスオーバーで拡大、アイコンは残す）
+
+カルーセルの方のサムネイルは工数に余裕があればご検討ください（こちらはMUSTではないです）
+
+②県の見出し（埼玉県など）の上マージンの空きが、各物件間の空きより狭くなってしまっているので空けて下さい。50pxでお願いします。（h2等で実装すればいける気がします）
+
+- 詳細ページ
+https://www.homes.co.jp/iezukuri/contents/3dmodelhouse/62/#anchor_showcase
+①「気になったら実物を見に行こう！」のテキストが高さが出てしまい窮屈なため、来場ボタンと並べて一列にして下さい。
+②コンテンツを囲んでいる角丸を一覧と同じにして下さい。（mod-matterportShowcaseの角丸を.listItemと同じ5pxに）
+
+③室内サムネイルの8個の並びのマージンを同じ空きにして下さい。（下4個のサムネイルを左右と同じくらい空けて下さい）
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+→developから
+
+* Feature branch
+git checkout -b IEZUKURI-7727_pc_3dmodelhouse_fix
+
+git push --delete origin IEZUKURI-7727_pc_3dmodelhouse_designfix
+
+## ソース
+
+.thumbnailLink {
+    &:hover {
+        .photo {
+            -webkit-transform: scale(1.2);
+                    transform: scale(1.2);
+        }
+        .select {
+            opacity: 1;
+        }
+    }
+    .photo {
+        transition: all .3s ease-in-out;
+    }
+    figure {
+        overflow: hidden;
+        position: relative;
+        margin: 0;
+        text-align: center;
+    }
+    .select {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        opacity: 0;
+        background: rgba(0,0,0,0.3);
+        transition: all .25s ease-in-out;
+    }
+}
+
+.角丸長方形_3 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(218, 218, 218);
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 242px;
+  top: 690px;
+  width: 943px;
+  height: 384px;
+  z-index: 288;
+}
+
+
+*
+
+## 単体テスト
+
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/contents/3dmodelhouse/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/contents/3dmodelhouse/12/#anchor_showcase
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

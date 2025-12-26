@@ -1,0 +1,44 @@
+# IEZUKURI-10383
+注文住宅 Business_synergy!プルダウン（digima）
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10383
+
+## サービス名
+クラウド営業支援ソフト「Digima」
+
+サービスURL　※依頼時未公開
+/lists/order-rates/digima
+
+S3資料アップロードURL
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/business/download/comvex/digima.pdf
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+master
+
+* Feature branch
+git checkout -b IEZUKURI-10383_doc_download_digima
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

@@ -1,0 +1,47 @@
+# IEZUKURI-9309 LP窓口導線追加_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-9309
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/product/okinawa/yaeyama_yonaguni-city/theme-23/
+
+## Branch
+
+* Topic branch
+IEZUKURI-8671_topic_sp_lp_ui_product_0cases
+
+* Feature branch
+IEZUKURI-9309_feature_sp_lp_ui_product_0cases_add_conductor
+
+## ソース
+
+モジュール名
+x contact
+o conductor
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

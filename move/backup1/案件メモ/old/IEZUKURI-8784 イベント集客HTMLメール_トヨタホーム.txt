@@ -1,0 +1,88 @@
+# IEZUKURI-8784 イベント集客HTMLメール_トヨタホーム
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8784
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+入稿シートの置き場
+https://drive.google.com/drive/folders/1r0huH1Ocr3q4h7O0l-MHB8x-WabXLe0r
+
+▽以下のURLを、「イベントに参加するボタン」に埋め込んでいただきたいです！
+https://homes.jp/2MVbghZ
+
+▽タイトル
+★来場予約キャンペーン実施中★今月のおすすめ住宅イベント｜LIFULL HOME'S 注文住宅
+
+▽見出し
+家づくりのヒントが満載！【LIFULL HOME'S 注文住宅】がご希望エリアの住宅イベントをご紹介！
+
+■デザイン
+https://drive.google.com/drive/folders/1r0huH1Ocr3q4h7O0l-MHB8x-WabXLe0r
+＞0829最新レイアウト案（トヨタホーム様）.jpg
+
+■テスト仕様書
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=150779699
+
+- 完了の定義
+
+
+## 対象画面
+http://localhost:3000/2019/09/toyotahome/index.html
+
+Pardot
+https://pi.pardot.com/email/template/draft/edit/id/26760
+
+## Branch
+
+* Topic branch
+IEZUKURI-8209_topic_mail_toyotahome_201909
+
+* Feature branch
+git checkout -b IEZUKURI-8784_feature_mail_toyotahome_201909
+
+## ソース
+画像素材置き場
+https://drive.google.com/drive/folders/1dgINZbXYwgN_nfsFj3XfwTHHX_qS9zS2
+
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/common/img_hero_event.jpg
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/common/text_all_users.png
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/2019/09/toyotahome/img_mainvisual.jpg
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/2019/09/toyotahome/img_sub_01.jpg
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/2019/09/toyotahome/img_sub_02.jpg
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/2019/09/toyotahome/img_campaign.jpg
+
+格納について
+
+/mail/src/2019/09/toyotahome/*.html
+/mail/src/2019/09/toyotahome/*.css
+
+or(gulpが動かなかったら)
+
+/mail/src/201909_toyotahome.html
+/mail/src/201909_toyotahome.css
+
+*
+
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/2019/07/dummy/img_header_kanagawa.png
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/2019/07/dummy/icon_event01.png
+https://homes-iezukuri-mail-image.s3-ap-northeast-1.amazonaws.com/event_attracting/2019/07/dummy/btn_showdetail.png
+
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

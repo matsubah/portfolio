@@ -1,0 +1,54 @@
+#　IEZUKURI-11988
+manager 来場プラン登録 iezukuri-manager フロントエンド
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-11988
+
+## 内容
+-　
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+プラン詳細input
+    新規　/visit/visit_plan/new/
+    編集　/visit/visit_plan/vid-{visit_plan_id}/edit/
+    エラー　？
+プラン詳細confirm
+    新規　/visit/visit_plan/confirm/
+    編集　/visit/visit_plan/vid-{visit_plan_id}/confirm/
+プラン詳細thanks
+    新規　/visit/visit_plan/complete/
+    編集　/visit/visit_plan/vid-{visit_plan_id}/complete/
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-10032_topic_ph2_visit
+
+* Feature branch
+git checkout -b IEZUKURI-11988_feature_visit_plan_new
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

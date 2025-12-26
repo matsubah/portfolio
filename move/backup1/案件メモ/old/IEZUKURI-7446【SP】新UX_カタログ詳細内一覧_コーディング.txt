@@ -1,0 +1,56 @@
+# IEZUKURI-7446【SP】新UX_カタログ詳細内一覧_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-XXXX
+
+## 内容
+- 渡辺さんより。
+
+念のため引き継ぎさせてくださいませ！
+https://iezukuri-web-watanaka.iez-dev.homes.co.jp/iezukuri/mid-5648/product/
+
+ぶらんち
+IEZUKURI-7446_feature_product_detail_list
+4/12 15:54
+
+15:56
+優先度はこんな感じですかね
+①カタログ詳細
+②事例詳細
+③カタログ詳細内一覧
+④事例詳細内一覧
+⑤一覧の参考建物価格(カタログ、会社？)
+
+カルーセルの参考→LPの画像部分
+https://www.homes.co.jp/iezukuri/lp/product/chiba/narashino-city/
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=129735004
+
+- 完了の定義
+
+
+## 対象画面
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/product/
+
+## Branch
+
+* Topic branch
+IEZUKURI-7762_topic_product_detail_list
+
+* Feature branch
+remotes/origin/IEZUKURI-7446_feature_product_detail_list
+git checkout -b IEZUKURI-7446_feature_product_detail_list origin/IEZUKURI-7446_feature_product_detail_list
+
+
+## ソース
+
+*
+
+## 単体テスト
+
+
+## 懸念点
+
+
+## 今後

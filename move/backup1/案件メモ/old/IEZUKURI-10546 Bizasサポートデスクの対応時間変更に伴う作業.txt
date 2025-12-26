@@ -1,0 +1,113 @@
+# IEZUKURI-10546
+Bizasサポートデスクの対応時間変更に伴う作業
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10546
+
+## 内容
+-
+Bizasサポートデスクの対応時間が2020年7月～変更になります。
+
+現）9：00～19：00
+　⇓
+新）10：00～18：00
+
+▼作業内容
+①クライアントへの通知メールなど、プログラム上に、サポートデスクの時間の表記がないか洗い出し
+②表記がある箇所を修正
+
+▼対象
+・注文サイト（注文サイトはないと思うのですが念のため）
+・注文Manager
+　　└共通ヘッダー
+　　└ホームのご不明点のお問合せ先　ほかにもある？
+・CMOS
+・上記サイトにまつわる通知メール
+
+▼期間
+6月15日～30日までに、変更が完了している必要があります。
+
+基本的には各サービス毎サポートデスクの表記がある部分をソースコードから洗い出していただき、修正いただくような内容となります！
+
+通知メールはサンクスメールなどになると思うので、iezukuri-web（Gitlab）上にあるものを確認して洗い出していただければと思います！（ソースをgrepしていただくか、開発環境でテスト問合せしていただければ確認できると思います）
+
+CMOSは以下のリポジトリになると思うのですが、開発環境にログインできないかもしれないので、一旦先にそれ以外のサイト（web, manager, business）を確認していただければと思います！
+https://github.com/lifull/iezukuri-cmos-exclusion
+
+
+サポートデスクの電話番号で
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-10546_supportdesk_businesshours
+
+## ソース
+
+* 環境設定
+git clone git@github.com:lifull/iezukuri-cmos-exclusion-api ${GOPATH}/src/iezukuri-cmos-exclusion-api
+git clone git@github.com:lifull/iezukuri-db-api ${PATH}/src/iezukuri-db-api
+git@github.com:lifull/iezukuri-db-api.git
+
+
+git grep "営業時間"
+
+git grep "9：00～19：00"
+php_include/src/Lib/InquireBundle/Resources/views/Mail/Client/inquire.text.twig
+php_include/src/Lib/InquireBundle/Resources/views/Mail/Client/inquireEvent.text.twig
+
+git grep "LIFULL HOME'Sサポートデスク"
+php_include/src/Lib/InquireBundle/Resources/views/Mail/Client/inquire.text.twig
+
+*
+
+## 単体テスト
+
+iezukuri-web
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/
+テスト問合せしてメールを受信する
+
+iezukuri-manager
+docker -> https://localhost/login
+
+CMOS
+https://iezukuri-cmos-develop.iez-dev.homes.co.jp/exclusion/
+
+
+    テストに関しては、今回は文言変更だけなのでコードレビューがOKになったらdevelopにあげてしまって、テスト環境でテストができればと思います。
+    cmosに関しては以下がテスト環境になるので、こちらから除外処理を行なってテストしていただければと思います。（ただ、決裁にはCMOSアカウントの作成が必要なので急ぐ場合はすでにアカウントがある人にお願いするのが良いかもしれないです）
+    https://iezukuri-cmos-develop.iez-dev.homes.co.jp/exclusion/
+
+    バッチは定期的に実行されるので、予算上限に達するまで問合せをしていただければ確認できるはずです。
+
+    ※どちらもこちらのアカウントでテストしてもらうと良いかもしれません！（managerでメールアドレスをchure-dev-in@lifull.comに設定しました）
+    https://www-test.homes.co.jp/iezukuri/mid-5648/
+
+
+f61c70771e6e21dfc9d7529d98bd6735ac8fee62 【IEZUKURI-10546】mail Bizasサポートデスクの対応時間変更
+d4ac6ee42b63bb47614a9fd5e72aedd9a8f08e8e 【IEZUKURI-10546】サポートセンター電話番号変更
+
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

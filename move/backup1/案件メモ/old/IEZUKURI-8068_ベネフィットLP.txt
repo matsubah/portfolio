@@ -1,0 +1,45 @@
+#
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8068
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-8068_lp_contents
+
+## ソース
+
+*
+
+## 単体テスト
+
+確認用URL
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/cont/3/
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

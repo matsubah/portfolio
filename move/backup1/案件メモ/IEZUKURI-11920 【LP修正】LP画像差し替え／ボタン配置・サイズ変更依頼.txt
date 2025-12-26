@@ -1,0 +1,64 @@
+#　IEZUKURI-11920
+【LP修正】LP画像差し替え/ボタン配置・サイズ変更依頼
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-11920
+承認用
+https://jira.next-group.jp/browse/IEZUKURI-12060
+
+## 内容
+-　有料集客で使用しているあこがれLP（https://www.homes.co.jp/iezukuri/lp/cont/4/ ）にて
+ファーストビュー改修を行うことになり、運用と制作を行っている代理店より差し替えデータを用意いただきました。
+つきましては上記URLの画像差し替えとボタン配置・サイズの変更をお願いいたします。
+
+■依頼内容
+①ヘッダー含むファーストビューの画像の差し替え　⇒ヘッダの変更なし（12/28長尾追記）
+②横並びのボタンを縦並びに変更
+※詳細は仕様書内に指示がございます。
+
+■納品データ/仕様書
+G:\共有ドライブ\【27期】LIFULLHOME'S事業本部\02_マーケティングコミュニケーション部\メディアコミュニケーションU\デジタルコミュニケーションG\02_レスポンス広告\12_マーケット別施策\５：注文\20201210_あこがれLPFV改修\【納品データ】201224_LIFULL様_あこがれLP_FV改修
+
+■期日
+1/15までとしておりますが、特にいつまでというマストはないため調整可能です。
+
+- 仕様
+https://docs.google.com/spreadsheets/d/18cyVqNGt-Ez08rZ6lyEN65VO3lmwlLAz/edit#gid=1074883853
+
+- 共有アイテム
+https://drive.google.com/drive/folders/18VZY4p5UF_TtM9Bn1t9QP-1hZz9SuKk1
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-11920_topic_sp_lp_4_firstView
+IEZUKURI-11920_topic_sp_lp_4_firstView_fix
+
+* Feature branch
+git checkout -b IEZUKURI-11920_feature_sp_lp_4_firstView_edit
+git checkout -b IEZUKURI-11920_feature_sp_lp_4_firstView_fix
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

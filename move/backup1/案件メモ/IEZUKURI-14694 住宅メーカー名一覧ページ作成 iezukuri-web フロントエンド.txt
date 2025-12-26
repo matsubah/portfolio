@@ -1,0 +1,77 @@
+#　IEZUKURI-14694
+住宅メーカー名一覧ページ作成 iezukuri-web フロントエンド
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-14694
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+親ブランチ
+IEZUKURI-14693_maker_name_list_tec
+子ブランチ（作業ブランチ）
+IEZUKURI-14694_maker_name_list_front
+
+## ソース
+
+*
+
+SQL
+
+$ docker exec -it iezukuri-db bash
+$ psql -U postgres housing_db
+
+--あ行
+UPDATE housing_gyosha SET title = '愛知ハウジング', title_ruby = 'アイチハウジング', logo_image = '903_logo.original.jpg' WHERE gyosha_id = 12501;
+UPDATE housing_gyosha SET title = '熱海ハウジング', title_ruby = 'アタミハウジング', logo_image = '1824_logo.original.jpg' WHERE gyosha_id = 12502;
+UPDATE housing_gyosha SET title = '伊豆ハウジング', title_ruby = 'イズハウジング', logo_image = '1991_logo.original.jpg' WHERE gyosha_id = 12503;
+UPDATE housing_gyosha SET title = '伊勢志摩ハウジング', title_ruby = 'イセシマハウジング', logo_image = '4620_logo.original.jpg' WHERE gyosha_id = 12504;
+UPDATE housing_gyosha SET title = '宇都宮ハウジング', title_ruby = 'ウツノミヤハウジング', logo_image = '5393_logo.original.jpg' WHERE gyosha_id = 12505;
+UPDATE housing_gyosha SET title = '江ノ島ハウジング', title_ruby = 'エノシマヤハウジング', logo_image = '5648_logo.original.jpg' WHERE gyosha_id = 12506;
+UPDATE housing_gyosha SET title = '大崎ハウジング', title_ruby = 'オオサキハウジング', logo_image = '5649_logo.original.jpg' WHERE gyosha_id = 12507;
+UPDATE housing_gyosha SET title = '岡山ハウジング', title_ruby = 'オカヤマハウジング', logo_image = NULL WHERE gyosha_id = 12508;
+--か行
+UPDATE housing_gyosha SET title = '蒲田ハウジング', title_ruby = 'カマタハウジング', logo_image = '5651_logo.original.gif' WHERE gyosha_id = 12600;
+UPDATE housing_gyosha SET title = '木更津ハウジング', title_ruby = 'キサラヅハウジング', logo_image = '5655_logo.original.jpg' WHERE gyosha_id = 12601;
+UPDATE housing_gyosha SET title = '久喜ハウジング', title_ruby = 'クキハウジング', logo_image = '5656_logo.original.jpg' WHERE gyosha_id = 12602;
+UPDATE housing_gyosha SET title = '九段下ハウジング', title_ruby = 'クダンシタハウジング', logo_image = '7423_logo.original.gif' WHERE gyosha_id = 12603;
+UPDATE housing_gyosha SET title = '京王八王子ハウジング', title_ruby = 'ケイオウハチオウジハウジング', logo_image = '5393_logo.original.jpg' WHERE gyosha_id = 12604;
+UPDATE housing_gyosha SET title = '気仙沼ハウジング', title_ruby = 'ケセンヌマハウジング', logo_image = '8237_logo.original.jpg' WHERE gyosha_id = 12605;
+UPDATE housing_gyosha SET title = '小岩井ハウジング', title_ruby = 'コイワイハウジング', logo_image = '10006_logo.original.jpg' WHERE gyosha_id = 12700;
+UPDATE housing_gyosha SET title = '狛江ハウジング', title_ruby = 'コマエハウジング', logo_image = NULL WHERE gyosha_id = 12701;
+--さ行
+UPDATE housing_gyosha SET title = 'さいたまハウジング', title_ruby = 'サイタマハウジング', logo_image = '10248_logo.original.jpg' WHERE gyosha_id = 12702;
+UPDATE housing_gyosha SET title = '佐賀ハウジング', title_ruby = 'サガハウジング', logo_image = '903_logo.original.jpg' WHERE gyosha_id = 12703;
+UPDATE housing_gyosha SET title = '滋賀ハウジング', title_ruby = 'シガハウジング', logo_image = '1824_logo.original.jpg' WHERE gyosha_id = 12704;
+UPDATE housing_gyosha SET title = '下高井戸ハウジング', title_ruby = 'シモタカイドハウジング', logo_image = '1991_logo.original.jpg' WHERE gyosha_id = 12800;
+UPDATE housing_gyosha SET title = '水道橋ハウジング', title_ruby = 'スイドウバシハウジング', logo_image = '4620_logo.original.jpg' WHERE gyosha_id = 12801;
+UPDATE housing_gyosha SET title = '逗子ハウジング', title_ruby = 'ズシハウジング', logo_image = '5393_logo.original.jpg' WHERE gyosha_id = 12802;
+UPDATE housing_gyosha SET title = '仙川ハウジング', title_ruby = 'センガワハウジング', logo_image = '5648_logo.original.jpg' WHERE gyosha_id = 12803;
+UPDATE housing_gyosha SET title = '蘇我ハウジング', title_ruby = 'ソガハウジング', logo_image = NULL WHERE gyosha_id = 12900;
+
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

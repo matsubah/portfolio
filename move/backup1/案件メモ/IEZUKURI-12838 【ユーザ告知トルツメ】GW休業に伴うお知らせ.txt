@@ -1,0 +1,71 @@
+#　IEZUKURI-12838
+【ユーザ告知トルツメ】GW休業に伴うお知らせ
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-12838
+
+## 内容
+- 4月末に表示した、GW休業に伴うユーザ向けの告知の削除をお願いいたします。
+
+◎対応箇所◎
+URL
+https://www.homes.co.jp/iezukuri/inquire/＊＊＊/input/
+https://www.homes.co.jp/iezukuri/
+対象ブラウザ
+PC・SP
+◎リリース日◎
+2021年5月11日（火）
+
+
+◎ご相談◎
+今後、GW・お盆・お正月に、同様の告知を実施することになると思います。
+その際に繰り返し作業しやすい形になっていると嬉しいです。
+
+## 対象画面
+
+旧基盤
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/inquire/product/input/?id[1588][]=4510&pref=13&city=203
+
+新基盤
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/
+
+
+### 前回のGithub
+旧基盤
+https://github.com/lifull/iezukuri-web-v5/pull/131
+新基盤
+https://github.com/lifull/iezukuri-web/pull/127
+
+## Branch
+
+* Topic branch
+develop
+main
+
+* Feature branch
+git checkout -b IEZUKURI-12838_hide-announcement
+
+## ソース
+
+*
+
+## 単体テスト
+
+https://iezukuri-web-develop-cloudfront.iez-dev.homes.co.jp/iezukuri/inquire/product/input/?id[1588][]=4510&pref=13&city=203
+https://iezukuri-web-develop-cloudfront.iez-dev.homes.co.jp/iezukuri/inquire/maker/input/?id[2265][]=2265&pref=13&city=201
+https://iezukuri-web-develop-cloudfront.iez-dev.homes.co.jp/iezukuri/inquire/case/input/?id[1588][]=6244&pref=13&city=203
+
+https://iezukuri-web-develop-cloudfront.iez-dev.homes.co.jp/iezukuri/
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

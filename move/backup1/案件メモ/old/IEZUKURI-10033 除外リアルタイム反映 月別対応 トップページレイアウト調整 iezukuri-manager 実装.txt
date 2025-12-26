@@ -1,0 +1,62 @@
+# IEZUKURI-10033
+除外リアルタイム反映 月別対応 トップページレイアウト調整 iezukuri-manager 実装
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10033
+
+## 内容
+- 以下仕様書の2次リリースのレイアウトに調整お願いします
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=158629981
+
+具体的には
+
+12月の除外審査承認問合せ数
+11月の除外審査承認問合せ数
+10月の除外審査承認問合せ数
+の左にマージンがほしいのと
+フォントを少し小さくして
+内訳感が出るようにお願いします。
+
+以下ブランチから切って作業してください
+IEZUKURI-9486_topic_monthly_exclusion
+
+- 完了の定義
+Topicへのマージ
+
+## 対象画面
+https://iezukuri-manager.homes.co.jp
+
+## Branch
+
+* Topic branch
+git checkout -b IEZUKURI-9486_topic_monthly_exclusion origin/IEZUKURI-9486_topic_monthly_exclusion
+
+* Feature branch
+git checkout -b IEZUKURI-10033_feature_monthly_exclusion
+
+* API切り替え
+
+iezukuri-api
+IEZUKURI-9952_monthly_exclusion_count
+
+manager-api
+IEZUKURI-9486_topic_monthly_exclusion
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

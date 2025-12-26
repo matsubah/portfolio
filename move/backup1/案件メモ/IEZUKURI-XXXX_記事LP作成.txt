@@ -1,0 +1,83 @@
+#
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-100XX
+
+## 内容
+-　
+
+来場の有料集客用記事LPを外注にて制作しようと思います。
+9/1～有料集客を開始するためにはいつまでに納品してもらえばいいか。（2週間くらいと伺ってましたが…）
+また松原さんのタスクとしてどのようなことが想定されるか洗い出しをお願いできますでしょうか？
+▼参考cont/3/の時の仕様など
+https://jira.next-group.jp/wiki/pages/viewpage.action?
+https://docs.google.com/spreadsheets/d/1YOvXgs0sY4UXIKspDOFl28Evc-fFId-vYiyPYfJgjz0/edit#gid=1168383134pageId=121338051
+
+記事LPの流れ
+-----------------------------
+記事のテーマ選定
+記事の方向性決定
+トラコスに記事制作依頼（ライティングなど含めてやってもらってたんじゃないかな・・と）
+デザイン＆記事内容確認・トラコスにて修正（ここでデザイン確認しているはず・・です※）
+トラコスにコーディング
+コーディング済みファイルを納品（PSDファイルも同時に納品）
+松原さんが注文サイトのテンプレに合わせて、リリース
+本番環境反映後、本番確認、外注業者と企画側への確認依頼
+
+5/25朝会
+- リリースは9月、日にち的には9/2か
+- 要件はこれから、記事LP3の時と同様になりそう
+
+
+記事LP4（SP）のコーディング
+https://jira.next-group.jp/browse/IEZUKURI-10492
+
+記事LP2（SP）のコーディング
+https://jira.next-group.jp/browse/IEZUKURI-7281
+
+＜見積もり＞
+→コーディング（元のソースからファイル名やクラス名などを変更し表示確認）
+1d
+→技術実装（ペアプロ？）
+/cont/n の場合はほぼ要らない？
+→テスト仕様書作成
+1d
+→テスト
+0.5d
+→AppScan
+1d
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-100XX_xxx
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

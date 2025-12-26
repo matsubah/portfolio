@@ -1,0 +1,90 @@
+#　IEZUKURI-13048
+【横断】(6月中希望)共通フッターリンク_追加
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-13048
+
+## 内容
+-　PP2部からの依頼で、6月中期限でマーケット横断のフッタリンク追加依頼がきております。
+非常に短納期となり恐縮ですが、ご対応の程お願いいたします！
+
+▼概要
+リンク追加2件
+①地方移住マッチング
+②DIY Mag
+
+※対象
+LPページを除く注文全ページ
+
+※注記
+
+リンク属性など、詳細については共通仕様書内に記載
+
+
+
+◆共通仕様書
+https://docs.google.com/spreadsheets/d/1xXUaIy3TnkgxauUl4KZyvSklALUfSxuNh2IcEqcdBYY/edit#gid=1879148869
+
+要件1
+
+フッターの「LIFULLのサービス」に追記
+地方移住マッチング
+https://local.lifull.jp/localmatch/
+"target=""_blank""
+※nofollowは不要"
+"既存のテキストリンクと同じ仕様
+・テキストに下線あり
+・ホバーした際、LIFULLオレンジになる
+・リンクとリンクの間は「｜」で繋ぐ"
+
+要件2
+
+"フッターの「LIFULL HOME'Sのサービス」に追記
+（「LIFULL HOME'S PRESS」と「新生活サポート」の間にリンクを追加）"
+DIY Mag
+https://diy.homes.jp/
+"target=""_blank""
+※nofollowは不要"
+"既存のテキストリンクと同じ仕様
+・テキストに下線あり
+・ホバーした際、LIFULLオレンジになる
+・リンクとリンクの間は「｜」で繋ぐ"
+
+
+
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+main
+
+* Feature branch
+
+v1
+git checkout -b IEZUKURI-13048_footer_add
+
+iezukuri-web-unit
+git checkout -b IEZUKURI-13048_footer_add
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

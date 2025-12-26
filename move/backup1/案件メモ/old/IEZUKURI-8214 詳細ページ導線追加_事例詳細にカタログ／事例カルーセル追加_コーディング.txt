@@ -1,0 +1,38 @@
+# IEZUKURI-8214詳細ページ導線追加_事例詳細にカタログ/事例カルーセル追加_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8214
+
+## 内容
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=135516424
+
+デザイン
+https://drive.google.com/drive/folders/1L_jpyHWQISoFfiCm7WE7wVxOIcNdahwT
+
+デザインファイル
+第2次リリース分_詳細ページ_20190409.xd
+
+## 対象画面
+https://www.homes.co.jp/iezukuri/mid-116/product/cid-27641/
+
+## Branch
+
+* Topic branch
+IEZUKURI-7979_topic_ux_sp_detail
+
+* Feature branch
+git checkout -b IEZUKURI-8214_feature_ux_sp_detail_case
+
+## ソース
+
+*
+
+## 単体テスト
+
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/product/pid-20115/
+
+## 懸念点
+
+
+## 今後

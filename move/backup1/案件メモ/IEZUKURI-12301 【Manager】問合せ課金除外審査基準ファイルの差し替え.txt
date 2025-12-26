@@ -1,0 +1,63 @@
+#　IEZUKURI-12301
+【Manager】問合せ課金除外審査基準ファイルの差し替え
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-12301
+
+## 内容
+- おつかれ様です。
+Manager上の下記ファイルを最新版に差し替えをお願いいたします。
+
+
+
+■URL
+https://iezukuri-manager.homes.co.jp/download/shinsakijun_201910.pdf
+
+■アップロード元ファイル
+https://drive.google.com/file/d/1pVNBRw_LrAY7acvhM0Dw_qOXLJa01jTV/view?usp=sharing
+
+
+
+よろしくお願いいたします。
+
+
+
+
+
+（メモ：変更点）
+当月分請求書への反映は、毎月25日の23時59分までに申請いただいた分までとします。
+↓
+当月分請求書への反映は、毎月25日の23時59分までに申請いただいた分かつ当月中に弊社で承認された分までとします。
+
+※除外ルールについて、クライアント〆と営業担当〆がねじれているため修正
+　ルールが変更になるわけではない
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-12301_pdf_update
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

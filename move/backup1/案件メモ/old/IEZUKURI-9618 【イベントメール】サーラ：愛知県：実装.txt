@@ -1,0 +1,54 @@
+# IEZUKURI-9618
+【イベントメール】サーラ：愛知県：実装
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-9618
+
+## 内容
+- 12/9(月)
+レビュー、先方にキャプチャ送付
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+master
+
+* Feature branch
+git checkout -b IEZUKURI-9618_mail_sala_202001
+
+## ソース
+
+img_detail_staff01.jpg
+img_detail_staff02.jpg
+img_mainvisual.jpg
+img_mainvisual.psd
+img_maker.jpg
+img_sub_01.jpg
+img_sub_02.jpg
+
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

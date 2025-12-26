@@ -1,0 +1,51 @@
+# IEZUKURI-7360【SP】新UX_トップページ(エリア選択)_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-7360
+
+## 内容
+- 5:エリア選択
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=126588195
+
+- 完了の定義
+トピックへマージ
+
+## 対象画面
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/
+
+## Branch
+
+* Topic branch
+IEZUKURI-6885_topic_ux_top_area
+
+* Feature branch
+git checkout -b IEZUKURI-7360_feature_ux_top_area
+
+## ソース
+
+*
+
+関東　/iezukuri/#area=2
+北海道・東北　/iezukuri/#area=1
+北陸・甲信越　/iezukuri/#area=3
+東海　/iezukuri/#area=4
+近畿　/iezukuri/#area=5
+中国・四国　/iezukuri/#area=6
+九州・沖縄　/iezukuri/#area=7
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

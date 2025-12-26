@@ -1,0 +1,55 @@
+#　IEZUKURI-13014
+manager 各画面修正 iezukuri-manager フロントエンド
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-13014
+
+## 内容
+-　Ph2の対象画面で仕様書の修正内容の反映をしていく
+
+ページ一覧（仕様書）
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=220228778
+
+- ホーム（TOP)
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=234895374
+- イベント一覧
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=221957954
+- イベント登録
+- プランに紐づく開催場所一覧
+- 開催場所の紐づけ
+- イベント画像登録
+- 全開催場所の一覧
+- 開催場所登録
+- 開催場所画像登録
+- 開催日時一覧
+- 開催日時追加
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-10032_topic_ph2_visit
+
+* Feature branch
+git checkout -b IEZUKURI-13014_visit_text_fix
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

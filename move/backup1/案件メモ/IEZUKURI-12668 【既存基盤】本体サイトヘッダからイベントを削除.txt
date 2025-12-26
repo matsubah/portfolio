@@ -1,0 +1,64 @@
+#　IEZUKURI-12668
+【既存基盤】本体サイトヘッダからイベントを削除
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-12668
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/contents/3dmodelhouse/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/contents/3dmodelhouse/1/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/contents/3dmodelhouse/11/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/inquire/product/input/?id[1588][]=4510&pref=13&city=203
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-12668_pc_header_event_del
+
+## ソース
+
+*
+
+## 単体テスト
+
+h3. テスト環境にてウォークスルー
+----
+*3Dモデルハウス（トップ、詳細）*
+ * ヘッダーの「見学会・住宅イベントを探す」がトルツメされていること
+ * フッターの導線トルツメ（住宅メーカーの評判、カタログランキング、施工事例ランキング、家づくりのダンドリチェックが表示されていないこと）
+ * SEOのフッターテキストから「開催中の見学会・住宅イベント、」が表示されていないこと
+
+[https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/contents/3dmodelhouse/]
+[https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/contents/3dmodelhouse/1/]
+[https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/contents/3dmodelhouse/11/]
+h4. *問合せ完了時の導線リンク*
+ * 「見学会・住宅イベント」への導線がトルツメされていること
+（カタログ、会社、施工事例の問合せ画面は同じテンプレートのため、カタログ問合せ画面でのみ確認した。下記URLから完了画面へ遷移して確認。）
+
+[https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/inquire/product/input/?id[1588][]=4510&pref=13&city=203]
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

@@ -1,0 +1,35 @@
+00...boss
+01...employee
+
+A エンジニア
+B 監督者
+C 営業
+D ビジネスサポート
+E 拠点営業
+Z 多部署
+
+B_00
+andotomohiko@lifull.com
+
+B_01
+nagaoaya@lifull.com
+iwatayumiko@lifull.com
+yaginumahisashige@lifull.com
+
+A_00
+kawadu
+
+A_01
+katoyuta@lifull.com
+higemasaru@lifull.com
+matsuyamayuki@lifull.com
+kudotakuya@lifull.com
+heoyongjun@lifull.com
+naoishota@lifull.com
+
+A_90
+fujikawamasaru@lifull.com
+
+C_01
+
+D_01

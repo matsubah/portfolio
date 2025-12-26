@@ -1,0 +1,70 @@
+# IEZUKURI-7226 【SPIKE】一覧チェックボックス非表示調査
+
+## PC一覧でチェックボックスが問題なく非表示にできるか調査
+* 上限到達の際はチェックボックス非表示
+* チェックボックス上部の▼の非表示
+
+## 仕様書
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=125557406
+
+## 調査対象画面
+
+* 住宅カタログ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/tokyo/chiyoda-city/theme-41/list/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/tokyo/chiyoda-city/theme-41/list/?page=7
+
+* 住宅メーカー
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker/tokyo/chiyoda-city/theme-41/list/?page=4
+
+* 施工事例
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/case/tokyo/chiyoda-city/theme-41/list/?page=17
+
+* 見学会
+スコープ外
+
+
+## Branch
+
+IEZUKURI-7226-pc-list-spike
+
+Topic branch
+IEZUKURI-7133_topic_pc_capacity_ui_update
+
+Feature branch
+IEZUKURI-xxxx_feature_
+IEZUKURI-xxxx_spike_
+
+git checkout -b IEZUKURI-7133_topic_pc_capacity_ui_update
+git checkout -b IEZUKURI-7226_spike_pc_capacity_ui_update
+
+## ソース
+
+住宅カタログ
+/Users/matsubah/mountpoint/iezukuri-web-unit/php_include/src/Iezukuri/PcBundle/Resources/views/ProductList/parts/listContents.html.twig
+
+住宅メーカー
+/Users/matsubah/mountpoint/iezukuri-web-unit/php_include/src/Iezukuri/PcBundle/Resources/views/MakerList/parts/listContents.html.twig
+
+施工事例
+/Users/matsubah/mountpoint/iezukuri-web-unit/php_include/src/Iezukuri/PcBundle/Resources/views/CaseList/parts/listContents.html.twig
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+・チェックボックス非表示部分でHover時にカーソルがpointerになる
+→CSSだけでは難しい？
+
+
+## 今後
+
+Topicブランチからfeatureブランチを切り出して、仕様書の残りを実装していく
+デザインはfixしていないため、今は詳細ページのディレクトリ構造やソースの場所などを把握しておく

@@ -1,0 +1,44 @@
+#　IEZUKURI-14626
+ランキングページ拡充 施工事例 iezukuri-web フロント
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-14626
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-11594_topic_example_ranking
+
+* Feature branch
+git checkout -b IEZUKURI-14626_example_ranking_frontcoding
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

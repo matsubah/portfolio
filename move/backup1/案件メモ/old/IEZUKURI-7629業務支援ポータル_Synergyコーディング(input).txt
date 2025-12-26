@@ -1,0 +1,142 @@
+# IEZUKURI-7629業務支援ポータル_Synergyコーディング(input)
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-7629
+
+## 内容
+-
+
+2019/03/25 柳沼さん　今後の打ち合わせ
+デザイン70ー80％でテストへ
+夕方からテスト（インプットからサンクス、メールが飛ぶまで）
+明日の16時までにはテスト完了していたい
+→19時まで？見極め
+
+今はシナリオテストができない？
+→システム未実装
+→クロスブラウザテストは探索的テストでカバー
+→回帰テストでは全部Fixしている状態でやる、27日水曜までには！
+
+テスト結果をベーシックさんに伝えるのが16時がベスト
+
+画像の差し替えはいつまで？
+synergy内のDB
+
+フォーム、つなぎこみを今日まで
+16時までにできて、今日中にバグ管理表へ
+
+synergyの単体テスト（メールまで）
+→明日の早い段階でできる？
+
+★スケジュール
+今日
+synergy組み込みまで
+→ドライブに入れて渡辺さん組み込み（今日の夕方？）
+
+明日
+デザインFix（回帰テストまで）
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b xxx
+
+## ソース
+
+.角丸長方形_1 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(235, 235, 235);
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 152px;
+  top: 163px;
+  width: 1124px;
+  height: 535px;
+  z-index: 5;
+}
+.角丸長方形_3 {　
+  border-radius: 4px;
+  background-color: rgb(237, 97, 3);
+  position: absolute;
+  left: 469px;
+  top: 669px;
+  width: 43px;
+  height: 22px;
+  z-index: 31;
+}
+.長方形_6 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(230, 232, 233);
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 556px;
+  top: 782px;
+  width: 632px;
+  height: 94px;
+  z-index: 23;
+}
+.角丸長方形_5 {
+  border-radius: 8px;
+  background-color: rgb(243, 244, 244);
+  position: absolute;
+  left: 220px;
+  top: 1506px;
+  width: 992px;
+  height: 184px;
+  z-index: 15;
+}
+https://f.msgs.jp/fcnts/nmcb/iez_bs_footer.css
+
+[To:786443] 柳沼 寿茂(やぎぬま ひさしげ／内線：2402)さん
+
+「お問合せの内容」欄
+仕様：「必ず入力して下さい。」
+現状：「必ずいずれかを選択して下さい。」
+
+「詳細な内容」欄
+仕様：「{項目名}(必須)の入力形式に誤りがあります。」
+→必須ではないが、(必須)をつけるか？
+
+
+body {
+    min-width: 1200px;
+}
+li {
+    float: left;
+    margin-left: 12px;
+    padding-left: 12px;
+    border-left: 1px solid #ed6103;
+}
+
+*
+
+## 単体テスト
+
+
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

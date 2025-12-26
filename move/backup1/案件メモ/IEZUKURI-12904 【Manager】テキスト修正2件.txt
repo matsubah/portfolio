@@ -1,0 +1,59 @@
+#　IEZUKURI-12904
+【Manager】テキスト修正2件
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-12904
+
+## 内容
+-　
+■Managerトップページ：預金口座振替依頼書
+ https://iezukuri-manager.homes.co.jp/
+
+（現）
+【口座振替】依頼預金口座振替依頼書（PDF形式 178KB、2020/10/06更新）
+　　⇓
+（修正後）
+【口座振替】預金口座振替依頼書（PDF形式 178KB、2020/10/06更新）
+
+※頭の依頼が不要でした「預金口座振替依頼書」
+※そもそもの文言が誤っていたので、更新日はママでOKです
+※リンク先も変更不要です
+
+■Manager：会員情報画像設定
+https://iezukuri-manager.homes.co.jp/member/images
+
+Managerの「会員情報画像設定」ページ
+「会社ロゴ画像」のこちらの注釈をトルツメしたいです。
+
+（トルツメ）⇓
+※サイト表示時期：【スマートフォンサイト】リリース完了・サイト表示中、【PCサイト】リリース時期調整中です
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-12904_fix_text
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

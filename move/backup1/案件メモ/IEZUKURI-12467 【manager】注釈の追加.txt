@@ -1,0 +1,78 @@
+#　IEZUKURI-12467 【manager】注釈の追加
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-12467
+
+## 内容
+-【１】見学会・住宅イベントページ
+●URL
+https://iezukuri-manager.homes.co.jp/event
+
+●注釈挿入箇所
+添付「イベント画面_作業依頼①.png」参照
+　└テキスト挿入①箇所
+
+●注釈文（赤字は可能ですか？）
+2021年4月1日のサイトリニューアルに伴い「見学会・住宅イベント」コンテンツは終了を予定しております。
+本入稿ページにおける各イベントにおきましても、2021年3月24日（水）終日中をもって、新規登録・編集作業を行うことができなくなります。
+（上記までに登録・編集作業を行った見学会・住宅イベント情報は3月31日まではサイト上に掲載されます）
+
+
+
+【２】スタッフ情報設定ページ
+●URL
+https://iezukuri-manager.homes.co.jp/staff/new
+
+https://iezukuri-manager.homes.co.jp/staff/sid-****/edit
+
+
+●注釈挿入箇所
+添付「スタッフ画面_作業依頼②.png」参照
+　└テキスト挿入②箇所
+
+●注釈文
+2021年4月1日のサイトリニューアルに伴い、スタッフ情報の表示項目が変更になります。
+詳細はこちらの資料（p3～5）にてご確認ください。
+
+
+
+※こちらの資料はリンクを設置（まだアップロード前です）
+　URL：https://s3-ap-northeast-1.amazonaws.com/homes-iezukuri-manager/download/releasereport_20210311.pdf
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-12467_message_add
+
+## ソース
+
+*
+
+## 単体テスト
+
+1
+https://localhost/event
+
+2
+https://localhost/staff/new
+https://localhost/staff/sid-10494/edit
+
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

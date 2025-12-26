@@ -1,0 +1,105 @@
+# 3Dモデルハウスページの改修
+
+# IEZUKURI-7150 SP_3D特集情報拡充_一覧ページ情報追加 コーディング
+
+## 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=121330699
+
+## 改修要項
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=120447053
+
+## 対象ページ
+https://www.homes.co.jp/iezukuri/contents/3dmodelhouse/
+
+## デザイン
+https://drive.google.com/drive/folders/1mE6OGBkUhtpar82niXs7j4sJ2Fdaklc3
+https://drive.google.com/drive/folders/1KEoQXWQeD5_XkU4BZB-xani8t-mfxAFm
+
+fixデザイン
+https://drive.google.com/drive/folders/1Wzt1ym4M47L2BvVJ4ZXlLJFp4mIsU2VL
+
+## Topic Branch
+http://gitlab.dev.nxin.jp/app/iezukuri/commits/IEZUKURI-6481_topic_sp_3dmodelhouse_list
+
+git checkout -b IEZUKURI-7150_feature_sp_3dmodelhouse_list
+
+## JIRA
+https://jira.next-group.jp/browse/IEZUKURAI-7150
+
+## コーディングガイドライン
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=22185448
+
+注文のコーディング規約(古いです)
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=30935470
+
+4マーケのコーディング規約(こっちと大体同じなのでこっち参考にしたほうが良いかも)
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=22185448
+
+
+対象
+
+1 フォーカス内リード文
+2 PickUP枠→ペンディング
+3 モデルハウス情報
+→モデルハウスが一件もない時は既存の仕様と同様
+4 MatterPort画面
+5 タグについて
+
+【IEZUKURI-7150】SPコーディング
+IEZUKURI-7150 SP_3D特集情報拡充_一覧ページ情報追加
+
+git commit -m "【IEZUKURI-7150】SPコーディング 見た目の調整"
+git push origin IEZUKURI-7150_feature_sp_3dmodelhouse_list
+
+## コードレビュー by watanabe
+
+件名: SP_3D特集情報拡充_一覧ページ情報追加 コーディング
+minファイルは使用しないので削除コミットお願いします
+http://gitlab.dev.nxin.jp/app/iezukuri/compare/develop...IEZUKURI-7150_feature_sp_3dmodelhouse_list#diff-2
+
+.sec-mainContentsのラップ領域が変わってしまっているのでコンテンツ全体をラップするよう修正してください
+
+「3Dモデルハウスを見る」ボタンがデザインと異なるので修正お願いします
+
+http://gitlab.dev.nxin.jp/app/iezukuri/compare/develop...IEZUKURI-7150_feature_sp_3dmodelhouse_list#d7075da7235721fc5abf1c762b561178ae3340b2_314_327
+下に追記するのではなくコンテンツの順番どおりに並べ替えちゃってOKです！
+あとチケットのコメントとかも不要です
+
+モジュール同士をまとめて記述するのは非推奨なので、バラして記述お願いします
+http://gitlab.dev.nxin.jp/app/iezukuri/compare/develop...IEZUKURI-7150_feature_sp_3dmodelhouse_list#d7075da7235721fc5abf1c762b561178ae3340b2_314_396
+
+http://gitlab.dev.nxin.jp/app/iezukuri/compare/develop...IEZUKURI-7150_feature_sp_3dmodelhouse_list#d7075da7235721fc5abf1c762b561178ae3340b2_314_401
+moduleにするか基点moduleにぶら下げる感じが良いですね
+prefix(役割)を明示しないパーツをグローバルに書くのはご法度で！
+
+http://gitlab.dev.nxin.jp/app/iezukuri/compare/develop...IEZUKURI-7150_feature_sp_3dmodelhouse_list#14f500a112655ee777187aa1ffc058a048023366_77_94
+これはなんでしょう？
+
+
+## デザインレビュー
+TO: 髙井 良美/たかいよしみ(8F/内線2717)さん
+SP版モデルハウス一覧ページの実装を行いましたので、デザインチェックをお願いします。
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/contents/3dmodelhouse/
+
+不具合などございましたらJIRAのコメントに記載をお願いします。
+
+よろしくお願いします。
+
+JIRA：
+https://jira.next-group.jp/browse/IEZUKURI-7150
+
+## マージリクエスト
+http://gitlab.dev.nxin.jp/app/iezukuri/merge_requests/672
+
+
+### 修正内容
+.角丸長方形_7 {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 2px 0px rgba(7, 3, 3, 0.3);
+  position: absolute;
+  left: 145px;
+  top: 1490px;
+  width: 348px;
+  height: 55px;
+  z-index: 183;
+}

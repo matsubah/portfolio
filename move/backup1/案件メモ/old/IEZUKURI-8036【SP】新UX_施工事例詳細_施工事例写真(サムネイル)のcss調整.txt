@@ -1,0 +1,60 @@
+# IEZUKURI-8036【SP】新UX_施工事例詳細_施工事例写真(サムネイル)のcss調整
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8036
+
+## 内容
+- IEZUKURI-8019 と同様な現象が施工事例詳細でも確認できましたので、
+CSS調整を同様にお願いします。
+
+＜参考＞
+添付ファイルの施工事例詳細は、IEZUKURI-7848 で対応途中のブランチにした状態で
+下記URLで確認可能です。
+/iezukuri/mid-5648/case/cid-17276/
+/iezukuri/mid-797/case/cid-2156/
+
+※上記の対応中ブランチは、このチケットの確認用に途中まで実装状態でpushした仮もの（後で削除予定）なので、
+　css調整対応の際のマージリクエストは、migrationブランチに向けてお願いします。
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+/iezukuri/mid-5648/case/cid-17276/
+/iezukuri/mid-797/case/cid-2156/
+
+## Branch
+
+* 元branch
+IEZUKURI-7848_sp_case_detail_dynamic_test1
+
+* branch from migration
+git checkout -b IEZUKURI-8036_case_detail_css
+
+* temp branch
+git checkout -b IEZUKURI-7848_sp_case_detail_dynamic_test1 origin/IEZUKURI-7848_sp_case_detail_dynamic_test1
+82c404d 【IEZUKURI-8036】SP_新UX_施工事例詳細_CSS修正
+git cherry-pick 82c404d
+
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

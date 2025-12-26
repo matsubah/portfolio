@@ -1,0 +1,40 @@
+# IEZUKURI-7361【SP】新UX_トップページ(カタログ選択)_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-7361
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=126588195
+
+6:カタログテーマ選択
+
+- 完了の定義
+トピックへマージ
+
+## 対象画面
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/
+
+## Branch
+ブランチ(ファーストビュー部分と同居)
+
+* Topic branch
+IEZUKURI-6885_topic_ux_common_components
+
+* Feature branch
+git checkout -b IEZUKURI-7350_feature_ux_top_firstview
+
+## ソース
+
+*
+
+## 単体テスト
+
+SP
+
+## 懸念点
+
+
+## 今後

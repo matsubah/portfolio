@@ -1,0 +1,60 @@
+#　IEZUKURI-12431
+注文住宅Managerに紹介制度の導線を設置＆カレッジ枠削除
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-12431
+
+## 内容
+-　実施したいこと
+①紹介制度枠の新設
+②お知らせ枠に紹介制度のご案内を設定
+③カレッジ枠の削除
+
+[仕様]②は本概要欄に記載
+
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=215134576
+
+—
+
+①紹介制度枠の新設
+
+注文住宅に紹介制度を常設します。
+これにより注文住宅既存会員様が制度の存在を気づくことができるよう、
+Managerへ導線を設置したく存じます。
+
+②
+→別チケット
+
+③カレッジ枠の削除
+
+現在存在する「カレッジ」枠については、誘導先が現状賃流会員のみアクセスできるサイト（PRO IDが必要）のため、導線を削除します。
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-12431_topic_introduction_add
+
+* Feature branch
+git checkout -b IEZUKURI-12431_introduction_add
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

@@ -1,0 +1,44 @@
+# IEZUKURI-8674
+ベネフィットLP_メインビジュアル画像修正
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8674
+
+## 内容
+- ベネフィットLP_メインビジュアルの画像の高さを変更する。
+下記画像への差し替えをお願いします。
+https://drive.google.com/drive/folders/1hvMt13GmGAUOxvGfzjNOGMuC9lM8OVZ-
+
+- 完了の定義
+
+
+## 対象画面
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/cont/3/
+
+## Branch
+
+* Topic branch
+IEZUKURI-8674_lp_benefit_mv
+
+* Feature branch
+git checkout -b xxx
+
+## ソース
+
++ a78dbe89cad96edceec81c17153a94e3af182d82 【IEZUKURI-8674】ベネフィットLP_メインビジュアル画像修正
++ 6e11ab71460ae646fae5e6ec7194005084fd6489 【IEZUKURI-8674】ベネフィットLP_メインビジュアル画像修正
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

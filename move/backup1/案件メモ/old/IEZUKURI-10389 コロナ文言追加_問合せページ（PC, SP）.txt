@@ -1,0 +1,137 @@
+# IEZUKURI-10389
+コロナ文言追加_問合せページ（PC, SP）
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10389
+
+## 内容
+- コロナの影響に関する文言をPC, SPの問合せページ（input）に追加する。
+
+対象の問合せは会社、カタログ、事例、イベント。
+
+仕様：https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=177228563
+
+PC
+▼文言
+
+新型コロナウイルス感染症の感染拡大の影響により、住宅メーカー様からの連絡や資料の発送等が遅延する場合がございます。
+何卒ご斟酌くださいますようお願いいたします。
+
+SP
+オレンジのヘッダの真下に、文言をアコーディオンの形式で入れる。
+
+見出しや背景、アコーディオンの動きは、HOME'S総合トップ（https://www.homes.co.jp/）をそのまま使う。
+
+文言は一部変更（不動産会社⇒住宅メーカー）
+
+
+▼文言
+
+新型コロナウイルス感染拡大に伴う影響について
+
+このたびの新型コロナウイルス感染症(COVID-19)に罹患された皆さまと、生活に影響を受けられている皆さまに、心よりお見舞いを申し上げます。
+感染拡大の影響により、住宅メーカー様からの連絡や資料の発送等が遅延する場合がございます。
+何卒ご斟酌くださいますようお願いいたします。
+
+
+## 対象画面
+PC/SP
+・PC カタログ問合せ入力画面
+・PC 会社問合せ入力画面
+・PC 施工事例問合せ入力画面
+・PC イベント問合せ入力画面
+・SP カタログ問合せ入力画面
+・SP 会社問合せ入力画面
+・SP 施工事例問合せ入力画面
+
+https://www.homes.co.jp/iezukuri/inquire/＊＊＊/input/
+
+
+## Branch
+
+* Topic branch
+develop
+git checkout -b IEZUKURI-10387_topic_input_add_announcement
+
+* Feature branch
+git checkout -b IEZUKURI-10389_feature_add_announcement
+
+## ソース
+
+*
+
+【Test環境】
+URL: https://www-test-testkit.develop.homes.co.jp/smp/
+※ HTTPSのみ接続を許可しています。URLを入力するときは「https」の部分も含めて入力してください。
+
+※ベーシック認証のIDとパスワードは以下をご利用ください。
+- ID: remotetest
+- パスワード: T)f2Er+h
+
+## 単体テスト
+
+1. デザイン崩れがないかという観点、追加した文言が対象のページで正常に表示されているかという観点で、下記の画面を確認
+・PC カタログ問合せ入力画面 OK
+・PC イベント問合せ入力画面 OK
+・SP カタログ問合せ入力画面 OK
+
+2. 完了画面への遷移ができることを下記の画面で確認
+・PC カタログ問合せ OK
+・PC イベント問合せ OK
+・SP カタログ問合せ OK
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+Backstage環境
+
+ウォークスルー
+・PC カタログ問合せ入力画面　OK メール
+・PC カタログ問合せ入力画面（LPからテーマあり）　OK メール
+・PC 会社問合せ入力画面　OK メール
+・PC 会社問合せ入力画面（LPからテーマあり）　OK メール
+・PC 施工事例問合せ入力画面　OK メール
+・PC イベント問合せ入力画面　OK メール
+・SP カタログ問合せ入力画面　OK メール
+・SP カタログ問合せ入力画面（LPからテーマあり）　OK メール
+・SP 会社問合せ入力画面　OK
+・SP 会社問合せ入力画面（LPからテーマあり）　OK
+・SP 施工事例問合せ入力画面　OK
+
+
+Live環境
+
+ウォークスルー
+・PC カタログ問合せ入力画面　OK
+・PC カタログ問合せ入力画面（LPからテーマあり）　OK
+・PC 会社問合せ入力画面　OK
+・PC 会社問合せ入力画面（LPからテーマあり）　OK
+・PC 施工事例問合せ入力画面　OK
+・PC イベント問合せ入力画面　OK
+・SP カタログ問合せ入力画面　OK
+・SP カタログ問合せ入力画面（LPからテーマあり）　OK
+・SP 会社問合せ入力画面　OK
+・SP 会社問合せ入力画面（LPからテーマあり）　OK
+・SP 施工事例問合せ入力画面　OK
+
+クロスブラウザテスト
+SP
+Android 7 product/maker/case/lp　OK
+Android 8 product/maker/case　OK
+Android 9 product/maker/case　OK
+iOS 12 product/maker/case　OK
+iOS 13 product/maker/case　OK
+
+PC
+Mac Chrome product/maker/case/lp OK
+Windows Edge product/maker/case/lp
+
+## 懸念点
+
+
+## 今後

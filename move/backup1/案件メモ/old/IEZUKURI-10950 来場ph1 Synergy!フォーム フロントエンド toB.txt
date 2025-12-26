@@ -1,0 +1,54 @@
+#　IEZUKURI-10950
+来場ph1 Synergy!フォーム フロントエンド toB
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10950
+
+## 内容
+- 概要
+
+クライアント向けに、来場情報を入力するためのフォームを作成する
+Synergy!にてフォームを作成、標準テンプレートを一部カスタマイズして構築する
+画面は「入力」「確認」「完了」の3画面
+仕様書
+
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=191767452
+デザイン
+
+特になし（項目をまとめる箇所など、カスタマイズ内容は仕様書に記載）
+
+
+## 対象画面
+Synergy上のフォーム名
+：【LIFULL HOME'S 注文住宅】来場情報ご登録フォーム
+
+プレビュー
+https://f.msgs.jp/webapp/form/19253_nmcb_35/pv/index.do
+
+## Branch
+https://github.com/lifull/iezukuri-static-html/tree/master/synergy
+
+* Topic branch
+master
+
+* Feature branch
+git checkout -b IEZUKURI-10950_synergy_visit_form_toB_cutomize
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

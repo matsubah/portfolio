@@ -1,0 +1,48 @@
+# IEZUKURI-7246 SP_3D特集情報拡充_詳細ページ コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-7246
+
+## 内容
+- SPモデルハウス詳細ページの実装を行う
+/iezukuri/contents/3dmodelhouse/
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=121330699
+
+- 完了の定義
+トピックにマージ
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-6481_topic_sp_3dmodelhouse_detail
+
+* Feature branch
+git checkout -b IEZUKURI-7246_feature_sp_3dmodelhouse_detail
+
+## ソース
+
+*
+
+## 単体テスト
+
+- PCにて一時確認
+Chrome最新版にて確認
+
+- 実機確認
+iOS12   iPhone8 Plus    : OK
+iOS11.4 iPhoneX         : OK
+iOS11.3 iPhone6         : OK
+iOS10.3.2 iPhone6s Plus : OK
+iOS10.0.2 iPhone6       : OK
+
+## 懸念点
+* iPhone Plusは「タブバーモード」設定時に横向きにすると、タブが複数存在する場合には全画面表示されない（タブが一つのみの場合は全画面表示される）
+
+2/4までに合計13.5hかかった（Gカルの集計）
+
+## 今後

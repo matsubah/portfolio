@@ -1,0 +1,63 @@
+#　IEZUKURI-10215
+【施工事例一覧】見た目の調整
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10215
+
+## 内容
+-　施工事例の一覧（タップ後）の見た目の調整をお願いします。
+
+- 岩田さんと話した際のメモ
+
+（経緯）
+カタログLP（一覧）に掲載している施工事例から遷移するモーダル画面上の、施工事例の画像の大きさが統一されていないため、
+現状では縦の長さが不揃いになり、見た目を統一したい。
+
+（イメージ）
+本体のカタログ詳細ページに表示されるサムネイル（４：３の画像がトリミングされて表示される）
+例：https://www.homes.co.jp/iezukuri/mid-5058/product/pid-12671/
+当時の仕様書：https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=141737656
+→デザインはこの時と異なり、今のモーダルで使われているままでいい（2列の表示でよい、角丸など不要）
+
+- 完了の定義
+developへマージ
+
+## 対象画面
+例：
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/product/tokyo/setagaya-city/
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-10215_sp_lp_case_modal_thumbnail
+
+## ソース
+
+*
+
+## 単体テスト
+
+320px
+x	146.39	y	110.39
+
+375px
+x	172.25	y	129.38
+
+425px
+x	195.75	y	146.63
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

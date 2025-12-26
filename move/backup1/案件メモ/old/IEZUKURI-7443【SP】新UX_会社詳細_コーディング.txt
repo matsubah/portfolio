@@ -1,0 +1,74 @@
+# IEZUKURI-7443【SP】新UX_会社詳細_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-7443
+
+## 内容
+- CW
+https://www.chatwork.com/#!rid137507864-1163057801384206336
+
+とりあえず会社詳細をできるところから実装おねがいします(7443)
+藤川さんがディレクトリ構成の見直しをやるので本実装はそれの作業後になるとおもいます
+あとmigrationでやるかdevelopで進めるかはかとちゃんに聞いてみてください
+どっちにしろmaker_detailのtopicつくってそっからfeature切ってやってくのが良いかとおもいます
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=127848925
+
+
+- 完了の定義
+
+
+## 対象画面
+/iezukuri/mid-***
+ex.
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-600/
+
+## Branch
+migrationを元にする
+
+* Topic branch
+藤川さん作成（ディレクトリ構成変更後にマージ）
+IEZUKURI-7762_topic_maker_detail
+
+* Feature branch
+git checkout -b IEZUKURI-7443_feature_maker_detail
+
+* merge用ブランチ
+IEZUKURI-7443_feature_detail_blank_template
+
+## ソース
+
+会社メイン画像
+
+ロゴ画像
+
+
+会社情報1
+
+会社情報2
+
+git show IEZUKURI-7444_feature_product_detail:php_include/src/Iezukuri/SpBundle/Resources/views/Product/Detail/detail.html.twig | vim -
+git show IEZUKURI-7444_feature_product_detail:php_include/src/Iezukuri/SpBundle/Resources/public/css/smartphone/page/catalog/catalog.css | vim -
+
+*
+html
+img
+CSS
+
+        
+## 単体テスト
+
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

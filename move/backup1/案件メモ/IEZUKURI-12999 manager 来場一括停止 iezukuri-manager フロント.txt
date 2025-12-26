@@ -1,0 +1,44 @@
+#　IEZUKURI-12999
+manager 来場一括停止 iezukuri-manager フロント
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-12999
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-10032_topic_ph2_visit
+
+* Feature branch
+git checkout -b IEZUKURI-12999_top_inquirystatus_visit_edit
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

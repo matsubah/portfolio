@@ -1,0 +1,72 @@
+#　IEZUKURI-12430
+【タグ設置】スポティファイCVタグ設置
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-12430
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## タグ
+
+IEZUKURI-12430_【タグ設置】スポティファイCVタグ設置
+
+
+
+--------------------------------------------------
+Tag 1: LIFULL_CV_Visit
+
+************************
+
+For IFrame format use:
+<iframe width="0" height="0" name="Trade Desk Tracking - LIFULL_CV_Visit" frameborder="0" scrolling="no" src="https://insight.adsrvr.org/tags/04tc93c/08kv6l8/iframe"></iframe>
+
+--------------------------------------------------
+--------------------------------------------------
+Tag 2: LIFULL_CV_AplicationDone
+
+************************
+
+For IFrame format use:
+<iframe width="0" height="0" name="Trade Desk Tracking - LIFULL_CV_AplicationDone" frameborder="0" scrolling="no" src="https://insight.adsrvr.org/tags/04tc93c/v3cbuyd/iframe"></iframe>
+
+--------------------------------------------------
+
+LIFULL_CV_Visit
+→Spotify_CV_Visit
+
+LIFULL_CV_AplicationDone
+→Spotify_CV_AplicationDone
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-12430_tag_spotify
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

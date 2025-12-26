@@ -1,0 +1,75 @@
+#　IEZUKURI-10121
+3月配信イベントHTMLメール作成
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10121
+
+## 内容
+- 複数社用です。
+
+配信日
+①3月11日
+②3月18日
+
+配信エリア
+全国
+
+配信日によって上下入れ替えを実施します。
+①セルコホーム→アイフルホーム
+②アイフルホーム→セルコホーム
+
+入稿シート
+https://drive.google.com/drive/folders/16v50FxG0JMYhxeDDJLFBOqPPq5_1mKzn
+
+スケジュール
+https://docs.google.com/spreadsheets/d/1ERZ1w4coRYZfSptFYhu3QnM2IAU60CHV2UcQjrQDV1I/edit#gid=1638883629
+
+URL差し替え
+▼アイフルホーム
+現）http://www.eyefulhome.jp/lp/sumai-kengaku/
+　　↓
+新）https://homes.jp/3ass8V0
+
+▼セルコホーム
+現）https://selcohome.jp/queen-ann-event/
+　　↓
+新）https://homes.jp/3aqzWXn
+
+イベント開催日時
+
+セルコホーム
+2020年3月14(土)・15日(日)
+2020年3月20(祝)・21日(土)・22日(日)
+
+## 対象画面
+http://localhost:3000/2020/03/selco+eyeful/index.html
+
+## Branch
+
+* Topic branch
+master
+
+* Feature branch
+git checkout -b IEZUKURI-10121_mail_selco+eyeful_202003
+
+## ソース
+
+*
+
+## 単体テスト
+
+Pardot
+https://pi.pardot.com/email/template/draft/edit/id/29564
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

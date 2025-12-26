@@ -1,0 +1,20 @@
+immutableなjs
+
+DI/DX
+Developer Interface
+Developer eXperience
+
+SQL(POSTGRE)
+VACUUM, ANALYZE
+
+バッチ設計
+lamda
+AWS upstream
+
+仕様書
+→共通認識、実装と仕様、引き継ぎ
+
+Vuex基本
+
+IA、Deep learning
+ディープラーニング→人工神経網、人の頭の中

@@ -1,0 +1,68 @@
+#　IEZUKURI-12350
+【共通フッターリンク対応】全社横断_リンク追加
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-12350
+
+## 内容
+-　全社的に横断で同時期に動いている共通フッターリンクの追加について
+不動産クラウドファンディングと新生活サポートのリンクの追加をご対応いただけないでしょうか。
+
+■共通仕様書■
+
+https://docs.google.com/spreadsheets/d/1ygRy1T666QW-tkGmHcKyeuVdWw0G8fbh8iR1HX7I_Go/edit#gid=1879148869
+
+※対象デバイス：SP/PC
+
+▼詳細
+*《追加①》*
+掲載場所：LIFULLのサービス（ママの就労支援の次に追加）
+掲載テキスト：不動産クラウドファンディング
+URL：https://recrowdfunding.lifull.jp/
+
+*《追加②》*
+掲載場所：LIFULL HOME'Sのサービス
+（「LIFULL HOME'S PRESS」と「アプリの間に追加）
+掲載テキスト：新生活サポート
+URL：https://nyukyo-service.homes.jp/
+
+■その他①②共通■
+リンク属性：target="_blank"
+※nofollowは不要
+
+その他：
+・テキストに下線あり
+・ホバーした際、LIFULLオレンジになる
+・リンクとリンクの間は「｜」で繋ぐ
+
+掲載開始タイミング：2021/2/24　日本時間の午前10:00に反映希望
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+git checkout -b IEZUKURI-435_topic_footer_add
+
+* Feature branch
+git checkout -b IEZUKURI-12350_feature_footer_add
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

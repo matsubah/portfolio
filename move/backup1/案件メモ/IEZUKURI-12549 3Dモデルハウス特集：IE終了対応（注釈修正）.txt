@@ -1,0 +1,66 @@
+#　IEZUKURI-12549
+3Dモデルハウス特集：IE終了対応（注釈修正）
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-12549
+
+## 内容
+- 「３Dモデルルーム」で利用しているシステム「マターポート」が2021年1月31日をもってIEのサポートを終了していることに対しての対応（テキスト追加）をお願いします。
+
+INTERNET EXPLORER11のサポートの終了
+https://support.matterport.com/hc/en-us/articles/1500000284841-Ending-Support-for-Internet-Explorer-11
+
+【対象ページ】
+3Dモデルハウス特集一覧
+https://www.homes.co.jp/iezukuri/contents/3dmodelhouse/
+
+3Dモデルハウス詳細（URLは例）
+https://www.homes.co.jp/iezukuri/contents/3dmodelhouse/165/
+
+【デバイス】
+PCのみ
+
+【修正内容】
+ページ下部の注釈に1文追加（下記の3つ目が追加テキストです）
+------
+※掲載中の物件で、引渡し済の物件等については現地にてご覧いただけない場合がございます。
+※3Dモデルハウス映像は、WindowsはWindows 10以上、MacintoshはOS X 10.10.5（Yosemite）以上で閲覧ください。
+※Internet Explorerは推奨環境外のため、正しく表示されない場合があります。他のブラウザをご利用ください。
+------
+↑一覧、詳細共通
+
+【その他】
+・会社詳細ページの注釈については新基盤となるため、基盤刷新PJに別途相談する
+・媒体資料確認済。対応箇所なし
+
+
+
+## 対象画面
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/contents/3dmodelhouse/
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-12549_pc_matterport_ie_attention
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

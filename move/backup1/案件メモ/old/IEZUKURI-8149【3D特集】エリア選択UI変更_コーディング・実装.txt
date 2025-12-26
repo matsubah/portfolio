@@ -1,0 +1,60 @@
+# IEZUKURI-8149【3D特集】エリア選択UI変更_コーディング・実装
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8149
+
+## 内容
+- PCのエリア選択のUIがデフォのままなので改修
+IEはcssが効かないのでUA振り分けして対応
+
+画面比較
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=138197428
+
+- 完了の定義
+
+
+## 対象画面
+
+
+参考
+https://www.homes.co.jp/owner/demo/
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-8149_pc_3d_ui_select
+
+## ソース
+
+* css
+.長方形_9_のコピー_3 {
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(218, 218, 218);
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 889px;
+  top: 564px;
+  width: 297px;
+  height: 44px;
+  z-index: 314;
+}
+
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

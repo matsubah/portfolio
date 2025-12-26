@@ -1,0 +1,72 @@
+# IEZUKURI-8797
+LP反響質向上_UI改修_カタログLP_旧ABテストの勝ちパターン反映
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8797
+
+## 内容
+- タスク
+・旧ABテストのlist.html.twigの削除、listB.html.twignoリネーム
+・partsディレクトリの_abを削除して、twigのテンプレートを一つ親のディレクトリに移動
+・cssとjsも同様の修正を行う。
+・controllerでも古いパターン表示ロジックの削除はせずに、renderされるpathをlistB.html.twigからlist.html.twigに修正
+
+参考情報
+
+完了条件
+・topicブランチへのマージ
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-8671_topic_sp_lp_ui_abtest
+
+* Feature branch
+IEZUKURI-8797_feature_sp_lp_ui_product_clear
+
+## ソース
+
+Resources/views/Landing/ProductList/listB.html.twig: {% include 'SpBundle::Landing/ProductList/parts/_ab/fixedBottomNavigation.html.twig' only %}
+Resources/views/Landing/ProductList/listB.html.twig: {% include 'SpBundle::Landing/ProductList/parts/_ab/inquireBtn.html.twig' only %}
+Resources/views/Landing/ProductList/listB.html.twig: {% include 'SpBundle::Landing/ProductList/parts/_ab/inquireBtn.html.twig' only %}
+Resources/views/Landing/ProductList/listB.html.twig: {% include 'SpBundle::Landing/ProductList/parts/_ab/leadText.html.twig' only %}
+Resources/views/Landing/ProductList/listB.html.twig: {% include 'SpBundle::Landing/ProductList/parts/_ab/resultItem.html.twig' with {'product': product, 'list': list, 'listIndex': loop.index0} only %}
+Resources/views/Landing/ProductList/listB.html.twig: {% include 'SpBundle::Landing/ProductList/parts/assets/_ab/javascript.html.twig' %}
+Resources/views/Landing/ProductList/listB.html.twig: {% include 'SpBundle::Landing/ProductList/parts/assets/_ab/stylesheet.html.twig' %}
+Resources/views/Landing/ProductList/parts/_ab/resultItem.html.twig: {% include 'SpBundle::Landing/ProductList/parts/_ab/photoSlider.html.twig' with { 'images' : product.image, 'listIndex' : listIndex } only %}
+Resources/views/Landing/ProductList/parts/assets/_ab/javascript.html.twig: '@SpBundle/Resources/public/js/smartphone/page/landing/productlist/_ab/controller.js'
+Resources/views/Landing/ProductList/parts/assets/_ab/javascript.html.twig: '@SpBundle/Resources/public/js/smartphone/page/landing/productlist/_ab/core/formManager.js'
+Resources/views/Landing/ProductList/parts/assets/_ab/javascript.html.twig: '@SpBundle/Resources/public/js/smartphone/page/landing/productlist/_ab/core/widgetManager.js'
+Resources/views/Landing/ProductList/parts/assets/_ab/javascript.html.twig: '@SpBundle/Resources/public/js/smartphone/page/landing/productlist/_ab/widget/fixedBottomNavigation.js'
+Resources/views/Landing/ProductList/parts/assets/_ab/javascript.html.twig: '@SpBundle/Resources/public/js/smartphone/page/landing/productlist/_ab/widget/listCheckbox.js'
+Resources/views/Landing/ProductList/parts/assets/_ab/javascript.html.twig: '@SpBundle/Resources/public/js/smartphone/page/landing/productlist/_ab/widget/listInquiryBtn.js'
+Resources/views/Landing/ProductList/parts/assets/_ab/javascript.html.twig: '@SpBundle/Resources/public/js/smartphone/page/landing/productlist/_ab/widget/photoSlider.js'
+Resources/views/Landing/ProductList/parts/assets/_ab/stylesheet.html.twig: '@SpBundle/Resources/public/css/smartphone/page/lp/product/_ab/mod/fixed_bottom_navigation.css'
+Resources/views/Landing/ProductList/parts/assets/_ab/stylesheet.html.twig: '@SpBundle/Resources/public/css/smartphone/page/lp/product/_ab/mod/inquire_btn.css'
+Resources/views/Landing/ProductList/parts/assets/_ab/stylesheet.html.twig: '@SpBundle/Resources/public/css/smartphone/page/lp/product/_ab/mod/lead_text.css'
+Resources/views/Landing/ProductList/parts/assets/_ab/stylesheet.html.twig: '@SpBundle/Resources/public/css/smartphone/page/lp/product/_ab/mod/not_item_message.css'
+Resources/views/Landing/ProductList/parts/assets/_ab/stylesheet.html.twig: '@SpBundle/Resources/public/css/smartphone/page/lp/product/_ab/mod/photo_slider.css'
+Resources/views/Landing/ProductList/parts/assets/_ab/stylesheet.html.twig: '@SpBundle/Resources/public/css/smartphone/page/lp/product/_ab/mod/research_btn.css'
+Resources/views/Landing/ProductList/parts/assets/_ab/stylesheet.html.twig: '@SpBundle/Resources/public/css/smartphone/page/lp/product/_ab/mod/result_item.css'
+Resources/views/Landing/ProductList/parts/assets/_ab/stylesheet.html.twig: '@SpBundle/Resources/public/css/smartphone/page/lp/product/_ab/search_list.css'
+
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

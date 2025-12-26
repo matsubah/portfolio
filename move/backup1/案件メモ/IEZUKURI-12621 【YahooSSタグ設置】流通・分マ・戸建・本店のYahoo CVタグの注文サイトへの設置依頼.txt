@@ -1,0 +1,109 @@
+#　IEZUKURI-12621
+【YahooSSタグ設置】流通・分マ・戸建・本店のYahoo CVタグの注文サイトへの設置依頼
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-IEZUKURI-12621
+
+## 内容
+-　
+
+/Users/matsubah/Downloads/注文サイトへのYahooSSタグ設置依頼.xlsx
+
+GTMタグ設定
+
+【新規作成タグ】
+Yahoo_CV_ApplicationDone
+
+＜GTM＞
+・コンテナ名：【PC・SP】www.homes.co.jp （iezukuri HOME'S注文住宅）
+・コンテナID：GTM-WWRWC3
+・ワークスペース名：IEZUKURI-12621_【タグ設置】Yahoo CVタグ設置（流通・分マ・戸建・本店）
+
+
+||No||PC
+ 結果||SP
+ 結果||項目||操作||期待値
+ (タグ発火確認)||
+|1| | |トップ|https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/
+ にアクセス|・未発火
+ Yahoo_CV_ApplicationDone|
+|2| | |会社問合せ
+ (入力)|https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/inquire/maker/input/?id[2265][]=2265&pref=13&city=201
+ にアクセス|同上|
+|3| | |会社問合せ
+ (確認)|上記入力画面で、必須項目を入力し、
+ 確認ボタンを押下|同上|
+|4| | |会社問合せ
+ (完了)|上記確認画面で、送信ボタンを押下|・発火
+ Yahoo_CV_ApplicationDone|
+|2| | |カタログ問合せ
+ (入力)|https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/inquire/maker/input/?id[2265][]=2265&pref=13&city=201
+ にアクセス|同上|
+|3| | |カタログ問合せ
+ (確認)|上記入力画面で、必須項目を入力し、
+ 確認ボタンを押下|同上|
+|4| | |カタログ問合せ
+ (完了)|上記確認画面で、送信ボタンを押下|・発火
+ Yahoo_CV_ApplicationDone|
+|2| | |施工事例問合せ
+ (入力)|https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/inquire/maker/input/?id[2265][]=2265&pref=13&city=201
+ にアクセス|同上|
+|3| | |施工事例問合せ
+ (確認)|上記入力画面で、必須項目を入力し、
+ 確認ボタンを押下|同上|
+|4| | |施工事例問合せ
+ (完了)|上記確認画面で、送信ボタンを押下|・発火
+ Yahoo_CV_ApplicationDone|
+|5| | |LP|https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/lp/
+ にアクセス|・発火
+ Spotify_CV_Visit
+ ・未発火
+ Yahoo_CV_ApplicationDone|
+ |2| | |会社問合せ
+  (入力)|https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/inquire/maker/input/?id[2265][]=2265&pref=13&city=201
+  にアクセス|同上|
+ |3| | |会社問合せ
+  (確認)|上記入力画面で、必須項目を入力し、
+  確認ボタンを押下|同上|
+ |4| | |会社問合せ
+  (完了)|上記確認画面で、送信ボタンを押下|・発火
+  Yahoo_CV_ApplicationDone|
+
+
+
+
+
+
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-12621_tag_inquire_thanks
+
+## ソース
+
+
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

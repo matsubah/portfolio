@@ -1,0 +1,63 @@
+#　IEZUKURI-10292
+注文住宅 Business_お役立ち資料フォームSynergy!コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10292
+
+## 内容
+-　基本的に以下と入力、完了ともに同様のフォーム
+https://f.msgs.jp/webapp/form/19253_nmcb_14/index.do
+※技術運用上「サービス紹介資料」と「お役立ち資料」は分けて運用する。
+
+マークアップの際、「ご登録時に必ずお読みください」のテキストのみ以下へ変更。
+発生したリードはセールスフォース/Pardot内で管理
+※セールスフォース/Pardot上での管理は機密へ申請の必要なし
+
+▼以下個人情報文言
+--------------------
+本フォームは、株式会社LIFULLが提供するサービスについて、お客様からのお問合せを受け付ける窓口です。
+本フォームでお客様が入力された個人情報は、電子メールや電話による連絡を目的に、株式会社LIFULLが保管します。
+株式会社LIFULLの個人情報保護方針については、こちらをご覧ください。
+--------------------
+
+▼synergy!プルダウン
+資料名
+アポ率向上！電話営業のコツ〜フレーズ編〜
+
+S3資料アップロードURL
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/business/download/white_paper/outbound_telephone_sales.pdf
+
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-10292_synergy_download_document_form
+git checkout -b IEZUKURI-10340_synergy_download_document_form_fix
+git checkout -b IEZUKURI-10341_ferretOne_globalnavi_css
+
+## ソース
+
+*
+
+
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

@@ -1,0 +1,42 @@
+#　IEZUKURI-12520
+注文媒体資料差し替え
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-12520
+
+## 内容
+-　元の作業依頼チケット
+https://jira.next-group.jp/browse/CSAMU-57
+
+以下の媒体資料を上記チケットに添付の資料に差し替えを行う。
+https://www.homes.co.jp/iezukuri/file/introduction.pdf
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-12520_file_introduction_replace
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

@@ -1,0 +1,162 @@
+#　IEZUKURI-11542
+来場ph1流入増施策：本体footer
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-11542
+
+11/6 調査 0.5d
+11/9 コーディング 1d
+11/10 ユニット環境にて表示確認（出社） 0.5d
+      レビュー依頼
+11/11 FB対応 0.5d
+注記）工藤さんが11/12から休暇
+
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+develop
+→IEZUKURI-10032_topic_visit_footer_induction_add
+
+* Feature branch
+git checkout -b IEZUKURI-11542_visit_footer_induction_add
+git checkout -b IEZUKURI-11542_feature_visit_footer_induction_add
+
+## ソース
+
+/Detail/Case/parts/revSearch.html.twig
+/Detail/Maker/parts/revSearch.html.twig
+/Detail/Product/parts/revSearch.html.twig
+/Detail/Visit/parts/revSearch.html.twig
+
+/_Slot/parts/extraContents.html.twig
+
+/Index/index.html.twig
+/lp_layout.html.twig
+
+
+パーツ
+_Slot/footer.html.twig
+_Slot/lp_footer.html.twig
+LandingContents/parts/footer.html.twig
+LandingPrice/_Slot/footer.html.twig
+LandingRanking/parts/footer.html.twig
+LandingSimulation/parts/footer.html.twig
+
+親
+layout.html.twig
+lp_layout.html.twig
+LandingContents/layout.html.twig
+LandingPrice/Product/Index/index.html.twig
+LandingPrice/Product/List/index.html.twig
+LandingPrice/Product/Pref/index.html.twig
+LandingPrice/Product/Top/index.html.twig
+LandingRanking/Product/index.html.twig
+LandingSimulation/Product/index.html.twig
+
+
+https://www.homes.co.jp/iezukuri/
+https://www.homes.co.jp/iezukuri/mid-47/
+https://www.homes.co.jp/iezukuri/product/tokyo/
+https://www.homes.co.jp/iezukuri/product/theme-41/
+https://www.homes.co.jp/iezukuri/product/tokyo/theme-41/
+https://www.homes.co.jp/iezukuri/product/tokyo/chiyoda-city/theme-41/list/
+https://www.homes.co.jp/iezukuri/product/
+https://www.homes.co.jp/iezukuri/maker/tokyo/
+https://www.homes.co.jp/iezukuri/maker/theme-41/
+https://www.homes.co.jp/iezukuri/maker/tokyo/theme-41/
+https://www.homes.co.jp/iezukuri/maker/tokyo/chiyoda-city/theme-41/list/
+https://www.homes.co.jp/iezukuri/maker/
+
+https://www.homes.co.jp/iezukuri/mid-47/visit/vid-28/
+
+https://www.homes.co.jp/iezukuri/lp/
+https://www.homes.co.jp/iezukuri/lp/cont/1/
+https://www.homes.co.jp/iezukuri/lp/price/product/low10000high499999/
+https://www.homes.co.jp/iezukuri/lp/price/product/tokyo/low10000high499999/
+https://www.homes.co.jp/iezukuri/lp/price/product/tokyo/chiyoda-city/low10000high499999/
+https://www.homes.co.jp/iezukuri/lp/product/tokyo/
+https://www.homes.co.jp/iezukuri/lp/product/theme-41/
+https://www.homes.co.jp/iezukuri/lp/product/tokyo/theme-41/
+https://www.homes.co.jp/iezukuri/lp/product/
+https://www.homes.co.jp/iezukuri/lp/ranking/product/
+https://www.homes.co.jp/iezukuri/lp/simulation/product/
+
+OK
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/product/pid-31324/
+
+?
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/case/cid-21907/
+
+確認必要
+3Dモデルハウス
+https://www.homes.co.jp/iezukuri/contents/3dmodelhouse/
+404
+https://www.homes.co.jp/iezukuri/404
+500
+https://www.homes.co.jp/iezukuri/mid-0/
+
+トップ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/
+
+会社
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/
+
+カタログ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/product/pid-31324/
+
+事例（「注文住宅トップ」の下に来る？）
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/case/cid-21907/
+
+来場（回遊リンクは無いが、、表示なし？）
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/visit/vid-11/
+
+リンク先にあたるので対象外か？
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/visit/osaka/list/
+
+3Dモデルハウスへのリンクは不要か？
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/contents/3dmodelhouse/
+
+
+対象外のはず
+来場詳細
+https://www.homes.co.jp/iezukuri/mid-2985/visit/vid-4/
+来場できる会社一覧
+https://www.homes.co.jp/iezukuri/visit/kanagawa/list/
+https://www.homes.co.jp/iezukuri/visit/osaka/list/
+
+バナーが出ていない事
+来場
+https://www.homes.co.jp/iezukuri/maker/theme-34/list/
+https://www.homes.co.jp/iezukuri/maker/osaka/theme-34/list/
+https://www.homes.co.jp/iezukuri/maker/kanagawa/theme-34/list/
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

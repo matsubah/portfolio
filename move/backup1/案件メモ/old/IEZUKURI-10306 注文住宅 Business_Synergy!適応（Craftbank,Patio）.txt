@@ -1,0 +1,54 @@
+#　IEZUKURI-10306
+注文住宅 Business_Synergy!適応（Craftbank,Patio）
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10306
+
+## 内容
+-　3/31公開予定の業務支援各種サービス資料ダウンロード
+CraftBank ライトプラン（旧SUSTINA）
+サービスURL　※3/31公開予定
+/lists/productivity/craftBank/union-tec-product
+
+資料URL
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/business/download/union-tec/craftbank.pdf
+
+Patio（パティオ）
+サービスURL　※3/31公開予定
+/lists/customer-management/patio/thehouse-product
+
+資料URL
+https://homes-iezukuri-business-support.s3-ap-northeast-1.amazonaws.com/business/download/thehouse/patio.pdf
+
+参考チケット
+https://jira.next-group.jp/browse/IEZUKURI-10194
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+master
+
+* Feature branch
+git checkout -b IEZUKURI-10306_doc_download_craftbank+patio
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

@@ -1,0 +1,54 @@
+# IEZUKURI-7975【SP】新UX_カタログ一覧_参考本体価格を表示_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-XXXX
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=131590410
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=128780153
+
+- 完了の定義
+
+
+## 対象画面
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/theme-41/list/
+▼カタログ：一覧
+www.homes.co.jp/iezukuri/product/list/
+（テーマ有）www.homes.co.jp/iezukuri/product/theme-41/list/
+（都道府県有）www.homes.co.jp/iezukuri/product/tokyo/list/
+（都道府県・テーマ）www.homes.co.jp/iezukuri/product/tokyo/theme-41/list/
+（市区町村）www.homes.co.jp/iezukuri/product/tokyo/chiyoda-city/list/
+（市区町村・テーマ）www.homes.co.jp/iezukuri/product/tokyo/chiyoda-city/theme-41/list/
+
+## Branch
+
+* Topic branch
+IEZUKURI-7762_topic_product_list_price
+
+* Feature branch
+git checkout -b IEZUKURI-7975_feature_product_list_price
+
+## ソース
+
+git checkout IEZUKURI-7974_feature_maker_list_price src/Iezukuri/SpBundle/Resources/views/Maker/List/parts/priceNotes.html.twig
+git checkout IEZUKURI-7974_feature_maker_list_price src/Iezukuri/SpBundle/Resources/public/css/smartphone/page/list/maker/mod/price_notes.css
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

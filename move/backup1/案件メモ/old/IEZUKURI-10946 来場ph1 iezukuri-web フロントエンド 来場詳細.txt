@@ -1,0 +1,48 @@
+#　IEZUKURI-10946
+来場ph1 iezukuri-web フロントエンド 来場詳細
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10946
+
+## 内容
+-　仕様書
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=187662612
+項目
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=186793094#id-387_phase1%EF%BC%9APJ%E6%A6%82%E8%A6%81-%E3%80%90%E9%A0%85%E7%9B%AE%E3%80%91%E6%9D%A5%E5%A0%B4%E6%83%85%E5%A0%B1%E8%A9%B3%E7%B4%B0%E6%9D%A5%E5%A0%B4%E6%83%85%E5%A0%B1
+デザイン
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=191763644
+デザインファイル
+https://drive.google.com/drive/folders/10Mr1hcqTE6LCsK3yK20NszDKd0dxGfVL
+
+
+## 対象画面
+https://www.homes.co.jp/iezukuri/mid-xxxx/visit/vid-xxxxx/
+
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-10032_topic_visit_pj
+
+* Feature branch
+git checkout -b IEZUKURI-10946_create_visit_detail
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

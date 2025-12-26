@@ -1,0 +1,85 @@
+#　IEZUKURI-10790
+来場ph1 Synergy!フォーム フロントエンド toC
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10790
+
+## 内容
+- Synergy!来場予約フォームのコーディング
+
+仕様書：
+
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=187662599
+
+（項目詳細）
+
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=186793094#id-387_phase1%EF%BC%9APJ%E6%A6%82%E8%A6%81-%E3%80%90%E9%A0%85%E7%9B%AE%E3%80%91%E6%9D%A5%E5%A0%B4%E4%BA%88%E7%B4%84%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0
+
+
+## 対象画面
+Synergy上のフォーム名
+：【LIFULL HOME'S 注文住宅】来場予約フォーム/ユーザー向け
+
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-10790_synergy_visit_form_inquire
+git checkout -b IEZUKURI-10790_synergy_visit_form_publish_request
+git checkout -b IEZUKURI-10790_synergy_visit_form_test
+
+## ソース
+
+https://homes-iezukuri-web.s3-ap-northeast-1.amazonaws.com/fonts/LIFULLFont-Medium.woff
+https://homes-iezukuri-web.s3-ap-northeast-1.amazonaws.com/fonts/LIFULLFont-Regular.woff
+https://homes-iezukuri-web.s3-ap-northeast-1.amazonaws.com/fonts/LIFULLFont-Bold.woff
+https://homes-iezukuri-web.s3-ap-northeast-1.amazonaws.com/fonts/LIFULLFont-Medium.woff2
+https://homes-iezukuri-web.s3-ap-northeast-1.amazonaws.com/fonts/LIFULLFont-Regular.woff2
+https://homes-iezukuri-web.s3-ap-northeast-1.amazonaws.com/fonts/LIFULLFont-Bold.woff2
+
+https://homes-iezukuri-web.s3-ap-northeast-1.amazonaws.com/img/visits/lifull_homes_white.svg
+https://homes-iezukuri-web.s3-ap-northeast-1.amazonaws.com/img/visits/lifull_white.svg
+https://homes-iezukuri-web.s3-ap-northeast-1.amazonaws.com/img/visits/sprite_icon_toggle.svg
+https://homes-iezukuri-web.s3-ap-northeast-1.amazonaws.com/img/visits/sprite_icon.png
+
+
+https://homes-iezukuri-web.s3-ap-northeast-1.amazonaws.com/css/visits/user/mod-reset.css
+https://homes-iezukuri-web.s3-ap-northeast-1.amazonaws.com/css/visits/user/mod-base.css
+https://homes-iezukuri-web.s3-ap-northeast-1.amazonaws.com/css/visits/user/mod-header.css
+https://homes-iezukuri-web.s3-ap-northeast-1.amazonaws.com/css/visits/user/mod-footer.css
+https://homes-iezukuri-web.s3-ap-northeast-1.amazonaws.com/css/visits/user/mod-input.css
+https://homes-iezukuri-web.s3-ap-northeast-1.amazonaws.com/css/visits/user/mod-confirm.css
+https://homes-iezukuri-web.s3-ap-northeast-1.amazonaws.com/css/visits/user/mod-finish.css
+
+*
+
+## 単体テスト
+
+https://storage.pardot.com/517421/215476/mod_base.css
+https://storage.pardot.com/517421/215478/mod_reset.css
+https://storage.pardot.com/517421/215480/mod_header.css
+https://storage.pardot.com/517421/215482/mod_footer.css
+https://storage.pardot.com/517421/215484/mod_inquire.css
+
+https://inquiry.develop.homes.co.jp/l/517421/2020-07-22/d4bp2t/517421/215486/LIFULLFont_Regular.woff
+https://inquiry.develop.homes.co.jp/l/517421/2020-07-22/d4bp2w/517421/215488/LIFULLFont_Regular.woff2
+https://inquiry.develop.homes.co.jp/l/517421/2020-07-22/d4bp31/517421/215490/LIFULLFont_Medium.woff
+https://inquiry.develop.homes.co.jp/l/517421/2020-07-22/d4bp39/517421/215498/LIFULLFont_Medium.woff2
+https://inquiry.develop.homes.co.jp/l/517421/2020-07-22/d4bp35/517421/215494/LIFULLFont_Bold.woff
+https://inquiry.develop.homes.co.jp/l/517421/2020-07-22/d4bp37/517421/215496/LIFULLFont_Bold.woff2
+
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

@@ -1,0 +1,182 @@
+#　IEZUKURI-10842
+【6. 0件ページ導線削除】iezukuri-web コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10842
+
+## 内容
+-
+
+仕様：
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=175360163
+
+藤川さんから
+Hiromi Matsubara [LIFULL]さん
+現時点のtopicブランチで、0件パターンの箇所が下記の通りになります。
+
+●topicブランチ：IEZUKURI-9644_topic_delete_zero_city
+・会社LP
+http://gitlab.dev.nxin.jp/app/iezukuri/blob/IEZUKURI-9644_topic_delete_zero_city/php_include/src/Iezukuri/SpBundle/Resources/views/Landing/_Slot/makerCity.html.twig#L3-5
+
+・カタログLP
+http://gitlab.dev.nxin.jp/app/iezukuri/blob/IEZUKURI-9644_topic_delete_zero_city/php_include/src/Iezukuri/SpBundle/Resources/views/Landing/_Slot/productCity.html.twig#L3-5
+
+・価格LP
+http://gitlab.dev.nxin.jp/app/iezukuri/blob/IEZUKURI-9644_topic_delete_zero_city/php_include/src/Iezukuri/SpBundle/Resources/views/LandingPrice/_Slot/cityList.html.twig#L8-10
+
+・記事LP
+http://gitlab.dev.nxin.jp/app/iezukuri/blob/IEZUKURI-9644_topic_delete_zero_city/php_include/src/Iezukuri/SpBundle/Resources/views/LandingContents/parts/cityList.html.twig#L15-17
+
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-9644_topic_sp_lp_pref_norecord
+→廃棄
+
+IEZUKURI-9644_topic_delete_zero_city
+→直井くんが先に進めてた分。カタログLPの部分を参考にする。
+
+IEZUKURI-10316_delete_zero_city_price
+→直井くんのブランチは既にTopicに取り込まれて削除済み
+
+* Feature branch
+git checkout -b IEZUKURI-10842_feature_sp_lp_pref_norecord
+
+470845c3e (HEAD -> IEZUKURI-10842_feature_sp_lp_pref_norecord) 【IEZUKURI-10842】CVR向上施策 0件ページ導線削除 cont
+5cb49951c 【IEZUKURI-10842】CVR向上施策 0件ページ導線削除 price
+8095d92b7 【IEZUKURI-10842】CVR向上施策 0件ページ導線削除 maker
+8f14c5724 【IEZUKURI-10842】CVR向上施策 0件ページ導線削除 product
+
+## ソース
+
+★★★　カタログLPなど　★★★
+
+# datail_area.css
+.mod-datailArea .areaList .list.is-close .item {
+    background-color: #efefef;
+    color: #666!important; /* dark */
+    /* color: #ccc!important; /* normal */
+}
+.mod-datailArea .areaList .list.is-close .icon {
+    opacity: .5;
+    opacity: .7; /* dark */
+}
+
+# pref.html
+{% if makerList|length is not same as (0) %}
+    {% set isClose = false %}
+{% else %}
+    {% set isClose = true %}
+{% endif %}
+
+{% include 'SpBundle::Landing/_Slot/makerCity.html.twig' with {'area': area, 'pref': pref, 'theme': theme, 'isClose': isClose } only %}
+
+# makerCity.html
+{% if isClose %}
+    <li class="list is-close">
+        <div class="item">
+            <span class="name">{{ area.name }}</span>
+        </div>
+    </li>
+{% else %}
+    <li class="list">
+        <a href="{{ hrefCity }}" class="item">
+            <span class="name">{{ area.name }}</span><span class="icon"><span class="ui-icon ui-icon-arrow_right"></span></span>
+        </a>
+    </li>
+{% endif %}
+
+Resources/views/Landing/MakerList/list.html.twig
+Resources/views/Landing/ProductList/list.html.twig
+Resources/views/LandingPrice/Product/List/parts/productList.html.twig
+Resources/views/LandingSimulation/Product/parts/no_catalog.html.twig
+Resources/views/Maker/List/parts/noContents.html.twig
+Resources/views/Product/List/parts/noContents.html.twig
+
+MakerList/list.html.twig
+->ホームズくんを表示されせる一例（不採用？）
+
+<style>
+    .mod-notItemMessage .content {
+        background-image: url("/iezukuri/img/smartphone/common/icon/icon_homeskun_search.svg");
+        background-position: 95% 85%;
+        background-repeat: no-repeat;
+        background-size: 45px;
+        padding-right: 18%;
+        min-height: 70px;
+    }
+    .mod-notItemMessage .content .heading {
+        text-align: center;
+    }
+</style>
+<p class="heading">ご指定の条件に一致する<br>住宅メーカーが見つかりませんでした。</p>
+
+★★★　記事LP　★★★
+
+php_include/src/Iezukuri/SpBundle/Resources/public/css/smartphone/page/lp_contents/mod/area_pref_selector.css
+
+.mod-areaPrefSelector .cityList .list.is-close .item {
+    /* background-color: #efefef; */
+    color: #ccc;
+}
+
+
+
+
+## 単体テスト
+
+0件
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/maker/okinawa/theme-55/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/product/tokyo/theme-55
+
+通常
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/product/okinawa/
+
+会社LP
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/maker/okinawa/
+
+カタログLP
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/product/okinawa/
+
+価格LP
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/okinawa/low10000high499999/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/okinawa/low1000000high9999999/
+
+記事LP
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/cont/1/#pref=47
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/cont/2/#pref=47
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/cont/3/#pref=47
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/cont/4/#pref=47
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+# テスト環境
+・記事LP（テーマ無し）
+https://www-test.homes.co.jp/iezukuri/lp/cont/3/
+　→「北海道・東北」→「秋田県」
+
+・会社LP（テーマ無し）
+https://www-test.homes.co.jp/iezukuri/lp/maker/akita/
+
+・カタログLP（テーマ無し）
+https://www-test.homes.co.jp/iezukuri/lp/product/akita/
+
+・価格LP
+https://iezukuri-web-fujikawm.iez-dev.homes.co.jp/iezukuri/lp/price/product/akita/low10000high499999/
+
+
+## 懸念点
+
+
+## 今後

@@ -1,0 +1,44 @@
+#　IEZUKURI-11195
+来場ph1 iezukuri-web 会社TOPマージン修正
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-11195
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-10032_topic_visit_pj_ph2
+
+* Feature branch
+git checkout -b IEZUKURI-11195_feature_sp_lp_maker_margin_fix
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

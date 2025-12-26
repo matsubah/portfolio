@@ -1,0 +1,48 @@
+テスト仕様書
+----
+iezukuri-web
+
+ # 本体サイトのヘッダー
+ https://www-test.develop.homes.co.jp/iezukuri
+ 「ビデオ通話相談を予約」のリンクが下記になっていること
+ ** [https://lifull.my.salesforce-sites.com/counter/reserve/calendar?consult=100&shop=1001]
+
+ # 本体サイトのフッター
+ https://www-test.develop.homes.co.jp/iezukuri
+ 「ご意見・ご要望」のリンクが下記になっていること
+ ** [https://lifull.my.salesforce-sites.com/inquiryform/homes/feedback]
+
+ # LPサイトのフッター
+ https://www-test.develop.homes.co.jp/iezukuri/lp
+ 「ご意見・ご要望」のリンクが下記になっていること（ヘッダーはない）
+ ** [https://lifull.my.salesforce-sites.com/inquiryform/homes/feedback]
+
+ iezukuri-web-v5
+
+ # メルマガキャンセル画面（PCのみ、SP側は仕様上なし）
+ https://www.develop.homes.co.jp/iezukuri/mail/cancel/input/?cancel_key=abcd1234
+ ヘッダーの「ビデオ通話相談を予約」のリンクが下記になっていること
+ ** [https://lifull.my.salesforce-sites.com/counter/reserve/calendar?consult=100&shop=1001]
+ フッターの 「ご意見・ご要望」のリンクが下記になっていること（PCのみ、SP側は仕様上なし）
+ ** [https://lifull.my.salesforce-sites.com/inquiryform/homes/feedback]
+
+# 3Dモデルハウス一覧 (PC・SP)
+ https://www-test.develop.homes.co.jp/iezukuri/contents/3dmodelhouse/
+ ヘッダーの「ビデオ通話相談を予約」のリンクが下記になっていること
+ ** [https://lifull.my.salesforce-sites.com/counter/reserve/calendar?consult=100&shop=1001]
+ フッターの 「ご意見・ご要望」のリンクが下記になっていること
+ ** [https://lifull.my.salesforce-sites.com/inquiryform/homes/feedback]
+
+ # 3Dモデルハウス詳細 (PCのみ、SP側はヘッダー・フッター無し)
+ https://www-test.develop.homes.co.jp/iezukuri/contents/3dmodelhouse/1/
+ ヘッダーの「ビデオ通話相談を予約」のリンクが下記になっていること
+ ** [https://lifull.my.salesforce-sites.com/counter/reserve/calendar?consult=100&shop=1001]
+ フッターの 「ご意見・ご要望」のリンクが下記になっていること
+ ** [https://lifull.my.salesforce-sites.com/inquiryform/homes/feedback]
+
+ # 404エラー (PC・SP)
+ https://www-test.develop.homes.co.jp/iezukuri/contents/3dmodelhouse/xxxxx/
+ ヘッダーの「ビデオ通話相談を予約」のリンクが下記になっていること
+ ** [https://lifull.my.salesforce-sites.com/counter/reserve/calendar?consult=100&shop=1001]
+ フッターの 「ご意見・ご要望」のリンクが下記になっていること
+ ** [https://lifull.my.salesforce-sites.com/inquiryform/homes/feedback]

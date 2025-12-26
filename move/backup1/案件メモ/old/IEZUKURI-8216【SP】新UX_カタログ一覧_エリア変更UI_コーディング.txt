@@ -1,0 +1,88 @@
+# IEZUKURI-8216【SP】新UX_カタログ一覧_エリア変更UI_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8216
+
+## 内容
+- 仕様書
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=127843309
+
+JSの仮実装を含めて行う。※本実装はエンジニアで行う
+
+- デザイン
+https://drive.google.com/drive/folders/1pmvn2sSHqsXSszlne_99KbRugy7xvgUr
+
+デザインファイル
+SP_SELECT_検索条件変更１.png
+SP_SELECT_検索条件変更２.png
+
+## 対象画面
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/tokyo/chiyoda-city/list/
+
+- 仕様から抜粋
+
+現在ユーザが選択している条件を表示する
+
+★	１	×ボタン
+当ページは会社およびカタログ一覧ページからオーバーレイで表示されるが、×ボタン押下により元のページを再度表示する。
+その際、建てたいエリアの変更は行われない。
+オーバーレイの表示イメージはprottを参照　https://prottapp.com/app/#/projects/5bda86304942fb18cab8bc15
+★	2	タイトル	以下を表示
+建てたいエリアを変更する
+★	3	各ボタン
+全て以下ページの仕様を踏襲
+
+トップページ（建てたいエリアから探す、部分）
+都道府県選択ページ
+市区町村選択ページ
+
+★	4
+エリア選択
+都道府県選択
+
+エリア選択→エリア選択ページ（1ページ前）へ遷移
+都道府県選択→都道府県選択ページ（1ページ前）へ遷移
+
+建てたいエリアを変更する
+　↓
+｛都道府県｝で建てる
+住宅メーカーを探す　or　カタログを探す
+　↓
+｛都道府県｝｛市区町村｝で建てる
+住宅メーカーを探す　or　カタログを探す
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-7336_sp_ux_ui_list
+
+* Feature branch
+git checkout -b IEZUKURI-8216_sp_ux_ui_list_product_area
+
+## ソース
+
+git show IEZUKURI-8216_sp_ux_ui_list_product_area:php_include/src/Iezukuri/SpBundle/Resources/public/css/smartphone/page/list/maker/mod/modal_change_area.scss
+git checkout IEZUKURI-8216_sp_ux_ui_list_product_area -- src/Iezukuri/SpBundle/Resources/public/css/smartphone/page/list/maker/mod/modal_change_area.scss
+git checkout IEZUKURI-8216_sp_ux_ui_list_product_area -- src/Iezukuri/SpBundle/Resources/views/Maker/List/parts/modalChangeArea.html.twig
+git checkout IEZUKURI-8216_sp_ux_ui_list_product_area -- src/Iezukuri/SpBundle/Resources/public/js/smartphone/page/maker/list/condition.js
+
+
+* 削除
+
+change_condition.scss
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

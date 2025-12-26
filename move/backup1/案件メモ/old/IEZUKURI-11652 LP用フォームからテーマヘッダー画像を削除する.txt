@@ -1,0 +1,55 @@
+#　IEZUKURI-11652 LP用フォームからテーマヘッダー画像を削除する
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-11652
+
+## 内容
+
+既存仕様
+LP経由で問合せフォームに入った場合のみ、ヘッダー画像（テーマやカタログ一括請求など）が表示される
+
+変更後
+ヘッダー画像は表示しない。トルツメ
+
+## 対象画面
+* SP
+* PC
+
+## Branch
+
+* Topic branch
+git checkout -b IEZUKURI-11595_topic_user-with-land_ph0
+
+* Feature branch
+git checkout -b IEZUKURI-11652_feature_form_theme-header-img_delete
+
+## ソース
+
+*
+
+## 単体テスト
+
+PC/SP
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/inquire/product/input/?id[1588][]=4510&pref=13&city=203
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/inquire/maker/input/?id[1588][]=1588&pref=13&city=203
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/inquire/case/input/?id[1588][]=6244&pref=13&city=203
+
+PCのみ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/inquire/event/input/?id[1588]=5364
+
+テスト環境
+
+PC/SP
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/inquire/product/input/?id[1588][]=4510&pref=13&city=203
+
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/inquire/maker/input/?id[1588][]=1588&pref=13&city=203
+
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/inquire/case/input/?id[1588][]=6244&pref=13&city=203
+
+PCのみ
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/inquire/event/input/?id[1588]=5364
+
+## 懸念点
+
+
+## 今後

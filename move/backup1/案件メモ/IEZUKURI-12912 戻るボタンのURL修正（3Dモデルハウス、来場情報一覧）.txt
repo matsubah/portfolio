@@ -1,0 +1,55 @@
+#　IEZUKURI-12912
+戻るボタンのURL修正（3Dモデルハウス、来場情報一覧）
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-12912
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-12912_backbutton
+
+## ソース
+
+*
+
+## 単体テスト
+3DモデルハウスTOP（SP）
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/contents/3dmodelhouse/
+
+来場一覧（PC/SP）
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/visit/osaka/list/
+
+
+3DモデルハウスTOP（SP）
+https://www.homes.co.jp/iezukuri/contents/3dmodelhouse/
+
+来場一覧（PC/SP）
+https://www.homes.co.jp/iezukuri/visit/osaka/list/
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

@@ -1,0 +1,102 @@
+#　IEZUKURI-11782
+LazyLoad対応
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-11782
+
+## 内容
+リストページの画像の最適化のため、一覧ページにLazyloadの対応をお願いいたします。
+
+■対応方法
+
+嶌田さんに確認する
+→やりかたですが、基本的には一覧の画像（img 要素）に loading="lazy" 属性を付けるだけです！
+すべてのブラウザが対応しているわけではありませんが、プログレッシブエンハンスメントの考え方なのでそれでオーケーです。
+
+loading="lazy" を使うときの一般的な注意点としては、
+
+メインビジュアル等、ファーストビューに入る画像には使わないほうがよい
+画像の読み込みでリフローが発生しないようにする
+あたりが挙げられます。
+なので理想を言えば、リストのそれぞれ１件目の画像には loading="lazy" をつけない、といった対応ができるならかなりよさそうですが、必須ではありません。
+読み込みでリフローにならないようにする、については、画像が読み込まれて後続の要素がガタつかなければオーケーなはずなので、今のコードを見る限り、コンテナの width, height が明示的なので、問題ないかなと思っています。
+
+懸念があるとしたら、カタログのサムネイルに swiper が使われていて、スクロール量の算出まわりで相性問題がでるかもしれません。でたらいっしょに対策考えましょう！！
+
+※補足
+
+CAからの指示書
+https://docs.google.com/presentation/d/14CyIYYLPr4h-9nCesmgHyfGhwaexOXyr/edit#slide=id.p38
+
+## 対象画面
+
+「本体サイト一覧ページ（PC・SP）」
+
+会社一覧
+https://www.homes.co.jp/iezukuri/maker/list/
+カタログ一覧
+https://www.homes.co.jp/iezukuri/product/list/
+施工事例一覧
+https://www.homes.co.jp/iezukuri/case/list/
+来場情報一覧　※来場PJにも声かける
+https://www.homes.co.jp/iezukuri/visit/list/
+詳細内一覧ページ
+    └詳細内カタログ一覧（PC/SP）
+        └詳細内事例一覧（PC/SP）
+    └詳細内スタッフ一覧（PCのみ）
+    └詳細内評判の声一覧（PCのみ）
+    └詳細内来場一覧（SPのみ）
+（イベント一覧は基盤刷新後削除されるため対応しない）
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-11782_list_lazyload
+
+## ソース
+
+*
+
+## 単体テスト
+
+PC
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker/tokyo/list/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/tokyo/list/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/case/tokyo/list/
+
+詳細内カタログ一覧
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/product/
+詳細内事例一覧
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/case/
+詳細内スタッフ一覧
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/staff/
+詳細内評判の声一覧
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/voice/
+
+
+SP
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker/tokyo/list/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/tokyo/list/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/visit/osaka/list/
+詳細内カタログ一覧→既存のjsライブラリの仕様により、lazyLoad設定が取り消されるため実装せず
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/product/#anchor_tab
+詳細内事例一覧
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/case/#anchor_tab
+詳細内来場一覧
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/visit/#anchor_tab
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

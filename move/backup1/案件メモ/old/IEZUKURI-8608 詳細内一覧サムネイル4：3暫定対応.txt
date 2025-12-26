@@ -1,0 +1,58 @@
+# IEZUKURI-8608
+詳細内一覧サムネイル4：3暫定対応
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8608
+
+## 内容
+- ・対応ページ
+
+詳細内施工事例一覧
+詳細内カタログ一覧
+
+
+
+・施策内容
+
+各一覧部分のサムネイル画像表示枠（領域）を横4：縦3になるようにする
+※4：3の画像の場合に余白なく表示されること
+※自動トリミング自体は行われる（自動的に4：3になる）
+※どの端末でも4：3になる
+
+
+
+・ご留意いただきたい点
+
+詳細内カタログ一覧のみカルーセル対応になっています。
+今回はカルーセルはイキのママでお願いします。
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-116/product/#anchor_tab
+
+## Branch
+git checkout -b IEZUKURI-8608_sp_ux_detail_list_caseandproduct
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

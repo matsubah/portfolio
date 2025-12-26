@@ -1,0 +1,45 @@
+#　IEZUKURI-14186
+来場 関連イベント コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-14186
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+イベント詳細に関連イベントを表示
+https://www-pool.homes.co.jp/iezukuri/makers/11952/visits/92
+
+## Branch
+
+* Topic branch
+IEZUKURI-10032_topic_visit_detail_related
+
+* Feature branch
+git checkout -b IEZUKURI-14186_feature_visit_detail_related_coding
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

@@ -1,0 +1,150 @@
+#　IEZUKURI-12423
+タグ設置依頼_AccessMillタグ
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-12423
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-12423_tag_accessmill
+
+## ソース
+
+①流入（ドメイン配下ALL）
+<script id="_lognos_script_4049_" type="text/javascript" src="https://img.macromill.com/js/us002428cxu/3000040492-13/lognos.js"></script>
+②流入（LP）
+<script id="_lognos_script_4050_" type="text/javascript" src="https://img.macromill.com/js/us002428cxu/3000040502-09/lognos.js"></script>
+③各CVポイント
+<script id="_lognos_script_4051_" type="text/javascript" src="https://img.macromill.com/js/us002428cxu/3000040512-58/lognos.js"></script>
+
+
+GTMタグ設定
+
+【新規作成タグ】
+
+AccessMill_Visit
+AccessMill_LP_Visit
+AccessMill_CV_AplicationDone
+
+
+＜GTM＞
+・コンテナ名：【PC・SP】www.homes.co.jp （iezukuri HOME'S注文住宅）
+・コンテナID：GTM-WWRWC3
+・ワークスペース名：IEZUKURI-12423_【タグ設置】AccessMillタグ設置
+
+＜テスト仕様書＞
+・該当するGTMワークスペースのプレビューモードにて下記「操作」を行い、
+　GTMの「Summary」の内容を参照して、「期待値」の状態であることを確認する。
+・「期待値」の確認
+　・発火：「Tags Fired」にあること
+　・未発火：「Tags Not Fired」にあること
+上記が期待値通りであれば、各「結果」に〇を記載する。
+
+||No||PC
+ 結果||SP
+ 結果||項目||操作||期待値
+ (タグ発火確認)||
+|1| | |トップ|https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/
+ にアクセス|・発火
+ AccessMill_Visit
+ ・未発火
+ AccessMill_LP_Visit, AccessMill_CV_AplicationDone|
+|2| | |会社問合せ
+ (入力)|https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/inquire/maker/input/?id[2265][]=2265&pref=13&city=201
+ にアクセス|同上|
+|3| | |会社問合せ
+ (確認)|上記入力画面で、必須項目を入力し、
+ 確認ボタンを押下|同上|
+|4| | |会社問合せ
+ (完了)|上記確認画面で、送信ボタンを押下|・発火
+ AccessMill_LP_Visit, AccessMill_CV_AplicationDone
+ ・未発火
+ AccessMill_Visit|
+|5| | |LP|https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/lp/
+ にアクセス|・発火
+ AccessMill_LP_Visit
+ ・未発火
+ AccessMill_Visit, AccessMill_CV_AplicationDone|
+
+
+*
+
+## 単体テスト
+
+①
+PC
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/theme-41/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker/tokyo/chiyoda-city/list/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/case/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/event/list/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5058/visit/vid-50/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-104/voice/vid-4671/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/contents/3dmodelhouse/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/special/mutenkahouse/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/ranking/maker/2020/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/article/plan/
+
+SP
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/theme-41/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker/tokyo/chiyoda-city/list/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/visit/osaka/list/
+
+②
+PC
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/maker/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/maker/tokyo/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/product/theme-41/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/cont/3/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/low10000high499999/
+
+SP
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/maker/tokyo/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/product/theme-41/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/cont/1/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/cont/theme-29/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/low10000high499999/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/ranking/product/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/simulation/product/
+
+③
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/inquire/product/input/?id[1588][]=4510&pref=13&city=203
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/inquire/thanks
+
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

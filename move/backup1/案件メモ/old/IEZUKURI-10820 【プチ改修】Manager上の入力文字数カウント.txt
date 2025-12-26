@@ -1,0 +1,148 @@
+# IEZUKURI-10820
+【プチ改修】Manager上の入力文字数カウント
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10820
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-10820_input_display_countnum
+
+## ソース
+
+resources/views/campaign/parts/form.blade.php
+resources/views/cases/images.blade.php
+resources/views/cases/parts/form.blade.php
+resources/views/event/images.blade.php
+resources/views/event/parts/form_overview.blade.php
+resources/views/member/parts/input_form_feature.blade.php
+resources/views/member/parts/input_form_mail.blade.php
+resources/views/product/images.blade.php
+resources/views/product/parts/form.blade.php
+resources/views/staff/parts/form.blade.php
+resources/views/voice/parts/form.blade.php
+
+【対象ソース】
+「登録情報メンテナンス」の7カテゴリーで追加を実行した際の入力画面にて
+（「会員情報」は「会員情報（概要）」の編集画面）
+
+【7カテゴリー】
+product
+cases
+event
+campaign
+voice
+staff
+member
+
+
+*
+
+## 単体テスト
+
+カタログ
+https://localhost/product/new
+https://localhost/product/pid-31324/edit
+https://localhost/product/pid-31324/copy
+https://localhost/product/pid-31324/images
+
+施工事例
+https://localhost/case/new
+https://localhost/case/cid-21907/edit
+https://localhost/case/cid-21907/copy
+https://localhost/case/cid-21907/images
+
+見学会・住宅イベント
+https://localhost/event/new
+https://localhost/event/eid-14494/edit
+https://localhost/event/eid-14454/copy
+https://localhost/event/eid-14494/images
+
+キャンペーン
+https://localhost/campaign/new
+https://localhost/campaign/cid-733/edit
+
+住宅メーカーの評判
+新規追加→Synergyに飛ぶ？範囲外？
+https://f.msgs.jp/webapp/form/19253_nmcb_5/index.do
+
+「会社コメント新規登録」
+例：https://localhost/voice/vid-5745/comment/new
+会社コメントの編集
+https://localhost/voice/vid-5744/comment/vcid-1917/edit
+
+スタッフ
+https://localhost/staff/new
+https://localhost/staff/sid-10462/edit
+
+会員情報
+https://localhost/member/info/edit
+
+# 本番環境
+
+カタログ
+https://iezukuri-manager.homes.co.jp/product/new
+https://iezukuri-manager.homes.co.jp/product/pid-31324/edit
+https://iezukuri-manager.homes.co.jp/product/pid-31324/copy
+https://iezukuri-manager.homes.co.jp/product/pid-31324/images
+
+施工事例
+https://iezukuri-manager.homes.co.jp/case/new
+https://iezukuri-manager.homes.co.jp/case/cid-21907/edit
+https://iezukuri-manager.homes.co.jp/case/cid-21907/copy
+https://iezukuri-manager.homes.co.jp/case/cid-21907/images
+
+見学会・住宅イベント
+https://iezukuri-manager.homes.co.jp/event/new
+https://iezukuri-manager.homes.co.jp/event/eid-14494/edit
+https://iezukuri-manager.homes.co.jp/event/eid-14454/copy
+https://iezukuri-manager.homes.co.jp/event/eid-14494/images
+
+キャンペーン
+https://iezukuri-manager.homes.co.jp/campaign/new
+https://iezukuri-manager.homes.co.jp/campaign/cid-733/edit
+
+住宅メーカーの評判
+新規追加→Synergyに飛ぶ？範囲外？
+https://f.msgs.jp/webapp/form/19253_nmcb_5/index.do
+
+「会社コメント新規登録」
+例：https://iezukuri-manager.homes.co.jp/voice/vid-5745/comment/new
+会社コメントの編集
+https://iezukuri-manager.homes.co.jp/voice/vid-5744/comment/vcid-1917/edit
+
+スタッフ
+https://iezukuri-manager.homes.co.jp/staff/new
+https://iezukuri-manager.homes.co.jp/staff/sid-10462/edit
+
+会員情報
+https://iezukuri-manager.homes.co.jp/member/info/edit
+
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

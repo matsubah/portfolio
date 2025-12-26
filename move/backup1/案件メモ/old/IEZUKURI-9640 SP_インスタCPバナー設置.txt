@@ -1,0 +1,195 @@
+# IEZUKURI-9640
+SP_インスタCPバナー設置
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-9640
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=162008977
+
+- 完了の定義
+
+
+## 対象画面
+LP
+申し込みのthanks（完了）
+本体（TOPなど）
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-9640_banner_instagramCP
+
+## ソース
+
+*
+
+## 単体テスト
+
+トップ	/iezukuri/
+会社検索：都道府県選択（テーマなし）	/iezukuri/maker/
+会社検索：都道府県選択（テーマあり）	/iezukuri/maker/theme-41/
+会社検索：市区町村選択（テーマなし）	/iezukuri/maker/tokyo/
+会社検索：市区町村選択（テーマあり）	/iezukuri/maker/tokyo/theme-41/
+会社検索：詳細条件選択（エリア選択なし）	/iezukuri/maker/condition/
+会社検索：詳細条件選択（都道府県選択あり）	/iezukuri/maker/tokyo/condition/
+会社検索：詳細条件選択（市区町村選択あり）	/iezukuri/maker/tokyo/chiyoda-city/condition/
+カタログ検索：都道府県選択（テーマなし）	/iezukuri/product/
+カタログ検索：都道府県選択（テーマあり）	/iezukuri/product/theme-41/
+カタログ検索：市区町村選択（テーマなし）	/iezukuri/product/tokyo/
+カタログ検索：市区町村選択（テーマあり）	/iezukuri/product/tokyo/theme-41/
+カタログ検索：詳細条件選択（エリア選択なし）	/iezukuri/product/condition/
+カタログ検索：詳細条件選択（都道府県選択あり）	/iezukuri/product/tokyo/condition/
+カタログ検索：詳細条件選択（市区町村選択あり）	/iezukuri/product/tokyo/chiyoda-city/condition/
+施工事例検索：都道府県選択（テーマなし）	/iezukuri/case/
+施工事例検索：都道府県選択（テーマあり）	/iezukuri/case/theme-41/
+施工事例検索：市区町村選択（テーマなし）	/iezukuri/case/tokyo/
+施工事例検索：市区町村選択（テーマあり）	/iezukuri/case/tokyo/theme-41/
+施工事例検索：詳細条件選択（エリア選択なし）	/iezukuri/case/condition/
+施工事例検索：詳細条件選択（都道府県選択あり）	/iezukuri/case/tokyo/condition/
+施工事例検索：詳細条件選択（市区町村選択あり）	/iezukuri/case/tokyo/chiyoda-city/condition/
+会社一覧（エリア選択なし・テーマなし）	/iezukuri/maker/list/
+会社一覧（エリア選択なし・テーマ1件選択あり）	/iezukuri/maker/theme-41/list/
+会社一覧（都道府県選択あり・テーマなし）	/iezukuri/maker/tokyo/list/
+会社一覧（都道府県選択あり・テーマ1件選択あり）	/iezukuri/maker/tokyo/theme-41/list/
+会社一覧（市区町村選択あり・テーマなし）	/iezukuri/maker/tokyo/chiyoda-city/list/
+会社一覧（市区町村選択あり・テーマ1件選択あり）	/iezukuri/maker/tokyo/chiyoda-city/theme-41/list/
+会社一覧（テーマ複数選択あり）	/iezukuri/maker/list/
+カタログ一覧（エリア選択なし・テーマなし）	/iezukuri/product/list/
+カタログ一覧（エリア選択なし・テーマ1件選択あり）	/iezukuri/product/theme-41/list/
+カタログ一覧（都道府県選択あり・テーマなし）	/iezukuri/product/tokyo/list/
+カタログ一覧（都道府県選択あり・テーマ1件選択あり）	/iezukuri/product/tokyo/theme-41/list/
+カタログ一覧（市区町村選択あり・テーマなし）	/iezukuri/product/tokyo/chiyoda-city/list/
+カタログ一覧（市区町村選択あり・テーマ1件選択あり）	/iezukuri/product/tokyo/chiyoda-city/theme-41/list/
+カタログ一覧（テーマ複数選択あり）	/iezukuri/product/list/
+施工事例一覧（エリア選択なし・テーマなし）	/iezukuri/case/list/
+施工事例一覧（エリア選択なし・テーマ1件選択あり）	/iezukuri/case/theme-41/list/
+施工事例一覧（都道府県選択あり・テーマなし）	/iezukuri/case/tokyo/list/
+施工事例一覧（都道府県選択あり・テーマ1件選択あり）	/iezukuri/case/tokyo/theme-41/list/
+施工事例一覧（市区町村選択あり・テーマなし）	/iezukuri/case/tokyo/chiyoda-city/list/
+施工事例一覧（市区町村選択あり・テーマ1件選択あり）	/iezukuri/case/tokyo/chiyoda-city/theme-41/list/
+施工事例一覧（テーマ複数選択あり）	/iezukuri/case/list/
+イベント一覧（エリア選択なし）	/iezukuri/event/list/
+イベント一覧（都道府県選択あり）	/iezukuri/event/tokyo/list/
+住宅メーカーの評判一覧（エリア選択なし）	/iezukuri/voice/list/
+住宅メーカーの評判一覧（都道府県選択あり）	/iezukuri/voice/tokyo/list/
+会社詳細	/iezukuri/mid-5648/
+詳細内カタログ一覧	/iezukuri/mid-5648/product/
+カタログ詳細	/iezukuri/mid-5648/product/pid-19997/
+詳細内施工事例一覧	/iezukuri/mid-5648/case/
+施工事例詳細	/iezukuri/mid-5648/case/cid-17276/
+詳細内イベント一覧	/iezukuri/mid-5648/event/
+イベント詳細	/iezukuri/mid-5648/event/eid-10484/
+詳細内住宅メーカーの評判一覧	/iezukuri/mid-5648/voice/
+住宅メーカーの評判詳細	/iezukuri/mid-5648/voice/vid-5744/
+詳細内スタッフ一覧	/iezukuri/mid-5648/staff/
+スタッフ詳細	/iezukuri/mid-5648/staff/sid-6201/
+家づくりの基礎知識・ノウハウ	/iezukuri/article/
+家づくりのダンドリチェック	/iezukuri/article/plan/
+家づくりのスケジュール - 基礎知識を学ぶ	/iezukuri/article/plan/t-1-01/
+住まいの居住形式区分 - 基礎知識を学ぶ	/iezukuri/article/plan/t-1-02/
+工法と構造について - 基礎知識を学ぶ	/iezukuri/article/plan/t-1-03/
+ハウスメーカーで建てる注文住宅 - 家づくりの基本を知る	/iezukuri/article/plan/t-1-04/
+工務店で建てる注文住宅 - 家づくりの基本を知る	/iezukuri/article/plan/t-1-05/
+耐震・免震住宅の基礎知識 - イメージを固める	/iezukuri/article/plan/t-2-01/
+輸入住宅の基礎知識 - イメージを固める	/iezukuri/article/plan/t-2-02/
+ローコスト住宅の基礎知識 - イメージを固める	/iezukuri/article/plan/t-2-03/
+デザイン住宅の基礎知識 - イメージを固める	/iezukuri/article/plan/t-2-04/
+狭小住宅の基礎知識 - イメージを固める	/iezukuri/article/plan/t-2-05/
+省エネ・エコ住宅の基礎知識 - イメージを固める	/iezukuri/article/plan/t-2-06/
+自然素材の家の基礎知識 - イメージを固める	/iezukuri/article/plan/t-2-07/
+間取りプラン作成の基礎知識 - イメージを固める	/iezukuri/article/plan/t-2-08/
+要望の整理方法 - イメージを固める	/iezukuri/article/plan/t-2-09/
+平屋住宅の基礎知識 - イメージを固める	/iezukuri/article/plan/t-2-10/
+二世帯・三世帯住宅の基礎知識 - イメージを固める	/iezukuri/article/plan/t-2-11/
+20代から（子育て世代）の注文住宅基礎知識 - イメージを固める	/iezukuri/article/plan/t-2-12/
+住宅展示場・モデルハウスの基礎知識 - イメージを固める	/iezukuri/article/plan/t-2-13/
+土地活用・アパート建築の基礎知識 - イメージを固める	/iezukuri/article/plan/t-2-14/
+資金計画をたてよう - 資金計画を考える	/iezukuri/article/plan/t-3-01/
+住宅ローン 超入門 - 資金計画を考える	/iezukuri/article/plan/t-3-02/
+住宅の減税・補助金制度とは - 資金計画を考える	/iezukuri/article/plan/t-3-03/
+坪単価とは？ 坪単価の落とし穴 - 資金計画を考える	/iezukuri/article/plan/t-3-04/
+住宅ローンの落とし穴 - 資金計画を考える	/iezukuri/article/plan/t-3-05/
+安全な土地の見極め方 - 土地を買う・調べる	/iezukuri/article/plan/t-4-01/
+失敗しない土地の探し方 - 土地を買う・調べる	/iezukuri/article/plan/t-4-02/
+依頼先の選び方 - 住宅メーカー（ハウスメーカー・工務店）を探す	/iezukuri/article/plan/t-5-01/
+依頼前に気をつけるべき心構えをチェック
+- 住宅メーカー（ハウスメーカー・工務店）と契約する	/iezukuri/article/plan/t-6-01/
+価格の秘訣①	/iezukuri/article/cost/t-hiketsu1/
+価格の秘訣②	/iezukuri/article/cost/t-hiketsu2/
+価格の秘訣③	/iezukuri/article/cost/t-hiketsu3/
+大手ハウスメーカー特集	/iezukuri/contents/major/
+3Dモデルハウス特集（全国）	/iezukuri/contents/3dmodelhouse/
+3Dモデルハウス特集（都道府県選択あり）	/iezukuri/contents/3dmodelhouse/tokyo/
+3Dモデルハウス特集（詳細）	/iezukuri/contents/3dmodelhouse/1/
+住宅メーカーランキング（全国・週間）	/iezukuri/ranking/maker/
+住宅メーカーランキング（都道府県選択あり・週間）	/iezukuri/ranking/maker/tokyo/
+住宅メーカーランキング（全国・月間）	/iezukuri/ranking/maker/2018/11/
+住宅メーカーランキング（都道府県選択あり・月間）	/iezukuri/ranking/maker/tokyo/2018/11/
+住宅メーカーランキング（全国・年間）	/iezukuri/ranking/maker/2017/
+住宅メーカーランキング（都道府県選択あり・年間）	/iezukuri/ranking/maker/tokyo/2017/
+住宅カタログランキング（全国・週間）	/iezukuri/ranking/product/
+住宅カタログランキング（都道府県選択あり・週間）	/iezukuri/ranking/product/tokyo/
+住宅カタログランキング（全国・月間）	/iezukuri/ranking/product/2018/11/
+住宅カタログランキング（都道府県選択あり・月間）	/iezukuri/ranking/product/tokyo/2018/11/
+住宅カタログランキング（全国・年間）	/iezukuri/ranking/product/2017/
+住宅カタログランキング（都道府県選択あり・年間）	/iezukuri/ranking/product/tokyo/2017/
+施工事例ランキング（全国・週間）	/iezukuri/ranking/case/
+施工事例ランキング（都道府県選択あり・週間）	/iezukuri/ranking/case/tokyo/
+施工事例ランキング（全国・月間）	/iezukuri/ranking/case/2018/11/
+施工事例ランキング（都道府県選択あり・月間）	/iezukuri/ranking/case/tokyo/2018/11/
+施工事例ランキング（全国・年間）	/iezukuri/ranking/case/2017/
+施工事例ランキング（都道府県選択あり・年間）	/iezukuri/ranking/case/tokyo/2017/
+LPトップ	/iezukuri/lp/
+会社LP 都道府県選択（テーマあり）	/iezukuri/lp/maker/theme-41/
+会社LP 市区町村選択（テーマあり）	/iezukuri/lp/maker/tokyo/theme-41/
+会社LP 一覧（テーマあり）	/iezukuri/lp/maker/tokyo/chiyoda-city/theme-41/
+会社LP 都道府県選択（テーマなし）	/iezukuri/lp/maker/
+会社LP 市区町村選択（テーマなし）	/iezukuri/lp/maker/tokyo/
+会社LP 一覧（テーマなし）	/iezukuri/lp/maker/tokyo/chiyoda-city/
+カタログLP 都道府県選択（テーマあり）	/iezukuri/lp/product/theme-41/
+カタログLP 市区町村選択（テーマあり）	/iezukuri/lp/product/tokyo/theme-41/
+カタログLP 一覧（テーマあり）	/iezukuri/lp/product/tokyo/chiyoda-city/theme-41/
+カタログLP 都道府県選択（テーマなし）	/iezukuri/lp/product/
+カタログLP 市区町村選択（テーマなし）	/iezukuri/lp/product/tokyo/
+カタログLP 一覧（テーマなし）	/iezukuri/lp/product/tokyo/chiyoda-city/
+価格LPトップ	/iezukuri/lp/price/product/
+価格LP 1,000万円台 都道府県選択	/iezukuri/lp/price/product/low10000high499999/
+価格LP 1,000万円台 市区町村選択	/iezukuri/lp/price/product/tokyo/low10000high499999/
+価格LP 1,000万円台 一覧	/iezukuri/lp/price/product/tokyo/chiyoda-city/low10000high499999/
+価格LP 2,000万円~2,500万円未満 都道府県選択	/iezukuri/lp/price/product/low500000high624999/
+価格LP 2,000万円~2,500万円未満 市区町村選択	/iezukuri/lp/price/product/tokyo/low500000high624999/
+価格LP 2,000万円~2,500万円未満 一覧	/iezukuri/lp/price/product/tokyo/chiyoda-city/low500000high624999/
+価格LP 2,500万円~3,000万円未満 都道府県選択	/iezukuri/lp/price/product/low625000high749999/
+価格LP 2,500万円~3,000万円未満 市区町村選択	/iezukuri/lp/price/product/tokyo/low625000high749999/
+価格LP 2,500万円~3,000万円未満 一覧	/iezukuri/lp/price/product/tokyo/chiyoda-city/low625000high749999/
+価格LP 3,000万円~3,500万円未満 都道府県選択	/iezukuri/lp/price/product/low750000high874999/
+価格LP 3,000万円~3,500万円未満 市区町村選択	/iezukuri/lp/price/product/tokyo/low750000high874999/
+価格LP 3,000万円~3,500万円未満 一覧	/iezukuri/lp/price/product/tokyo/chiyoda-city/low750000high874999/
+価格LP 3,500万円~4,000万円未満 都道府県選択	/iezukuri/lp/price/product/low875000high999999/
+価格LP 3,500万円~4,000万円未満 市区町村選択	/iezukuri/lp/price/product/tokyo/low875000high999999/
+価格LP 3,500万円~4,000万円未満 一覧	/iezukuri/lp/price/product/tokyo/chiyoda-city/low875000high999999/
+価格LP 4,000万円以上 都道府県選択	/iezukuri/lp/price/product/low1000000high9999999/
+価格LP 4,000万円以上 市区町村選択	/iezukuri/lp/price/product/tokyo/low1000000high9999999/
+価格LP 4,000万円以上 一覧	/iezukuri/lp/price/product/tokyo/chiyoda-city/low1000000high9999999/
+シミュレーションLP	/iezukuri/lp/simulation/product/
+LPランキング（全国版 カタログ人気ランキング）	/iezukuri/lp/ranking/product/
+LPランキング（都道府県選択あり カタログ人気ランキング）	/iezukuri/lp/ranking/product/tokyo/
+記事LP（失敗談）	/iezukuri/lp/cont/1/
+記事LP（ハウスメーカーvs工務店）	/iezukuri/lp/cont/2/
+記事LP（カタログ_ベネフィット）	/iezukuri/lp/cont/3/
+記事LP（平屋）	/iezukuri/lp/cont/theme-29/
+記事LP（ローコスト住宅）	/iezukuri/lp/cont/theme-41/
+記事LP（20-30歳代人気）	/iezukuri/lp/cont/theme-33/
+問合せ完了（会社）	/iezukuri/inquire/maker/thanks/
+
+## 懸念点
+
+
+## 今後

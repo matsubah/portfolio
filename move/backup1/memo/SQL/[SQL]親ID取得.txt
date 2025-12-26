@@ -1,0 +1,21 @@
+parentがtrueになっているレコードが、親IDの情報です
+name: 会社名
+group_name: 親の会社名
+
+SELECT
+  mgm.group_id,
+  m.gyosha_id,
+  m.member_id,
+  mgm.parent_gyosha_id = m.gyosha_id AS parent,
+  m."name",
+  mgm.group_name
+FROM
+  housing_gyosha m
+LEFT JOIN housing_gyosha_group_member mg
+    USING (gyosha_id)
+JOIN housing_gyosha_group_master mgm ON
+  mg.group_id = mgm.group_id
+WHERE m.status = 1
+ORDER BY
+  mgm.group_id ASC, gyosha_id ASC
+;

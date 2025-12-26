@@ -1,0 +1,49 @@
+#　IEZUKURI-10070
+注文住宅 Business_導入事例ロゴと社名を水平
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10070
+
+## 内容
+-　https://iezukuri-business.homes.jp/cases/us-home
+
+現在ロゴと会社名が水平になっていないので、
+水平にしたい。
+
+可能か、不可能か調査依頼
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+
+* Feature branch
+git checkout -b IEZUKURI-10070_ferretOne_cases_css
+
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

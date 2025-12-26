@@ -1,0 +1,93 @@
+#　IEZUKURI-11783
+構造化データのエラー：Breadcrumb対応
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-11783
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-11594_topic_iezukuri_seo_breadcrumb
+
+* Feature branch
+git checkout -b IEZUKURI-11783_feature_breadcrumb_to_json
+
+## ソース
+
+*
+
+## 単体テスト
+
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker/tokyo/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker/tokyo/chiyoda-city/condition/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker/tokyo/chiyoda-city/list/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/tokyo/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/tokyo/chiyoda-city/condition/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/tokyo/chiyoda-city/list/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/product/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/product/pid-20082/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/case/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/case/cid-21792/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/voice/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/voice/vid-5745/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/event/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/event/eid-10484/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/staff/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/staff/sid-10494/
+
+
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/maker/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/maker/tokyo/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/maker/tokyo/chiyoda-city/condition/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/maker/tokyo/chiyoda-city/list/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/product/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/product/tokyo/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/product/tokyo/chiyoda-city/condition/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/product/tokyo/chiyoda-city/list/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-5648/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-5648/product/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-5648/product/pid-20082/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-5648/case/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-5648/case/cid-21792/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-5648/voice/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-5648/voice/vid-5745/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-5648/event/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-5648/event/eid-10484/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-5648/staff/
+https://iezukuri-web-develop.iez-dev.homes.co.jp/iezukuri/mid-5648/staff/sid-10494/
+
+markupの結果（
+
+https://search.google.com/test/rich-results?utm_campaign=sdtt&utm_medium=message&id=ZpHJQJO_JAc_VFWZLmCN0g
+
+
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

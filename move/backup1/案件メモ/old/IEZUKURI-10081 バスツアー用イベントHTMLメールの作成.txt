@@ -1,0 +1,52 @@
+#　IEZUKURI-10081
+バスツアー用イベントHTMLメールの作成　
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-10081
+
+## 内容
+-　ヒノキヤのバスツアーを成功させるため（＝成約数増加）
+より多くの集客を必要としています。
+
+その一環としてイベントHTMLメールを実施することになりました。
+
+スケジュール
+https://docs.google.com/spreadsheets/d/1ERZ1w4coRYZfSptFYhu3QnM2IAU60CHV2UcQjrQDV1I/edit#gid=1638883629
+
+配信日
+①2月26日（水）
+②3月4日（水）
+
+→入稿シート       2/6？
+→メール組み立て    2/7,2/10,2/12
+→キャプチャ共有    2/13
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+master
+
+* Feature branch
+git checkout -b IEZUKURI-10081_mail_bustour_202002
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

@@ -1,0 +1,48 @@
+# IEZUKURI-7347 PC_3D特集情報拡充_詳細_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-XXXX
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=123809896
+詳細の実装
+
+- 完了の定義
+トピックへマージ
+
+## 対象画面
+/iezukuri/contents/3dmodelhouse/{matterportID}/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/contents/3dmodelhouse/123/
+
+## Branch
+
+* Topic branch
+旧：
+IEZUKURI-6484_topic_pc_3dmodelhouse_detail
+新：
+IEZUKURI-6484_topic_pc_3dmodelhouse
+
+* Feature branch
+git checkout -b IEZUKURI-7347_feature_pc_3dmodelhouse_detail
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

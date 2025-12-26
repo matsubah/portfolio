@@ -1,0 +1,44 @@
+# IEZUKURI-11021
+【注文管轄サイト】「物件数No.1」から「日本最大級」へ表記変更作業
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-11021
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-11021_pc_header
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

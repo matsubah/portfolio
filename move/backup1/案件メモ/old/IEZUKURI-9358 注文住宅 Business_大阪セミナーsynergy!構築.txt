@@ -1,0 +1,54 @@
+# IEZUKURI-9358
+注文住宅 Business_大阪セミナーsynergy!構築
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-9358
+
+## 内容
+- デザインや表示項目は以下フォームと同様ですが、一部完了画面に追記していただきたい文章がございます。
+「メールが届かない場合は、お手数ですが担当営業までお問合せください。」
+※添付画像を参照
+
+https://f.msgs.jp/webapp/form/19253_nmcb_15/index.do
+
+セミナータイトル：【大阪開催】来場・成約に繋げる！差別化プロモーション・追客戦略
+日時：2019年12月5日（木）14:00～17:00
+
+- 仕様
+
+大阪セミナーのプレビューページです
+inputのname属性などはここから持ってきてください
+https://f.msgs.jp/webapp/form/19253_nmcb_19/pv/index.do
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+master
+
+* Feature branch
+git checkout -b IEZUKURI-9358_synergy_seminar-entry_osaka
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

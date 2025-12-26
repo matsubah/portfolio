@@ -1,0 +1,48 @@
+# IEZUKURI-8482
+SP詳細_サムネイル4:3対応_会社詳細_コーディング・JS実装
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8482
+
+## 内容
+- 仕様書：https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=141737656
+
+このチケットでは会社詳細ページのコーディング及びJSの実装を行う。
+
+基本はコーディング。
+
+JS実装が必要な箇所はキャンペーンのすべて見るの部分。
+
+※仕様書にある詳細内一覧の部分は共通パーツのため、このタスクで完結するはず
+
+## 対象画面
+会社詳細ページ：https://www.homes.co.jp/iezukuri/mid-****/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-116/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/
+
+## Branch
+
+* Topic branch
+IEZUKURI-8403_topic_sp_ux_detail_thumbnail
+
+* Feature branch
+git checkout -b IEZUKURI-8482_feature_sp_ux_detail_thumbnail
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

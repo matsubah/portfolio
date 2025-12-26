@@ -1,0 +1,52 @@
+# IEZUKURI-8017【SP】新UX_リファクタ_ファイル共通化(フロント側)
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8017
+
+## 内容
+- ・cssで共通化できそうな箇所を対応
+・不要ファイルがあれば削除
+
+完了の定義
+マイグレにマージ
+
+## 対象画面
+
+maker
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-116/
+case
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-116/case/
+product
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-116/product/
+
+list
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker/list/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker/theme-41/list/
+
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/list/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/tokyo/chiyoda-city/theme-41/list/
+
+詳細
+case
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-1767/case/cid-2483/
+
+
+## Branch
+
+* Topic branch
+migration
+
+* Feature branch
+git checkout -b IEZUKURI-8017_sp_css_merge
+
+## ソース
+
+*
+
+## 単体テスト
+
+
+## 懸念点
+
+
+## 今後

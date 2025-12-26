@@ -1,0 +1,54 @@
+# IEZUKURI-9357
+注文住宅 Business_名古屋セミナーsynergy!構築
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-9357
+
+## 内容
+- デザインや表示項目は以下フォームと同様ですが、一部完了画面に追記していただきたい文章がございます。
+「メールが届かない場合は、お手数ですが担当営業までお問合せください。」
+※添付画像を参照
+
+https://f.msgs.jp/webapp/form/19253_nmcb_15/index.do
+
+セミナータイトル：【名古屋開催】WEB集客のお客様を来場・成約に繋げるセミナー
+日時：2019年12月12日（木）14:00～17:00
+
+- 仕様
+名古屋プレビューページ
+https://f.msgs.jp/webapp/form/19253_nmcb_20/pv/index.do
+
+- 完了の定義
+htmlはリポジトリにアップお願いします
+https://github.com/lifull/iezukuri-static-html/tree/master/synergy/seminar_entry
+配下に新しくディレクトリ切る感じで
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+master
+
+* Feature branch
+git checkout -b IEZUKURI-9357_synergy_seminar-entry_nagoya
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

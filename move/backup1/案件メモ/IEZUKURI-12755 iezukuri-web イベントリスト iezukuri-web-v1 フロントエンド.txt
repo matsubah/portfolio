@@ -1,0 +1,65 @@
+#　IEZUKURI-12755
+iezukuri-web イベントリスト iezukuri-web-v1 フロントエンド
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-12755
+
+## 内容
+-　IEZUKURI-12754の実装後に行う
+
+仕様書
+
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=224541992
+
+デザイン（大枠）
+
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=236825012
+
+ブランチ
+
+iezukuri-web-api
+IEZUKURI-10032_topic_visit_reservation_rebase
+
+iezukuri-db
+IEZUKURI-10032_topic_visit_ph2
+
+URL（一例）
+
+/iezukuri/visits?pref=tokyo
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+IEZUKURI-10032_topic_ph2_visit
+
+* Feature branch
+git checkout -b IEZUKURI-12755_visit_plans_venues_list_coding
+
+
+branch
+IEZUKURI-10032_topic_ph2_visit
+└IEZUKURI-12755_visit_plans_venues_list_coding　（Topicとのマージ未済）
+　└IEZUKURI-12747_visit_plans_venues_list_coding_pref　（親ブランチとのマージ未済）
+
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

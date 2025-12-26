@@ -1,0 +1,45 @@
+#　IEZUKURI-12352
+Evolv_cont3ソースコード修正
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-12352
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+git checkout -b IEZUKURI-11636_topic_evolve_lp_cont03_edit
+
+* Feature branch
+git checkout -b IEZUKURI-12352_feature_sp_lp_cont03_edit
+git checkout -b IEZUKURI-12352_sp_lp_cont03_fix
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

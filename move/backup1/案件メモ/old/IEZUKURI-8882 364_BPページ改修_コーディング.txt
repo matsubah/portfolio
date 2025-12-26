@@ -1,0 +1,53 @@
+# IEZUKURI-8882 364_BPページ改修_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8882
+
+## 内容
+- 概要
+新規会員のサイト利用スケジュールのルールが厳密化される（ ※2019/09/04 以降適用 ）
+⇒それに伴い、BPページもにより、最短5日から利用可といううたい文句を変更する必要がある。
+⇒および、しばらく手を加えてなかったため、この機に乗じて、内容を最新のものに変更する。
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=149094553
+
+デザインファイルこちらになります。
+
+■デザイン
+https://drive.google.com/drive/folders/1o9P0JX9tm3zCr5Nnh1dDOWzQ2NsZqBUX
+■LP内の更新／新規img
+https://drive.google.com/drive/folders/1X3CrbKn_eqr29O8IRLYGscKHchKFyIxW
+
+BPページのhtmlを添付しました
+画像はローカルで、cssもローカルに落として作業してください
+(のちほどアップロードします)
+
+## 対象画面
+https://f.msgs.jp/webapp/form/19253_nmcb_1/index.do
+PCサイトのみ／シナジーにて構築
+
+## Branch
+
+* Topic branch
+master
+
+* Feature branch
+git checkout -b IEZUKURI-8882_synergy_bppage_input
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

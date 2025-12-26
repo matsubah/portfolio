@@ -1,0 +1,57 @@
+# IEZUKURI-9928
+【1.画像キレイ】価格LP：フロントエンド対応
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-9928
+
+##
+▼内容
+# 文言修正（LP上部）
+# 文言追加（チェックボックスの上）
+# 会社ロゴ追加(※)
+# 画像合計枚数を表示(※)
+# 画像を本体サイトと同様の見せ方にする（表示もキレイに）(※)
+# 「計測」に関しては技術実装で対応
+(※)について・・・ 技術実装が必要な場合はリリースフェーズを分ける可能性あり
+
+▼完了の定義
+topicにマージ
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=164712662
+
+## 対象画面（SPのみ）
+カタログLP
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/product/tokyo/setagaya-city/
+会社LP
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/maker/tokyo/setagaya-city/
+価格LP
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/tokyo/setagaya-city/low10000high499999/
+
+## Branch
+
+* Topic branch
+IEZUKURI-9644_topic_sp_lp_improve_cvr
+
+* Feature branch
+git checkout -b IEZUKURI-9928_feature_sp_lp_improve_cvr_price
+
+## ソース
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker/list/
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

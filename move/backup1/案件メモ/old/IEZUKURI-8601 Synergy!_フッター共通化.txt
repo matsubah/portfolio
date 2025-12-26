@@ -1,0 +1,47 @@
+# IEZUKURI-8601
+Synergy!_フッター共通化
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8601
+
+## 内容
+- メルマガ登録フォームとセミナーイベントフォームページのフッターを共通化する
+mod-simpleFooter
+
+完了の定義
+masterにマージ
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+master
+
+* Feature branch
+git checkout -b IEZUKURI-8601_synergy_merge_footer
+git checkout -b IEZUKURI-8601_synergy_path
+
+## ソース
+
+*
+git show origin/IEZUKURI-8467_topic_synergy_mailmagazine_regist:synergy/mailmagazine_regist/
+git checkout origin/IEZUKURI-8467_topic_synergy_mailmagazine_regist mailmagazine_regist/
+git checkout origin/IEZUKURI-8466_topic_synergy_seminar-entry seminar_entry/
+
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

@@ -1,0 +1,34 @@
+計測
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=122343617
+議事録
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=127832471
+時間管理表
+https://docs.google.com/spreadsheets/d/1jhyl95gNVIMm4zpiiATk2KTt7sMavypkljw_C-ZxY14/edit#gid=20615230
+
+開会の言葉(1min)
+チェックイン(1min * member)
+データ収集(15min try確認、バーンダウン確認、ベロシティ確認)
+アイデア出し
+- Keep(15min データ収集、グルーピング)
+    予想と実働の時間の差が少なかった
+
+- Problem(15min データ収集、グルーピング)
+    ツールのインストールに時間がかかった
+    Mac,vscodeの使いこなし
+    結婚指輪の作成
+    本棚の検討と導入（price >= 10000）
+
+- Try(15min 2,3個出るのが好ましいけど無理はしない)
+    ペアプロ→コード規約や命名規則など、早めに指摘してもらえたのがよかった。
+
+
+
+実装方針を加藤さん、渡辺さんと擦り合わせしておくと
+後で出戻りが少なくなる（藤川さん）
+
+レビューの仕方を擦り合わせしておくといいのでは（ヨンジュンさん）
+
+
+2/20が次の時期
+
+SPの次はPCへの対応

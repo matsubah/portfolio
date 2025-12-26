@@ -1,0 +1,147 @@
+#　IEZUKURI-12334
+注文_Evolv_検証ページへのEvolvタグ埋め込み
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-12334
+
+## 内容
+-　Evolvタグの埋め込みを以下のページを対象に行う
+
+▼タグ仕様書
+https://drive.google.com/drive/folders/1vLpVD_bpR4IGMrrorbZQ-2RpjEQaQigr
+
+▼タグ
+https://drive.google.com/file/d/1upjSEiKJ6F7UrZM2N3HSzeaaSyyIoXOI/view?usp=sharing
+
+▼対象：SP/PC
+
+## 対象画面
+
+▼下記LP配下全てのページ
+LPトップ	/iezukuri/lp/
+会社LP 都道府県選択（テーマあり）	/iezukuri/lp/maker/theme-41/
+会社LP 市区町村選択（テーマあり）	/iezukuri/lp/maker/tokyo/theme-41/
+会社LP 一覧（テーマあり）	/iezukuri/lp/maker/tokyo/chiyoda-city/theme-41/
+会社LP 都道府県選択（テーマなし）	/iezukuri/lp/maker/
+会社LP 市区町村選択（テーマなし）	/iezukuri/lp/maker/tokyo/
+会社LP 一覧（テーマなし）	/iezukuri/lp/maker/tokyo/chiyoda-city/
+カタログLP 都道府県選択（テーマあり）	/iezukuri/lp/product/theme-41/
+カタログLP 市区町村選択（テーマあり）	/iezukuri/lp/product/tokyo/theme-41/
+カタログLP 一覧（テーマあり）	/iezukuri/lp/product/tokyo/chiyoda-city/theme-41/
+カタログLP 都道府県選択（テーマなし）	/iezukuri/lp/product/
+カタログLP 市区町村選択（テーマなし）	/iezukuri/lp/product/tokyo/
+カタログLP 一覧（テーマなし）	/iezukuri/lp/product/tokyo/chiyoda-city/
+価格LPトップ	/iezukuri/lp/price/product/
+価格LP 1,000万円台 都道府県選択	/iezukuri/lp/price/product/low10000high499999/
+価格LP 1,000万円台 市区町村選択	/iezukuri/lp/price/product/tokyo/low10000high499999/
+価格LP 1,000万円台 一覧	/iezukuri/lp/price/product/tokyo/chiyoda-city/low10000high499999/
+価格LP 2,000万円~2,500万円未満 都道府県選択	/iezukuri/lp/price/product/low500000high624999/
+価格LP 2,000万円~2,500万円未満 市区町村選択	/iezukuri/lp/price/product/tokyo/low500000high624999/
+価格LP 2,000万円~2,500万円未満 一覧	/iezukuri/lp/price/product/tokyo/chiyoda-city/low500000high624999/
+価格LP 2,500万円~3,000万円未満 都道府県選択	/iezukuri/lp/price/product/low625000high749999/
+価格LP 2,500万円~3,000万円未満 市区町村選択	/iezukuri/lp/price/product/tokyo/low625000high749999/
+価格LP 2,500万円~3,000万円未満 一覧	/iezukuri/lp/price/product/tokyo/chiyoda-city/low625000high749999/
+価格LP 3,000万円~3,500万円未満 都道府県選択	/iezukuri/lp/price/product/low750000high874999/
+価格LP 3,000万円~3,500万円未満 市区町村選択	/iezukuri/lp/price/product/tokyo/low750000high874999/
+価格LP 3,000万円~3,500万円未満 一覧	/iezukuri/lp/price/product/tokyo/chiyoda-city/low750000high874999/
+価格LP 3,500万円~4,000万円未満 都道府県選択	/iezukuri/lp/price/product/low875000high999999/
+価格LP 3,500万円~4,000万円未満 市区町村選択	/iezukuri/lp/price/product/tokyo/low875000high999999/
+価格LP 3,500万円~4,000万円未満 一覧	/iezukuri/lp/price/product/tokyo/chiyoda-city/low875000high999999/
+価格LP 4,000万円以上 都道府県選択	/iezukuri/lp/price/product/low1000000high9999999/
+価格LP 4,000万円以上 市区町村選択	/iezukuri/lp/price/product/tokyo/low1000000high9999999/
+価格LP 4,000万円以上 一覧	/iezukuri/lp/price/product/tokyo/chiyoda-city/low1000000high9999999/
+シミュレーションLP	/iezukuri/lp/simulation/product/
+LPランキング（全国版 カタログ人気ランキング）	/iezukuri/lp/ranking/product/
+LPランキング（都道府県選択あり カタログ人気ランキング）	/iezukuri/lp/ranking/product/tokyo/
+記事LP（失敗談）	/iezukuri/lp/cont/1/
+記事LP（ハウスメーカーvs工務店）	/iezukuri/lp/cont/2/
+記事LP（カタログ_ベネフィット）	/iezukuri/lp/cont/3/
+記事LP（あこがれLP）	/iezukuri/lp/cont/4/
+記事LP（平屋）	/iezukuri/lp/cont/theme-29/
+記事LP（ローコスト住宅）	/iezukuri/lp/cont/theme-41/
+記事LP（20-30歳代人気）	/iezukuri/lp/cont/theme-33/
+
+▼フォーム全ページ（イベントを除く）
+問合せ入力（会社）	/iezukuri/inquire/maker/input/
+問合せ確認（会社）	/iezukuri/inquire/maker/confirm/
+問合せ完了（会社）	/iezukuri/inquire/maker/thanks/
+問合せ入力（カタログ）	/iezukuri/inquire/product/input/
+問合せ確認（カタログ）	/iezukuri/inquire/product/confirm/
+問合せ完了（カタログ）	/iezukuri/inquire/product/thanks/
+問合せ入力（施工事例）	/iezukuri/inquire/case/input/
+問合せ確認（施工事例）	/iezukuri/inquire/case/confirm/
+問合せ完了（施工事例）	/iezukuri/inquire/case/thanks/
+
+Evolv_20210209_テスト内容確認 - 注文住宅 - Confluence https://jira.next-group.jp/wiki/pages/viewpage.action
+
+## Branch
+
+* Topic branch
+git checkout -b IEZUKURI-11636_topic_evolve_tag
+
+* Feature branch
+git checkout -b IEZUKURI-12334_feature_lp_evolve_tag
+
+## ソース
+
+// evolvのタグ
+<script src="https://media.evolv.ai/asset-manager/releases/latest/webloader.min.js" data-evolv-environment="d6451b7f26"></script>
+
+php_include/src/Iezukuri/PcBundle/Resources/views/Inquire/layout.html.twig
+php_include/src/Iezukuri/PcBundle/Resources/views/Landing/layout.html.twig
+
+php_include/src/Iezukuri/PcBundle/Resources/views/LandingContents/layout.html.twig
+php_include/src/Iezukuri/PcBundle/Resources/views/LandingPrice/Product/index/index.html.twig
+php_include/src/Iezukuri/PcBundle/Resources/views/LandingPrice/Product/list/index.html.twig
+php_include/src/Iezukuri/PcBundle/Resources/views/LandingPrice/Product/pref/index.html.twig
+php_include/src/Iezukuri/PcBundle/Resources/views/LandingPrice/Product/top/index.html.twig
+
+php_include/src/Iezukuri/PcBundle/Resources/views/LandingRanking/Product/index.html.twig
+php_include/src/Iezukuri/PcBundle/Resources/views/LandingSimulation/Product/index.html.twig
+
+php_include/src/Iezukuri/PcBundle/Resources/views/parts/evolvTag.html.twig
+
+php_include/src/Iezukuri/SpBundle/Resources/views/Inquire/limit.html.twig
+php_include/src/Iezukuri/SpBundle/Resources/views/LandingContents/layout.html.twig
+php_include/src/Iezukuri/SpBundle/Resources/views/LandingPrice/Product/Index/index.html.twig
+php_include/src/Iezukuri/SpBundle/Resources/views/LandingPrice/Product/List/index.html.twig
+php_include/src/Iezukuri/SpBundle/Resources/views/LandingPrice/Product/Pref/index.html.twig
+php_include/src/Iezukuri/SpBundle/Resources/views/LandingPrice/Product/Top/index.html.twig
+
+php_include/src/Iezukuri/SpBundle/Resources/views/_Slot/parts/evolvTag.html.twig
+
+php_include/src/Iezukuri/SpBundle/Resources/views/inq_layout.html.twig
+php_include/src/Iezukuri/SpBundle/Resources/views/lp_layout.html.twig
+
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+ユニット
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/maker/tokyo/
+
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/product/theme-41/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/product/tokyo/chiyoda-city/theme-41/
+
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/low10000high499999/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/tokyo/low10000high499999/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/tokyo/chiyoda-city/low10000high499999/
+
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/inquire/product/input/?id[1588][]=4510&pref=13&city=203
+
+
+
+## 懸念点
+
+
+## 今後

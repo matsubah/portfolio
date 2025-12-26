@@ -1,0 +1,46 @@
+#　IEZUKURI-11964
+manager 施設画像登録 iezukuri-manager フロントエンド
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-11964
+
+## 内容
+-　仕様書
+
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=220213432
+
+実装後に見た目を整える必要があればコーディングにて対応する
+
+## 対象画面
+https://localhost/visit/venue/vid-11/images
+
+## Branch
+
+* Topic branch
+IEZUKURI-10032_topic_ph2_visit
+
+* Feature branch
+git checkout -b IEZUKURI-11964_visit_venue_images
+
+## ソース
+
+API
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=221045960
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=221047932
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

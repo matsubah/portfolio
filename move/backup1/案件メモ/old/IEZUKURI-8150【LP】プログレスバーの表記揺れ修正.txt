@@ -1,0 +1,106 @@
+# IEZUKURI-8150【LP】プログレスバーの表記揺れ修正
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8150
+
+## 内容
+-　プログレスバーの表記揺れ修正
+└テーマTOP：請求、市区町村選択：比較、リスト：比較
+└メーカーTOP：一括お問合せ、市区町村選択：一括お問合せ、リスト：カタログ比較
+└価格TOP：請求、市区町村選択：請求、リスト：請求
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+カタログ
+市区町村選択
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/product/tokyo/theme-41/
+一覧ページ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/product/tokyo/chiyoda-city/theme-41/
+
+メーカー
+市区町村選択
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/maker/tokyo/theme-41/
+一覧ページ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/maker/tokyo/chiyoda-city/theme-41/
+
+価格プロダクト
+都道府県選択
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/low10000high499999/
+
+市区町村選択
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/tokyo/low10000high499999/
+
+一覧ページ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/tokyo/chiyoda-city/low10000high499999/
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-8150_lp_progressbar
+
+## ソース
+
+src/Iezukuri/PcBundle/Resources/views/Landing/Maker/index.html.twig:                <li class="step3">一括お問合せ</li>
+src/Iezukuri/PcBundle/Resources/views/Landing/MakerList/listPref.html.twig:            <li class="step3">一括お問合せ</li>
+src/Iezukuri/PcBundle/Resources/views/Landing/MakerList/listPrefCity.html.twig:            <li class="step3 active">一括お問合せ</li>
+src/Iezukuri/PcBundle/Resources/views/Landing/MakerList/listPrefCity.html.twig:        <span class="step step3">step3</span><span class="text"><span class="key">{{ data.pref.name }}{{ data.city.name }}</span>で<span class="sub">建築可能</span>な会社に<span class="sub">一括お問合せ</span></span>
+src/Iezukuri/PcBundle/Resources/views/Landing/MakerList/listPrefCityTheme.html.twig:            <li class="step3 active">一括お問合せ</li>
+src/Iezukuri/PcBundle/Resources/views/Landing/MakerList/listPrefCityTheme.html.twig:        <span class="step step3">step3</span><span class="text"><span class="key">{{ data.pref.name }}{{ data.city.name }}</span>で<span class="sub">建築可能</span>な会社に<span class="sub">一括お問合せ</span></span>
+src/Iezukuri/PcBundle/Resources/views/Landing/MakerList/listPrefTheme.html.twig:            <li class="step3">一括お問合せ</li>
+src/Iezukuri/PcBundle/Resources/views/Landing/MakerList/parts/form.html.twig:        <button class="ui-btn-img prg-submit" type="submit" value="">ハウスメーカー・工務店に無料で一括お問合せ</button>
+src/Iezukuri/PcBundle/Resources/views/Landing/MakerList/parts/form.html.twig:        <button class="ui-btn-img prg-submit" type="submit" value="">チェック済みの住宅メーカーに一括お問合せ（無料）</button>
+src/Iezukuri/PcBundle/Resources/views/Landing/parts/scrollHeader.html.twig:            {% set buttonText = '一括お問合せ' %}
+src/Iezukuri/SpBundle/Resources/views/Landing/Maker/index.html.twig:        <span class="step step3"><span>3.一括お問合せ</span></span>
+src/Iezukuri/SpBundle/Resources/views/Landing/MakerList/list.html.twig:                <span class="step step3"><span>3.一括お問合せ</span></span>
+src/Iezukuri/SpBundle/Resources/views/Landing/MakerList/list.html.twig:                <span class="step step3"><em>3.一括お問合せ</em></span>
+
+
+
+## 単体テスト
+
+カタログ
+Step1
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/product/theme-41/
+Step2
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/product/tokyo/theme-41/
+Step3
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/product/tokyo/chiyoda-city/theme-41/
+
+メーカー
+Step1
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/maker/theme-41/
+Step2
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/maker/tokyo/theme-41/
+Step3
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/maker/tokyo/chiyoda-city/theme-41/
+
+価格プロダクト
+Step1
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/low10000high499999/
+Step2
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/tokyo/low10000high499999/
+Step3
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/tokyo/chiyoda-city/low10000high499999/
+
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

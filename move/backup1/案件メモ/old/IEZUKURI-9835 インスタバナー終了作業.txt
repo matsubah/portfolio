@@ -1,0 +1,54 @@
+# IEZUKURI-9835 インスタバナー終了作業
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-9835
+
+## 内容
+-　年内でインスタCPが終了するため、
+先日設置していただいたインスタCPバナーをすべて削除でお願いいたします。
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+
+
+## Branch
+
+* Topic branch
+develop
+
+* Feature branch
+git checkout -b IEZUKURI-9835_banner_instagramCP_remove
+
+## ソース
+
+htdocs/www/iezukuri/img/smartphone/bnr/campaign/bnr_instagram_1000x1000.jpg
+php_include/src/Iezukuri/SpBundle/Resources/public/css/smartphone/page/_slot/merchandise/campaign_banner.css
+php_include/src/Iezukuri/SpBundle/Resources/views/_Slot/assets/css/base.html.twig
+php_include/src/Iezukuri/SpBundle/Resources/views/_Slot/lp_footer.html.twig
+php_include/src/Iezukuri/SpBundle/Resources/views/_Slot/parts/campaignBanner.html.twig
+php_include/src/Iezukuri/SpBundle/Resources/views/_Slot/parts/extraBanner.html.twig
+php_include/src/Iezukuri/SpBundle/Resources/views/Inquire/thanks.html.twig
+php_include/src/Iezukuri/SpBundle/Resources/views/LandingContents/parts/footer.html.twig
+php_include/src/Iezukuri/SpBundle/Resources/views/LandingPrice/_Slot/footer.html.twig
+php_include/src/Iezukuri/SpBundle/Resources/views/LandingRanking/parts/footer.html.twig
+php_include/src/Iezukuri/SpBundle/Resources/views/LandingSimulation/parts/footer.html.twig
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

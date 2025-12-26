@@ -1,0 +1,104 @@
+# IEZUKURI-8028【SP】新UX_会社一覧_phase1残対応
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-8028
+
+## 内容
+- https://docs.google.com/spreadsheets/d/1gV0fXbBiyv-l028vRNg78S2yzZVHK3s4820KUe85IuU/edit#gid=0
+
+2:アコーディオン部分の開閉でアイコンが上下するが、このアイコンの解像度が低い気がする
+
+3:もっと見るアイコンがボヤボヤしてる
+
+4:カタログと施工事例の件数表示の箇所が近すぎる気がするので、カタログ件数部分と「施工事例」のラベルを少し空けた方が見やすいと思います。
+
+6:一覧の下部「建てたいエリア」のアコーディオンを開くと、「詳細条件」との境目に罫線がない
+
+7:「詳細情報」画面の画像部分で、角丸ボーダーが途切れている（テスト環境で画像がない場合に確認可能）
+->対応なし
+
+10:坪単価と値段の間のマージンをもう少し空けたい
+->タカイさんに確認
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=xxxx
+
+- 完了の定義
+
+
+## 対象画面
+2
+public/css/smartphone/page/detail/case/index/mod/keyword_area.css
+public/css/smartphone/page/detail/case/index/mod/pr_textarea.css
+public/css/smartphone/page/detail/maker/mod/keyword_area.css
+public/css/smartphone/page/detail/maker/mod/pr_textarea.css
+public/css/smartphone/page/detail/product/index/mod/keyword_area.css
+public/css/smartphone/page/detail/product/index/mod/pr_textarea.css
+public/css/smartphone/page/list/maker/mod/change_condition.css
+public/css/smartphone/page/list/maker/mod/change_condition.scss
+public/css/smartphone/page/list/product/mod/change_condition.css
+public/css/smartphone/page/list/product/mod/change_condition.scss
+
+
+3
+詳細内施工事例一覧
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-116/case/
+
+詳細内カタログ一覧
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/product/
+
+会社一覧
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker/theme-41/list/
+
+カタログ一覧
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/list/
+
+
+4
+会社一覧
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker/theme-41/list/
+カタログ一覧
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/list/
+
+詳細内施工事例一覧
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-116/case/
+詳細内カタログ一覧
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/product/
+
+会社詳細
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-1767/
+施工事例詳細
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/case/cid-17276/
+カタログ詳細
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-181/product/pid-924/
+
+6
+
+10
+
+## Branch
+
+* Topic branch
+migration
+
+* Feature branch
+git checkout -b IEZUKURI-8028_sp_makerlist_remaintopics
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

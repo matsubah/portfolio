@@ -1,0 +1,57 @@
+#　IEZUKURI-11671
+来場ph1流入増施策：リスト内導線追加　フロント
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-11671
+
+## 内容
+-
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=208081283
+
+- 完了の定義
+
+
+## 対象画面
+/iezukuri/maker/list/
+/iezukuri/maker/kanagawa/yokohama_tsurumi-city/list/
+/iezukuri/product/list/
+
+/iezukuri/lp/maker/tokyo/ogasawara-city/
+/iezukuri/lp/product/tokyo/ogasawara-city/
+/iezukuri/lp/price/product/tokyo/ogasawara-city/low1000000high9999999/
+
+0件
+/iezukuri/maker/kanagawa/yokohama_tsurumi-city/theme-34/list/
+/iezukuri/lp/product/tokyo/ogasawara-city/theme-55/
+
+対象外
+/iezukuri/visit/kanagawa/list/
+
+## Branch
+
+* Topic branch
+IEZUKURI-10032_topic_pr_visit_in_list
+
+* Feature branch
+git checkout -b IEZUKURI-11671_feature_pr_visit_in_list
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

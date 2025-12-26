@@ -1,0 +1,121 @@
+# IEZUKURI-7544【SP】新UX_共通パーツ(戻るリンク)_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-7544
+
+## 内容
+-
+
+- 仕様
+仕様はここを参照しつつ、最新のデザインで実装する
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=127836117
+
+ページ下部の戻るリンクを実装
+
+- 完了の定義
+migrationにマージ
+
+
+## 対象画面
+
+## Branch
+
+* Topic branch
+IEZUKURI-6885_topic_ux_common_backbtn
+
+* Feature branch
+git checkout -b IEZUKURI-7544_feature_ux_common_backbtn
+
+## ソース
+
+<p class="mod-backLink">
+    <a href="/iezukuri/">
+        <span class="ui-icon ui-icon-arrow_left icon"></span>
+        注文住宅トップ
+    </a>
+</p>
+
+
+
+/* 戻るリンク */
+.mod-backLink {
+    margin: 0 5px 15px 10px;
+    width: 8.8rem;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    background: #fff;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    display: flex;
+}
+.mod-backLink a {
+    display: inline-block;
+    padding: 1em .7rem 1em 1.5em;
+    width: 100%;
+    text-decoration: none;
+    line-height: 1;
+    font-size: 1.2rem;
+    color: inherit;
+}
+.mod-backLink a .icon {
+    background-position: 0 -19em;
+    margin-right: .5rem;
+    transform: rotate(180deg);
+}
+
+
+* /Users/matsubah/mountpoint/iezukuri-web-unit/php_include/src/Iezukuri/SpBundle/Resources/views/Index/parts/mod-backLink.html.twig
+* /Users/matsubah/mountpoint/iezukuri-web-unit/php_include/src/Iezukuri/SpBundle/Resources/views/Contents/Matterport/index.html.twig
+* /Users/matsubah/mountpoint/iezukuri-web-unit/php_include/src/Iezukuri/SpBundle/Resources/views/Dsp/_Slot/backLink.html.twig
+* /Users/matsubah/mountpoint/iezukuri-web-unit/php_include/src/Iezukuri/SpBundle/Resources/views/_Slot/parts/mod-backLink.html.twig
+* /Users/matsubah/mountpoint/iezukuri-web-unit/php_include/src/Iezukuri/SpBundle/Resources/views/Index/index.html.twig
+* /Users/matsubah/mountpoint/iezukuri-web-unit/php_include/src/Iezukuri/SpBundle/Resources/views/Index/parts/mod-backLink.html.twig
+* /Users/matsubah/mountpoint/iezukuri-web-unit/php_include/src/Iezukuri/SpBundle/Resources/views/Landing/_Slot/mod-backLink.html.twig
+* /Users/matsubah/mountpoint/iezukuri-web-unit/php_include/src/Iezukuri/SpBundle/Resources/views/Landing/Maker/index.html.twig
+* /Users/matsubah/mountpoint/iezukuri-web-unit/php_include/src/Iezukuri/SpBundle/Resources/views/Landing/MakerList/list.html.twig
+* /Users/matsubah/mountpoint/iezukuri-web-unit/php_include/src/Iezukuri/SpBundle/Resources/views/Landing/MakerList/listB.html.twig
+* /Users/matsubah/mountpoint/iezukuri-web-unit/php_include/src/Iezukuri/SpBundle/Resources/views/Landing/Product/index.html.twig
+* /Users/matsubah/mountpoint/iezukuri-web-unit/php_include/src/Iezukuri/SpBundle/Resources/views/Landing/ProductList/list.html.twig
+* /Users/matsubah/mountpoint/iezukuri-web-unit/php_include/src/Iezukuri/SpBundle/Resources/views/Landing/ProductList/listB.html.twig
+* /Users/matsubah/mountpoint/iezukuri-web-unit/php_include/src/Iezukuri/SpBundle/Resources/views/LandingPrice/Product/List/index.html.twig
+* /Users/matsubah/mountpoint/iezukuri-web-unit/php_include/src/Iezukuri/SpBundle/Resources/views/LandingPrice/Product/Pref/index.html.twig
+* /Users/matsubah/mountpoint/iezukuri-web-unit/php_include/src/Iezukuri/SpBundle/Resources/views/Maker/Flow/city.html.twig
+* /Users/matsubah/mountpoint/iezukuri-web-unit/php_include/src/Iezukuri/SpBundle/Resources/views/Maker/Flow/flow.html.twig
+* /Users/matsubah/mountpoint/iezukuri-web-unit/php_include/src/Iezukuri/SpBundle/Resources/views/Maker/Flow/pref.html.twig
+* /Users/matsubah/mountpoint/iezukuri-web-unit/php_include/src/Iezukuri/SpBundle/Resources/views/Maker/List/list.html.twig
+* /Users/matsubah/mountpoint/iezukuri-web-unit/php_include/src/Iezukuri/SpBundle/Resources/views/Product/Flow/city.html.twig
+* /Users/matsubah/mountpoint/iezukuri-web-unit/php_include/src/Iezukuri/SpBundle/Resources/views/Product/Flow/flow.html.twig
+* /Users/matsubah/mountpoint/iezukuri-web-unit/php_include/src/Iezukuri/SpBundle/Resources/views/Product/Flow/pref.html.twig
+* /Users/matsubah/mountpoint/iezukuri-web-unit/php_include/src/Iezukuri/SpBundle/Resources/views/Product/List/list.html.twig
+
+
+## 単体テスト
+
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/tokyo
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/theme-41
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/tokyo/theme-41
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/tokyo/chiyoda-city/condition/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/tokyo/chiyoda-city/theme-41/list
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker/tokyo
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker/theme-41
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker/tokyo/theme-41
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker/tokyo/chiyoda-city/condition
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker/tokyo/chiyoda-city/theme-41/list
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/product
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/product/theme-41
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/maker/tokyo
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/maker/tokyo/theme-41
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/price/product/tokyo/low10000high499999
+
+## 懸念点
+
+Index：Backボタンは取る予定、エリア選択のボタンにデザインが当たる予定
+詳細条件：マージ前なので古いデザインと混在する
+LP：共通パーツのため構造やスタイルが反映される
+
+## 今後

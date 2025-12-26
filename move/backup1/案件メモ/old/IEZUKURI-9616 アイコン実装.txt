@@ -1,0 +1,48 @@
+# IEZUKURI-9616 アイコン実装
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-9616
+
+## 内容
+- 現在v5で利用されているui-iconをatoms化する
+実装方法の選定から
+
+cssスプライト    →v5に近い、現状はpng
+アイコンフォント  →Webフォント？
+svgスプライトetc →svg
+
+modifierでアイコン切り替えられると素敵
+
+- 完了の定義
+調査、実装まで
+
+## 対象画面
+SPトップ
+
+## Branch
+
+* Topic branch
+develop
+https://github.com/lifull/iezukuri-web/tree/IEZUKURI-8298_renewal_reload
+
+* Feature branch
+git checkout -b IEZUKURI-9616_icons
+
+## ソース
+
+*
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+
+## 懸念点
+
+
+## 今後

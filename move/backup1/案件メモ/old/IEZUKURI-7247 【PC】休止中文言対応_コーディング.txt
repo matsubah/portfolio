@@ -1,0 +1,88 @@
+# IEZUKURI-7247 【PC】休止中文言対応_コーディング
+
+## JIRA:
+https://jira.next-group.jp/browse/IEZUKURI-7247
+
+## 内容
+- PCで問合せ休止中の文言対応を行う
+
+## 対象画面
+
+一覧(カタログ、会社)
+詳細
+詳細内一覧
+
+- 仕様
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=125557406
+
+- 完了の定義
+developにマージ
+
+- デザインFIX
+https://jira.next-group.jp/browse/IEZUKURI-7064
+
+## Branch
+
+* Topic branch
+なし
+
+* Feature branch
+git checkout -b IEZUKURI-7247_pc_inquiry_paused
+
+## ソース
+
+1. php_include/src/Iezukuri/PcBundle/Resources/public/css/default/page/detail/case/index/mod/main_picture.css
+* php_include/src/Iezukuri/PcBundle/Resources/public/css/default/page/detail/case/list/mod/box_case.css
+* php_include/src/Iezukuri/PcBundle/Resources/public/css/default/page/detail/maker/index/mod/main_picture.css
+* php_include/src/Iezukuri/PcBundle/Resources/public/css/default/page/detail/mod/maker_outline.css
+* php_include/src/Iezukuri/PcBundle/Resources/public/css/default/page/detail/product/index/mod/main_picture.css
+* php_include/src/Iezukuri/PcBundle/Resources/public/css/default/page/detail/product/list/mod/box_product.css
+* php_include/src/Iezukuri/PcBundle/Resources/public/css/default/page/list/case/mod/box_case.css
+* php_include/src/Iezukuri/PcBundle/Resources/public/css/default/page/list/maker/mod/box_maker.css
+* php_include/src/Iezukuri/PcBundle/Resources/public/css/default/page/list/product/mod/box_product.css
+* php_include/src/Iezukuri/PcBundle/Resources/views/CaseDetail/list.html.twig
+* php_include/src/Iezukuri/PcBundle/Resources/views/CaseDetail/parts/mainPicture.html.twig
+* php_include/src/Iezukuri/PcBundle/Resources/views/CaseList/parts/listContents.html.twig
+* php_include/src/Iezukuri/PcBundle/Resources/views/MakerDetail/parts/mainPicture.html.twig
+* php_include/src/Iezukuri/PcBundle/Resources/views/MakerList/parts/listContents.html.twig
+* php_include/src/Iezukuri/PcBundle/Resources/views/ProductDetail/list.html.twig
+* php_include/src/Iezukuri/PcBundle/Resources/views/ProductDetail/parts/mainPicture.html.twig
+* php_include/src/Iezukuri/PcBundle/Resources/views/ProductList/parts/listContents.html.twig
+* php_include/src/Iezukuri/PcBundle/Resources/views/parts/detail/headerInquireBtn.html.twig
+* htdocs/www/iezukuri/img/default/page/detail/icon_homeskun_paused.png
+
+## 単体テスト
+
+３画面を下記ブラウザで確認
+- Chrome
+- Firefox
+- Safari
+
+※いずれもfor Mac
+
+* 会社詳細ページ / 会社一覧ページ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-3217/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker/tokyo/chiyoda-city/theme-41/list/?page=4
+
+* カタログ詳細ページ / 詳細内カタログ一覧ページ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-3217/product/pid-11200/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-3217/product/
+
+* 施工事例詳細ページ / 詳細内施工事例一覧ページ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-1013/case/cid-13551/
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-1013/case/
+
+* イベント詳細ページ / 詳細内イベント一覧ページ
+なし
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/mid-5648/event/
+
+* 一覧ページ
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/maker/tokyo/chiyoda-city/theme-41/list/?page=4
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/product/tokyo/chiyoda-city/theme-41/list/?page=7
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/case/tokyo/chiyoda-city/theme-41/list/?page=17
+
+
+## 懸念点
+2/4までに合計13.5hかかった（Gカルの集計）
+
+## 今後
