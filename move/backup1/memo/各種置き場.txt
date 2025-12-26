@@ -1,0 +1,40 @@
+■v5PCのtwig置き場
+php_include/src/Iezukuri/PcBundle/Resources/views
+
+
+■v5SPのtwig置き場
+php_include/src/Iezukuri/SpBundle/Resources/views
+
+
+■v5PCのcss置き場
+php_include/src/Iezukuri/PcBundle/Resources/public/css/default
+
+
+■v5PCのcss置き場
+php_include/src/Iezukuri/SpBundle/Resources/public/css/smartphone
+
+
+■dump先
+htdocs/www/iezukuri/compiled
+
+
+■キャッシュのクリア方法
+
+php_includeに移動
+cd /web/iezukuri/unit/$USER/php_include
+→エイリアス”cdcc” cc:cache clear
+
+Symfonyキャッシュ(routing.ymlなど)
+$ php app/console cache:clear
+$ php app/console cache:clear -k PcApp
+$ php app/console cache:clear -k SpApp
+
+アプリ側（memcached全部、Symfonyデフォルトでない設定ファイル(seo.ymlなど)）
+$ php app/console appcache:clear
+
+JS・CSSのダンプ
+表示が遅い場合、JS・CSSを出力しておけば実ファイルが参照される。
+$ php app/console assetic:dump
+→エイリアス"phpdump"
+
+※JS・CSSを編集する場合、/web/iezukuri/unit/$USER/htdocs/www/iezukuri/compiledを削除すればよい。

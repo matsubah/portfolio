@@ -1,0 +1,26 @@
+lintのテスト
+
+* node v8を入れてみる
+
+nodebrew install-binary v8.16.2
+nodebrew use v8.16.2
+npm install -g stylelint
+
+stylelint --help
+
+vim .stylelintrc
+
+-> stylelintが古いバージョンじゃないと動かない？
+
+* node v6
+
+nodebrew install-binary v6.17.1
+nodebrew use v6.17.1
+npm install -g stylelint
+
+* node v10（元に戻す）
+nodebrew install-binary v10.14.2
+nodebrew use v10.14.2
+npm install -g stylelint
+npm install -D stylelint-order
+stylelint test.css

@@ -1,0 +1,8 @@
+
+アプリキャッシュクリアとビルド
+php app/console cache:clear && php app/console appcache:clear
+php app/console cache:clear -k PcApp && php app/console appcache:clear -k PcApp
+php app/console cache:clear -k SpApp && php app/console appcache:clear -k SpApp
+
+ダンプファイル削除と作成
+phpdump

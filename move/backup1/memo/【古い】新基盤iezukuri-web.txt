@@ -1,0 +1,49 @@
+# 環境設定、反映
+docker build . -t iezukuri-web
+
+# 起動
+docker run -p 3000:3000 -e NUXT_HOST=0.0.0.0 -e NUXT_PORT=3000 -e BASE_URL=http://localhost:3000 -v $HOME/projects/iezukuri-web:/app/iezukuri-web iezukuri-web
+
+上記は古いパターン
+
+# Dockerfile共有用
+IEZUKURI-6888_feature_docker_dev
+IEZUKURI-6888_topic_search_renewal_prototype
+
+# マウント
+## sshfs iezukuri-web:/home/matsubah/projects/iezukuri-web/ /Users/matsubah/projects/iezukuri-web/
+
+# 開発画面の確認（localhost:3000）
+
+#iezukuri-web (vue)
+npm run dev
+npm run dev --fix
+http://localhost:3000/iezukuri/contents/major/
+
+## lintを動かす
+npm run lint
+npm run lint:fix
+
+
+# 懸念点
+
+- 静的ファイルはどうする？
+- imgファイルの移植
+-> いつか画像をまるっと移植する？
+-> 一旦は本番の画像へリンクする（相対パスに//www.homes.co.jpを付ける）
+
+- CSSの場所
+-> 各vueファイルに埋め込む
+-> 外部ファイルとして読み込む
+-->この場合はvueファイルと同列に配置する
+
+- ディレクトリmolecules,atomsの場所
+-> /src/components/sp配下
+
+- molecules, atoms内のディレクトリ構成は？
+
+- 既存ソースにあるdata属性はどうすればいいか
+
+- 既存ソースにあるutilityな要素（ui-iconなど）はどう言う区分になるか
+
+- URLのhttpプロトコルは省けるのでは

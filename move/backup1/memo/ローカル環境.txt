@@ -1,0 +1,24 @@
+ローカル環境
+
+Docker起動
+docker-compose up iezukuri-web-api iezukuri-db iezukuri-db-api
+→SQLが走ってローカルにDBが作成される
+
+DB
+PG Commander [localhost]でログイン可能となる
+ID/PWは同じ
+
+=====
+
+Docker起動
+docker-compose -f docker-compose.test.yml up iezukuri-web-api
+→DBはテスト環境のものを見る
+
+DB
+PG Commander [iezukuri-db-db]でログイン可能となる
+ID/PWは変わらず
+
+/iezukuri/makers/5648
+→これらが見れるようになる
+
+=====

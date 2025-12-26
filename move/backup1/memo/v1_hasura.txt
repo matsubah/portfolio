@@ -1,0 +1,6 @@
+hasura
+
+hasuraで新たなテーブルをTrack後にmetadataを出力するコマンド？
+docker-compose run iezukuri-hasura-cli hasura-cli metadata export
+
+docker-compose up

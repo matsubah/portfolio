@@ -1,0 +1,57 @@
+# GitHub移行した後のiezukuri-web-unitの環境構築
+
+// ターミナルでssh接続
+ssh iezukuri-web-unit
+
+// iezukuriディレクトリ（既存）へ
+$cd ${HOME}/projects/iezukuri
+$ls -la
+
+//ココで出できたものは.git含めてすべて削除（リネームするとリンクが貼られているのでディレクトリごと違うディレクトリに移動してアーカイブにするか、削除する方が無難）
+
+# ${HOME}/projects/iezukuri にはシンボリックリンクがはられているので、一つ一つ削除お願いします。 消した場合は再度作成します。
+drwxrwxr-x  2 matsuyay matsuyay  4096 Sep 25 11:12 appspec
+drwxrwxr-x  3 matsuyay matsuyay  4096 Sep 25 11:12 config
+-rw-rw-r--  1 matsuyay matsuyay 10475 Sep 25 11:12 Dockerfile
+drwxrwxr-x  8 matsuyay matsuyay  4096 Sep 25 12:11 .git
+-rw-rw-r--  1 matsuyay matsuyay   975 Sep 25 11:12 .gitignore
+drwxrwxr-x  3 matsuyay matsuyay  4096 Sep 25 11:12 htdocs
+drwxrwxr-x  5 matsuyay matsuyay  4096 Sep 25 11:12 php_include
+drwxrwxr-x  2 matsuyay matsuyay  4096 Sep 25 11:12 taskdef
+
+// githubにsshキーを登録してなければ、登録してください。鍵は使いまわしても良いです。新しく作っても良いです。
+// 1.やることは鍵の生成 or ローカルからコピー
+ssh-keygen -t rsa -b 4096 -C “matsubarahiromi@lifull.com”
+
+// 2. ~/.ssh/configでgithubのhostを追加 これもlocalではすでに書いているはずなのでコピーして、鍵の名前が変わってたらそこを修正。
+
+// パーミッションエラーなど起こったら都度対応
+
+// githubからclone
+$ cd ${HOME}/projects/
+
+$ git clone git@github.com:lifull/iezukuri-web-v5 iezukuri
+
+// githubからは秘匿情報を削除しているのでconfigのalias
+$ ln -sn /iezukuri-web-secure-config/config/config_dev.yml ${HOME}/projects/iezukuri/php_include/app/config/config_dev.yml
+$ ln -sn /iezukuri-web-secure-config/config/config.yml ${HOME}/projects/iezukuri/php_include/app/config/config.yml
+$ ln -sn /iezukuri-web-secure-config/config/config_whoami.yml.dist ${HOME}/projects/iezukuri/php_include/app/config/config_whoami.yml.dist
+$ ln -sn /iezukuri-web-secure-config/config/parameters.yml  ${HOME}/projects/iezukuri/php_include/app/config/parameters.yml
+
+// [重要]自分用のconfigの作成
+(config_dev.ymlとかの中身はあたらしいvpcのサーバーを見てるので古いvpcのサーバーからアクセスできないため）
+$ cd ${HOME}/projects/iezukuri/php_include/app/config/
+$ touch config_${USERNAME}.yml
+// USERNAMEで効かなかった場合があるので一旦確認した方が無難
+// 中身はこれをそのままコピペ
+http://gitlab.dev.nxin.jp/app/iezukuri/blob/develop/php_include/app/config/config_dev.yml
+
+// githubからは秘匿情報を削除しているのでconfigのalias
+$ln -sn /iezukuri-web-secure-config/environment/default.yml  ${HOME}/projects/iezukuri/php_include/src/Iezukuri/PcBundle/Resources/config/environment/default.yml
+
+// 動作確認
+$ php php_include/app/console assetic:dump
+$ php php_include/app/console appcache:clear
+$ php php_include/app/console cache:clear
+
+* ssh接続できなくなった場合は、IPを確認すること

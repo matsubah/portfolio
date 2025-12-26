@@ -1,0 +1,45 @@
+# 環境設定、反映
+docker build . -t iezukuri-web
+
+# 起動
+docker run -p 3000:3000 -e NUXT_HOST=0.0.0.0 -e NUXT_PORT=3000 -e BASE_URL=http://localhost:3000 -v $HOME/projects/iezukuri-web:/app/iezukuri-web iezukuri-web
+
+# Dockerfile共有用
+IEZUKURI-6888_feature_docker_dev
+IEZUKURI-6888_topic_search_renewal_prototype
+
+
+test
+docker run -p 6080:80 -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc
+
+開発画面の確認（localhost:3000）
+
+#iezukuri-Manager
+docker-compose up iezukuri-api memcached iezukuri-manager-api iezukuri-manager redis
+http://localhost:3000/
+
+#iezukuri-web (vue)
+npm run dev
+http://localhost:3000/iezukuri/
+
+# 下記やってみる
+[引用 aid=4819935 time=1597985455]https://qiita.com/ysKey2/items/346c429ac8dfa0aed892
+>     volumesの指定の最後に:delegatedをつけていつも通りdocker-compose upを実行
+することで、書き込み読み込みの一貫性を担保しない代わりに Docker on Mac が高速化するとのこと～。
+既出？[/引用]
+
+停止方法tips
+$ cd ${HOME}/projects/
+$ docker-compose stop
+# 以下のコマンドでコンテナーが停止しているか確認。停止していない場合は以下のようにコンテナーの情報が表示される。
+$ docker ps
+# 起動しているコンテナがあったら以下のコマンドで停止
+$ docker stop $(docker ps -aq)
+
+# デバッグ用
+コンテナの中をキャッシュクリア
+php artisan cache:clear
+
+オブジェクトの中を見るためのコード（デバッグ用）
+var_dump($res);
+exit();

@@ -1,0 +1,77 @@
+# カタログ
+
+with a AS (
+SELECT
+	housing_product_lsa_ranking.addr1_1,
+	housing_product_lsa_ranking.addr1_2,
+	housing_product_lsa_ranking.product_id,
+	count(*)
+FROM
+		housing_product_lsa_ranking
+		INNER JOIN housing_product ON housing_product_lsa_ranking.similar_product_id = housing_product.product_id
+		INNER JOIN housing_gyosha ON housing_product.gyosha_id = housing_gyosha.gyosha_id
+		LEFT JOIN housing_client ON housing_gyosha.client_id = housing_client.client_id
+		LEFT JOIN housing_inquire_capacity ON housing_gyosha.client_id = housing_inquire_capacity.client_id
+WHERE
+		housing_product.status = 1
+		AND housing_product.product_listing = 1
+		AND housing_gyosha.status = 1
+		AND COALESCE(housing_client.can_display_recommend, 1) = 1
+		AND COALESCE(housing_inquire_capacity.capacity, 99999) >= 1
+		AND housing_product_lsa_ranking.addr1_1 = '13'
+		AND housing_product_lsa_ranking.addr1_2 = '101'
+GROUP BY
+	housing_product_lsa_ranking.addr1_1,
+	housing_product_lsa_ranking.addr1_2,
+	housing_product_lsa_ranking.product_id)
+select mp.prefecture_name, mc.city_name, p.gyosha_id, a.* from a
+left join conceptual.master_prefectures mp on mp.prefecture_code = a.addr1_1
+left join conceptual.master_cities mc on mc.city_code = a.addr1_1 || a.addr1_2
+left join housing_product p on a.product_id = p.product_id
+
+# 会社
+
+SELECT
+  recommend.addr1_1 AS prefecture_code,
+  recommend.addr1_2 AS city_part_code,
+  recommend.gyosha_id,
+  count(*)
+FROM
+(
+SELECT
+    housing_gyosha_lsa_ranking.addr1_1,
+    housing_gyosha_lsa_ranking.addr1_2,
+    housing_gyosha_lsa_ranking.rank,
+    housing_gyosha_lsa_ranking.gyosha_id,
+    housing_gyosha_lsa_ranking.similar_gyosha_id,
+    -- 日本語訳: group_idはsimilar_gyosha_idでjoinをしてきているので親会社が同じ場合のときにその中で最小のrankのものを取得する。
+    CASE WHEN MIN(housing_gyosha_lsa_ranking.rank) OVER (PARTITION BY housing_gyosha_lsa_ranking.addr1_1,
+      housing_gyosha_lsa_ranking.addr1_2,
+      housing_gyosha_lsa_ranking.gyosha_id,
+      housing_gyosha_group_member.group_id) = housing_gyosha_lsa_ranking.rank THEN
+      TRUE
+    ELSE
+      FALSE
+    END AS is_display
+  FROM
+    housing_gyosha_lsa_ranking
+    INNER JOIN housing_gyosha ON housing_gyosha_lsa_ranking.similar_gyosha_id = housing_gyosha.gyosha_id
+    LEFT JOIN housing_gyosha_group_member ON housing_gyosha.gyosha_id = housing_gyosha_group_member.gyosha_id
+    LEFT JOIN housing_gyosha_group_master ON housing_gyosha_group_member.group_id = housing_gyosha_group_master.group_id
+    LEFT JOIN housing_client ON housing_gyosha.client_id = housing_client.client_id
+    LEFT JOIN housing_inquire_capacity ON housing_gyosha.client_id = housing_inquire_capacity.client_id
+  WHERE
+    housing_gyosha.status = 1
+    AND COALESCE(housing_client.can_display_recommend, 1) = 1
+    AND COALESCE(housing_inquire_capacity.capacity, 99999) >= 1
+    ) as
+  recommend
+WHERE
+  recommend.is_display = TRUE
+  AND recommend.addr1_1 = '01'
+GROUP BY
+	recommend.addr1_1,
+	recommend.addr1_2,
+	recommend.gyosha_id;
+
+--  AND recommend.addr1_1 = '01' の部分を適宜変えて検索する

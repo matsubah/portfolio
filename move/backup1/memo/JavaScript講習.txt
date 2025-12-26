@@ -1,0 +1,38 @@
+# JavaScript講習 by katoyu
+
+## 構造について
+
+base.js
+controller.js
+
+base.js
+initが一番先に実行される
+各ディレクトリ core,widgetなど に発火
+
+ex.xxxxxxxx
+/Users/matsubah/mountpoint/iezukuri-web-unit/php_include/src/Iezukuri/SpBundle/Resources/public/js/smartphone/page/landingSimulation
+
+pubsub.subscribeOnce
+
+controller
+初期化がメイン3
+
+core
+各機能を全体的に管理する
+ビジネスロジックが入っている
+
+widget
+指定した要素の中で完結する機能
+
+widgetの制御の仕方
+this.rootの設定
+
+pubsub
+メッセージングのやりとり
+puslish/subscribe
+非同期で実行されるので処理結果は並列処理、結果の受け取りは順不同の可能性
+→順序が大事になる時は非同期は使わない
+publishがあればsubscribeもある
+
+## lintについて
+http://172.20.17.50:3245/JSLint/jslint.html

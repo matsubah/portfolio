@@ -1,0 +1,21 @@
+# システム系
+
+会社→maker
+
+カタログ→product
+
+事例→case
+
+v5環境→現在使用しているシステム
+
+v1環境→移行予定の新システム（開発中）
+
+
+# 不動産業界用語系
+
+パワービルダー
+
+
+# リソース設計
+例
+https://jira.next-group.jp/wiki/display/chumon/0504_iezukuri-web-api+GET+matterport_features

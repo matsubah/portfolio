@@ -1,0 +1,15 @@
+ユニット環境(unit)
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/
+
+テスト環境(test)
+http://www-iezukuri-test.homes.co.jp/iezukuri/
+
+ステージ(backstage)
+http://www-iezukuri-backstage.homes.co.jp/iezukuri/
+
+本番(live)
+https://www.homes.co.jp/iezukuri/
+1月11日 10:59
+
+本番環境でテスト問い合わせする場合
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=63467974

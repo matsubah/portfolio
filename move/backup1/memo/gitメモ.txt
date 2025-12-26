@@ -1,0 +1,270 @@
+#Gitコマンドメモ
+
+クローン
+$ cd /home/$USER/projects/iezukuri
+$ git clone -b develop git@gitlab.dev.nxin.jp:app/iezukuri.git ./
+
+## gitでコミットしたファイルの一覧を取得
+git log -1 --name-only
+
+## 現在のブランチとdevelopブランチ（リポジトリ）とのコミット差分を出す
+git cherry -v origin/master
+
+## 新たにブランチを切る際（安全なやり方）
+git checkout 元にするブランチ
+git fetch
+git merge origin/元にするブランチ
+git checkout -b 新ブランチ
+
+## 古いブランチからコミット単位で新しいブランチに移す場合
+git cherry-pick コミット達...
+
+## リモートにブランチを push してそのままトラックする
+git push --set-upstream origin new_feature
+
+リモートブランチの一覧を見たい
+git branch -r
+
+変更箇所を直前のコミットタイミングと比較したい
+git diff HEAD~1
+
+他のブランチとの差分を見る（ファイル名一覧の表示）
+git diff --name-status branch名
+
+git add した後にインデックスと最新のコミットとの変更点を見たいときは --cached を付ける
+git diff --cached
+
+デバッグコードが残っていないかチェックする
+git diff --cached | grep log
+
+ログの差分を見る
+git log --name-status
+
+ファイルごとにどれくらい変更したかを表示する
+git diff --stat
+
+git reset --hardした内容を取り消す
+# コミットログ確認
+git log --oneline -n 3
+
+# 2番目のコミット (second commit) に戻ろうと思って、間違えて first commitまで戻ってしまった・・・
+git reset --hard HEAD^^
+
+# ログ見ると、履歴が取り消されてる・・・
+git log --oneline -n 3
+
+# reflogを確認!
+git reflog -n 5
+  74f21a7 HEAD@{0}: reset: moving to HEAD^^  <<--ここがさっき間違えてresetした地点
+  64606a0 HEAD@{1}: commit: third commit     <<--取り消される前のコミット履歴が残っている
+
+# 戻すべきreflogが判明したので、再度reset --hardする
+git reset --hard "HEAD@{1}"
+
+# コミットログ確認
+git log --oneline -n 3
+
+- 別ブランチの特定のファイルをvimで開く
+$ git show branch_name:/path/to/file | vim -
+
+- リモートブランチをローカルにチェックアウトする方法
+→ローカルブランチ名を指定して、リモートブランチをチェックアウトする
+git fetch
+git checkout -b other_branch origin/other_branch
+
+- stash
+git stash save "名前をつけたい場合はこちら"
+git stash list
+
+git stash apply # 最新のスタッシュを適用し、残す
+git stash apply stash@{N} # N番目のスタッシュを適用し、残す
+
+git stash pop # 最新のスタッシュを適用し、削除
+git stash pop stash@{N} # N番目のスタッシュを適用し、削除
+
+- Untracked filesを削除する
+ファイルを実際に削除する
+git clean -f
+削除する対象を確認する(ディレクトリも対象)
+git clean -nd
+実際に削除する(ディレクトリも対象)
+git clean -fd
+
+- ブランチ名称の変更
+開いているブランチをリネームする場合は、単純に新しいブランチ名を指定するだけ
+git branch -m <新しいブランチ名>
+Currentじゃないブランチ名称を変更する時
+git branch -m <古いブランチ名> <新しいブランチ名>
+
+- 直前にコミットしたメッセージを変更する
+git commit --amend
+
+- 2つ以上前のコミットメッセージを変更する
+git rebase -i HEAD~n
+vi -> 「pick」→「edit」に変更する -> :w
+git rebase --continue
+-> editの個数分だけ繰り返す
+
+- 1ファイルだけ別のブランチから持ってくる
+
+#確認
+git show <ブランチ名>:<ファイル名>
+#取ってくる
+git checkout <ブランチ名> -- <ファイル名>
+
+- ローカルブランチがどのリモートブランチを追跡してるのか確認
+git branch -vv
+
+- ローカルブランチが特定のリモートブランチを追跡するように設定
+# 追跡させたいローカルブランチにcheckoutした状態で
+git branch --set-upstream-to=origin/[ブランチ名]
+# オプションは -u という省略形があります
+git branch -u origin/[ブランチ名]
+# または、push 時に -u オプションをつける
+git push -u origin [ブランチ名]
+
+- リモートブランチを消す（ブランチの削除）
+git push --delete origin branch_name
+
+- 2つ以上前のコミットメッセージを変更する
+git rebase -i HEAD~3
+# 修正したいコミット先頭の「pick」を「edit」に書き換える
+# ファイルを上書き保存してviエディタを終了
+git commit --amend
+git rebase --continue
+
+- リモートブランチ名を変更
+1. ローカルのブランチ名を変更
+git branch -m 古いブランチ名 新しいブランチ名
+
+2. 変更したブランチを新たにリモートへpush
+git push -u origin HEAD
+
+3. 間違えてpushしたリモートブランチを削除
+git push origin :リモートのブランチ名
+https://qiita.com/shungo_m/items/4218e70751375b4bfeec
+
+
+- rebaseしてmainを取り込む際の注意点
+
+1. ローカルにてmainブランチを最新化（`git fetch` & git pull）
+2. 作業ブランチに切り替え
+3. 作業ブランチにて、`git rebase main`
+4. コンフリクトが発生したら、解消する
+5. コンフリクトの解消後、`git rebase --continue`を繰り返してリベースを完了する
+6. 作業ブランチをリモート環境へ`git push --force-with-lease`→ git push -fと同じ
+
+ローカルで rebase 後にリモートにpushするときは、
+git push --force-with-lease --force-if-includes
+
+- keelaiを活用したコミットの選択肢を表示する書き方
+
+旧）git diff --cached | keelctl llm conventional-commits --select=3 | git commit -F -
+新）git commit -e -m "$(git diff --cached | keelctl llm conventional-commits --select 3)"
+
+
+- コミットを1つにまとめる
+
+# 1. 対象のコミットの1つ前のコミットIDを調べる
+git log --oneline
+
+# 2. 対話的リベースを開始する
+git rebase -i <前のコミットID>
+
+（直近のコミット2つをまとめたい場合は下記でも良い）
+$ git rebase -i HEAD~2
+
+# 3. エディタが開くので、対象となるコミットを見つけ、
+#    集約先のコミット（残したいコミット）の pick はそのままにして、
+#    全てのコミットの前にある`pick`を`squash`または`s`に変更する
+
+# 4. :wq で変更を保存し、エディタを終了
+#    すると、再度テキストエディタが開く
+#    必要に応じて残したいほうのコミットのコミットメッセージを編集する
+
+例）
+$ # This is a combination of 2 commits.
+$ # This is the 1st commit message:
+$
+$ commit A comment + commit B comment
+$
+$ # This is the commit message #2:
+$
+$ # ここを消した
+$ （以下略）
+
+:wq で保存して、「強制push」して終了。
+$ git push -f origin (ブランチ名)
+
+# 5. リベースが完了したら、結果を確認する
+git log --oneline
+
+出典）下記に加えて、何か1つサイトをみてる
+https://qiita.com/futakuchi0117/items/0eafe586e88fe593c23f
+
+squash:
+squashを指定したあとに:wqでエディタを保存すると、コミットメッセージを
+編集する画面に切り替わる
+「コミットメッセージを残し直前のコミットとまとめる」
+
+fixup:
+fixupの場合はsquashのようにメッセージの編集は開かれず
+fixupしたメッセージはなくなります。
+「コミットメッセージを削除して直前のコミットとまとめる」
+
+出典）
+https://qiita.com/shyamahira/items/47557acfe88ba392561e
+https://chaika.hatenablog.com/entry/2019/02/25/170000#:~:text=%E5%87%BA%E6%9D%A5%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82-,fixup%20%E3%81%A8%20squash%20%E3%81%AE%E9%81%95%E3%81%84,-fixup%E3%81%AB%E4%BC%BC
+
+=========================================================================================
+
+下記参考：https://qiita.com/shibukk/items/8c9362a5bd399b9c56be
+
+# git push する前にリモートとの変更点を見る
+git diff origin/main..HEAD
+
+# 今回コミットした変更点を見る
+git diff HEAD^
+
+# ある1ファイルの変更点を見る
+git diff ブランチA..ブランチB -- 対象のファイルパス
+
+# 別ファイル同士を比較する
+git diff -- ファイルパスA ファイルパスB
+
+# いったん git add の dry-run した上で、追加されたファイル名も含めて比較される。出力結果がファイル名だけになる。
+git add -n .; git diff --name-only
+
+# 改行コードや空白を無視する
+git diff -w
+
+# 空行を無視する
+git diff --ignore-blank-lines
+
+# 変更点の前後に表示される行数を変える
+git diff -U0
+
+# 上方向に比較差分が出る設定にする
+git config --global diff.compactionHeuristic true
+
+===
+
+# 1つ前のコミットに追加
+git commit --amend --no-edit
+
+===
+
+git config --global user.email "matsubarahiromi@lifull.com"
+git config --global user.name "hiroomi matsubara"
+
+
+===
+
+空のコミットを入れる
+git commit --allow-empty -m "start implementation"
+
+PRをドラフトで作る(GitHub CLI)
+gh pr create -draft
+
+マージ済みの古いブランチのみを一括削除
+git branch --merged | grep -v "\*\|main\|master\|develop" | xargs -n 1 git branch -d

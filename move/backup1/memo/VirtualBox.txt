@@ -1,0 +1,54 @@
+VirtualBox
+
+コンフル
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=212495970
+
+Passw0rd!
+
+163.116.207.112
+
+・遅いけどWindows10を試せる
+・動かしてる間はMacが不安定になる（パワー食い過ぎ？）
+・ユニット環境は見れるけどテスト環境は見れない（2023/03/03現在）
+・ローカル環境も見れない？
+
+2021/09/17
+
+VirtualBox Win10 IE11
+
+TOPの表示確認のみ、テスト問合せやログインは未確認
+
+本番 v1
+https://www.homes.co.jp/iezukuri/
+OK
+
+本番 manager
+https://iezukuri-manager.homes.co.jp/login
+OK
+
+テスト環境 v1
+https://www-test.develop.homes.co.jp/iezukuri/
+NG(403 error)
+
+https://iezukuri-web-develop-cloudfront.iez-dev.homes.co.jp/iezukuri/
+NG(403 error)
+
+テスト環境 manager
+https://iezukuri-manager-develop.iez-dev.homes.co.jp/login
+NG(Bad Gateway)
+
+Pool環境 v1
+https://www-pool.homes.co.jp/iezukuri/
+OK
+
+ローカル環境 v1
+http://localhost:8080/iezukuri
+NG
+
+ローカル環境 v5
+https://iezukuri-web-matsubah.iez-dev.homes.co.jp/iezukuri/lp/cont/5/
+NG(Bad Gateway)
+
+ローカル環境 manager
+http://localhost/login
+NG

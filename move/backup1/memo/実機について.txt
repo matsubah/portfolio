@@ -1,0 +1,36 @@
+# 実機について
+
+## SP
+### 以下のブラウザにおいて、表示及び動作が概ね同一となるようにする。
+
+* iOSは各端末でのデフォルトブラウザ
+* Androidは各端末でのChromeブラウザ
+
+### 以下の OS / 端末において、表示及び動作が概ね同一となるようにする。
+
+iOS
+iOS11系 / iOS12系
+
+端末
+- iPhone6S
+- iPhone6S Plus
+- iPhone7
+- iPhone7 Plus
+- iPhoneSE
+- iPhone8
+- iPhone8 Plus
+- iPhone X
+- iPhone XR
+- iPhone XS
+- iPhone XS Max
+
+Android
+OS6系 / 7系 / 8系
+
+端末
+- Sharp 701SH AQUOS R compact
+- Kyocera Android One S4
+- Samsung SCV36 Galaxy S8
+- Huawei P10 Lite
+- Sony SO-02H Xperia Z5 Compact
+- Asus Zenfone 2

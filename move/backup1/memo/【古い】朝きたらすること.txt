@@ -1,0 +1,14 @@
+#sh
+# 朝きたらすること
+
+## sshfsで開発環境をマウントする
+sshfs iezukuri-web-unit:/home/matsubah/projects/iezukuri/ /Users/matsubah/mountpoint/iezukuri-web-unit/
+
+## v5開発環境にログインしてgit管理のディレクトリに移動
+cd /home/$USER/projects/iezukuri
+
+## ssh接続(unit環境へ)
+ssh iezukuri-web-unit
+
+## メールチェック
+## チャットワークチェック

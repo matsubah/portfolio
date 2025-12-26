@@ -1,0 +1,40 @@
+リントその1
+https://jira.next-group.jp/browse/IEZUKURI-9512
+11/18 13:46
+nodebrew いれるいつもの
+https://qiita.com/_mezzoForte_/items/ec9e32adda08e6fc1d62
+13:47
+[To:766934] 渡辺 和貴(3588/7階右奥)さん
+fixerで変なの入ってたんで修正してpushしました。
+https://jira.next-group.jp/browse/IEZUKURI-9512
+13:53
+# composer install
+echo 'export PATH=/usr/local/bin:$HOME/.composer/vendor/bin:$PATH'  >> ~/.zshrc
+composer global require friendsofphp/php-cs-fixer
+source ~/.zshrc
+composer -v
+
+# node install
+curl -L git.io/nodebrew | perl - setup
+
+echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH'  >> ~/.zshrc
+source ~/.zshrc
+nodebrew -v
+nodebrew install-binary v12.13.0
+nodebrew use v12.13.0
+
+# lintが入っているリポジトリに移動 & npm install
+cd $HOME/projects/iezukuri/
+git fetch
+git checkout IEZUKURI-9525-topic_lint_js_html_css_php
+npm install
+
+適当なcssまたは、scssまたは、jsまたはphpを作ってcommit1
+14:09
+誰かこれやって動かなかったら教えてください。
+14:11
+stylefmtが動いてないな。
+14:37
+http://gitlab.dev.nxin.jp/app/iezukuri/merge_requests/1033/
+14:40
+あ、fixerも自分の環境のやつを向けたままだ。

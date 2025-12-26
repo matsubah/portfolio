@@ -1,0 +1,60 @@
+h4. テスト観点
+ * 対象画面でバナーが表示される
+ * エリア選択
+ * 北海道
+ * 指定した期間内はバナーが表示される
+ * リリース段階では表示期間内なので、表示されることを確認する
+ * リリース後に表示期間外になった時に、表示されていないことを確認する
+ * 対象画面以外でバナーが表示されない
+ * エリア選択
+ * 北海道以外
+ * 全国
+ * 来場（バナーを表示する部品を同じく使っているが、分岐によって非表示となるかを確認する）
+ * 展示場（バナーを表示する部品を同じく使っているが、分岐によって非表示となるかを確認する）
+
+h4. テスト項目
+* テスト環境（https://www-test.develop.homes.co.jp）にて行う
+
+|No.|結果|対象|手順|期待値|
+| ---- | ---- | ---- | ---- | ---- |
+| 1 |  | エリア選択（北海道） | 下記URLを開く<br>/iezukuri/maker-flow?pref=hokkaido | イベント告知バナーが表示される |
+| 2 |  | エリア選択（北海道） | 下記URLを開く<br>/iezukuri/catalog-flow?pref=hokkaido | イベント告知バナーが表示される |
+| 3 |  | エリア選択（北海道） | 下記URLを開く<br>/iezukuri/practice-flow?pref=hokkaido | イベント告知バナーが表示される |
+| 4 |  | エリア選択（北海道以外） | 下記URLを開く<br>/iezukuri/maker-flow?pref=tokyo | イベント告知バナーは表示されない |
+| 5 |  | エリア選択（北海道以外） | 下記URLを開く<br>/iezukuri/catalog-flow?pref=tokyo | イベント告知バナーは表示されない |
+| 6 |  | エリア選択（北海道以外） | 下記URLを開く<br>/iezukuri/practice-flow?pref=tokyo | イベント告知バナーは表示されない |
+| 7 |  | エリア選択（全国） | 下記URLを開く<br>/iezukuri/maker-flow | イベント告知バナーは表示されない |
+| 8 |  | エリア選択（全国） | 下記URLを開く<br>/iezukuri/catalog-flow | イベント告知バナーは表示されない |
+| 9 |  | エリア選択（全国） | 下記URLを開く<br>/iezukuri/practice-flow | イベント告知バナーは表示されない |
+| 10 |  | 類似する対象外画面 | 下記URLを開く<br>/iezukuri/visit-flow?venue_pref=hokkaido | イベント告知バナーは表示されない |
+| 11 |  | 類似する対象外画面 | 下記URLを開く<br>/iezukuri/venue-flow?venue_pref=hokkaido | イベント告知バナーは表示されない |
+
+
+
+
+ || TH || TH ||
+ | ---- | ---- |
+ | TD | TD |
+
+ ||No||結果||テスト項目||操作(各URLにアクセス)||期待値||
+ |1| |chatbotフォーム画面表示|以下のURLにアクセスする。（Chromeで確認）
+ [https://www-test.develop.homes.co.jp/iezukuri/inquire/input/lp?refs=chatbotcataloglp]|エラーが起こらないこと|
+ |2| |カタログLP|以下のURLにアクセスする。（Chrome SPモードで確認）
+ [https://www-test.develop.homes.co.jp/iezukuri/lp/product/hokkaido/sapporo_chuo-city/]|エラーが起こらないこと
+ 「予算をあげて2,000～2,500万円未満のカタログを見てみる」のエリアが表示されていないこと|
+ |3| |テーマLP
+ （ローコスト住宅）|以下のURLにアクセスする。（Chrome SPモードで確認）
+ [https://www-test.develop.homes.co.jp/iezukuri/lp/product/tokyo/chiyoda-city/theme-41/]|#1と同様
+ （違うエリアでも同様に見えること）|
+
+
+
+ 例外
+ https://www-test.develop.homes.co.jp/iezukuri/maker-flow?pref=tokyo
+ https://www-test.develop.homes.co.jp/iezukuri/maker-flow
+ https://www-test.develop.homes.co.jp/iezukuri/catalog-flow?pref=tokyo
+ https://www-test.develop.homes.co.jp/iezukuri/catalog-flow
+ https://www-test.develop.homes.co.jp/iezukuri/practice-flow?pref=tokyo
+ https://www-test.develop.homes.co.jp/iezukuri/practice-flow
+ https://www-test.develop.homes.co.jp/iezukuri/visit-flow?venue_pref=hokkaido
+ https://www-test.develop.homes.co.jp/iezukuri/venue-flow?venue_pref=hokkaido

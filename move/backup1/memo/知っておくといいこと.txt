@@ -1,0 +1,50 @@
+■キャッシュクリアうんぬん
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=18318303
+
+■逆引きGit
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=62564465
+
+【V5】 [SP][PC]作業フロー(実装～リリースまで)
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=71121813
+
+
+■下記はメモ
+ATOMでtwigファイルを見やすくする方法
+https://qiita.com/kanuu/items/32e3d5f7660074a3f3c7
+
+git初期設定
+
+git config --global user.email "matsubarahiromi@lifull.com"
+git config --global user.name "hiroomi.matsubara"
+
+疎結合と密結合
+クリーンアーキテクチャ
+
+Sassを書くのに便利なツール
+
+vscode用プラグイン
+sass-autocompile
+http://weblifetimes.com/atom-sassautocompile/
+
+Atom用
+node.jsとnode-sass
+
+# ご利用方法について（推奨環境） https://www.homes.co.jp/about/service/usage/
+Windows をお使いの場合：Internet Explorer 11, Firefox 最新版, Chrome 最新版, Microsoft Edge 最新版
+
+Mac をお使いの場合：Safari 最新版, Chrome 最新版
+
+iOS をお使いの場合：iPhone では iOS10 以上, iPad では iOS10 以上
+Android をお使いの場合：スマートフォンでは 5.0 以上, タブレットでは 5.0 以上
+
+
+ナベさんより。
+
+注文のコーディング規約(古いです)
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=30935470
+
+4マーケのコーディング規約(こっちと大体同じなのでこっち参考にしたほうが良いかも)
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=22185448
+
+画像の命名規則
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=66420611

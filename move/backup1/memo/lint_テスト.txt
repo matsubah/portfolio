@@ -1,0 +1,26 @@
+no-descending-specificity
+https://stylelint.io/user-guide/rules/no-descending-specificity
+http://cluex-developers.hateblo.jp/entry/2019/01/10/171237
+-> 詳細度の高いセレクタより後に詳細度の低いセレクタを定義するのを許容しない
+-> null
+
+declaration-colon-space-after
+https://stylelint.io/user-guide/rules/declaration-colon-space-after
+-> prefixのコードでわざとインデントを空けている場合は引っかかる
+-> null
+
+number-leading-zero
+https://stylelint.io/user-guide/rules/number-leading-zero
+-> paddingなど、小数点で表す時に引っかかる
+-> null
+
+https://stylelint.io/user-guide/rules/block-opening-brace-space-before
+-> インデントを揃える時に引っかかる
+-> "always-multi-line"
+
+https://stylelint.io/user-guide/rules/function-linear-gradient-no-nonstandard-direction
+-> linear-gradientの表記が間違っていないかチェックしてくれる
+
+
+
+https://stylelint.io/user-guide/rules/

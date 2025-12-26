@@ -1,0 +1,27 @@
+画像の指定について（HTML）
+
+画像ファイルの指定
+
+1. ローカルかサーバー（S3）か
+2. 固定かレスポンシブ対応か
+
+<img srcset="images/small.jpg 320w,
+             images/medium.jpg 640w,
+             images/large.jpg 1280w"
+     src="images/large.jpg"
+     sizes="(max-width:1280px) 100vw, 1280px">
+
+[srcset]
+* 「画像ファイルの横幅」は、「画像をウェブページ上で表示する際の横幅」ではない
+* "パス（ファイル名） + スペース + 横幅"と書く
+* 「横幅」の単位はw : 320w = 320pxの画像
+
+[sizes]
+* 表示する画像の横幅を記述
+* メディアクエリーと組み合わせて複数の横幅を指定可能
+* 「1280px以下の時は画面幅、それ以外では1280pxで画像を表示したい場合」は下記のように記述
+「sizes="(max-width:1280px) 100vw, 1280px"」
+* Safariを含む全ブラウザ共通でウインドウ幅に応じて画像サイズを変えたい場合は、CSSでwidthプロパティに%を指定する
+.responsive img {
+    width: 100%;
+}

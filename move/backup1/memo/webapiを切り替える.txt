@@ -1,0 +1,13 @@
+web-apiの切り替え
+
+php_include/app/config/config_matsubah.yml
+
+api:
+    webapi:
+        host: xxxx
+→ここをコピーしてコメント
+→xxxxの中を新たに書き換え（https://や最後のスラッシュは不要）
+
+appchache:clear を行う
+
+→APIの項目は使用しなくなったので、APIの項は削除した（2022/02/09）

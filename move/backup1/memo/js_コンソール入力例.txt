@@ -1,0 +1,5 @@
+
+LPのカタログ選択画面で全部選択済みにする
+
+$('.prg-result-item').addClass("is-checked") && $('input:checkbox').prop('checked', true);
+-> カタログどれかをクリックすると表示が変わる

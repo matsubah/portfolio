@@ -1,0 +1,55 @@
+# 環境構築
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=64843536
+
+# iezukuri-manager ローカル環境での確認について
+
+iezukuri-db-api
+-> vendorの削除
+-> docker-compose down
+-> docker-compose -f docker-compose.test.yml build iezukuri-db-api
+-> docker-compose -f docker-compose.test.yml up iezukuri-db-api
+-> OK
+
+docker-compose -f docker-compose.test.yml build iezukuri-manager iezukuri-db-api
+docker-compose -f docker-compose.test.yml up iezukuri-manager iezukuri-db-api
+
+# ローカル環境のDBを使う
+docker-compose up iezukuri-manager iezukuri-db-api
+docker-compose up iezukuri-manager iezukuri-manager-api iezukuri-db iezukuri-db-api
+
+# Docker内でGulpを動かす方法
+
+コンテナ内でのビルド
+$ docker-compose exec iezukuri-manager bash
+$ ./node_modules/gulp/bin/gulp.js
+
+docker-compose down
+
+ID / PW
+9000010 / test
+
+# 起動方法 → Docker
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=90792029
+
+$ cd ${HOME}/projects/
+$ docker-compose up iezukuri-manager iezukuri-db-api
+
+テスト用
+$ docker-compose -f docker-compose.test.yml up iezukuri-manager iezukuri-db-api
+
+https://localhost/login
+
+$ docker-compose down
+
+★★★ API切り替え、DockerfileのUpdateなどした場合、キャッシュなしでdockerをビルドする ★★★
+# 念のため消す
+$ docker-compose rm iezukuri-manager
+# キャッシュなしでビルド（時間かかる）
+$ docker-compose build --no-cache iezukuri-manager
+# docker-compose upする
+→docker-compose up iezukuri-manager
+
+もし上記でブラウザエラーなど出たら、apiなどを一個ずつdocker-compose buildしていく。
+
+全然ダメならコンテナを消してbuildからやり直す
+docker container prune

@@ -1,0 +1,20 @@
+
+IconFontを作る
+* gulpでsvgからアイコンフォントを作成する ｜ Tips Note by TAM https://www.tam-tam.co.jp/tipsnote/javascript/post11005.html
+* gulp でアイコン フォント生成 - アカベコマイリ https://akabeko.me/blog/2015/01/gulp-iconfont/
+* アイコンフォントの使い方と注意点 | Rriver https://parashuto.com/rriver/development/icon-font#two-ways-to-implement
+
+SVGスプライト
+* SVGスプライトの実装方法 - くらしのマーケット開発ブログ https://tech.curama.jp/entry/2018/05/11/120000
+* SVGスプライトアイコンの作り方・使い方 - 一休.com Developers Blog https://user-first.ikyu.co.jp/entry/svg-sprite
+* svg-spriteで無駄の無いSVGスプライトを生成する | DeNA DESIGN BLOG https://design.dena.com/engineering/svg-sprite/
+
+SVG作成ツール
+* オンライン
+* Online Image Vectorizer http://www.vectorizer.io/
+(3 uploads/h 10 edits/h 3 downloads/h Free, if you allow Google Ads)
+
+SVGとは
+* SVGを使うときに知っておくといいことをまとめました - Qiita https://qiita.com/manabuyasuda/items/01a76204f97cd73ffc4e
+* アイコンフォントからSVGへ！より手軽にベクター画像を表示しよう | Webクリエイターボックス https://www.webcreatorbox.com/tech/svg-vector
+* 【Illustrator】ラスタ画像からsvg画像を作る方法 | webico blog https://blog.webico.work/svg01#pngsvg

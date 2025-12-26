@@ -1,0 +1,13 @@
+# 注文住宅開発環境(AWS)
+  # 踏み台サーバ
+  Host dev-bastion
+    HostName            52.192.52.186
+    User                matsubah
+    IdentityFile        ~/.ssh/id_rsa
+
+  # v5
+  Host iezukuri-web-unit
+    HostName            172.20.76.181
+    User                matsubah
+    IdentityFile        ~/.ssh/id_rsa
+    ProxyCommand ssh -l matsubah dev-bastion nc %h %p

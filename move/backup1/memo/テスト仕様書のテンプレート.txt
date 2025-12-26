@@ -1,0 +1,10 @@
+||No||SP結果||テスト項目||操作(各URLにアクセス)||期待値||
+|1| |chatbotフォーム画面表示|以下のURLにアクセスする。（Chromeで確認）
+[https://www-test.develop.homes.co.jp/iezukuri/inquire/input/lp?refs=chatbotcataloglp]|エラーが起こらないこと|
+|2| |カタログLP|以下のURLにアクセスする。（Chrome SPモードで確認）
+[https://www-test.develop.homes.co.jp/iezukuri/lp/product/hokkaido/sapporo_chuo-city/]|エラーが起こらないこと
+「予算をあげて2,000～2,500万円未満のカタログを見てみる」のエリアが表示されていないこと|
+|3| |テーマLP
+（ローコスト住宅）|以下のURLにアクセスする。（Chrome SPモードで確認）
+[https://www-test.develop.homes.co.jp/iezukuri/lp/product/tokyo/chiyoda-city/theme-41/]|#1と同様
+（違うエリアでも同様に見えること）|

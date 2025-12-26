@@ -1,0 +1,319 @@
+manager マークアップガイドライン
+
+対象ブラウザ	IE9 / IE11 / Firefox最新 / Chrome最新
+文字コード	UTF-8
+改行コード	LF(UNIX)
+インデント	半スペ4つ(blade,scss,css,js)
+開発環境	Node.js + Gulp + Sass(SCSS)
+
+
+全体の構成
+
+- ヘッダー　フッター　サイドナビ
+Manager用のフレームワークを使用しています。
+fw.css(fw.scss)に記述しており原則いじりません。
+「hm-」のプレフィックスが付いているパーツ群が当フレームワークに該当します。
+※hm＝homes managerの略
+
+- コンテンツ部分
+Manager用のフレームワーク＋独自パーツを使用してハイブリッドに実装していくエリアです。
+最低限のUIはフレームワークで担保できますが、フレームワークでは対応しきれない
+イレギュラーな見た目に関しては独自パーツでカバーしながら実装していきます。
+プレフィックスは付きません。
+
+- コーディング規約（主なもの）
+class / 変数　キャメルケース
+
+mixin　チェインケース
+例：
+// OK
+@mixin hide-text($num: 100%) { … }
+// NG
+@mixin hideText($num: 100%) { … }
+
+要素は省略する
+例：
+// OK
+.heading {}
+// NG
+h2.heading {}
+
+タイプセレクタは極力使用しない(例外アリ)
+// OK
+.widget .heading {}
+// NG
+.widget h2 {}
+
+// 例外：フレージングコンテンツや、その他粒度の小さい(影響を及ぼさない)要素に関しては使用できるものとする
+// OK
+.widget .heading span {}
+.widget widgetList li {}
+.widget widgetList li a {}
+.widget widgetList li a img {}
+
+意味のある命名にする
+// OK
+.error {}
+
+// NG
+.red {}
+
+波括弧 { } は可読性向上のため半スペ、改行を入れる(例外アリ)
+// 例外：ワンラインで記述したほうが見やすいものの場合は例外とする
+// OK
+.pref1 { background-position:      0      0; }
+.pref2 { background-position: -100px      0; }
+.pref3 { background-position: -200px      0; }
+.pref4 { background-position: -100px -100px; }
+
+セレクタを複数指定する場合は改行を入れる
+// OK
+.table {
+    th,
+    td {}
+}
+// NG
+.table {
+    th,td {}
+}
+
+プロパティと値は半スペを空け、末尾のセミコロンは省略しない
+// OK
+.widget {
+    margin: 1.4rem;
+    padding: 1.4rem
+    font-size: 1.2rem;
+}
+
+// NG
+.widget {
+    margin: 14px;
+    padding: 14px;
+    font-size: 12px;
+}
+
+// 例外：値が大きくなる場合はpxでも可能(明確に規定しないが目安として100pxを超えたら)
+// OK
+.widget {
+    margin: 200px;
+}
+
+margin、padding、font-sizeはremを使用する(例外アリ)
+ネストは積極的に利用する
+親セレクタの参照は＆(アンパサンド)を利用する(可読性によっては例外アリ)
+
+その他
+* extendはコンパイル後のセレクタがグルーピングされるため用意していない。
+  scssファイルのみレビューするというルールで確立するのであれば今後検討する
+* 規約は運用していく上で懸念が生じた場合見直すものとする
+
+
+
+ssh-keygen -t rsa -C "matsubarahiromi@lifull.com"
+
+以降はコピペでOK?（一部古いので注意、エラーあるかも）
+
+# ブラウザからリクエストして動作確認
+古い→https://manager-{user名}.iez-dev.homes.co.jp
+https://iezukuri-manager-develop.iez-dev.homes.co.jp
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=111402691
+
+ID / PW
+9000010 / test
+
+# 起動方法 → Docker
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=90792029
+
+$ cd ${HOME}/projects/
+（これは古い）
+$ docker-compose up iezukuri-manager iezukuri-manager-api iezukuri-api iezukuri-db-api
+テスト用
+$ docker-compose -f docker-compose.test.yml up iezukuri-api iezukuri-manager-api iezukuri-manager iezukuri-db-api
+OR
+★★★　docker-compose -f docker-compose.test.yml up iezukuri-manager iezukuri-db-api
+https://localhost/login
+$ docker-compose down
+
+★★★ API切り替え、DockerfileのUpdateなどした場合、キャッシュなしでdockerをビルドする ★★★
+# 念のため消す
+$ docker-compose rm iezukuri-manager iezukuri-manager-api iezukuri-api
+# キャッシュなしでビルド（時間かかる）
+$ docker-compose build --no-cache iezukuri-manager iezukuri-manager-api iezukuri-api
+# docker-compose upする
+→docker-compose up iezukuri-manager iezukuri-manager-api iezukuri-api
+
+もし上記でブラウザエラーなど出たら、apiなどを一個ずつdocker-compose buildしていく。
+
+全然ダメならコンテナを消してbuildからやり直す
+docker container prune
+
+
+
+2023/01/06メモ
+docker compose up iezukuri-manager iezukuri-web-api iezukuri-db-api
+docker compose up iezukuri-api iezukuri-manager-api iezukuri-manager
+docker-compose -f docker-compose.test.yml up iezukuri-api iezukuri-manager-api iezukuri-manager
+
+2023/04/11メモ
+docker-compose up iezukuri-web-api iezukuri-db-api iezukuri-db
+docker-compose -f docker-compose.test.yml up iezukuri-web-api iezukuri-db-api
+
+2023/07/12メモ
+ローカル環境のDBを使う
+docker-compose up iezukuri-manager iezukuri-db-api
+docker-compose up iezukuri-manager iezukuri-manager-api iezukuri-db iezukuri-db-api
+
+エラー
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using ***.***.*.*. Set the 'ServerName' directive globally to suppress this message
+
+参考：
+[Docker]AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using ***.***.*.*. Set the 'ServerName' directive globally to suppress this message - Qiita https://qiita.com/sachiko-kame/items/a6deebbad207d627b598
+
+echo "ServerName localhost" | tee /etc/apache2/conf-available/fqdn.conf
+a2enconf fqdn
+service apache2 reload
+
+
+既存のコンテナ～使われていないイメージすべてを削除するには、 -a フラグを使います。
+--filter フラグでフィルタリング表現を使えば、削除するイメージに制限を設けられます。
+https://docs.docker.jp/config/pruning.html
+
+docker system prune -a --filter "until=24h"
+docker-compose build --no-cache iezukuri-manager iezukuri-hasura
+
+docker-compose -f docker-compose.test.yml up iezukuri-manager
+
+curl -v telnet://127.0.0.1
+
+https://127.0.0.1/login
+
+iezukuri-db-api
+-> vendorの削除
+-> docker-compose down
+-> docker-compose -f docker-compose.test.yml build iezukuri-db-api
+-> docker-compose -f docker-compose.test.yml up iezukuri-db-api
+-> OK
+
+*** NG ***
+docker-compose -f docker-compose.test.yml up iezukuri-api iezukuri-manager-api iezukuri-manager iezukuri-db-api
+
+⭐️これでも起動できる
+docker-compose -f docker-compose.test.yml up iezukuri-manager iezukuri-db-api
+
+2023/12/05
+「エラーと対処法」
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=91960896
+
+ログイン画面で"could not connect to server"のエラーになる場合
+
+docker-compose -f docker-compose.test.yml build --no-cache iezukuri-api iezukuri-manager-api iezukuri-db-api iezukuri-manager && docker-compose -f docker-compose.test.yml up iezukuri-api iezukuri-manager-api iezukuri-db-api iezukuri-manager
+
+
+
+
+# unitはdockerへ移行したため、下記のようなマウントはしなくて良い
+
+# sshfs
+sshfs iezukuri-manager-dev:/home/matsubah/projects/iezukuri-manager/ /Users/matsubah/projects/iezukuri-manager/
+
+アンマウント
+umount /Users/matsubah/projects/iezukuri-manager/
+diskutil unmount /Users/matsubah/projects/iezukuri-manager/
+
+上記でできない場合
+pgrep -lf sshfs
+kill -9 xxxx
+umount -f /Users/matsubah/projects/iezukuri-manager/
+
+
+# ssh
+ssh iezukuri-manager-dev
+
+# Manager
+Host iezukuri-manager-dev
+  HostName            172.20.76.134
+  User                matsubah
+  IdentityFile        ~/.ssh/id_rsa
+  ProxyCommand ssh -l matsubah dev-bastion nc %h %p
+  ProxyCommand ssh -q -W nc %h:%p bastion
+
+  Host iezukuri-manager-unit
+    HostName 172.20.76.134
+    User     matsubah
+    Port     22
+    IdentityFile ~/.ssh/id_rsa
+    ProxyCommand ssh -q -W %h:%p bastion
+
+
+# Docker内でGulpを動かす方法
+
+iezukuri-managerの起動してるコンテナIDをみる
+$ docker ps
+
+#コンテナに入る
+Old
+$ docker exec -it {{container id}} bash
+$ docker-compose exec iezukuri-manager bash
+
+New
+$ docker exec -it iezukuri-manager bash
+$ ./node_modules/gulp/bin/gulp.js
+
+環境構築
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=64843536
+
+# 予算上限なしの会社
+
+[test]株式会社大原建設
+https://www-test.homes.co.jp/iezukuri/mid-4869/
+Manager
+会員番号：9104855
+
+
+# リリースについて
+
+develop -> releaseブランチへのpull requestを作成
+→URLをチケットに記載
+
+例：
+release <- developのマージリクエストを作成しました。
+ご確認をお願いします。
+https://github.com/lifull/iezukuri-manager/pull/851
+
+→リリースチケットにも記載
+
+例：
+以下のpull requestをお願いします
+https://github.com/lifull/iezukuri-manager/pull/851
+
+現状登録されてないID一覧
+9000054
+9000057
+9000058
+9000059
+9000087
+9000088
+9000089
+9000090
+9000091
+9000094
+9101979
+9101998
+9102023
+9102174
+9102358
+9102495
+9102501
+9102654
+9102721
+9103004
+9103123
+9103178
+9103254
+9103328
+9104606
+9104971
+9105379
+9105552
+9105682
+9105683

@@ -1,0 +1,47 @@
+.topHeader_nav_overlay {
+    opacity: 0;
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgba(0,0,0,.3);
+    z-index: 4;
+    transition: opacity .3s ease-out,visibility .3s
+}
+
+.topHeader_nav_overlay.open {
+    opacity: 1;
+    visibility: visible
+}
+
+.topHeader_nav {
+    overflow: auto;
+    max-height: 80%;
+    display: none;
+    padding-top: 33px;
+    position: fixed;
+    top: 59px;
+    background: #efefef;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    -webkit-animation: nav-show .3s linear 0s;
+    animation: nav-show .3s linear 0s
+}
+@media only screen and (max-width: 1024px)
+.drawerMenu-active.topHeader_nav {
+    display: block;
+    transition: all .3s;
+}
+
+@keyframes nav-show {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}

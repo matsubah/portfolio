@@ -1,0 +1,7 @@
+SELECT
+  *
+FROM
+  external.web_makers
+WHERE
+  member_id::integer = 9000010
+ORDER BY maker_id;

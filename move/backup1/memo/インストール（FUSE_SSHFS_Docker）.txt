@@ -1,0 +1,36 @@
+ソースをいじる方法
+
+1.ssh, vim
+
+2.serverをマウント
+
+参照：
+マウントする方法（FUSEとSSHFS）
+https://jira.next-group.jp/wiki/display/~watanar/05.+fuse
+
+FUSE
+https://osxfuse.github.io/
+
+SSHFS
+かづきさん虎の巻
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=73861482
+
+https://github.com/osxfuse/sshfs/downloads
+マウント
+sshfs iezukuri-web-unit:/home/matsubah/projects/iezukuri/ /Users/matsubah/mountpoint/iezukuri-web-unit/
+アンマウント
+umount /Users/matsubah/mountpoint/iezukuri-web-unit/
+diskutil unmount /Users/matsubah/mountpoint/iezukuri-web-unit/
+
+上記でできない場合
+pgrep -lf sshfs
+kill -9 xxxx
+umount -f /Users/matsubah/mountpoint/iezukuri-web-unit/
+
+3.Docker
+
+Dockerのダウンロード
+https://hub.docker.com/editions/community/docker-ce-desktop-mac?tab=description
+
+matsubarahiromi@lifull.com
+docker2019

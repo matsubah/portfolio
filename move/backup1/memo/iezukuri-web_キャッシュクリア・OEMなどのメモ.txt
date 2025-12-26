@@ -1,0 +1,20 @@
+キャッシュクリア
+
+フォルダ構成など変更時に再度構築
+php app/console cache:clear -k PcApp
+php app/console cache:clear -k SpApp
+
+
+OEMパラメーター
+
+楽天
+?o=248hA3c2GUnlW7I
+
+その他OEM
+?o=318hKxQya2SrXYU
+
+自動除外系の要件
+例
+emailが一致したら自動除外
+全期間で一致したのをみて除外 or 同計上月での同じemailの場合除外
+https://jira.next-group.jp/wiki/pages/viewpage.action?pageId=149126835
